@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "Seferi - Ahlat",
+    "slug": "seferi-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.seferi.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Seferi fotoğraf çekmek için kamera erişimine ihtiyaç duyar.",
+        "NSPhotoLibraryUsageDescription": "Seferi fotoğraf seçmek için galeri erişimine ihtiyaç duyar.",
+        "NSLocationWhenInUseUsageDescription": "Seferi konumunuzu doğrulamak için GPS'e ihtiyaç duyar."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.seferi.app",
+      "permissions": [
+        "CAMERA",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Seferi fotoğraf çekmek için kamera erişimine ihtiyaç duyar."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Seferi konumunuzu doğrulamak için GPS'e ihtiyaç duyar."
+        }
+      ]
+    ]
+  }
+}
