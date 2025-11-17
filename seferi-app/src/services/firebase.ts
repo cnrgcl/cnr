@@ -1,25 +1,21 @@
-import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
-import { getStorage } from 'firebase/storage';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-// Firebase yapılandırmanızı buraya ekleyin
-// Firebase Console'dan alacağınız bilgiler
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "BURAYA_API_KEY_YAZIN",
-  authDomain: "BURAYA_AUTH_DOMAIN_YAZIN",
-  projectId: "BURAYA_PROJECT_ID_YAZIN",
-  storageBucket: "BURAYA_STORAGE_BUCKET_YAZIN",
-  messagingSenderId: "BURAYA_MESSAGING_SENDER_ID_YAZIN",
-  appId: "BURAYA_APP_ID_YAZIN"
+  apiKey: "AIzaSyANAH91waUETdC1mLDc0CnXQ1vfdBC2bGU",
+  authDomain: "seferi-b0d22.firebaseapp.com",
+  projectId: "seferi-b0d22",
+  storageBucket: "seferi-b0d22.firebasestorage.app",
+  messagingSenderId: "947665600370",
+  appId: "1:947665600370:web:77959cff507066e81327eb",
+  measurementId: "G-4GL84LHVFF"
 };
 
-// Firebase'i başlat
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
-
-// Servisleri export et
-export const auth = getAuth(app);
-export const db = getFirestore(app);
-export const storage = getStorage(app);
-
-export default app;
+const analytics = getAnalytics(app);
