@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { anthropic, MODEL } from '@/lib/anthropic';
-import { getHumanizationPrompt, getSectionPrompt } from '@/lib/humanization';
+import { getHumanizationPrompt, getSectionPrompt, getRewritingPrompt, postProcessText } from '@/lib/humanization';
 import { calculateMetrics } from '@/lib/metrics';
 import { GenerationRequest, GenerationResponse } from '@/types';
 
@@ -68,11 +68,11 @@ IMPORTANT REMINDERS:
 
 Now write the ${sectionType} section:`;
 
-    // Call Claude API
+    // Call Claude API for initial generation
     const message = await anthropic.messages.create({
       model: MODEL,
       max_tokens: 4096,
-      temperature: 0.8, // Higher temperature for more variation
+      temperature: humanizationLevel === 'ultra' ? 0.9 : 0.8, // Higher temperature for ultra mode
       messages: [
         {
           role: 'user',
@@ -82,9 +82,49 @@ Now write the ${sectionType} section:`;
     });
 
     // Extract the generated text
-    const generatedText = message.content[0].type === 'text'
+    let generatedText = message.content[0].type === 'text'
       ? message.content[0].text
       : '';
+
+    // Multi-pass rewriting for ULTRA mode
+    if (humanizationLevel === 'ultra') {
+      // Pass 1: Sentence Structure Variation
+      const pass1Message = await anthropic.messages.create({
+        model: MODEL,
+        max_tokens: 4096,
+        temperature: 0.9,
+        messages: [
+          {
+            role: 'user',
+            content: getRewritingPrompt(generatedText, 1),
+          },
+        ],
+      });
+
+      generatedText = pass1Message.content[0].type === 'text'
+        ? pass1Message.content[0].text
+        : generatedText;
+
+      // Pass 2: Natural Flow & Personality
+      const pass2Message = await anthropic.messages.create({
+        model: MODEL,
+        max_tokens: 4096,
+        temperature: 0.85,
+        messages: [
+          {
+            role: 'user',
+            content: getRewritingPrompt(generatedText, 2),
+          },
+        ],
+      });
+
+      generatedText = pass2Message.content[0].type === 'text'
+        ? pass2Message.content[0].text
+        : generatedText;
+
+      // Post-processing for final touches
+      generatedText = postProcessText(generatedText);
+    }
 
     // Calculate metrics
     const metrics = calculateMetrics(generatedText);
@@ -93,7 +133,7 @@ Now write the ${sectionType} section:`;
     const response: GenerationResponse = {
       content: generatedText,
       metrics,
-      suggestions: generateSuggestions(metrics),
+      suggestions: generateSuggestions(metrics, humanizationLevel),
     };
 
     return NextResponse.json(response);
@@ -106,27 +146,43 @@ Now write the ${sectionType} section:`;
   }
 }
 
-function generateSuggestions(metrics: any): string[] {
+function generateSuggestions(metrics: any, level: string): string[] {
   const suggestions: string[] = [];
 
   if (metrics.aiDetectionScore > 30) {
-    suggestions.push('AI detection skoru yüksek. "Yeniden üret" butonuna basarak daha doğal bir versiyon alabilirsiniz.');
+    suggestions.push('AI detection skoru yüksek. "Ultra" modunu deneyin veya "Yeniden üret" butonuna basın.');
+  } else if (metrics.aiDetectionScore > 15) {
+    suggestions.push('AI detection skoru orta seviyede. "Ultra" mode ile daha da düşürebilirsiniz.');
+  } else if (metrics.aiDetectionScore <= 10) {
+    suggestions.push('🎉 Mükemmel! AI detection skoru çok düşük - içerik tamamen insan benzeri!');
   }
 
   if (metrics.humanLikeScore < 60) {
-    suggestions.push('İnsan benzeri skoru düşük. Humanization seviyesini "Yüksek" olarak ayarlayın.');
+    suggestions.push('İnsan benzeri skoru düşük. Humanization seviyesini "Ultra" olarak ayarlayın.');
+  } else if (metrics.humanLikeScore >= 80) {
+    suggestions.push('✨ Harika! İnsan benzeri skoru çok yüksek.');
   }
 
   if (metrics.burstiness === 'low') {
-    suggestions.push('Cümle varyasyonu düşük. Manuel olarak bazı cümleleri uzatıp kısaltabilirsiniz.');
+    suggestions.push('Cümle varyasyonu düşük. Ultra mode otomatik olarak bunu iyileştirir.');
+  } else if (metrics.burstiness === 'high') {
+    suggestions.push('✅ Mükemmel cümle varyasyonu - tamamen doğal!');
   }
 
   if (metrics.perplexity === 'low') {
-    suggestions.push('Kelime çeşitliliği artırılabilir. Bazı kelimeleri sinonimlerle değiştirin.');
+    suggestions.push('Kelime çeşitliliği artırılabilir. Ultra mode daha zengin kelime dağarcığı kullanır.');
+  } else if (metrics.perplexity === 'high') {
+    suggestions.push('✅ Mükemmel kelime çeşitliliği!');
   }
 
   if (metrics.academicQuality < 70) {
     suggestions.push('Akademik kalite artırılabilir. Daha fazla akademik terminoloji ve referans ekleyin.');
+  } else if (metrics.academicQuality >= 85) {
+    suggestions.push('🎓 Mükemmel akademik kalite - Q1 standartlarına uygun!');
+  }
+
+  if (level === 'ultra' && metrics.aiDetectionScore <= 15 && metrics.humanLikeScore >= 75) {
+    suggestions.push('🔥 ULTRA MODE BAŞARILI! Bu içerik AI detection testlerinden geçmelidir.');
   }
 
   if (suggestions.length === 0) {

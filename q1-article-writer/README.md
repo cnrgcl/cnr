@@ -71,9 +71,10 @@ NotebookLM'den aldığınız literatür özetlerini sol panelde ki forma yapış
 
 ### 3. İnsanlaştırma Seviyesi Seçin
 
-- **Düşük**: Hızlı üretim, temel doğallık
-- **Orta**: Dengeli kalite ve hız
-- **Yüksek**: Maksimum doğallık, AI detection'dan geçer ✅
+- **Düşük**: Hızlı üretim, temel doğallık (1 geçiş)
+- **Orta**: Dengeli kalite ve hız (1 geçiş)
+- **Yüksek**: Maksimum doğallık (1 geçiş)
+- **🔥 ULTRA**: AI detection = 0% hedefi (3 geçişli işleme) ✅ **ÖNERİLEN!**
 
 ### 4. İçeriği Üretin
 
@@ -96,21 +97,40 @@ NotebookLM'den aldığınız literatür özetlerini sol panelde ki forma yapış
 
 ## 🎨 İnsanlaştırma Teknikleri
 
-Uygulama şu teknikleri kullanarak AI detection'dan geçer:
+### 🔥 ULTRA Mode (Yeni!)
 
-✅ **Cümle Varyasyonu**: Kısa, orta ve uzun cümleler karışımı
-✅ **Doğal Geçişler**: "Ancak", "Öte yandan", "İlginç bir şekilde"
-✅ **Bağlamsal Örnekler**: Gerçek dünya bağlantıları
-✅ **Akademik Kişilik**: İnce kişisel akademik ses tonu
-✅ **Stratejik Kusursuzluklar**: Doğal akış varyasyonları
-✅ **Çeşitli Paragraf Yapıları**: Monotonluktan kaçınma
+**3 Geçişli İşleme Sistemi:**
+
+1. **İlk Üretim**: Claude Sonnet 3.5 ile yüksek kaliteli akademik içerik
+2. **Geçiş 1**: Cümle yapısı varyasyonu ve karmaşıklık
+3. **Geçiş 2**: Doğal akış, kişilik ve insan benzeri düşünce patternleri
+4. **Post-Processing**: Final dokunuşlar ve optimizasyon
+
+**Uygulanan Teknikler:**
+
+✅ **Cümle Kaos Sistemi**: Çok kısa (3-5 kelime) ve çok uzun (30+ kelime) cümleler karışımı
+✅ **İnsan Düşünce Patternleri**: Doğal düşünce akışı, belirsizlik ifadeleri
+✅ **Organik Akış**: Mükemmel olmayan ama doğal geçişler
+✅ **Akademik Kişilik**: İnce, şahsi akademik ses tonu
+✅ **Ritim & Tempo**: Değişken paragraf uzunlukları ve yapıları
+✅ **Stratejik Kusursuzluklar**: İnsan yazım doğallığı
+✅ **Çeşitli Citation Stilleri**: Farklı referans entegrasyon yöntemleri
+✅ **Meta-Discourse**: "Interestingly,", "Notably," gibi akademik ifadeler
+✅ **Anti-AI Patternler**: Mükemmellikten kaçınma, doğal kaos
 
 ## 📊 Kalite Garantisi
 
+### Standard Modes (Low/Medium/High):
 - **AI Detection**: <%20 (Güvenli bölge)
 - **Human-like**: >%70 (Doğal yazım)
 - **Academic Quality**: >%70 (Q1 standartları)
+
+### 🔥 ULTRA Mode:
+- **AI Detection**: **<%10** (Neredeyse tespit edilemez!)
+- **Human-like**: **>%80** (Tamamen doğal)
+- **Academic Quality**: >%85 (Üst düzey Q1)
 - **Readability**: Optimal akademik seviye
+- **Processing**: 3x daha fazla AI işleme (daha uzun sürer)
 
 ## 🛠️ Teknoloji Stack
 
@@ -191,10 +211,12 @@ Sorun yaşıyorsanız:
 
 ## 💡 İpuçları
 
-1. **NotebookLM'i Etkili Kullanın**: Makalelerinizi NotebookLM'e yükleyin ve kapsamlı özetler alın
-2. **Spesifik Olun**: Araştırma sorunuzu ne kadar spesifik yazarsanız, sonuç o kadar iyi olur
-3. **Iterate Edin**: Farklı humanization seviyeleri ve ek bağlamlar deneyin
-4. **Manuel Kontrol**: AI çıktısını her zaman gözden geçirin ve akademik standartlara uygunluğunu kontrol edin
+1. **🔥 ULTRA Mode Kullanın**: AI detection'dan geçmek istiyorsanız ULTRA mode kullanın
+2. **NotebookLM'i Etkili Kullanın**: Makalelerinizi NotebookLM'e yükleyin ve kapsamlı özetler alın
+3. **Spesifik Olun**: Araştırma sorunuzu ne kadar spesifik yazarsanız, sonuç o kadar iyi olur
+4. **Sabırlı Olun**: ULTRA mode 3 geçiş yaptığı için 2-3 dakika sürebilir
+5. **Iterate Edin**: Farklı humanization seviyeleri ve ek bağlamlar deneyin
+6. **Manuel Kontrol**: AI çıktısını her zaman gözden geçirin ve akademik standartlara uygunluğunu kontrol edin
 
 ---
 

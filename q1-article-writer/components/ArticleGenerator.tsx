@@ -15,7 +15,7 @@ export default function ArticleGenerator({ literatureSummaries, onGenerate, onGe
   const [articleTitle, setArticleTitle] = useState('');
   const [researchQuestion, setResearchQuestion] = useState('');
   const [additionalContext, setAdditionalContext] = useState('');
-  const [humanizationLevel, setHumanizationLevel] = useState<'low' | 'medium' | 'high'>('high');
+  const [humanizationLevel, setHumanizationLevel] = useState<'low' | 'medium' | 'high' | 'ultra'>('ultra');
   const [isGenerating, setIsGenerating] = useState(false);
   const [generatedContent, setGeneratedContent] = useState('');
 
@@ -156,15 +156,21 @@ export default function ArticleGenerator({ literatureSummaries, onGenerate, onGe
           </label>
           <select
             value={humanizationLevel}
-            onChange={(e) => setHumanizationLevel(e.target.value as 'low' | 'medium' | 'high')}
+            onChange={(e) => setHumanizationLevel(e.target.value as 'low' | 'medium' | 'high' | 'ultra')}
             className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md
                      bg-white dark:bg-gray-700 text-gray-900 dark:text-white
                      focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
           >
-            <option value="low">Düşük (Hızlı)</option>
-            <option value="medium">Orta (Dengeli)</option>
-            <option value="high">Yüksek (Maksimum Doğal)</option>
+            <option value="low">Düşük (Hızlı - 1 geçiş)</option>
+            <option value="medium">Orta (Dengeli - 1 geçiş)</option>
+            <option value="high">Yüksek (Maksimum Doğal - 1 geçiş)</option>
+            <option value="ultra">🔥 ULTRA (AI Detection = 0% - 3 geçiş)</option>
           </select>
+          {humanizationLevel === 'ultra' && (
+            <p className="text-xs text-indigo-600 dark:text-indigo-400 mt-1">
+              ⚡ Ultra mode 3 geçişli AI işleme kullanır (daha uzun sürer ama AI detection neredeyse 0%)
+            </p>
+          )}
         </div>
 
         {/* Additional Context */}

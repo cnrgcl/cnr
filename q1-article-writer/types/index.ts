@@ -40,7 +40,7 @@ export interface GenerationRequest {
   articleTitle?: string;
   researchQuestion?: string;
   additionalContext?: string;
-  humanizationLevel: 'low' | 'medium' | 'high';
+  humanizationLevel: 'low' | 'medium' | 'high' | 'ultra';
 }
 
 export interface GenerationResponse {

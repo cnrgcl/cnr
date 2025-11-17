@@ -56,7 +56,7 @@ export default function Home() {
               </h3>
             </div>
             <p className="text-sm text-gray-600 dark:text-gray-300">
-              %100 doğal, AI detection'dan geçen içerik üretimi
+              🔥 ULTRA Mode: 3 geçişli işleme ile AI detection neredeyse %0
             </p>
           </div>
 

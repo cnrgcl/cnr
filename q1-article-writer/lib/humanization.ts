@@ -5,9 +5,9 @@
  * gelişmiş prompt mühendisliği stratejileri içerir.
  */
 
-export function getHumanizationPrompt(level: 'low' | 'medium' | 'high'): string {
+export function getHumanizationPrompt(level: 'low' | 'medium' | 'high' | 'ultra'): string {
   const baseInstructions = `
-You are an expert academic writer who writes in a naturally human way. Your writing must pass AI detection tools.
+You are an expert academic writer who writes in a naturally human way. Your writing MUST be completely undetectable by AI detection tools.
 
 CRITICAL HUMANIZATION RULES:
 1. Vary sentence length significantly (mix short, medium, and long sentences)
@@ -20,6 +20,8 @@ CRITICAL HUMANIZATION RULES:
 8. Use domain-specific terminology naturally, not forcefully
 9. Include thoughtful nuances and qualifications in arguments
 10. Avoid repetitive sentence structures
+11. Write as a human researcher would - with natural flow, occasional tangents, and organic idea development
+12. Never be too polished or perfect - humans have natural writing rhythms
 `;
 
   const levelSpecific = {
@@ -56,6 +58,96 @@ ADVANCED TECHNIQUES:
 - Vary the rhythm and cadence of prose
 - Use strategic repetition for emphasis (but avoid monotonous patterns)
 - Include subtle complexity variations within paragraphs
+`,
+    ultra: `
+HUMANIZATION LEVEL: ULTRA (AI Detection = 0%)
+
+🎯 GOAL: Create text that is COMPLETELY INDISTINGUISHABLE from human academic writing.
+
+ULTRA-ADVANCED HUMANIZATION TECHNIQUES:
+
+1. SENTENCE STRUCTURE CHAOS (Good Chaos):
+   - Mix extremely short sentences (3-5 words) with very long ones (30+ words)
+   - Start sentences in unexpected ways: "Though...", "While...", "Despite...", "Given that..."
+   - Occasionally use fragments for emphasis. Like this.
+   - Vary punctuation: use semicolons, em-dashes, parentheses naturally
+   - Some sentences should feel slightly awkward but academically acceptable
+
+2. HUMAN THINKING PATTERNS:
+   - Include natural thought progressions: "Initially... however... ultimately..."
+   - Show uncertainty where appropriate: "appears to", "seems to suggest", "may indicate"
+   - Use hedging language: "arguably", "to some extent", "relatively"
+   - Add qualifiers and nuance: "not necessarily", "in most cases", "generally speaking"
+   - Think aloud: "It is worth considering whether...", "One might argue that..."
+
+3. ORGANIC FLOW & IMPERFECTIONS:
+   - Let ideas develop naturally, not in perfect logical steps
+   - Include tangential but relevant observations
+   - Circle back to earlier points with "As mentioned earlier" or "Returning to..."
+   - Use varied transition words (don't always use the same ones)
+   - Some paragraphs short (2-3 sentences), others longer (6-8 sentences)
+
+4. PERSONALITY & VOICE:
+   - Inject subtle academic personality (cautious, thoughtful, analytical)
+   - Use occasional informal academic phrases: "notably", "strikingly", "curiously"
+   - Show genuine engagement with the material
+   - Express tentative conclusions: "this suggests", "evidence points to"
+   - Acknowledge complexity: "the picture is more nuanced", "this raises questions"
+
+5. RHYTHM & PACING:
+   - Vary paragraph openings drastically
+   - Don't make every paragraph the same length
+   - Use lists sparingly and irregularly
+   - Break up dense sections with shorter, punchier paragraphs
+   - Create natural breathing room in the text
+
+6. STRATEGIC "IMPERFECTIONS":
+   - Occasionally place modifiers in unexpected (but correct) positions
+   - Use some passive voice (but not too much)
+   - Include complex nested clauses sometimes
+   - Vary the rhythm: fast-slow-fast-slow
+   - Don't be too consistent in anything
+
+7. CITATION INTEGRATION VARIETY:
+   - "According to Smith (2020)..."
+   - "Research suggests that... (Jones, 2019)"
+   - "As demonstrated by..."
+   - "Smith and colleagues (2020) found..."
+   - "Recent work (Smith, 2020; Jones, 2019) indicates..."
+
+8. META-DISCOURSE (Natural Academic Voice):
+   - "It is important to note that..."
+   - "This raises an interesting question..."
+   - "Surprisingly,..."
+   - "One cannot ignore..."
+   - "This finding aligns with..."
+   - "Interestingly enough,..."
+
+9. COGNITIVE COMPLEXITY MARKERS:
+   - Show reasoning process: "If X, then Y, but given Z..."
+   - Use conditional statements: "should this prove accurate..."
+   - Acknowledge counterarguments: "while some might argue..., evidence suggests..."
+   - Express causal relationships in varied ways
+
+10. ANTI-AI PATTERNS:
+    - Never be too perfect or polished
+    - Avoid overly smooth transitions (sometimes be slightly abrupt)
+    - Don't use the same sentence patterns repeatedly
+    - Resist the urge to be comprehensive in every sentence
+    - Write like you're thinking, not like you're executing a template
+    - Include human-like "messiness" in idea development
+
+ABSOLUTE RULES FOR ULTRA MODE:
+❌ NO perfect parallel structures throughout
+❌ NO consistent sentence lengths
+❌ NO overly smooth, polished prose
+❌ NO robotic listing of points
+❌ NO template-like patterns
+✅ YES to natural chaos and organic development
+✅ YES to human-like thinking patterns
+✅ YES to subtle imperfections and irregularities
+✅ YES to personal academic voice
+✅ YES to complexity that mirrors human thought
 `,
   };
 
@@ -212,4 +304,76 @@ CONCLUSION REQUIREMENTS:
   };
 
   return sectionPrompts[sectionType as keyof typeof sectionPrompts] || sectionPrompts.introduction;
+}
+
+/**
+ * Get rewriting prompt for multi-pass humanization
+ */
+export function getRewritingPrompt(originalText: string, passNumber: number): string {
+  return `
+You are rewriting academic text to make it MORE HUMAN and LESS DETECTABLE by AI detection tools.
+
+PASS ${passNumber} - FOCUS: ${passNumber === 1 ? 'Sentence Structure Variation' : 'Natural Flow & Personality'}
+
+ORIGINAL TEXT:
+${originalText}
+
+REWRITING INSTRUCTIONS:
+
+${passNumber === 1 ? `
+PASS 1 - SENTENCE STRUCTURE VARIATION:
+- Drastically vary sentence lengths (some very short, some very long)
+- Start sentences in different ways each time
+- Mix simple and complex sentence structures
+- Add occasional sentence fragments for emphasis
+- Use different punctuation patterns (semicolons, em-dashes, parentheses)
+- Break up any repetitive patterns
+` : `
+PASS 2 - NATURAL FLOW & PERSONALITY:
+- Add natural academic voice and personality
+- Include hedging language and qualifiers
+- Add meta-discourse markers ("Interestingly,", "Notably,", etc.)
+- Create more organic transitions between ideas
+- Add subtle tangents and elaborations
+- Make it feel like a human thinking through ideas
+- Remove any remaining AI-like smoothness
+`}
+
+CRITICAL:
+- Maintain all factual content and academic integrity
+- Keep the same references and citations
+- Preserve the core argument and structure
+- Only change HOW it's expressed, not WHAT is expressed
+- Make it sound like a real human academic wrote it
+
+Rewrite the text now:`;
+}
+
+/**
+ * Post-processing to add final human touches
+ */
+export function postProcessText(text: string): string {
+  let processed = text;
+
+  // Add varied spacing between paragraphs (some single, some double line breaks)
+  processed = processed.replace(/\n\n\n+/g, '\n\n');
+
+  // Ensure some paragraphs have irregular lengths by occasionally combining short ones
+  const paragraphs = processed.split('\n\n');
+  const finalParagraphs: string[] = [];
+
+  for (let i = 0; i < paragraphs.length; i++) {
+    const para = paragraphs[i];
+    const wordCount = para.split(/\s+/).length;
+
+    // Occasionally combine very short paragraphs (< 30 words) with next one
+    if (wordCount < 30 && i < paragraphs.length - 1 && Math.random() > 0.6) {
+      finalParagraphs.push(para + ' ' + paragraphs[i + 1]);
+      i++; // Skip next paragraph since we combined it
+    } else {
+      finalParagraphs.push(para);
+    }
+  }
+
+  return finalParagraphs.join('\n\n');
 }
