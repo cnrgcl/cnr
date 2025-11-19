@@ -1,5 +1,21 @@
 # Digital Stigmergy: Theory and Applications
 
+## ABSTRACT
+
+**Purpose:** This study investigates how multi-platform digital signals function as "digital pheromones" guiding restaurant selection in gastronomy tourism through stigmergic coordination mechanisms, addressing the critical gap in understanding cross-platform signal integration and attention concentration dynamics in competitive tourism markets.
+
+**Design/Methodology/Approach:** We developed a Digital Pheromone Index (DFI) integrating Google ratings (40%), review volumes (30%), and Instagram followers (30%) for 92 restaurants in Kadıköy, Istanbul. Employing Ant Colony Optimization (ACO) algorithms as a generative model, we simulated 50,000 selection events across 100 iterations to examine emergent attention concentration patterns, testing four hypotheses regarding DFI-selection correlation, winner-takes-most dynamics, Instagram dominance, and Instagram absence penalties.
+
+**Findings:** DFI strongly predicted selection probability (r=0.71, p<0.001, r²=0.50), supporting H1. ACO simulation reproduced extreme concentration (Gini=0.74), with top 20% capturing 81.7% of selections, confirming H2. Multiple regression revealed Instagram's 1.5x stronger influence versus reviews (β=0.42 vs. β=0.28), validating H3. Zero Instagram-absent restaurants appeared in top-20 selections despite comprising 62% of sample, supporting H4. Stigmergic positive feedback amplified initial inequality 80% (Gini: 0.41→0.74).
+
+**Practical Implications:** Destination management organizations require proactive interventions—curated promotion campaigns, digital marketing support, platform partnerships—to counterbalance winner-takes-most dynamics. Restaurant operators must treat Instagram presence as competitive necessity rather than optional marketing tool. Platform designers should implement exploration-exploitation balance mechanisms and diversity constraints to mitigate concentration.
+
+**Originality/Value:** This research pioneers ACO's application as generative behavioral model (versus optimization tool), extends stigmergy theory to competitive commercial contexts, and provides first systematic quantification of multi-platform signal integration in gastronomy tourism, establishing baseline measurements for tracking digital attention dynamics.
+
+**Keywords:** Digital pheromone, ant colony optimization, Instagram, restaurant selection, gastronomy tourism, stigmergy, attention concentration, multi-platform integration
+
+---
+
 ## 1. INTRODUCTION
 
 ### 1.1. Opening: The Digital Transformation of Gastronomy Tourism
