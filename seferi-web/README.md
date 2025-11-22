@@ -261,14 +261,71 @@ export async function getMyData() {
 
 ### Vercel (Önerilen)
 
-1. [Vercel](https://vercel.com) hesabı oluştur
-2. GitHub repo'yu bağla
-3. Environment variables ekle (Firebase config)
-4. Deploy!
+#### 1. Vercel Hesabı Oluştur ve GitHub Bağla
+
+1. [Vercel](https://vercel.com) adresine git
+2. "Sign Up" ile hesap oluştur (GitHub ile giriş önerilen)
+3. GitHub hesabını bağla
+
+#### 2. Yeni Proje Oluştur
+
+1. Vercel Dashboard'da **"Add New..."** → **"Project"** tıkla
+2. **cnr** repo'sunu seç (veya GitHub'dan import et)
+3. **ÖNEMLİ - Şu ayarları yap:**
+
+   **Framework Preset:** Next.js
+
+   **Root Directory:** `seferi-web` (Browse butonuna tıkla ve seferi-web klasörünü seç)
+
+   **Branch:** `claude/seferi-gamification-platform-01AAqcW4nxw35ygcRsJA31ir`
+
+   **Build Settings:**
+   - Build Command: `npm run build`
+   - Output Directory: `.next`
+   - Install Command: `npm install`
+
+4. **Environment Variables (Demo Mode için gerekli değil, ama Production için):**
+
+   Eğer Firebase kullanmak isterseniz:
+   ```
+   NEXT_PUBLIC_FIREBASE_API_KEY=AIza...
+   NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your-project.firebaseapp.com
+   NEXT_PUBLIC_FIREBASE_PROJECT_ID=your-project-id
+   NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your-project.appspot.com
+   NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=123456789
+   NEXT_PUBLIC_FIREBASE_APP_ID=1:123456789:web:abc...
+   ```
+
+5. **Deploy** butonuna tıkla!
+
+#### 3. Deployment Sonrası
+
+Deployment tamamlandıktan sonra:
+- Vercel size otomatik bir URL verecek (örn: `seferi-web.vercel.app`)
+- Bu URL'i açın
+- Demo hesabı ile giriş yapın:
+  - Email: `demo@seferi.app`
+  - Şifre: `demo123`
+
+#### CLI ile Deployment (Alternatif)
 
 ```bash
 npm install -g vercel
+cd seferi-web
 vercel
+```
+
+İlk deployment'ta size sorulacak sorular:
+- **Set up and deploy?** Y
+- **Which scope?** (Hesabınızı seçin)
+- **Link to existing project?** N
+- **Project name?** seferi-web
+- **Directory?** ./
+- **Override settings?** N
+
+Sonraki deployment'lar için sadece:
+```bash
+vercel --prod
 ```
 
 ### Netlify
