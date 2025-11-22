@@ -157,9 +157,19 @@ export default function LoginPage() {
         </div>
 
         {/* Demo Bilgisi */}
-        <div className="mt-8 p-4 bg-blue-50 rounded-lg border border-blue-200">
-          <p className="text-sm text-blue-800">
-            <strong>Demo Sürümü:</strong> Firebase config eklenince çalışacak. Şu an UI görüntüleniyor.
+        <div className="mt-8 p-4 bg-green-50 rounded-lg border border-green-200">
+          <p className="text-sm text-green-800 font-semibold mb-2">
+            🎉 Demo Mode Aktif!
+          </p>
+          <p className="text-xs text-green-700 mb-2">
+            Firebase olmadan test edebilirsiniz:
+          </p>
+          <div className="bg-white p-3 rounded border border-green-300 text-xs space-y-1">
+            <p><strong>Email:</strong> demo@seferi.app</p>
+            <p><strong>Şifre:</strong> demo123</p>
+          </div>
+          <p className="text-xs text-green-600 mt-2">
+            veya herhangi bir email/şifre ile kayıt olabilirsiniz!
           </p>
         </div>
       </div>

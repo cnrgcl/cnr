@@ -12,6 +12,7 @@ import {
 import { doc, getDoc, setDoc, Timestamp } from 'firebase/firestore';
 import { auth, db } from './firebase';
 import { User } from '@/types';
+import { DEMO_MODE, demoSignIn, demoSignUp, demoSignOut, getDemoUser } from './demo';
 
 interface AuthContextType {
   user: User | null;
@@ -81,6 +82,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   // Sign in
   const signIn = async (email: string, password: string) => {
+    if (DEMO_MODE) {
+      const demoUser = await demoSignIn(email, password);
+      setUser(demoUser);
+      return;
+    }
+
     const userCredential = await signInWithEmailAndPassword(auth, email, password);
     const userData = await fetchUserData(userCredential.user.uid);
     setUser(userData);
@@ -88,6 +95,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   // Sign up
   const signUp = async (email: string, password: string, displayName: string) => {
+    if (DEMO_MODE) {
+      const demoUser = await demoSignUp(email, password, displayName);
+      setUser(demoUser);
+      return;
+    }
+
     const userCredential = await createUserWithEmailAndPassword(auth, email, password);
 
     // Update Firebase profile
@@ -100,6 +113,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   // Sign out
   const signOut = async () => {
+    if (DEMO_MODE) {
+      await demoSignOut();
+      setUser(null);
+      return;
+    }
+
     await firebaseSignOut(auth);
     setUser(null);
     setFirebaseUser(null);
@@ -107,6 +126,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   // Refresh user data
   const refreshUser = async () => {
+    if (DEMO_MODE) {
+      const demoUser = getDemoUser();
+      setUser(demoUser);
+      return;
+    }
+
     if (firebaseUser) {
       const userData = await fetchUserData(firebaseUser.uid);
       setUser(userData);
@@ -115,6 +140,15 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 
   // Listen to auth state changes
   useEffect(() => {
+    if (DEMO_MODE) {
+      // Demo mode: check localStorage
+      const demoUser = getDemoUser();
+      setUser(demoUser);
+      setLoading(false);
+      return;
+    }
+
+    // Firebase mode
     const unsubscribe = onAuthStateChanged(auth, async (firebaseUser) => {
       setFirebaseUser(firebaseUser);
 
