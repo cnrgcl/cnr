@@ -38,7 +38,7 @@ export default function LeaderboardPage() {
       const currentUserData = JSON.parse(localStorage.getItem('demo_user') || '{}');
       demoUsers.push({
         id: user.id,
-        name: user.name,
+        name: user.displayName || user.email,
         points: currentUserData.stats?.totalPoints || 150,
         level: currentUserData.stats?.level || 5,
         photosShared: currentUserData.stats?.photosShared || 8,
