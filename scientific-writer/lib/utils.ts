@@ -11,6 +11,13 @@ export function countWords(text: string): number {
   return text.trim().split(/\s+/).length;
 }
 
+export function countSentences(text: string): number {
+  if (!text || text.trim() === '') return 0;
+  // Split by sentence-ending punctuation (., !, ?)
+  const sentences = text.trim().split(/[.!?]+/).filter(s => s.trim().length > 0);
+  return sentences.length;
+}
+
 export function savePaper(paper: Paper): void {
   try {
     localStorage.setItem(STORAGE_KEY, JSON.stringify(paper));

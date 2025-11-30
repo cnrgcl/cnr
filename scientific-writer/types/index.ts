@@ -3,12 +3,21 @@ export interface Paragraph {
   title: string;
   content: string;
   notes: string;
+  theme: string; // Paragrafın teması/amacı
+  targetSentences: number; // Hedef cümle sayısı
+}
+
+export interface Subsection {
+  id: string;
+  title: string;
+  targetParagraphs: number; // Hedef paragraf sayısı
+  paragraphs: Paragraph[];
 }
 
 export interface Section {
   id: string;
   name: string;
-  paragraphs: Paragraph[];
+  subsections: Subsection[];
 }
 
 export interface Paper {

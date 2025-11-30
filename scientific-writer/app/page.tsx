@@ -1,22 +1,15 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Paper, Section, Paragraph } from '@/types';
-import ParagraphEditor from '@/components/ParagraphEditor';
-import SectionView from '@/components/SectionView';
-import { generateId, countWords, savePaper, loadPaper } from '@/lib/utils';
-
-const SECTION_NAMES = {
-  introduction: 'Giriş (Introduction)',
-  methods: 'Yöntem (Methods)',
-  results: 'Bulgular (Results)',
-  discussion: 'Tartışma (Discussion)',
-};
+import { Paper, Section, Subsection, Paragraph } from '@/types';
+import SubsectionEditor from '@/components/SubsectionEditor';
+import { generateId, countWords, countSentences, savePaper, loadPaper } from '@/lib/utils';
 
 export default function Home() {
   const [paper, setPaper] = useState<Paper | null>(null);
   const [activeSection, setActiveSection] = useState<string>('introduction');
   const [lastSaved, setLastSaved] = useState<string>('');
+  const [showOutline, setShowOutline] = useState(false);
 
   // Initialize or load paper
   useEffect(() => {
@@ -25,7 +18,7 @@ export default function Home() {
       setPaper(loaded);
       setLastSaved(new Date(loaded.updatedAt).toLocaleTimeString('tr-TR'));
     } else {
-      // Create new paper
+      // Create new paper with subsection structure
       const newPaper: Paper = {
         id: generateId(),
         title: 'Yeni Bilimsel Makale',
@@ -34,10 +27,10 @@ export default function Home() {
         keywordsTR: [],
         keywordsEN: [],
         sections: [
-          { id: 'introduction', name: 'Giriş', paragraphs: [] },
-          { id: 'methods', name: 'Yöntem', paragraphs: [] },
-          { id: 'results', name: 'Bulgular', paragraphs: [] },
-          { id: 'discussion', name: 'Tartışma', paragraphs: [] },
+          { id: 'introduction', name: 'Giriş (Introduction)', subsections: [] },
+          { id: 'methods', name: 'Yöntem (Methods)', subsections: [] },
+          { id: 'results', name: 'Bulgular (Results)', subsections: [] },
+          { id: 'discussion', name: 'Tartışma (Discussion)', subsections: [] },
         ],
         references: [],
         createdAt: new Date().toISOString(),
@@ -63,33 +56,34 @@ export default function Home() {
 
   const currentSection = paper.sections.find(s => s.id === activeSection)!;
 
-  const addParagraph = (sectionId: string) => {
-    const newParagraph: Paragraph = {
+  const addSubsection = (sectionId: string) => {
+    const section = paper.sections.find(s => s.id === sectionId)!;
+    const newSubsection: Subsection = {
       id: generateId(),
-      title: `Paragraf ${currentSection.paragraphs.length + 1}`,
-      content: '',
-      notes: '',
+      title: `${section.subsections.length + 1}. Alt Başlık`,
+      targetParagraphs: 0,
+      paragraphs: [],
     };
 
     setPaper(prev => ({
       ...prev!,
       sections: prev!.sections.map(s =>
         s.id === sectionId
-          ? { ...s, paragraphs: [...s.paragraphs, newParagraph] }
+          ? { ...s, subsections: [...s.subsections, newSubsection] }
           : s
       ),
     }));
   };
 
-  const updateParagraph = (sectionId: string, paragraphId: string, field: keyof Paragraph, value: string) => {
+  const updateSubsection = (sectionId: string, subsectionId: string, updates: Partial<Subsection>) => {
     setPaper(prev => ({
       ...prev!,
       sections: prev!.sections.map(s =>
         s.id === sectionId
           ? {
               ...s,
-              paragraphs: s.paragraphs.map(p =>
-                p.id === paragraphId ? { ...p, [field]: value } : p
+              subsections: s.subsections.map(sub =>
+                sub.id === subsectionId ? { ...sub, ...updates } : sub
               ),
             }
           : s
@@ -97,37 +91,36 @@ export default function Home() {
     }));
   };
 
-  const deleteParagraph = (sectionId: string, paragraphId: string) => {
-    if (!confirm('Bu paragrafı silmek istediğinizden emin misiniz?')) return;
+  const deleteSubsection = (sectionId: string, subsectionId: string) => {
     setPaper(prev => ({
       ...prev!,
       sections: prev!.sections.map(s =>
         s.id === sectionId
-          ? { ...s, paragraphs: s.paragraphs.filter(p => p.id !== paragraphId) }
+          ? { ...s, subsections: s.subsections.filter(sub => sub.id !== subsectionId) }
           : s
       ),
     }));
   };
 
-  const moveParagraph = (sectionId: string, paragraphId: string, direction: 'up' | 'down') => {
+  const moveSubsection = (sectionId: string, subsectionId: string, direction: 'up' | 'down') => {
     setPaper(prev => {
       const section = prev!.sections.find(s => s.id === sectionId)!;
-      const index = section.paragraphs.findIndex(p => p.id === paragraphId);
+      const index = section.subsections.findIndex(sub => sub.id === subsectionId);
       if (
         (direction === 'up' && index === 0) ||
-        (direction === 'down' && index === section.paragraphs.length - 1)
+        (direction === 'down' && index === section.subsections.length - 1)
       ) {
         return prev!;
       }
 
-      const newParagraphs = [...section.paragraphs];
+      const newSubsections = [...section.subsections];
       const newIndex = direction === 'up' ? index - 1 : index + 1;
-      [newParagraphs[index], newParagraphs[newIndex]] = [newParagraphs[newIndex], newParagraphs[index]];
+      [newSubsections[index], newSubsections[newIndex]] = [newSubsections[newIndex], newSubsections[index]];
 
       return {
         ...prev!,
         sections: prev!.sections.map(s =>
-          s.id === sectionId ? { ...s, paragraphs: newParagraphs } : s
+          s.id === sectionId ? { ...s, subsections: newSubsections } : s
         ),
       };
     });
@@ -135,14 +128,25 @@ export default function Home() {
 
   const getTotalWords = () => {
     return paper.sections.reduce((total, section) => {
-      return total + section.paragraphs.reduce((sectionTotal, p) => {
-        return sectionTotal + countWords(p.content);
+      return total + section.subsections.reduce((secTotal, subsection) => {
+        return secTotal + subsection.paragraphs.reduce((subTotal, p) => {
+          return subTotal + countWords(p.content);
+        }, 0);
+      }, 0);
+    }, 0);
+  };
+
+  const getTotalSentences = () => {
+    return paper.sections.reduce((total, section) => {
+      return total + section.subsections.reduce((secTotal, subsection) => {
+        return secTotal + subsection.paragraphs.reduce((subTotal, p) => {
+          return subTotal + countSentences(p.content);
+        }, 0);
       }, 0);
     }, 0);
   };
 
   const exportToWord = () => {
-    // Simple HTML export that can be opened in Word
     let html = `<!DOCTYPE html>
 <html>
 <head>
@@ -152,7 +156,8 @@ export default function Home() {
     body { font-family: 'Times New Roman', serif; font-size: 12pt; line-height: 1.6; max-width: 800px; margin: 40px auto; padding: 0 20px; }
     h1 { text-align: center; font-size: 16pt; margin-bottom: 30px; }
     h2 { font-size: 14pt; margin-top: 30px; margin-bottom: 15px; font-weight: bold; }
-    h3 { font-size: 12pt; margin-top: 20px; margin-bottom: 10px; font-weight: bold; }
+    h3 { font-size: 13pt; margin-top: 20px; margin-bottom: 10px; font-weight: bold; }
+    h4 { font-size: 12pt; margin-top: 15px; margin-bottom: 8px; font-weight: bold; }
     p { text-align: justify; margin-bottom: 10px; }
     .abstract { margin: 20px 0; padding: 15px; border: 1px solid #ccc; }
     .keywords { margin: 10px 0; font-style: italic; }
@@ -174,13 +179,16 @@ export default function Home() {
   </div>
 `;
 
-    paper.sections.forEach(section => {
-      html += `\n  <h2>${section.name}</h2>\n`;
-      section.paragraphs.forEach(para => {
-        if (para.title) {
-          html += `  <h3>${para.title}</h3>\n`;
-        }
-        html += `  <p>${para.content}</p>\n`;
+    paper.sections.forEach((section, sIndex) => {
+      html += `\n  <h2>${sIndex + 1}. ${section.name}</h2>\n`;
+      section.subsections.forEach((subsection, subIndex) => {
+        html += `  <h3>${sIndex + 1}.${subIndex + 1}. ${subsection.title}</h3>\n`;
+        subsection.paragraphs.forEach(para => {
+          if (para.title && para.title !== `Paragraf ${subsection.paragraphs.indexOf(para) + 1}`) {
+            html += `  <h4>${para.title}</h4>\n`;
+          }
+          html += `  <p>${para.content}</p>\n`;
+        });
       });
     });
 
@@ -202,8 +210,117 @@ export default function Home() {
     URL.revokeObjectURL(url);
   };
 
+  // Outline view component
+  const OutlineView = () => {
+    const totalParagraphs = paper.sections.reduce((total, section) =>
+      total + section.subsections.reduce((secTotal, subsection) =>
+        secTotal + subsection.paragraphs.length, 0), 0);
+
+    const totalTargetParagraphs = paper.sections.reduce((total, section) =>
+      total + section.subsections.reduce((secTotal, subsection) =>
+        secTotal + subsection.targetParagraphs, 0), 0);
+
+    return (
+      <div className="bg-white rounded-lg shadow-lg p-6 max-w-4xl mx-auto">
+        <div className="flex justify-between items-center mb-6">
+          <h2 className="text-2xl font-bold">📋 Makale Planı</h2>
+          <button
+            onClick={() => setShowOutline(false)}
+            className="px-4 py-2 bg-gray-500 text-white rounded-lg hover:bg-gray-600"
+          >
+            ✕ Kapat
+          </button>
+        </div>
+
+        <div className="grid grid-cols-3 gap-4 mb-6">
+          <div className="bg-blue-50 p-4 rounded-lg">
+            <div className="text-sm text-gray-600">Toplam Paragraf</div>
+            <div className="text-2xl font-bold text-blue-600">
+              {totalParagraphs} / {totalTargetParagraphs || '∞'}
+            </div>
+          </div>
+          <div className="bg-green-50 p-4 rounded-lg">
+            <div className="text-sm text-gray-600">Toplam Cümle</div>
+            <div className="text-2xl font-bold text-green-600">{getTotalSentences()}</div>
+          </div>
+          <div className="bg-purple-50 p-4 rounded-lg">
+            <div className="text-sm text-gray-600">Toplam Kelime</div>
+            <div className="text-2xl font-bold text-purple-600">{getTotalWords()}</div>
+          </div>
+        </div>
+
+        {paper.sections.map((section, sIndex) => (
+          <div key={section.id} className="mb-6">
+            <h3 className="text-xl font-bold mb-3 text-gray-800">
+              {sIndex + 1}. {section.name}
+            </h3>
+            {section.subsections.length === 0 ? (
+              <p className="text-gray-500 ml-6">Alt başlık eklenmemiş</p>
+            ) : (
+              section.subsections.map((subsection, subIndex) => {
+                const subProgress = subsection.targetParagraphs > 0
+                  ? Math.min(100, (subsection.paragraphs.length / subsection.targetParagraphs) * 100)
+                  : 0;
+
+                return (
+                  <div key={subsection.id} className="ml-6 mb-4 border-l-4 border-blue-300 pl-4">
+                    <div className="flex justify-between items-center mb-2">
+                      <h4 className="font-semibold text-gray-700">
+                        {sIndex + 1}.{subIndex + 1}. {subsection.title}
+                      </h4>
+                      <span className="text-sm text-gray-600">
+                        {subsection.paragraphs.length} / {subsection.targetParagraphs} paragraf
+                        {subsection.targetParagraphs > 0 && subProgress >= 100 ? ' ✓' : ''}
+                      </span>
+                    </div>
+                    {subsection.paragraphs.map((para, pIndex) => {
+                      const sentenceCount = countSentences(para.content);
+                      const sentenceProgress = para.targetSentences > 0
+                        ? Math.min(100, (sentenceCount / para.targetSentences) * 100)
+                        : 0;
+
+                      return (
+                        <div key={para.id} className="ml-6 mb-2 text-sm">
+                          <div className="flex justify-between items-center">
+                            <span className="text-gray-600">
+                              • {para.title}
+                              {para.theme && (
+                                <span className="ml-2 text-xs italic text-gray-500">
+                                  ({para.theme})
+                                </span>
+                              )}
+                            </span>
+                            <span className={`text-xs ${
+                              para.targetSentences > 0 && sentenceProgress >= 100
+                                ? 'text-green-600 font-medium'
+                                : 'text-gray-500'
+                            }`}>
+                              {sentenceCount}{para.targetSentences > 0 ? ` / ${para.targetSentences}` : ''} cümle
+                              {para.targetSentences > 0 && sentenceProgress >= 100 ? ' ✓' : ''}
+                            </span>
+                          </div>
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })
+            )}
+          </div>
+        ))}
+      </div>
+    );
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Outline Modal */}
+      {showOutline && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4 overflow-y-auto">
+          <OutlineView />
+        </div>
+      )}
+
       {/* Header */}
       <header className="bg-white shadow-sm border-b sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 py-4">
@@ -216,10 +333,16 @@ export default function Home() {
                 className="text-2xl font-bold text-gray-900 border-none focus:outline-none focus:ring-2 focus:ring-blue-500 rounded px-2 py-1"
               />
               <p className="text-sm text-gray-500 mt-1">
-                Son kayıt: {lastSaved} • Toplam kelime: {getTotalWords()}
+                Son kayıt: {lastSaved} • {getTotalSentences()} cümle • {getTotalWords()} kelime
               </p>
             </div>
             <div className="flex gap-2">
+              <button
+                onClick={() => setShowOutline(true)}
+                className="px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition"
+              >
+                📋 Plan Görünümü
+              </button>
               <button
                 onClick={() => {
                   const updated = { ...paper, updatedAt: new Date().toISOString() };
@@ -279,7 +402,7 @@ export default function Home() {
               <input
                 type="text"
                 value={paper.keywordsTR.join(', ')}
-                onChange={(e) => setPaper({ ...paper, keywordsTR: e.target.value.split(',').map(k => k.trim()) })}
+                onChange={(e) => setPaper({ ...paper, keywordsTR: e.target.value.split(',').map(k => k.trim()).filter(k => k) })}
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 placeholder="kelime1, kelime2, kelime3"
               />
@@ -291,7 +414,7 @@ export default function Home() {
               <input
                 type="text"
                 value={paper.keywordsEN.join(', ')}
-                onChange={(e) => setPaper({ ...paper, keywordsEN: e.target.value.split(',').map(k => k.trim()) })}
+                onChange={(e) => setPaper({ ...paper, keywordsEN: e.target.value.split(',').map(k => k.trim()).filter(k => k) })}
                 className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 placeholder="word1, word2, word3"
               />
@@ -315,7 +438,7 @@ export default function Home() {
                 >
                   {section.name}
                   <span className="ml-2 text-xs bg-gray-100 px-2 py-1 rounded-full">
-                    {section.paragraphs.length}
+                    {section.subsections.length}
                   </span>
                 </button>
               ))}
@@ -329,29 +452,30 @@ export default function Home() {
                 {currentSection.name}
               </h2>
               <button
-                onClick={() => addParagraph(activeSection)}
+                onClick={() => addSubsection(activeSection)}
                 className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition flex items-center gap-2"
               >
-                ➕ Yeni Paragraf Ekle
+                ➕ Yeni Alt Başlık Ekle
               </button>
             </div>
 
-            {currentSection.paragraphs.length === 0 ? (
+            {currentSection.subsections.length === 0 ? (
               <div className="text-center py-12 text-gray-500">
-                <p className="text-lg mb-2">Henüz paragraf eklenmedi</p>
-                <p className="text-sm">Yukarıdaki butona tıklayarak paragraf ekleyin</p>
+                <p className="text-lg mb-2">Henüz alt başlık eklenmedi</p>
+                <p className="text-sm">Yukarıdaki butona tıklayarak alt başlık ekleyin</p>
               </div>
             ) : (
               <div className="space-y-6">
-                {currentSection.paragraphs.map((paragraph, index) => (
-                  <ParagraphEditor
-                    key={paragraph.id}
-                    paragraph={paragraph}
+                {currentSection.subsections.map((subsection, index) => (
+                  <SubsectionEditor
+                    key={subsection.id}
+                    subsection={subsection}
+                    sectionId={activeSection}
                     index={index}
-                    total={currentSection.paragraphs.length}
-                    onUpdate={(field, value) => updateParagraph(activeSection, paragraph.id, field, value)}
-                    onDelete={() => deleteParagraph(activeSection, paragraph.id)}
-                    onMove={(direction) => moveParagraph(activeSection, paragraph.id, direction)}
+                    total={currentSection.subsections.length}
+                    onUpdate={(subId, updates) => updateSubsection(activeSection, subId, updates)}
+                    onDelete={(subId) => deleteSubsection(activeSection, subId)}
+                    onMove={(subId, direction) => moveSubsection(activeSection, subId, direction)}
                   />
                 ))}
               </div>
