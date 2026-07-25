@@ -122,6 +122,34 @@ npm run dev
 
 `http://localhost:3001`
 
+## Vercel'e yayınlama
+
+Terminal açmadan, her cihazdan erişmek için. Vercel panelinden yapılır —
+komut satırına gerek yok.
+
+1. [vercel.com/new](https://vercel.com/new) → GitHub hesabını bağla → **cnrgcl/cnr** deposunu seç
+2. **Root Directory** ayarını `scientific-writer` yap — bu adım kritik, depo
+   kökünde birden fazla proje var
+3. Framework otomatik **Next.js** algılanır, dokunma
+4. Deploy
+
+Depoda `main` dalı yok. Vercel *Settings → Git → Production Branch* altında
+üretim dalını sorar; şu an çalıştığımız dalı seç:
+
+```
+claude/scientific-writing-site-01PhgMQ3riUBiDtKmYdyZN7B
+```
+
+Bundan sonra bu dala her push, siteyi otomatik günceller.
+
+**Ortam değişkeni gerekmez** — uygulama tamamen tarayıcıda çalışır, sunucu
+tarafı sır tutmaz.
+
+⚠️ Yayınlanan adres herkese açıktır. Uygulama makaleni sunucuya göndermez
+(veri yalnızca senin tarayıcında durur), ama adresi bilen boş bir editör
+açabilir. Sorun olacaksa Vercel'in *Deployment Protection* ayarıyla parola
+koyabilirsin.
+
 ## Kullanım akışı
 
 1. **Alt başlık ekle** → "1.1 Literatür Taraması", hedef 3 paragraf
