@@ -86,9 +86,31 @@ dönüşür.
 - **Cümle başına kaynak** — kaynakçaya bağlı, metin içi atıf otomatik üretilir
 - **Paragraf önizleme** — cümleleri birleştirip paragrafı bütün olarak gör
 - **Plan görünümü** — tüm makalenin cümle düzeyinde anahattı ve ilerleme durumu
+- **Denetim** — yapısal eksikleri bulan kural tabanlı kontroller (aşağıda)
 - **JSON yedekleme / geri yükleme** — veri kaybına karşı
 - **Word'e aktarma** — cümleler paragraflara birleştirilerek dışa aktarılır
 - Otomatik kayıt (2 sn), TR/EN özet, anahtar kelimeler, kaynakça
+
+## 🔍 Denetim
+
+Cümlelere işlev ve kaynak etiketlendiği için, normalde göz kararı yapılan
+birçok kontrol **kesin kuralla** yapılabilir. Denetim paneli hiçbir metni
+yorumlamaz, yalnızca yapıya bakar — bu yüzden asla yanılmaz ve internet
+istemez.
+
+| Seviye | Kontrol |
+|---|---|
+| ⛔ Eksik | Başkasının bulgusunu aktaran cümlede kaynak yok |
+| ⚠️ Dikkat | Bölümde beklenen bir hamle hiç kullanılmamış (örn. Giriş'te boşluk açılmamış, Yöntem'de etik onay yok) |
+| ⚠️ Dikkat | Cümlenin retorik işlevi seçilmemiş · paragrafın teması boş · kaynağın bilgileri eksik |
+| ℹ️ Bilgi | Hedef sapmaları · aşırı uzun paragraf · kullanılmayan kaynak · Sonuç'ta atıf · özet ve anahtar kelime boş |
+
+Her bulgu tıklanabilir — ilgili bölüme geçip paragrafa kaydırır.
+
+**Gürültü kontrolü:** boş bölümler ve hiç yazılmamış paragraflar denetlenmez,
+yoksa yeni bir makale onlarca uyarıyla açılırdı. Yine de "beklenen hamle yok"
+uyarıları yazım sürerken çıkabilir — bunlar taslak aşamasında normaldir,
+makaleyi bitirirken anlam kazanır.
 
 ## Kurulum
 

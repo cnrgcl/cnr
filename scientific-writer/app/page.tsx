@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Paper, Subsection, Reference } from '@/types';
 import SubsectionEditor from '@/components/SubsectionEditor';
 import { findMoveLabel, MOVE_SET_OPTIONS } from '@/lib/moves';
+import { auditPaper, countBySeverity, Finding, Severity } from '@/lib/audit';
 import {
   generateId,
   countWords,
@@ -57,6 +58,7 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('introduction');
   const [lastSaved, setLastSaved] = useState('');
   const [showOutline, setShowOutline] = useState(false);
+  const [showAudit, setShowAudit] = useState(false);
   const [showSectionManager, setShowSectionManager] = useState(false);
   const [expandedRef, setExpandedRef] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -103,6 +105,22 @@ export default function Home() {
   const citedSentences = sentences.filter((s) => s.citations.length > 0).length;
   const unusedRefs = paper.references.filter((r) => referenceUsage(paper, r.id) === 0);
   const incompleteRefs = paper.references.filter(isReferenceIncomplete);
+
+  const findings = auditPaper(paper);
+  const findingCounts = countBySeverity(findings);
+
+  /** Bulgunun işaret ettiği yere git. */
+  const jumpTo = (finding: Finding) => {
+    if (finding.sectionId) setActiveSection(finding.sectionId);
+    setShowAudit(false);
+    if (finding.anchorId) {
+      setTimeout(() => {
+        document
+          .getElementById(finding.anchorId!)
+          ?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 120);
+    }
+  };
 
   // ---- kaynakça işlemleri ----
   const createReference = (): string => {
@@ -444,6 +462,91 @@ export default function Home() {
         </div>
       )}
 
+      {/* Denetim */}
+      {showAudit && (
+        <div className="fixed inset-0 z-50 overflow-y-auto bg-black/50 p-4">
+          <div className="mx-auto max-w-3xl rounded-lg bg-white p-6 shadow-lg">
+            <div className="mb-4 flex items-center justify-between">
+              <h2 className="text-2xl font-bold">🔍 Denetim</h2>
+              <button
+                onClick={() => setShowAudit(false)}
+                className="rounded-lg bg-gray-500 px-4 py-2 text-white hover:bg-gray-600"
+              >
+                ✕ Kapat
+              </button>
+            </div>
+
+            <p className="mb-4 text-sm text-gray-600">
+              Bu kontroller tamamen kural tabanlıdır — yapıya bakar, metni yorumlamaz. Boş
+              bölümler ve yazılmamış paragraflar denetlenmez.
+            </p>
+
+            <div className="mb-5 grid grid-cols-3 gap-3">
+              <div className="rounded-lg bg-red-50 p-3">
+                <div className="text-xs text-gray-600">Eksik</div>
+                <div className="text-2xl font-bold text-red-600">{findingCounts.error}</div>
+              </div>
+              <div className="rounded-lg bg-amber-50 p-3">
+                <div className="text-xs text-gray-600">Dikkat</div>
+                <div className="text-2xl font-bold text-amber-600">{findingCounts.warning}</div>
+              </div>
+              <div className="rounded-lg bg-gray-100 p-3">
+                <div className="text-xs text-gray-600">Bilgi</div>
+                <div className="text-2xl font-bold text-gray-600">{findingCounts.info}</div>
+              </div>
+            </div>
+
+            {findings.length === 0 ? (
+              <div className="py-10 text-center text-gray-500">
+                <p className="text-lg">Sorun bulunamadı</p>
+                <p className="mt-1 text-sm">
+                  Henüz yazmaya başlamadıysanız bu beklenen bir sonuçtur.
+                </p>
+              </div>
+            ) : (
+              <ul className="space-y-2">
+                {findings.map((f) => {
+                  const style: Record<Severity, string> = {
+                    error: 'border-red-300 bg-red-50',
+                    warning: 'border-amber-300 bg-amber-50',
+                    info: 'border-gray-200 bg-gray-50',
+                  };
+                  const icon: Record<Severity, string> = {
+                    error: '⛔',
+                    warning: '⚠️',
+                    info: 'ℹ️',
+                  };
+                  const clickable = Boolean(f.sectionId);
+                  return (
+                    <li
+                      key={f.id}
+                      onClick={() => clickable && jumpTo(f)}
+                      className={`rounded-lg border px-3 py-2 ${style[f.severity]} ${
+                        clickable ? 'cursor-pointer hover:brightness-95' : ''
+                      }`}
+                    >
+                      <div className="flex items-start gap-2">
+                        <span>{icon[f.severity]}</span>
+                        <div className="min-w-0 flex-1">
+                          <p className="text-sm text-gray-800">{f.message}</p>
+                          <p className="mt-0.5 text-xs text-gray-500">
+                            {f.location}
+                            {clickable && ' · git →'}
+                          </p>
+                        </div>
+                        <span className="shrink-0 rounded bg-white/70 px-2 py-0.5 text-xs text-gray-600">
+                          {f.category}
+                        </span>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* Üst çubuk */}
       <header className="sticky top-0 z-10 border-b bg-white shadow-sm">
         <div className="mx-auto max-w-7xl px-4 py-4">
@@ -467,6 +570,22 @@ export default function Home() {
                 className="rounded-lg bg-purple-600 px-4 py-2 text-white transition hover:bg-purple-700"
               >
                 📋 Plan
+              </button>
+              <button
+                onClick={() => setShowAudit(true)}
+                className="flex items-center gap-2 rounded-lg bg-teal-600 px-4 py-2 text-white transition hover:bg-teal-700"
+              >
+                🔍 Denetim
+                {findingCounts.error > 0 && (
+                  <span className="rounded-full bg-red-500 px-2 text-xs font-bold">
+                    {findingCounts.error}
+                  </span>
+                )}
+                {findingCounts.error === 0 && findingCounts.warning > 0 && (
+                  <span className="rounded-full bg-amber-400 px-2 text-xs font-bold text-amber-950">
+                    {findingCounts.warning}
+                  </span>
+                )}
               </button>
               <button
                 onClick={() => exportPaperAsJSON(paper)}

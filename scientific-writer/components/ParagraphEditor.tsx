@@ -86,7 +86,7 @@ export default function ParagraphEditor({
   };
 
   return (
-    <div className="rounded-lg border border-gray-300 bg-gray-50 p-4">
+    <div id={paragraph.id} className="scroll-mt-24 rounded-lg border border-gray-300 bg-gray-50 p-4">
       {/* Başlık satırı */}
       <div className="mb-2 flex items-start gap-2">
         <button
