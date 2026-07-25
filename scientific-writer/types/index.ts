@@ -1,15 +1,22 @@
+export interface Reference {
+  id: string;
+  inText: string; // metin içi ad: "Yılmaz", "Yılmaz ve Kaya", "Yılmaz vd."
+  year: string;   // "2003"
+  full: string;   // tam kaynakça satırı (APA)
+}
+
 export interface Sentence {
   id: string;
-  move: string;      // retorik işlev — bu cümle ne iş yapıyor
-  note: string;      // plan: ne diyecek
-  text: string;      // gerçek cümle
-  citation: string;  // hangi kaynağa dayanıyor
+  move: string;         // retorik işlev — bu cümle ne iş yapıyor
+  note: string;         // plan: ne diyecek
+  text: string;         // gerçek cümle (atıf yazmadan)
+  citations: string[];  // bağlı kaynakların id'leri
 }
 
 export interface Paragraph {
   id: string;
-  theme: string;            // paragrafın tek cümlelik amacı
-  targetSentences: number;  // hedef cümle sayısı
+  theme: string;
+  targetSentences: number;
   notes: string;
   sentences: Sentence[];
 }
@@ -35,7 +42,7 @@ export interface Paper {
   keywordsTR: string[];
   keywordsEN: string[];
   sections: Section[];
-  references: string[];
+  references: Reference[];
   createdAt: string;
   updatedAt: string;
 }

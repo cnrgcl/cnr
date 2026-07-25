@@ -15,6 +15,33 @@ Bölüm (Giriş / Yöntem / Bulgular / Tartışma)
         └── Cümle                  → retorik işlev + plan notu + metin + kaynak
 ```
 
+## Kaynakça bağlantılı
+
+Atıfları **cümle metnine elle yazmazsın**. Her cümleye kaynakçadan kaynak
+bağlarsın, metin içi atıf otomatik oluşur:
+
+```
+yazdığın:   Bu alanda üç ana yaklaşım öne çıkmıştır.
+bağladığın: Yılmaz, 2003
+çıkan:      Bu alanda üç ana yaklaşım öne çıkmıştır (Yılmaz, 2003).
+```
+
+Atıf, APA'daki gibi cümle sonu noktalamasından önce yerleşir. Bir cümleye
+birden fazla kaynak bağlanabilir: `(Yılmaz, 2003; Kaya, 2011)`.
+
+Her kaynağın üç alanı vardır — **metin içi ad** ("Yılmaz", "Yılmaz vd."),
+**yıl**, ve **tam kaynakça satırı**. Tam satırı yazıp alandan çıkınca ilk iki
+alan boşsa otomatik tahmin edilir.
+
+Kaynakça bölümü ayrıca şunları gösterir:
+- her kaynağın kaç cümlede kullanıldığı ve **tam olarak nerede** (`1.1 · P2 · C3`)
+- hiç kullanılmayan kaynaklar
+- bilgisi eksik kaynaklar (atıfları `(?, t.y.)` olarak çıkacak olanlar)
+- alfabetik sıralama düğmesi
+
+Bir kaynağı silersen bağlı olduğu tüm cümlelerden bağlantısı da temizlenir —
+kopuk atıf kalmaz.
+
 ## Retorik işlev kütüphanesi
 
 Her cümleye "bu cümle ne iş yapıyor" etiketi atanır. Giriş bölümü için etiketler
@@ -35,7 +62,7 @@ Yöntem, Bulgular ve Tartışma bölümlerinin de kendi işlev listeleri vardır
   yuvaları aç, tek tek yaz
 - **Kesin sayım** — cümleler ayrı nesneler olduğu için sayım tahmine dayanmaz
   ("vb.", "Dr.", "s. 45" gibi kısaltmalar sayımı bozmaz)
-- **Cümle başına kaynak** — hangi iddianın hangi kaynağa dayandığı kaybolmaz
+- **Cümle başına kaynak** — kaynakçaya bağlı, metin içi atıf otomatik üretilir
 - **Paragraf önizleme** — cümleleri birleştirip paragrafı bütün olarak gör
 - **Plan görünümü** — tüm makalenin cümle düzeyinde anahattı ve ilerleme durumu
 - **JSON yedekleme / geri yükleme** — veri kaybına karşı
@@ -59,7 +86,8 @@ npm run dev
 3. **⚡ hedefe kadar doldur** → 5 boş cümle yuvası açılır
 4. Her yuva için **işlev seç** (örn. "Kavram tanımı") ve **plan notu** yaz
 5. Planı bitirince cümleleri tek tek doldur
-6. **📄 Word** ile son metni al, cilalamayı Word'de yap
+6. Her cümleye **🔗 kaynak bağla** — atıfı elle yazma
+7. **📄 Word** ile son metni al, cilalamayı Word'de yap
 
 ## ⚠️ Veri saklama
 

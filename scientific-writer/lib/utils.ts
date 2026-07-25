@@ -1,4 +1,4 @@
-import { Paper, Paragraph, Sentence } from '@/types';
+import { Paper, Paragraph, Sentence, Reference } from '@/types';
 
 const STORAGE_KEY = 'scientific-paper';
 
@@ -16,44 +16,181 @@ export function countWords(text: string): number {
 }
 
 export function emptySentence(): Sentence {
-  return { id: generateId(), move: '', note: '', text: '', citation: '' };
+  return { id: generateId(), move: '', note: '', text: '', citations: [] };
 }
 
 export function emptyParagraph(): Paragraph {
-  return {
-    id: generateId(),
-    theme: '',
-    targetSentences: 0,
-    notes: '',
-    sentences: [],
-  };
+  return { id: generateId(), theme: '', targetSentences: 0, notes: '', sentences: [] };
 }
 
-/** Bir paragrafın yazılmış cümlelerini tek bir metne birleştirir. */
-export function assembleParagraph(paragraph: Paragraph): string {
+export function emptyReference(): Reference {
+  return { id: generateId(), inText: '', year: '', full: '' };
+}
+
+export function isReferenceIncomplete(ref: Reference): boolean {
+  return !ref.full.trim() || !ref.inText.trim() || !ref.year.trim();
+}
+
+/**
+ * Tam kaynakça satırından metin içi ad ve yılı tahmin eder.
+ * Yalnızca alanlar boşken öneri olarak kullanılır — yanılması zararsızdır.
+ */
+export function guessReferenceFields(full: string): { inText: string; year: string } {
+  const parenYear = full.match(/\((\d{4})[a-z]?\)/);
+  const bareYear = full.match(/\b((?:19|20)\d{2})\b/);
+  const year = parenYear ? parenYear[1] : bareYear ? bareYear[1] : '';
+
+  const beforeComma = full.split(',')[0].trim();
+  const inText = beforeComma.length > 0 && beforeComma.length <= 40 ? beforeComma : '';
+
+  return { inText, year };
+}
+
+/** Tek bir kaynağın metin içi gösterimi: "Yılmaz, 2003" */
+export function inTextLabel(ref: Reference): string {
+  const name = ref.inText.trim() || '?';
+  const year = ref.year.trim() || 't.y.';
+  return `${name}, ${year}`;
+}
+
+export function findReference(refs: Reference[], id: string): Reference | undefined {
+  return refs.find((r) => r.id === id);
+}
+
+/** Bir cümlenin atıf öbeği: "(Yılmaz, 2003; Kaya, 2011)" */
+export function citationBlock(sentence: Sentence, refs: Reference[]): string {
+  const labels = sentence.citations
+    .map((id) => findReference(refs, id))
+    .filter((r): r is Reference => Boolean(r))
+    .map(inTextLabel);
+  return labels.length ? `(${labels.join('; ')})` : '';
+}
+
+/**
+ * Cümleyi atıflarıyla birlikte üretir. Atıf, APA'daki gibi cümle sonundaki
+ * noktalama işaretinden önce yerleştirilir.
+ */
+export function renderSentence(sentence: Sentence, refs: Reference[]): string {
+  const text = sentence.text.trim();
+  if (!text) return '';
+
+  const block = citationBlock(sentence, refs);
+  if (!block) return text;
+
+  const ending = text.match(/[.!?]+$/);
+  if (ending) {
+    return `${text.slice(0, -ending[0].length).trimEnd()} ${block}${ending[0]}`;
+  }
+  return `${text} ${block}`;
+}
+
+/** Paragrafın yazılmış cümlelerini atıflarıyla birlikte tek metne birleştirir. */
+export function assembleParagraph(paragraph: Paragraph, refs: Reference[] = []): string {
   return paragraph.sentences
-    .map((s) => s.text.trim())
+    .map((s) => renderSentence(s, refs))
     .filter((t) => t.length > 0)
     .join(' ');
-}
-
-export function paragraphWordCount(paragraph: Paragraph): number {
-  return countWords(assembleParagraph(paragraph));
 }
 
 export function writtenSentenceCount(paragraph: Paragraph): number {
   return paragraph.sentences.filter((s) => s.text.trim().length > 0).length;
 }
 
+export function allSentences(paper: Paper): Sentence[] {
+  return paper.sections.flatMap((s) =>
+    s.subsections.flatMap((sub) => sub.paragraphs.flatMap((p) => p.sentences))
+  );
+}
+
+/** Bir kaynağın kaç cümlede kullanıldığı. */
+export function referenceUsage(paper: Paper, refId: string): number {
+  return allSentences(paper).filter((s) => s.citations.includes(refId)).length;
+}
+
+/** Bir kaynağın kullanıldığı yerler — "1.1 · P2 · C3" biçiminde. */
+export function referenceLocations(paper: Paper, refId: string): string[] {
+  const spots: string[] = [];
+  paper.sections.forEach((section, sIdx) => {
+    section.subsections.forEach((sub, subIdx) => {
+      sub.paragraphs.forEach((para, pIdx) => {
+        para.sentences.forEach((sentence, senIdx) => {
+          if (sentence.citations.includes(refId)) {
+            spots.push(`${sIdx + 1}.${subIdx + 1} · P${pIdx + 1} · C${senIdx + 1}`);
+          }
+        });
+      });
+    });
+  });
+  return spots;
+}
+
+/** Kaynakçayı tam satıra göre Türkçe alfabetik sıralar. */
+export function sortReferences(refs: Reference[]): Reference[] {
+  return [...refs].sort((a, b) => a.full.localeCompare(b.full, 'tr'));
+}
+
 /**
- * Eski sürümlerden gelen kayıtları yeni yapıya taşır.
- * Eski şekilde paragrafın düz `content` metni vardı; onu cümlelere bölüp
- * her birini ayrı bir nesneye çeviriyoruz. Hiçbir metin atılmaz.
+ * Eski sürümlerden gelen kayıtları yeni yapıya taşır. Hiçbir veri atılmaz:
+ * serbest metin atıflar kaynakçaya yeni birer kayıt olarak eklenir.
  */
 function migratePaper(raw: any): Paper {
+  // 1) Kaynakça: string[] -> Reference[]
+  const references: Reference[] = (raw.references ?? []).map((ref: any) => {
+    if (typeof ref === 'string') {
+      const guess = guessReferenceFields(ref);
+      return { id: generateId(), inText: guess.inText, year: guess.year, full: ref };
+    }
+    return {
+      id: ref.id ?? generateId(),
+      inText: ref.inText ?? '',
+      year: ref.year ?? '',
+      full: ref.full ?? '',
+    };
+  });
+
+  // Eski serbest metin atıfları tekilleştirerek kaynakçaya taşımak için
+  const legacyByText = new Map<string, string>();
+  const ensureLegacyReference = (text: string): string => {
+    const key = text.trim();
+    const existing = legacyByText.get(key);
+    if (existing) return existing;
+
+    const already = references.find((r) => r.full.trim() === key);
+    if (already) {
+      legacyByText.set(key, already.id);
+      return already.id;
+    }
+
+    const guess = guessReferenceFields(key);
+    const created: Reference = {
+      id: generateId(),
+      inText: guess.inText,
+      year: guess.year,
+      full: key,
+    };
+    references.push(created);
+    legacyByText.set(key, created.id);
+    return created.id;
+  };
+
+  const migrateSentence = (s: any): Sentence => {
+    let citations: string[] = [];
+    if (Array.isArray(s.citations)) {
+      citations = s.citations;
+    } else if (typeof s.citation === 'string' && s.citation.trim()) {
+      citations = [ensureLegacyReference(s.citation)];
+    }
+    return {
+      id: s.id ?? generateId(),
+      move: s.move ?? '',
+      note: s.note ?? '',
+      text: s.text ?? '',
+      citations,
+    };
+  };
+
+  // 2) Bölümler
   const sections = (raw.sections ?? []).map((section: any) => {
-    // Alt başlık katmanı yoksa (en eski sürüm) paragrafları tek bir
-    // alt başlık altına topla.
     const subsections =
       section.subsections ??
       (section.paragraphs?.length
@@ -80,17 +217,11 @@ function migratePaper(raw: any): Paper {
               theme: p.theme ?? '',
               targetSentences: p.targetSentences ?? 0,
               notes: p.notes ?? '',
-              sentences: p.sentences.map((s: any) => ({
-                id: s.id ?? generateId(),
-                move: s.move ?? '',
-                note: s.note ?? '',
-                text: s.text ?? '',
-                citation: s.citation ?? '',
-              })),
+              sentences: p.sentences.map(migrateSentence),
             };
           }
 
-          // Eski şekil: düz `content` metni.
+          // En eski şekil: paragrafın düz `content` metni.
           const chunks: string[] = (p.content ?? '')
             .split(/(?<=[.!?])\s+/)
             .map((c: string) => c.trim())
@@ -106,7 +237,7 @@ function migratePaper(raw: any): Paper {
               move: '',
               note: '',
               text,
-              citation: '',
+              citations: [],
             })),
           };
         }),
@@ -114,7 +245,7 @@ function migratePaper(raw: any): Paper {
     };
   });
 
-  return { ...raw, sections } as Paper;
+  return { ...raw, sections, references } as Paper;
 }
 
 export function savePaper(paper: Paper): void {

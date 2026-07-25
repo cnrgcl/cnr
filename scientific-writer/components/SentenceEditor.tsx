@@ -1,15 +1,17 @@
 'use client';
 
-import { Sentence } from '@/types';
+import { Sentence, Reference } from '@/types';
 import { getMovesForSection } from '@/lib/moves';
-import { countWords } from '@/lib/utils';
+import { countWords, inTextLabel, findReference, isReferenceIncomplete, renderSentence } from '@/lib/utils';
 
 interface SentenceEditorProps {
   sentence: Sentence;
   sectionId: string;
   index: number;
   total: number;
-  onUpdate: (field: keyof Sentence, value: string) => void;
+  references: Reference[];
+  onUpdate: (field: keyof Sentence, value: string | string[]) => void;
+  onCreateReference: () => string;
   onDelete: () => void;
   onMove: (direction: 'up' | 'down') => void;
 }
@@ -19,16 +21,35 @@ export default function SentenceEditor({
   sectionId,
   index,
   total,
+  references,
   onUpdate,
+  onCreateReference,
   onDelete,
   onMove,
 }: SentenceEditorProps) {
   const groups = getMovesForSection(sectionId);
   const written = sentence.text.trim().length > 0;
 
-  const activeHint = groups
-    .flatMap((g) => g.moves)
-    .find((m) => m.id === sentence.move)?.hint;
+  const activeHint = groups.flatMap((g) => g.moves).find((m) => m.id === sentence.move)?.hint;
+
+  const linked = sentence.citations
+    .map((id) => findReference(references, id))
+    .filter((r): r is Reference => Boolean(r));
+
+  const available = references.filter((r) => !sentence.citations.includes(r.id));
+
+  const link = (refId: string) => onUpdate('citations', [...sentence.citations, refId]);
+  const unlink = (refId: string) =>
+    onUpdate('citations', sentence.citations.filter((id) => id !== refId));
+
+  const handlePick = (value: string) => {
+    if (!value) return;
+    if (value === '__new__') {
+      link(onCreateReference());
+    } else {
+      link(value);
+    }
+  };
 
   return (
     <div
@@ -36,7 +57,7 @@ export default function SentenceEditor({
         written ? 'border-green-300 bg-green-50/40' : 'border-gray-200 bg-white'
       }`}
     >
-      {/* Üst satır: numara, işlev, kaynak, kontroller */}
+      {/* Üst satır: numara, işlev, kontroller */}
       <div className="flex items-center gap-2">
         <span
           className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-semibold ${
@@ -62,14 +83,6 @@ export default function SentenceEditor({
             </optgroup>
           ))}
         </select>
-
-        <input
-          type="text"
-          value={sentence.citation}
-          onChange={(e) => onUpdate('citation', e.target.value)}
-          className="w-40 shrink-0 rounded border border-gray-300 px-2 py-1 text-sm focus:ring-2 focus:ring-blue-500"
-          placeholder="kaynak (Yılmaz, 2003)"
-        />
 
         <div className="flex shrink-0 gap-1">
           <button
@@ -113,8 +126,67 @@ export default function SentenceEditor({
         onChange={(e) => onUpdate('text', e.target.value)}
         rows={2}
         className="mt-1 w-full resize-y rounded border border-gray-300 px-2 py-1 text-sm leading-relaxed focus:ring-2 focus:ring-blue-500"
-        placeholder="Cümleyi buraya yazın..."
+        placeholder="Cümleyi buraya yazın (atıfı elle yazmayın, aşağıdan bağlayın)..."
       />
+
+      {/* Kaynak bağlama */}
+      <div className="mt-2 flex flex-wrap items-center gap-1.5">
+        <span className="text-xs text-gray-500">🔗 Kaynak:</span>
+
+        {linked.map((ref) => {
+          const incomplete = isReferenceIncomplete(ref);
+          return (
+            <span
+              key={ref.id}
+              title={incomplete ? 'Bu kaynağın bilgileri eksik — Kaynakça bölümünden tamamlayın' : ref.full}
+              className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-xs ${
+                incomplete
+                  ? 'border border-amber-400 bg-amber-50 text-amber-800'
+                  : 'border border-blue-300 bg-blue-50 text-blue-800'
+              }`}
+            >
+              {incomplete && '⚠ '}
+              {inTextLabel(ref)}
+              <button
+                onClick={() => unlink(ref.id)}
+                className="text-current opacity-50 hover:opacity-100"
+                title="Bağlantıyı kaldır"
+              >
+                ✕
+              </button>
+            </span>
+          );
+        })}
+
+        {linked.length === 0 && <span className="text-xs text-gray-400">yok</span>}
+
+        <select
+          value=""
+          onChange={(e) => handlePick(e.target.value)}
+          className="rounded border border-gray-300 bg-white px-1.5 py-0.5 text-xs text-gray-600 focus:ring-2 focus:ring-blue-500"
+        >
+          <option value="">＋ bağla</option>
+          {available.length > 0 && (
+            <optgroup label="Kaynakçadan">
+              {available.map((ref) => (
+                <option key={ref.id} value={ref.id}>
+                  {ref.full.trim() ? `${inTextLabel(ref)} — ${ref.full.slice(0, 50)}` : inTextLabel(ref)}
+                </option>
+              ))}
+            </optgroup>
+          )}
+          <optgroup label="Yeni">
+            <option value="__new__">＋ Yeni kaynak oluştur…</option>
+          </optgroup>
+        </select>
+      </div>
+
+      {/* Atıflı önizleme */}
+      {written && linked.length > 0 && (
+        <p className="mt-2 rounded border border-gray-200 bg-white px-2 py-1 text-xs italic text-gray-600">
+          {renderSentence(sentence, references)}
+        </p>
+      )}
 
       {written && (
         <div className="mt-1 text-right text-xs text-gray-500">

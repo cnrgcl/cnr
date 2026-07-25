@@ -1,8 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import { Paragraph, Sentence } from '@/types';
-import { emptySentence, paragraphWordCount, writtenSentenceCount } from '@/lib/utils';
+import { Paragraph, Sentence, Reference } from '@/types';
+import {
+  emptySentence,
+  countWords,
+  assembleParagraph,
+  writtenSentenceCount,
+} from '@/lib/utils';
 import SentenceEditor from './SentenceEditor';
 
 interface ParagraphEditorProps {
@@ -10,7 +15,9 @@ interface ParagraphEditorProps {
   sectionId: string;
   index: number;
   total: number;
+  references: Reference[];
   onUpdate: (updates: Partial<Paragraph>) => void;
+  onCreateReference: () => string;
   onDelete: () => void;
   onMove: (direction: 'up' | 'down') => void;
 }
@@ -20,7 +27,9 @@ export default function ParagraphEditor({
   sectionId,
   index,
   total,
+  references,
   onUpdate,
+  onCreateReference,
   onDelete,
   onMove,
 }: ParagraphEditorProps) {
@@ -33,9 +42,10 @@ export default function ParagraphEditor({
   const progress = target > 0 ? Math.min(100, (written / target) * 100) : 0;
   const complete = target > 0 && written >= target;
 
-  const addSentence = () => {
-    onUpdate({ sentences: [...paragraph.sentences, emptySentence()] });
-  };
+  const wordCount = countWords(paragraph.sentences.map((s) => s.text).join(' '));
+  const citedCount = paragraph.sentences.filter((s) => s.citations.length > 0).length;
+
+  const addSentence = () => onUpdate({ sentences: [...paragraph.sentences, emptySentence()] });
 
   /** Hedef sayıya kadar boş cümle yuvası açar. */
   const fillSlots = () => {
@@ -49,7 +59,11 @@ export default function ParagraphEditor({
     });
   };
 
-  const updateSentence = (sentenceId: string, field: keyof Sentence, value: string) => {
+  const updateSentence = (
+    sentenceId: string,
+    field: keyof Sentence,
+    value: string | string[]
+  ) => {
     onUpdate({
       sentences: paragraph.sentences.map((s) =>
         s.id === sentenceId ? { ...s, [field]: value } : s
@@ -153,7 +167,10 @@ export default function ParagraphEditor({
           </div>
         )}
 
-        <span className="text-sm text-gray-500">{paragraphWordCount(paragraph)} kelime</span>
+        <span className="text-sm text-gray-500">{wordCount} kelime</span>
+        {planned > 0 && (
+          <span className="text-sm text-gray-500">🔗 {citedCount}/{planned} cümle kaynaklı</span>
+        )}
 
         <button
           onClick={() => setShowNotes(!showNotes)}
@@ -208,7 +225,9 @@ export default function ParagraphEditor({
                     sectionId={sectionId}
                     index={sIndex}
                     total={paragraph.sentences.length}
+                    references={references}
                     onUpdate={(field, value) => updateSentence(sentence.id, field, value)}
+                    onCreateReference={onCreateReference}
                     onDelete={() => deleteSentence(sentence.id)}
                     onMove={(direction) => moveSentence(sentence.id, direction)}
                   />
@@ -232,17 +251,14 @@ export default function ParagraphEditor({
                 )}
               </div>
 
-              {/* Birleştirilmiş önizleme */}
+              {/* Birleştirilmiş önizleme — atıflarıyla birlikte */}
               {written > 0 && (
                 <details className="mt-3">
                   <summary className="cursor-pointer text-sm text-gray-600 hover:text-gray-800">
                     👁️ Paragrafı bütün olarak gör
                   </summary>
                   <p className="mt-2 rounded border border-gray-200 bg-white p-3 text-justify text-sm leading-relaxed text-gray-800">
-                    {paragraph.sentences
-                      .map((s) => s.text.trim())
-                      .filter(Boolean)
-                      .join(' ')}
+                    {assembleParagraph(paragraph, references)}
                   </p>
                 </details>
               )}

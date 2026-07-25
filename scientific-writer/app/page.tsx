@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { Paper, Subsection } from '@/types';
+import { Paper, Subsection, Reference } from '@/types';
 import SubsectionEditor from '@/components/SubsectionEditor';
 import { findMoveLabel } from '@/lib/moves';
 import {
@@ -13,14 +13,19 @@ import {
   writtenSentenceCount,
   exportPaperAsJSON,
   importPaperFromJSON,
+  emptyReference,
+  guessReferenceFields,
+  isReferenceIncomplete,
+  inTextLabel,
+  referenceUsage,
+  referenceLocations,
+  sortReferences,
+  allSentences,
   WORDS_PER_SENTENCE,
 } from '@/lib/utils';
 
 function escapeHtml(text: string): string {
-  return text
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;');
+  return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
 function newPaper(): Paper {
@@ -48,6 +53,7 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('introduction');
   const [lastSaved, setLastSaved] = useState('');
   const [showOutline, setShowOutline] = useState(false);
+  const [expandedRef, setExpandedRef] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -79,10 +85,77 @@ export default function Home() {
   const allParagraphs = paper.sections.flatMap((s) =>
     s.subsections.flatMap((sub) => sub.paragraphs)
   );
-  const plannedSentences = allParagraphs.reduce((n, p) => n + p.sentences.length, 0);
+  const sentences = allSentences(paper);
+  const plannedSentences = sentences.length;
   const writtenSentences = allParagraphs.reduce((n, p) => n + writtenSentenceCount(p), 0);
   const targetSentences = allParagraphs.reduce((n, p) => n + p.targetSentences, 0);
-  const totalWords = allParagraphs.reduce((n, p) => n + countWords(assembleParagraph(p)), 0);
+  const totalWords = allParagraphs.reduce(
+    (n, p) => n + countWords(p.sentences.map((s) => s.text).join(' ')),
+    0
+  );
+  const citedSentences = sentences.filter((s) => s.citations.length > 0).length;
+  const unusedRefs = paper.references.filter((r) => referenceUsage(paper, r.id) === 0);
+  const incompleteRefs = paper.references.filter(isReferenceIncomplete);
+
+  // ---- kaynakça işlemleri ----
+  const createReference = (): string => {
+    const ref = emptyReference();
+    setPaper((prev) => ({ ...prev!, references: [...prev!.references, ref] }));
+    return ref.id;
+  };
+
+  const updateReference = (refId: string, updates: Partial<Reference>) => {
+    setPaper((prev) => ({
+      ...prev!,
+      references: prev!.references.map((r) => (r.id === refId ? { ...r, ...updates } : r)),
+    }));
+  };
+
+  /** Tam satır yazılıp alandan çıkılınca boş kalan alanları tahminle doldurur. */
+  const autofillReference = (refId: string) => {
+    setPaper((prev) => ({
+      ...prev!,
+      references: prev!.references.map((r) => {
+        if (r.id !== refId || !r.full.trim()) return r;
+        if (r.inText.trim() && r.year.trim()) return r;
+        const guess = guessReferenceFields(r.full);
+        return {
+          ...r,
+          inText: r.inText.trim() || guess.inText,
+          year: r.year.trim() || guess.year,
+        };
+      }),
+    }));
+  };
+
+  /** Kaynağı siler ve bağlı olduğu tüm cümlelerden bağlantısını kaldırır. */
+  const deleteReference = (refId: string) => {
+    const usage = referenceUsage(paper, refId);
+    if (usage > 0) {
+      const ok = confirm(
+        `Bu kaynak ${usage} cümlede kullanılıyor. Silinirse o cümlelerdeki bağlantılar da kaldırılacak. Devam edilsin mi?`
+      );
+      if (!ok) return;
+    }
+
+    setPaper((prev) => ({
+      ...prev!,
+      references: prev!.references.filter((r) => r.id !== refId),
+      sections: prev!.sections.map((section) => ({
+        ...section,
+        subsections: section.subsections.map((sub) => ({
+          ...sub,
+          paragraphs: sub.paragraphs.map((para) => ({
+            ...para,
+            sentences: para.sentences.map((s) => ({
+              ...s,
+              citations: s.citations.filter((id) => id !== refId),
+            })),
+          })),
+        })),
+      })),
+    }));
+  };
 
   // ---- alt başlık işlemleri ----
   const addSubsection = (sectionId: string) => {
@@ -158,6 +231,7 @@ export default function Home() {
   p { text-align: justify; margin-bottom: 12px; text-indent: 1.25cm; }
   .ozet { margin: 20px 0; padding: 15px; border: 1px solid #ccc; }
   .anahtar { font-style: italic; text-indent: 0; }
+  .kaynak { text-indent: 0; padding-left: 1.25cm; }
 </style></head><body>
 <h1>${escapeHtml(paper.title)}</h1>
 <div class="ozet"><h2>Özet</h2><p>${escapeHtml(paper.abstractTR)}</p>
@@ -171,7 +245,7 @@ export default function Home() {
       section.subsections.forEach((sub, subIdx) => {
         html += `<h3>${sIdx + 1}.${subIdx + 1}. ${escapeHtml(sub.title)}</h3>\n`;
         sub.paragraphs.forEach((para) => {
-          const text = assembleParagraph(para);
+          const text = assembleParagraph(para, paper.references);
           if (text) html += `<p>${escapeHtml(text)}</p>\n`;
         });
       });
@@ -179,8 +253,10 @@ export default function Home() {
 
     if (paper.references.length) {
       html += `<h2>Kaynakça</h2>\n`;
-      paper.references.forEach((ref) => {
-        html += `<p style="text-indent:0">${escapeHtml(ref)}</p>\n`;
+      sortReferences(paper.references).forEach((ref) => {
+        if (ref.full.trim()) {
+          html += `<p class="kaynak">${escapeHtml(ref.full)}</p>\n`;
+        }
       });
     }
 
@@ -200,8 +276,7 @@ export default function Home() {
       return;
     }
     try {
-      const imported = await importPaperFromJSON(file);
-      setPaper(imported);
+      setPaper(await importPaperFromJSON(file));
       alert('Yedek yüklendi.');
     } catch {
       alert('Dosya okunamadı. Geçerli bir yedek dosyası mı?');
@@ -235,9 +310,11 @@ export default function Home() {
                   {writtenSentences}/{plannedSentences}
                 </div>
               </div>
-              <div className="rounded-lg bg-amber-50 p-4">
-                <div className="text-sm text-gray-600">Hedef cümle</div>
-                <div className="text-2xl font-bold text-amber-600">{targetSentences}</div>
+              <div className="rounded-lg bg-indigo-50 p-4">
+                <div className="text-sm text-gray-600">Kaynaklı cümle</div>
+                <div className="text-2xl font-bold text-indigo-600">
+                  {citedSentences}/{plannedSentences}
+                </div>
               </div>
               <div className="rounded-lg bg-purple-50 p-4">
                 <div className="text-sm text-gray-600">Kelime</div>
@@ -283,11 +360,7 @@ export default function Home() {
                           <ol className="ml-4 mt-1 space-y-0.5">
                             {para.sentences.map((s, i) => (
                               <li key={s.id} className="flex items-start gap-2 text-xs">
-                                <span
-                                  className={
-                                    s.text.trim() ? 'text-green-600' : 'text-gray-300'
-                                  }
-                                >
+                                <span className={s.text.trim() ? 'text-green-600' : 'text-gray-300'}>
                                   {s.text.trim() ? '●' : '○'}
                                 </span>
                                 <span className="text-gray-500">{i + 1}.</span>
@@ -297,8 +370,13 @@ export default function Home() {
                                   </span>
                                 )}
                                 <span className="text-gray-600">
-                                  {s.note || s.text.slice(0, 60)}
+                                  {s.note || s.text.slice(0, 55)}
                                 </span>
+                                {s.citations.length > 0 && (
+                                  <span className="text-blue-600">
+                                    🔗{s.citations.length}
+                                  </span>
+                                )}
                               </li>
                             ))}
                           </ol>
@@ -326,7 +404,7 @@ export default function Home() {
               />
               <p className="mt-1 px-2 text-sm text-gray-500">
                 Son kayıt: {lastSaved} • {writtenSentences}/{plannedSentences} cümle •{' '}
-                {totalWords} kelime
+                {citedSentences} kaynaklı • {totalWords} kelime
               </p>
             </div>
 
@@ -374,7 +452,6 @@ export default function Home() {
       </header>
 
       <div className="mx-auto max-w-7xl px-4 py-6">
-        {/* Uyarı */}
         <div className="mb-6 rounded-lg border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900">
           ⚠️ Çalışmanız yalnızca bu tarayıcıda saklanıyor. Tarayıcı verilerini temizlerseniz
           silinir. Düzenli olarak <strong>💾 Yedekle</strong> ile JSON dosyası indirin.
@@ -491,7 +568,9 @@ export default function Home() {
                   sectionId={activeSection}
                   index={index}
                   total={currentSection.subsections.length}
+                  references={paper.references}
                   onUpdate={(subId, updates) => updateSubsection(activeSection, subId, updates)}
+                  onCreateReference={createReference}
                   onDelete={(subId) => deleteSubsection(activeSection, subId)}
                   onMove={(subId, dir) => moveSubsection(activeSection, subId, dir)}
                 />
@@ -502,37 +581,126 @@ export default function Home() {
 
         {/* Kaynakça */}
         <div className="rounded-lg bg-white p-6 shadow-sm">
-          <h2 className="mb-4 text-xl font-bold">Kaynakça</h2>
-          <div className="space-y-2">
-            {paper.references.map((ref, index) => (
-              <div key={index} className="flex gap-2">
-                <span className="pt-2 font-mono text-gray-500">{index + 1}.</span>
-                <input
-                  type="text"
-                  value={ref}
-                  onChange={(e) => {
-                    const next = [...paper.references];
-                    next[index] = e.target.value;
-                    setPaper({ ...paper, references: next });
-                  }}
-                  className="flex-1 rounded-lg border border-gray-300 px-3 py-2 focus:ring-2 focus:ring-blue-500"
-                  placeholder="Yılmaz, A. (2003). Başlık. Dergi, 12(3), 45-60."
-                />
-                <button
-                  onClick={() =>
-                    setPaper({
-                      ...paper,
-                      references: paper.references.filter((_, i) => i !== index),
-                    })
-                  }
-                  className="rounded-lg bg-red-500 px-3 py-2 text-white transition hover:bg-red-600"
+          <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
+            <h2 className="text-xl font-bold">
+              Kaynakça{' '}
+              <span className="text-sm font-normal text-gray-500">
+                ({paper.references.length} kaynak)
+              </span>
+            </h2>
+            {paper.references.length > 1 && (
+              <button
+                onClick={() => setPaper({ ...paper, references: sortReferences(paper.references) })}
+                className="rounded-lg bg-gray-200 px-3 py-1.5 text-sm text-gray-800 transition hover:bg-gray-300"
+              >
+                🔤 Alfabetik sırala
+              </button>
+            )}
+          </div>
+
+          {/* Uyarılar */}
+          {(unusedRefs.length > 0 || incompleteRefs.length > 0) && (
+            <div className="mb-4 space-y-2">
+              {incompleteRefs.length > 0 && (
+                <div className="rounded border border-amber-300 bg-amber-50 px-3 py-2 text-sm text-amber-900">
+                  ⚠ {incompleteRefs.length} kaynağın bilgileri eksik. Metin içi ad ve yıl
+                  doldurulmazsa atıf <em>(?, t.y.)</em> olarak çıkar.
+                </div>
+              )}
+              {unusedRefs.length > 0 && (
+                <div className="rounded border border-gray-300 bg-gray-50 px-3 py-2 text-sm text-gray-700">
+                  ℹ️ {unusedRefs.length} kaynak hiçbir cümlede kullanılmıyor.
+                </div>
+              )}
+            </div>
+          )}
+
+          <div className="space-y-3">
+            {paper.references.map((ref, index) => {
+              const usage = referenceUsage(paper, ref.id);
+              const incomplete = isReferenceIncomplete(ref);
+              const expanded = expandedRef === ref.id;
+
+              return (
+                <div
+                  key={ref.id}
+                  className={`rounded-lg border p-3 ${
+                    incomplete ? 'border-amber-300 bg-amber-50/50' : 'border-gray-200 bg-white'
+                  }`}
                 >
-                  🗑️
-                </button>
-              </div>
-            ))}
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="font-mono text-sm text-gray-400">{index + 1}.</span>
+
+                    <input
+                      type="text"
+                      value={ref.inText}
+                      onChange={(e) => updateReference(ref.id, { inText: e.target.value })}
+                      className="w-44 rounded border border-gray-300 px-2 py-1 text-sm focus:ring-2 focus:ring-blue-500"
+                      placeholder="metin içi ad"
+                      title="Metin içinde görünecek ad: Yılmaz / Yılmaz ve Kaya / Yılmaz vd."
+                    />
+                    <input
+                      type="text"
+                      value={ref.year}
+                      onChange={(e) => updateReference(ref.id, { year: e.target.value })}
+                      className="w-20 rounded border border-gray-300 px-2 py-1 text-sm focus:ring-2 focus:ring-blue-500"
+                      placeholder="yıl"
+                    />
+
+                    <span className="rounded bg-gray-100 px-2 py-1 text-xs text-gray-600">
+                      → ({inTextLabel(ref)})
+                    </span>
+
+                    <button
+                      onClick={() => setExpandedRef(expanded ? null : ref.id)}
+                      className={`rounded px-2 py-1 text-xs ${
+                        usage > 0
+                          ? 'bg-blue-100 text-blue-800 hover:bg-blue-200'
+                          : 'bg-gray-100 text-gray-500'
+                      }`}
+                      title="Kullanıldığı yerleri göster"
+                    >
+                      {usage > 0 ? `🔗 ${usage} cümlede` : 'kullanılmıyor'}
+                    </button>
+
+                    <button
+                      onClick={() => deleteReference(ref.id)}
+                      className="ml-auto rounded bg-red-500 px-3 py-1 text-sm text-white transition hover:bg-red-600"
+                    >
+                      🗑️
+                    </button>
+                  </div>
+
+                  <input
+                    type="text"
+                    value={ref.full}
+                    onChange={(e) => updateReference(ref.id, { full: e.target.value })}
+                    onBlur={() => autofillReference(ref.id)}
+                    className="mt-2 w-full rounded border border-gray-300 px-3 py-2 text-sm focus:ring-2 focus:ring-blue-500"
+                    placeholder="Yılmaz, A. (2003). Makalenin başlığı. Dergi Adı, 12(3), 45-60."
+                  />
+
+                  {expanded && (
+                    <div className="mt-2 rounded bg-gray-50 px-3 py-2 text-xs text-gray-600">
+                      {usage > 0 ? (
+                        <>
+                          <span className="font-medium">Kullanıldığı yerler: </span>
+                          {referenceLocations(paper, ref.id).join(' · ')}
+                          <div className="mt-1 text-gray-400">
+                            (bölüm.altbaşlık · paragraf · cümle)
+                          </div>
+                        </>
+                      ) : (
+                        'Bu kaynak henüz hiçbir cümleye bağlanmamış.'
+                      )}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+
             <button
-              onClick={() => setPaper({ ...paper, references: [...paper.references, ''] })}
+              onClick={createReference}
               className="w-full rounded-lg border-2 border-dashed border-gray-300 px-4 py-2 text-gray-600 transition hover:border-gray-400 hover:text-gray-700"
             >
               + Yeni Kaynak
