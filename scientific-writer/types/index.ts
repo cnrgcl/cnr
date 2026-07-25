@@ -1,16 +1,23 @@
+export interface Sentence {
+  id: string;
+  move: string;      // retorik işlev — bu cümle ne iş yapıyor
+  note: string;      // plan: ne diyecek
+  text: string;      // gerçek cümle
+  citation: string;  // hangi kaynağa dayanıyor
+}
+
 export interface Paragraph {
   id: string;
-  title: string;
-  content: string;
+  theme: string;            // paragrafın tek cümlelik amacı
+  targetSentences: number;  // hedef cümle sayısı
   notes: string;
-  theme: string; // Paragrafın teması/amacı
-  targetSentences: number; // Hedef cümle sayısı
+  sentences: Sentence[];
 }
 
 export interface Subsection {
   id: string;
   title: string;
-  targetParagraphs: number; // Hedef paragraf sayısı
+  targetParagraphs: number;
   paragraphs: Paragraph[];
 }
 

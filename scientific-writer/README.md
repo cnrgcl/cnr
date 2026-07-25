@@ -1,41 +1,46 @@
 # Bilimsel Araştırma Yazma Platformu
 
-IMRAD formatında detaylı bilimsel makale yazma aracı.
+IMRAD formatında, **cümle cümle** planlanan ve yazılan bilimsel makale aracı.
+
+## Temel fikir
+
+Çoğu yazma aracı seni boş bir sayfayla baş başa bırakır. Bu araç tersini yapar:
+makaleyi en küçük birimine kadar **önce planlarsın**, sonra her cümleyi kendi
+yuvasında yazarsın.
+
+```
+Bölüm (Giriş / Yöntem / Bulgular / Tartışma)
+└── Alt başlık (1.1, 1.2 ...)     → hedef paragraf sayısı
+    └── Paragraf                   → tema + hedef cümle sayısı
+        └── Cümle                  → retorik işlev + plan notu + metin + kaynak
+```
+
+## Retorik işlev kütüphanesi
+
+Her cümleye "bu cümle ne iş yapıyor" etiketi atanır. Giriş bölümü için etiketler
+Swales'in **CARS** (Create A Research Space) modelini izler:
+
+| Hamle | Örnek işlevler |
+|---|---|
+| 1. Alan kurma | konunun genel önemi, kavram tanımı, geçmiş çalışmaların özeti |
+| 2. Boşluk açma | karşıt bulgu, eksik kalan yön, yöntemsel kısıt |
+| 3. Boşluğu doldurma | çalışmanın amacı, hipotez, katkı beyanı, makalenin planı |
+
+Yöntem, Bulgular ve Tartışma bölümlerinin de kendi işlev listeleri vardır
+(`lib/moves.ts`).
 
 ## Özellikler
 
-### ✅ Temel Yapı
-- **IMRAD Formatı**: Introduction (Giriş), Methods (Yöntem), Results (Bulgular), Discussion (Tartışma)
-- **Özet/Abstract**: Türkçe ve İngilizce özet desteği
-- **Anahtar Kelimeler**: TR ve EN anahtar kelime yönetimi
-- **Kaynakça**: Sınırsız kaynak ekleme
-
-### ✅ Paragraf Yönetimi
-- Her bölüm için sınırsız paragraf ekleme
-- Paragraf başlığı + içerik + notlar
-- Paragrafları yukarı/aşağı taşıma
-- Paragraf silme
-- Her paragraf için:
-  - Kelime sayacı
-  - Karakter sayacı
-  - Özel notlar alanı
-
-### ✅ Otomasyonlar
-- **Otomatik Kaydetme**: Her 2 saniyede bir otomatik kaydeder
-- **Manuel Kaydetme**: İstediğiniz zaman kaydet butonu
-- **Toplam Kelime Sayısı**: Tüm makale için toplam kelime
-- **Bölüm İstatistikleri**: Her bölüm için paragraf sayısı
-
-### ✅ Dışa Aktarma
-- **Word (.doc)**: Microsoft Word formatında dışa aktarma
-- HTML formatında, Word'de açılabilir
-- Tüm formatlamayı korur
-
-### ✅ Kullanıcı Deneyimi
-- Modern, temiz arayüz
-- Responsive tasarım
-- Kolay navigasyon
-- Bölümler arası hızlı geçiş
+- **Cümle yuvaları** — hedef cümle sayısını gir, "⚡ hedefe kadar doldur" ile boş
+  yuvaları aç, tek tek yaz
+- **Kesin sayım** — cümleler ayrı nesneler olduğu için sayım tahmine dayanmaz
+  ("vb.", "Dr.", "s. 45" gibi kısaltmalar sayımı bozmaz)
+- **Cümle başına kaynak** — hangi iddianın hangi kaynağa dayandığı kaybolmaz
+- **Paragraf önizleme** — cümleleri birleştirip paragrafı bütün olarak gör
+- **Plan görünümü** — tüm makalenin cümle düzeyinde anahattı ve ilerleme durumu
+- **JSON yedekleme / geri yükleme** — veri kaybına karşı
+- **Word'e aktarma** — cümleler paragraflara birleştirilerek dışa aktarılır
+- Otomatik kayıt (2 sn), TR/EN özet, anahtar kelimeler, kaynakça
 
 ## Kurulum
 
@@ -45,67 +50,26 @@ npm install
 npm run dev
 ```
 
-Tarayıcınızda `http://localhost:3001` adresini açın.
+`http://localhost:3001`
 
-## Kullanım
+## Kullanım akışı
 
-### 1. Başlık ve Özet
-- Makale başlığını en üstten düzenleyin
-- Türkçe ve İngilizce özet yazın
-- Anahtar kelimeleri virgülle ayırarak ekleyin
+1. **Alt başlık ekle** → "1.1 Literatür Taraması", hedef 3 paragraf
+2. **Paragraf ekle** → tema: "1990 sonrası yaklaşımların özeti", hedef 5 cümle
+3. **⚡ hedefe kadar doldur** → 5 boş cümle yuvası açılır
+4. Her yuva için **işlev seç** (örn. "Kavram tanımı") ve **plan notu** yaz
+5. Planı bitirince cümleleri tek tek doldur
+6. **📄 Word** ile son metni al, cilalamayı Word'de yap
 
-### 2. IMRAD Bölümleri
-- Üstteki sekmelere tıklayarak bölümler arası geçiş yapın
-- Her bölüm için "Yeni Paragraf Ekle" butonuna tıklayın
-- Paragraf başlığı ve içeriğini doldurun
+## ⚠️ Veri saklama
 
-### 3. Paragraf Yönetimi
-- ⬆️⬇️ butonları ile paragrafları sıralayın
-- 🗑️ butonu ile paragraf silin
-- 📝 butonu ile paragraf notları ekleyin
+Çalışman yalnızca tarayıcının `localStorage`'ında durur. Tarayıcı verilerini
+temizlersen **silinir**. Düzenli olarak **💾 Yedekle** ile JSON dosyası indir —
+**📂 Geri yükle** ile aynı dosyadan tam olarak geri dönebilirsin.
 
-### 4. Kaynakça
-- En altta kaynakça bölümünden kaynak ekleyin
-- Kaynakları düzenleyin veya silin
+## Teknik
 
-### 5. Kaydetme ve Dışa Aktarma
-- 💾 Kaydet: Manuel kaydetme (otomatik kaydetme de aktif)
-- 📄 Word'e Aktar: .doc formatında indirir
+Next.js 15 · React 18 · TypeScript · Tailwind CSS · localStorage
 
-## Veri Saklama
-
-Tüm veriler tarayıcınızın `localStorage`'ında saklanır. Bu sayede:
-- İnternet bağlantısı gerektirmez
-- Verileriniz tamamen sizde kalır
-- Tarayıcıyı kapatıp açsanız bile veriler korunur
-
-**DİKKAT**: Tarayıcı verilerini temizlerseniz makaleniz silinir. Düzenli olarak Word'e aktararak yedek alın!
-
-## Teknik Detaylar
-
-- **Framework**: Next.js 15
-- **UI**: React 18 + Tailwind CSS
-- **Language**: TypeScript
-- **Storage**: LocalStorage
-
-## Geliştirme
-
-```bash
-# Geliştirme modu
-npm run dev
-
-# Production build
-npm run build
-npm start
-
-# Lint
-npm run lint
-```
-
-## Özelleştirme
-
-Bölüm isimlerini veya sayısını değiştirmek için `app/page.tsx` dosyasındaki `SECTION_NAMES` ve `sections` array'ini düzenleyin.
-
-## Lisans
-
-Kişisel kullanım için geliştirilmiştir.
+Bölüm adlarını veya işlev listelerini değiştirmek için `lib/moves.ts` ve
+`app/page.tsx` içindeki `newPaper()` fonksiyonunu düzenle.
