@@ -31,6 +31,7 @@ export interface Subsection {
 export interface Section {
   id: string;
   name: string;
+  moveSet: string; // hangi retorik işlev kümesini kullanacağı (lib/moves.ts)
   subsections: Subsection[];
 }
 

@@ -6,7 +6,7 @@ import { countWords, inTextLabel, findReference, isReferenceIncomplete, renderSe
 
 interface SentenceEditorProps {
   sentence: Sentence;
-  sectionId: string;
+  moveSet: string;
   index: number;
   total: number;
   references: Reference[];
@@ -18,7 +18,7 @@ interface SentenceEditorProps {
 
 export default function SentenceEditor({
   sentence,
-  sectionId,
+  moveSet,
   index,
   total,
   references,
@@ -27,7 +27,7 @@ export default function SentenceEditor({
   onDelete,
   onMove,
 }: SentenceEditorProps) {
-  const groups = getMovesForSection(sectionId);
+  const groups = getMovesForSection(moveSet);
   const written = sentence.text.trim().length > 0;
 
   const activeHint = groups.flatMap((g) => g.moves).find((m) => m.id === sentence.move)?.hint;

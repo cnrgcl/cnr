@@ -7,7 +7,7 @@ import ParagraphEditor from './ParagraphEditor';
 
 interface SubsectionEditorProps {
   subsection: Subsection;
-  sectionId: string;
+  moveSet: string;
   index: number;
   total: number;
   references: Reference[];
@@ -19,7 +19,7 @@ interface SubsectionEditorProps {
 
 export default function SubsectionEditor({
   subsection,
-  sectionId,
+  moveSet,
   index,
   total,
   references,
@@ -172,7 +172,7 @@ export default function SubsectionEditor({
                   <ParagraphEditor
                     key={paragraph.id}
                     paragraph={paragraph}
-                    sectionId={sectionId}
+                    moveSet={moveSet}
                     index={pIndex}
                     total={subsection.paragraphs.length}
                     references={references}

@@ -206,6 +206,9 @@ function migratePaper(raw: any): Paper {
 
     return {
       ...section,
+      // Eski kayıtlarda işlev kümesi alanı yoktu; bölüm kimliği kümenin
+      // kendisiydi.
+      moveSet: section.moveSet ?? section.id ?? '',
       subsections: subsections.map((sub: any) => ({
         id: sub.id ?? generateId(),
         title: sub.title ?? '',

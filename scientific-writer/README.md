@@ -9,7 +9,7 @@ makaleyi en küçük birimine kadar **önce planlarsın**, sonra her cümleyi ke
 yuvasında yazarsın.
 
 ```
-Bölüm (Giriş / Yöntem / Bulgular / Tartışma)
+Bölüm (düzenlenebilir)
 └── Alt başlık (1.1, 1.2 ...)     → hedef paragraf sayısı
     └── Paragraf                   → tema + hedef cümle sayısı
         └── Cümle                  → retorik işlev + plan notu + metin + kaynak
@@ -42,6 +42,20 @@ Kaynakça bölümü ayrıca şunları gösterir:
 Bir kaynağı silersen bağlı olduğu tüm cümlelerden bağlantısı da temizlenir —
 kopuk atıf kalmaz.
 
+## Bölümler düzenlenebilir
+
+Yeni makale, sosyal bilimlerde yerleşik olan altı bölümle açılır:
+
+**Giriş · Literatür Taraması · Yöntem · Bulgular · Tartışma · Sonuç**
+
+Katı IMRAD'dan farkı: sosyal bilimlerde literatür taraması genelde ayrı bir
+numaralı bölümdür ve sonuç, tartışmadan ayrılır.
+
+**⚙️ Bölümleri düzenle** ile bölümleri yeniden adlandırabilir, sıralayabilir,
+ekleyip silebilirsiniz. Her bölüme, cümlelere önerilecek **retorik işlev
+kümesi** atanır — böylece eklediğiniz özel bir bölüm de (örn. "Sınırlılıklar")
+uygun işlev listesini kullanır.
+
 ## Retorik işlev kütüphanesi
 
 Her cümleye "bu cümle ne iş yapıyor" etiketi atanır. Giriş bölümü için etiketler
@@ -53,8 +67,15 @@ Swales'in **CARS** (Create A Research Space) modelini izler:
 | 2. Boşluk açma | karşıt bulgu, eksik kalan yön, yöntemsel kısıt |
 | 3. Boşluğu doldurma | çalışmanın amacı, hipotez, katkı beyanı, makalenin planı |
 
-Yöntem, Bulgular ve Tartışma bölümlerinin de kendi işlev listeleri vardır
-(`lib/moves.ts`).
+Literatür Taraması, Yöntem, Bulgular, Tartışma ve Sonuç bölümlerinin de kendi
+işlev listeleri vardır (`lib/moves.ts`).
+
+Tartışma bölümündeki **Sınırlılıklar** grubu, sosyal bilimler yazım
+rehberlerinde yerleşik olan altı sınırlılık türünü ayrı ayrı listeler —
+örneklem büyüklüğü, önceki araştırma eksikliği, ölçüm aracının kısıtı,
+öz-bildirim verisi, erişim kısıtı, boylamsal katılımcı kaybı. Böylece
+"sınırlılıklar" tek bir muğlak paragraf olmaktan çıkıp kontrol listesine
+dönüşür.
 
 ## Özellikler
 

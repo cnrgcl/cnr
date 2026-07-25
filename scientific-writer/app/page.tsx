@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Paper, Subsection, Reference } from '@/types';
 import SubsectionEditor from '@/components/SubsectionEditor';
-import { findMoveLabel } from '@/lib/moves';
+import { findMoveLabel, MOVE_SET_OPTIONS } from '@/lib/moves';
 import {
   generateId,
   countWords,
@@ -36,11 +36,15 @@ function newPaper(): Paper {
     abstractEN: '',
     keywordsTR: [],
     keywordsEN: [],
+    // Sosyal bilimlerde yerleşik düzen: literatür taraması ve sonuç ayrı
+    // bölümlerdir. Bölümler sonradan eklenip çıkarılabilir.
     sections: [
-      { id: 'introduction', name: 'Giriş', subsections: [] },
-      { id: 'methods', name: 'Yöntem', subsections: [] },
-      { id: 'results', name: 'Bulgular', subsections: [] },
-      { id: 'discussion', name: 'Tartışma', subsections: [] },
+      { id: 'introduction', name: 'Giriş', moveSet: 'introduction', subsections: [] },
+      { id: 'literature', name: 'Literatür Taraması', moveSet: 'literature', subsections: [] },
+      { id: 'methods', name: 'Yöntem', moveSet: 'methods', subsections: [] },
+      { id: 'results', name: 'Bulgular', moveSet: 'results', subsections: [] },
+      { id: 'discussion', name: 'Tartışma', moveSet: 'discussion', subsections: [] },
+      { id: 'conclusion', name: 'Sonuç', moveSet: 'conclusion', subsections: [] },
     ],
     references: [],
     createdAt: new Date().toISOString(),
@@ -53,6 +57,7 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState('introduction');
   const [lastSaved, setLastSaved] = useState('');
   const [showOutline, setShowOutline] = useState(false);
+  const [showSectionManager, setShowSectionManager] = useState(false);
   const [expandedRef, setExpandedRef] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -79,7 +84,9 @@ export default function Home() {
     return <div className="flex h-screen items-center justify-center">Yükleniyor...</div>;
   }
 
-  const currentSection = paper.sections.find((s) => s.id === activeSection)!;
+  // Aktif bölüm silinmiş olabilir; ilk bölüme düş.
+  const currentSection =
+    paper.sections.find((s) => s.id === activeSection) ?? paper.sections[0];
 
   // ---- istatistikler ----
   const allParagraphs = paper.sections.flatMap((s) =>
@@ -155,6 +162,52 @@ export default function Home() {
         })),
       })),
     }));
+  };
+
+  // ---- bölüm işlemleri ----
+  const addSection = () => {
+    const section = {
+      id: generateId(),
+      name: 'Yeni Bölüm',
+      moveSet: '',
+      subsections: [],
+    };
+    setPaper((prev) => ({ ...prev!, sections: [...prev!.sections, section] }));
+    setActiveSection(section.id);
+  };
+
+  const updateSection = (sectionId: string, updates: { name?: string; moveSet?: string }) => {
+    setPaper((prev) => ({
+      ...prev!,
+      sections: prev!.sections.map((s) => (s.id === sectionId ? { ...s, ...updates } : s)),
+    }));
+  };
+
+  const deleteSection = (sectionId: string) => {
+    const section = paper.sections.find((s) => s.id === sectionId)!;
+    const paraCount = section.subsections.reduce((n, sub) => n + sub.paragraphs.length, 0);
+    const warning =
+      paraCount > 0
+        ? `"${section.name}" bölümünde ${section.subsections.length} alt başlık ve ${paraCount} paragraf var. Hepsi silinecek. Devam edilsin mi?`
+        : `"${section.name}" bölümü silinsin mi?`;
+    if (!confirm(warning)) return;
+
+    setPaper((prev) => ({
+      ...prev!,
+      sections: prev!.sections.filter((s) => s.id !== sectionId),
+    }));
+  };
+
+  const moveSection = (sectionId: string, direction: 'up' | 'down') => {
+    setPaper((prev) => {
+      const idx = prev!.sections.findIndex((s) => s.id === sectionId);
+      const newIdx = direction === 'up' ? idx - 1 : idx + 1;
+      if (newIdx < 0 || newIdx >= prev!.sections.length) return prev!;
+
+      const next = [...prev!.sections];
+      [next[idx], next[newIdx]] = [next[newIdx], next[idx]];
+      return { ...prev!, sections: next };
+    });
   };
 
   // ---- alt başlık işlemleri ----
@@ -366,7 +419,7 @@ export default function Home() {
                                 <span className="text-gray-500">{i + 1}.</span>
                                 {s.move && (
                                   <span className="rounded bg-gray-100 px-1.5 text-gray-700">
-                                    {findMoveLabel(section.id, s.move)}
+                                    {findMoveLabel(section.moveSet, s.move)}
                                   </span>
                                 )}
                                 <span className="text-gray-600">
@@ -519,62 +572,148 @@ export default function Home() {
 
         {/* Bölümler */}
         <div className="mb-6 rounded-lg bg-white shadow-sm">
-          <nav className="flex flex-wrap border-b border-gray-200">
-            {paper.sections.map((section) => {
-              const count = section.subsections.reduce(
-                (n, sub) => n + sub.paragraphs.reduce((m, p) => m + p.sentences.length, 0),
-                0
-              );
-              return (
-                <button
-                  key={section.id}
-                  onClick={() => setActiveSection(section.id)}
-                  className={`border-b-2 px-6 py-4 text-sm font-medium transition ${
-                    activeSection === section.id
-                      ? 'border-blue-500 text-blue-600'
-                      : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
-                  }`}
-                >
-                  {section.name}
-                  <span className="ml-2 rounded-full bg-gray-100 px-2 py-1 text-xs">
-                    {count} cümle
-                  </span>
-                </button>
-              );
-            })}
-          </nav>
+          <div className="flex flex-wrap items-center justify-between gap-2 border-b border-gray-200 px-2">
+            <nav className="flex flex-wrap">
+              {paper.sections.map((section) => {
+                const count = section.subsections.reduce(
+                  (n, sub) => n + sub.paragraphs.reduce((m, p) => m + p.sentences.length, 0),
+                  0
+                );
+                return (
+                  <button
+                    key={section.id}
+                    onClick={() => setActiveSection(section.id)}
+                    className={`border-b-2 px-5 py-4 text-sm font-medium transition ${
+                      currentSection?.id === section.id
+                        ? 'border-blue-500 text-blue-600'
+                        : 'border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700'
+                    }`}
+                  >
+                    {section.name}
+                    <span className="ml-2 rounded-full bg-gray-100 px-2 py-1 text-xs">{count}</span>
+                  </button>
+                );
+              })}
+            </nav>
+            <button
+              onClick={() => setShowSectionManager(!showSectionManager)}
+              className="mr-2 rounded-lg bg-gray-200 px-3 py-1.5 text-sm text-gray-800 transition hover:bg-gray-300"
+            >
+              ⚙️ Bölümleri düzenle
+            </button>
+          </div>
 
-          <div className="p-6">
-            <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
-              <h2 className="text-2xl font-bold text-gray-900">{currentSection.name}</h2>
+          {/* Bölüm yöneticisi */}
+          {showSectionManager && (
+            <div className="border-b border-gray-200 bg-gray-50 p-4">
+              <p className="mb-3 text-sm text-gray-600">
+                Bölümleri yeniden adlandırabilir, sıralayabilir, ekleyip silebilirsiniz. Her
+                bölüm, cümlelere önerilecek retorik işlev kümesini seçer.
+              </p>
+              <div className="space-y-2">
+                {paper.sections.map((section, index) => (
+                  <div
+                    key={section.id}
+                    className="flex flex-wrap items-center gap-2 rounded border border-gray-200 bg-white p-2"
+                  >
+                    <span className="font-mono text-sm text-gray-400">{index + 1}.</span>
+                    <input
+                      type="text"
+                      value={section.name}
+                      onChange={(e) => updateSection(section.id, { name: e.target.value })}
+                      className="flex-1 rounded border border-gray-300 px-2 py-1 text-sm focus:ring-2 focus:ring-blue-500"
+                      placeholder="Bölüm adı"
+                    />
+                    <select
+                      value={section.moveSet}
+                      onChange={(e) => updateSection(section.id, { moveSet: e.target.value })}
+                      className="rounded border border-gray-300 bg-white px-2 py-1 text-sm focus:ring-2 focus:ring-blue-500"
+                    >
+                      <option value="">— işlev kümesi yok —</option>
+                      {MOVE_SET_OPTIONS.map((opt) => (
+                        <option key={opt.id} value={opt.id}>
+                          {opt.label}
+                        </option>
+                      ))}
+                    </select>
+                    <button
+                      onClick={() => moveSection(section.id, 'up')}
+                      disabled={index === 0}
+                      className="rounded px-2 py-1 text-gray-600 hover:bg-gray-200 disabled:opacity-30"
+                      title="Yukarı taşı"
+                    >
+                      ⬆️
+                    </button>
+                    <button
+                      onClick={() => moveSection(section.id, 'down')}
+                      disabled={index === paper.sections.length - 1}
+                      className="rounded px-2 py-1 text-gray-600 hover:bg-gray-200 disabled:opacity-30"
+                      title="Aşağı taşı"
+                    >
+                      ⬇️
+                    </button>
+                    <button
+                      onClick={() => deleteSection(section.id)}
+                      className="rounded bg-red-500 px-2 py-1 text-sm text-white transition hover:bg-red-600"
+                    >
+                      🗑️
+                    </button>
+                  </div>
+                ))}
+              </div>
               <button
-                onClick={() => addSubsection(activeSection)}
-                className="rounded-lg bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700"
+                onClick={addSection}
+                className="mt-3 w-full rounded-lg border-2 border-dashed border-gray-300 px-4 py-2 text-gray-600 transition hover:border-gray-400 hover:text-gray-700"
               >
-                ➕ Yeni Alt Başlık
+                + Yeni Bölüm
               </button>
             </div>
+          )}
 
-            {currentSection.subsections.length === 0 ? (
+          <div className="p-6">
+            {!currentSection ? (
               <div className="py-12 text-center text-gray-500">
-                <p className="mb-2 text-lg">Henüz alt başlık eklenmedi</p>
-                <p className="text-sm">Yukarıdaki butonla başlayın</p>
+                <p className="mb-2 text-lg">Hiç bölüm yok</p>
+                <p className="text-sm">
+                  &quot;⚙️ Bölümleri düzenle&quot; ile bölüm ekleyin
+                </p>
               </div>
             ) : (
-              currentSection.subsections.map((sub, index) => (
-                <SubsectionEditor
-                  key={sub.id}
-                  subsection={sub}
-                  sectionId={activeSection}
-                  index={index}
-                  total={currentSection.subsections.length}
-                  references={paper.references}
-                  onUpdate={(subId, updates) => updateSubsection(activeSection, subId, updates)}
-                  onCreateReference={createReference}
-                  onDelete={(subId) => deleteSubsection(activeSection, subId)}
-                  onMove={(subId, dir) => moveSubsection(activeSection, subId, dir)}
-                />
-              ))
+              <>
+                <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
+                  <h2 className="text-2xl font-bold text-gray-900">{currentSection.name}</h2>
+                  <button
+                    onClick={() => addSubsection(currentSection.id)}
+                    className="rounded-lg bg-blue-600 px-4 py-2 text-white transition hover:bg-blue-700"
+                  >
+                    ➕ Yeni Alt Başlık
+                  </button>
+                </div>
+
+                {currentSection.subsections.length === 0 ? (
+                  <div className="py-12 text-center text-gray-500">
+                    <p className="mb-2 text-lg">Henüz alt başlık eklenmedi</p>
+                    <p className="text-sm">Yukarıdaki butonla başlayın</p>
+                  </div>
+                ) : (
+                  currentSection.subsections.map((sub, index) => (
+                    <SubsectionEditor
+                      key={sub.id}
+                      subsection={sub}
+                      moveSet={currentSection.moveSet}
+                      index={index}
+                      total={currentSection.subsections.length}
+                      references={paper.references}
+                      onUpdate={(subId, updates) =>
+                        updateSubsection(currentSection.id, subId, updates)
+                      }
+                      onCreateReference={createReference}
+                      onDelete={(subId) => deleteSubsection(currentSection.id, subId)}
+                      onMove={(subId, dir) => moveSubsection(currentSection.id, subId, dir)}
+                    />
+                  ))
+                )}
+              </>
             )}
           </div>
         </div>

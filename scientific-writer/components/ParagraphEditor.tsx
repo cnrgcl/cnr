@@ -12,7 +12,7 @@ import SentenceEditor from './SentenceEditor';
 
 interface ParagraphEditorProps {
   paragraph: Paragraph;
-  sectionId: string;
+  moveSet: string;
   index: number;
   total: number;
   references: Reference[];
@@ -24,7 +24,7 @@ interface ParagraphEditorProps {
 
 export default function ParagraphEditor({
   paragraph,
-  sectionId,
+  moveSet,
   index,
   total,
   references,
@@ -222,7 +222,7 @@ export default function ParagraphEditor({
                   <SentenceEditor
                     key={sentence.id}
                     sentence={sentence}
-                    sectionId={sectionId}
+                    moveSet={moveSet}
                     index={sIndex}
                     total={paragraph.sentences.length}
                     references={references}

@@ -47,6 +47,34 @@ export const MOVE_LIBRARY: Record<string, MoveGroup[]> = {
     },
   ],
 
+  literature: [
+    {
+      group: 'Kapsam',
+      moves: [
+        { id: 'tarama-olcut', label: 'Tarama ölçütleri', hint: 'Hangi veri tabanları, hangi yıllar, hangi dahil etme ölçütü' },
+        { id: 'kuramsal-cerceve', label: 'Kuramsal çerçeve', hint: 'Çalışmayı hangi kuram üzerine kuruyorsun' },
+        { id: 'kavram-haritasi', label: 'Kavramların tanımlanması', hint: 'Alanda kavram nasıl kullanılıyor' },
+      ],
+    },
+    {
+      group: 'Alanyazının düzeni',
+      moves: [
+        { id: 'kronolojik', label: 'Kronolojik gelişim', hint: 'Alan zaman içinde nasıl değişmiş' },
+        { id: 'tematik', label: 'Tematik küme', hint: 'Bir yaklaşımı paylaşan çalışmalar öbeği' },
+        { id: 'yontemsel-karsilastirma', label: 'Yöntemsel karşılaştırma', hint: 'Çalışmalar hangi yöntemleri kullanmış' },
+        { id: 'tartismali', label: 'Tartışmalı alan / karşıt görüşler', hint: 'Uzlaşılamayan nokta' },
+      ],
+    },
+    {
+      group: 'Kapanış',
+      moves: [
+        { id: 'sentez', label: 'Sentez', hint: 'Alanyazın toplamda ne söylüyor' },
+        { id: 'lit-bosluk', label: 'Boşluğun gösterilmesi', hint: 'Bu taramanın ortaya çıkardığı eksik' },
+        { id: 'konumlandirma', label: 'Çalışmanın konumlandırılması', hint: 'Senin çalışman bu tabloda nerede duruyor' },
+      ],
+    },
+  ],
+
   methods: [
     {
       group: 'Desen ve örneklem',
@@ -107,17 +135,70 @@ export const MOVE_LIBRARY: Record<string, MoveGroup[]> = {
       ],
     },
     {
-      group: 'Katkı ve kapanış',
+      group: 'Katkı',
       moves: [
         { id: 'kuramsal', label: 'Kuramsal katkı', hint: 'Alanyazına ne ekliyor' },
         { id: 'pratik', label: 'Uygulamaya dönük çıkarım', hint: 'Politika veya uygulama önerisi' },
-        { id: 'sinirlilik', label: 'Sınırlılık', hint: 'Çalışmanın kabul edilen zayıf yönü' },
+      ],
+    },
+    {
+      // Sınırlılık türleri sosyal bilimler yazım rehberlerinde yerleşik bir
+      // listedir; her biri ayrı bir cümleyi hak eder.
+      group: 'Sınırlılıklar',
+      moves: [
+        { id: 'sinir-orneklem', label: 'Örneklem büyüklüğü', hint: 'Küçük örneklem sonucun genellenebilirliğini sınırlar' },
+        { id: 'sinir-onceki', label: 'Önceki araştırma eksikliği', hint: 'Dayanılacak kuramsal/görgül temelin zayıflığı' },
+        { id: 'sinir-olcum', label: 'Ölçüm aracının kısıtı', hint: 'Veri toplama biçiminin analizi sınırladığı nokta' },
+        { id: 'sinir-ozbildirim', label: 'Öz-bildirim verisi', hint: 'Seçici hatırlama, abartma, atıf yanlılığı' },
+        { id: 'sinir-erisim', label: 'Erişim kısıtı', hint: 'Kişi, kurum veya belgeye erişimin sınırlı kalması' },
+        { id: 'sinir-boylamsal', label: 'Boylamsal etki / katılımcı kaybı', hint: 'Zaman içinde örneklem erimesi' },
+        { id: 'sinirlilik', label: 'Diğer sınırlılık', hint: 'Yukarıdakilere girmeyen zayıf yön' },
+      ],
+    },
+    {
+      group: 'Kapanış',
+      moves: [
         { id: 'gelecek', label: 'Gelecek araştırma önerisi', hint: 'Bundan sonra ne çalışılmalı' },
-        { id: 'sonuc', label: 'Sonuç cümlesi', hint: 'Makaleyi kapatan iddia' },
+        { id: 'sonuc', label: 'Tartışmayı kapatan cümle', hint: 'Bölümü toparlayan iddia' },
+      ],
+    },
+  ],
+
+  conclusion: [
+    {
+      group: 'Toparlama',
+      moves: [
+        { id: 'arguman-tekrar', label: 'Ana argümanın yeniden ifadesi', hint: 'Girişteki iddiayı bulgular ışığında yeniden söyle' },
+        { id: 'bulgu-sentez', label: 'Bulguların sentezi', hint: 'Yeni veri sunmadan toplamı bağla' },
+      ],
+    },
+    {
+      group: 'Önem',
+      moves: [
+        { id: 'so-what', label: 'Neden önemli ("ne olmuş?")', hint: 'Okur bu çalışmadan ne çıkarmalı' },
+        { id: 'son-katki', label: 'Alana katkının özeti', hint: 'Bilgi birikimine eklenen' },
+        { id: 'son-pratik', label: 'Politika / uygulama çıkarımı', hint: 'Kim, ne yapmalı' },
+      ],
+    },
+    {
+      group: 'Kapanış',
+      moves: [
+        { id: 'son-gelecek', label: 'Gelecek araştırma yönü', hint: 'Açık kalan soru' },
+        { id: 'kapanis', label: 'Kapanış vurgusu', hint: 'Makaleyi bitiren cümle' },
       ],
     },
   ],
 };
+
+/** Bir bölüme atanabilecek işlev kümeleri. */
+export const MOVE_SET_OPTIONS: { id: string; label: string }[] = [
+  { id: 'introduction', label: 'Giriş işlevleri' },
+  { id: 'literature', label: 'Literatür taraması işlevleri' },
+  { id: 'methods', label: 'Yöntem işlevleri' },
+  { id: 'results', label: 'Bulgular işlevleri' },
+  { id: 'discussion', label: 'Tartışma işlevleri' },
+  { id: 'conclusion', label: 'Sonuç işlevleri' },
+];
 
 export function getMovesForSection(sectionId: string): MoveGroup[] {
   return MOVE_LIBRARY[sectionId] ?? [];
