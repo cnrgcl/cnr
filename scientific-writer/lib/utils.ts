@@ -27,6 +27,17 @@ export function emptyReference(): Reference {
   return { id: generateId(), inText: '', year: '', full: '' };
 }
 
+/** Bir işlev dizisinden etiketli boş cümle yuvaları üretir. */
+export function sentencesFromMoves(moves: string[]): Sentence[] {
+  return moves.map((move) => ({
+    id: generateId(),
+    move,
+    note: '',
+    text: '',
+    citations: [],
+  }));
+}
+
 export function isReferenceIncomplete(ref: Reference): boolean {
   return !ref.full.trim() || !ref.inText.trim() || !ref.year.trim();
 }
@@ -248,7 +259,7 @@ function migratePaper(raw: any): Paper {
     };
   });
 
-  return { ...raw, sections, references } as Paper;
+  return { ...raw, sections, references, templates: raw.templates ?? [] } as Paper;
 }
 
 export function savePaper(paper: Paper): void {

@@ -1,13 +1,15 @@
 'use client';
 
 import { useState } from 'react';
-import { Paragraph, Sentence, Reference } from '@/types';
+import { Paragraph, Sentence, Reference, Template } from '@/types';
 import {
   emptySentence,
   countWords,
   assembleParagraph,
   writtenSentenceCount,
+  sentencesFromMoves,
 } from '@/lib/utils';
+import { templatesFor } from '@/lib/templates';
 import SentenceEditor from './SentenceEditor';
 
 interface ParagraphEditorProps {
@@ -16,8 +18,10 @@ interface ParagraphEditorProps {
   index: number;
   total: number;
   references: Reference[];
+  templates: Template[];
   onUpdate: (updates: Partial<Paragraph>) => void;
   onCreateReference: () => string;
+  onSaveTemplate: (moves: string[]) => void;
   onDelete: () => void;
   onMove: (direction: 'up' | 'down') => void;
 }
@@ -28,8 +32,10 @@ export default function ParagraphEditor({
   index,
   total,
   references,
+  templates,
   onUpdate,
   onCreateReference,
+  onSaveTemplate,
   onDelete,
   onMove,
 }: ParagraphEditorProps) {
@@ -45,7 +51,23 @@ export default function ParagraphEditor({
   const wordCount = countWords(paragraph.sentences.map((s) => s.text).join(' '));
   const citedCount = paragraph.sentences.filter((s) => s.citations.length > 0).length;
 
+  const available = templatesFor(moveSet, templates);
+  const taggedMoves = paragraph.sentences.map((s) => s.move).filter(Boolean);
+
   const addSentence = () => onUpdate({ sentences: [...paragraph.sentences, emptySentence()] });
+
+  /** Şablonun işlev dizisini etiketli boş yuvalar olarak ekler. */
+  const applyTemplate = (templateId: string) => {
+    const tpl = available.find((t) => t.id === templateId);
+    if (!tpl) return;
+    onUpdate({
+      sentences: [...paragraph.sentences, ...sentencesFromMoves(tpl.moves)],
+      targetSentences:
+        paragraph.targetSentences > 0
+          ? paragraph.targetSentences
+          : paragraph.sentences.length + tpl.moves.length,
+    });
+  };
 
   /** Hedef sayıya kadar boş cümle yuvası açar. */
   const fillSlots = () => {
@@ -172,12 +194,23 @@ export default function ParagraphEditor({
           <span className="text-sm text-gray-500">🔗 {citedCount}/{planned} cümle kaynaklı</span>
         )}
 
-        <button
-          onClick={() => setShowNotes(!showNotes)}
-          className="ml-auto text-sm text-blue-600 hover:text-blue-700"
-        >
-          {showNotes ? '📝 Notu gizle' : '📝 Not'}
-        </button>
+        <div className="ml-auto flex items-center gap-3">
+          {taggedMoves.length > 1 && (
+            <button
+              onClick={() => onSaveTemplate(taggedMoves)}
+              className="text-sm text-indigo-600 hover:text-indigo-700"
+              title="Bu paragrafın işlev dizisini yeniden kullanılabilir şablon olarak kaydet"
+            >
+              ⚡ Şablon yap
+            </button>
+          )}
+          <button
+            onClick={() => setShowNotes(!showNotes)}
+            className="text-sm text-blue-600 hover:text-blue-700"
+          >
+            {showNotes ? '📝 Notu gizle' : '📝 Not'}
+          </button>
+        </div>
       </div>
 
       {showNotes && (
@@ -198,7 +231,22 @@ export default function ParagraphEditor({
           {paragraph.sentences.length === 0 ? (
             <div className="rounded-lg border-2 border-dashed border-gray-300 bg-white py-6 text-center">
               <p className="mb-3 text-sm text-gray-500">Henüz cümle planlanmadı</p>
-              <div className="flex justify-center gap-2">
+              <div className="flex flex-wrap justify-center gap-2">
+                {available.length > 0 && (
+                  <select
+                    value=""
+                    onChange={(e) => applyTemplate(e.target.value)}
+                    className="rounded-lg border border-indigo-300 bg-indigo-50 px-3 py-2 text-sm text-indigo-800 focus:ring-2 focus:ring-indigo-500"
+                  >
+                    <option value="">⚡ Şablondan başla…</option>
+                    {available.map((t) => (
+                      <option key={t.id} value={t.id}>
+                        {t.builtIn ? '' : '★ '}
+                        {t.name} ({t.moves.length} cümle)
+                      </option>
+                    ))}
+                  </select>
+                )}
                 <button
                   onClick={addSentence}
                   className="rounded-lg bg-blue-600 px-4 py-2 text-sm text-white transition hover:bg-blue-700"
@@ -234,13 +282,29 @@ export default function ParagraphEditor({
                 ))}
               </div>
 
-              <div className="mt-3 flex gap-2">
+              <div className="mt-3 flex flex-wrap gap-2">
                 <button
                   onClick={addSentence}
                   className="flex-1 rounded-lg border-2 border-dashed border-blue-300 px-4 py-2 text-sm text-blue-600 transition hover:border-blue-400 hover:text-blue-700"
                 >
                   ➕ Cümle ekle
                 </button>
+                {available.length > 0 && (
+                  <select
+                    value=""
+                    onChange={(e) => applyTemplate(e.target.value)}
+                    className="rounded-lg border-2 border-dashed border-indigo-300 px-3 py-2 text-sm text-indigo-600 focus:ring-2 focus:ring-indigo-500"
+                    title="Şablonun cümlelerini sona ekler"
+                  >
+                    <option value="">⚡ Şablon ekle…</option>
+                    {available.map((t) => (
+                      <option key={t.id} value={t.id}>
+                        {t.builtIn ? '' : '★ '}
+                        {t.name} ({t.moves.length} cümle)
+                      </option>
+                    ))}
+                  </select>
+                )}
                 {target > paragraph.sentences.length && (
                   <button
                     onClick={fillSlots}

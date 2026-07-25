@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Subsection, Paragraph, Reference } from '@/types';
+import { Subsection, Paragraph, Reference, Template } from '@/types';
 import { emptyParagraph, writtenSentenceCount } from '@/lib/utils';
 import ParagraphEditor from './ParagraphEditor';
 
@@ -11,8 +11,10 @@ interface SubsectionEditorProps {
   index: number;
   total: number;
   references: Reference[];
+  templates: Template[];
   onUpdate: (subsectionId: string, updates: Partial<Subsection>) => void;
   onCreateReference: () => string;
+  onSaveTemplate: (moves: string[]) => void;
   onDelete: (subsectionId: string) => void;
   onMove: (subsectionId: string, direction: 'up' | 'down') => void;
 }
@@ -23,8 +25,10 @@ export default function SubsectionEditor({
   index,
   total,
   references,
+  templates,
   onUpdate,
   onCreateReference,
+  onSaveTemplate,
   onDelete,
   onMove,
 }: SubsectionEditorProps) {
@@ -176,8 +180,10 @@ export default function SubsectionEditor({
                     index={pIndex}
                     total={subsection.paragraphs.length}
                     references={references}
+                    templates={templates}
                     onUpdate={(updates) => updateParagraph(paragraph.id, updates)}
                     onCreateReference={onCreateReference}
+                    onSaveTemplate={onSaveTemplate}
                     onDelete={() => deleteParagraph(paragraph.id)}
                     onMove={(direction) => moveParagraph(paragraph.id, direction)}
                   />

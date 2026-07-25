@@ -35,6 +35,14 @@ export interface Section {
   subsections: Subsection[];
 }
 
+export interface Template {
+  id: string;
+  name: string;
+  moveSet: string;   // hangi bölüm türü için
+  moves: string[];   // sıralı işlev kimlikleri
+  builtIn?: boolean;
+}
+
 export interface Paper {
   id: string;
   title: string;
@@ -44,6 +52,7 @@ export interface Paper {
   keywordsEN: string[];
   sections: Section[];
   references: Reference[];
+  templates: Template[]; // kullanıcının kaydettiği paragraf desenleri
   createdAt: string;
   updatedAt: string;
 }

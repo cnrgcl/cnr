@@ -1,7 +1,8 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { Paper, Subsection, Reference } from '@/types';
+import { Paper, Subsection, Reference, Template } from '@/types';
+import { BUILT_IN_TEMPLATES } from '@/lib/templates';
 import SubsectionEditor from '@/components/SubsectionEditor';
 import { findMoveLabel, MOVE_SET_OPTIONS } from '@/lib/moves';
 import { auditPaper, countBySeverity, Finding, Severity } from '@/lib/audit';
@@ -48,6 +49,7 @@ function newPaper(): Paper {
       { id: 'conclusion', name: 'Sonuç', moveSet: 'conclusion', subsections: [] },
     ],
     references: [],
+    templates: [],
     createdAt: new Date().toISOString(),
     updatedAt: new Date().toISOString(),
   };
@@ -59,6 +61,7 @@ export default function Home() {
   const [lastSaved, setLastSaved] = useState('');
   const [showOutline, setShowOutline] = useState(false);
   const [showAudit, setShowAudit] = useState(false);
+  const [showTemplates, setShowTemplates] = useState(false);
   const [showSectionManager, setShowSectionManager] = useState(false);
   const [expandedRef, setExpandedRef] = useState<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -179,6 +182,28 @@ export default function Home() {
           })),
         })),
       })),
+    }));
+  };
+
+  // ---- şablon işlemleri ----
+  const saveTemplate = (moves: string[]) => {
+    const name = prompt('Şablon adı (örn. "Boşluk açan giriş paragrafı"):', '');
+    if (!name?.trim()) return;
+
+    const tpl: Template = {
+      id: generateId(),
+      name: name.trim(),
+      moveSet: currentSection?.moveSet ?? '',
+      moves,
+    };
+    setPaper((prev) => ({ ...prev!, templates: [...prev!.templates, tpl] }));
+    alert(`"${tpl.name}" şablonu kaydedildi.`);
+  };
+
+  const deleteTemplate = (templateId: string) => {
+    setPaper((prev) => ({
+      ...prev!,
+      templates: prev!.templates.filter((t) => t.id !== templateId),
     }));
   };
 
@@ -462,6 +487,86 @@ export default function Home() {
         </div>
       )}
 
+      {/* Şablonlar */}
+      {showTemplates && (
+        <div className="fixed inset-0 z-50 overflow-y-auto bg-black/50 p-4">
+          <div className="mx-auto max-w-3xl rounded-lg bg-white p-6 shadow-lg">
+            <div className="mb-4 flex items-center justify-between">
+              <h2 className="text-2xl font-bold">⚡ Şablonlar</h2>
+              <button
+                onClick={() => setShowTemplates(false)}
+                className="rounded-lg bg-gray-500 px-4 py-2 text-white hover:bg-gray-600"
+              >
+                ✕ Kapat
+              </button>
+            </div>
+
+            <p className="mb-5 text-sm text-gray-600">
+              Şablon, bir paragrafın <strong>işlev dizisidir</strong>. Uygulandığında o sırayla
+              etiketlenmiş boş cümle yuvaları açar — içeriği yine sen yazarsın. Paragraf
+              editöründeki <em>⚡ Şablondan başla</em> ile uygulanır.
+            </p>
+
+            {MOVE_SET_OPTIONS.map((set) => {
+              const builtIn = BUILT_IN_TEMPLATES.filter((t) => t.moveSet === set.id);
+              const mine = paper.templates.filter((t) => t.moveSet === set.id);
+              if (builtIn.length === 0 && mine.length === 0) return null;
+
+              return (
+                <div key={set.id} className="mb-5">
+                  <h3 className="mb-2 font-bold text-gray-800">{set.label}</h3>
+                  <div className="space-y-2">
+                    {[...builtIn, ...mine].map((t) => (
+                      <div
+                        key={t.id}
+                        className={`rounded-lg border px-3 py-2 ${
+                          t.builtIn ? 'border-gray-200 bg-gray-50' : 'border-indigo-200 bg-indigo-50'
+                        }`}
+                      >
+                        <div className="flex items-center justify-between gap-2">
+                          <span className="text-sm font-medium text-gray-800">
+                            {t.builtIn ? '' : '★ '}
+                            {t.name}
+                          </span>
+                          <div className="flex items-center gap-2">
+                            <span className="text-xs text-gray-500">{t.moves.length} cümle</span>
+                            {!t.builtIn && (
+                              <button
+                                onClick={() => deleteTemplate(t.id)}
+                                className="rounded bg-red-500 px-2 py-0.5 text-xs text-white hover:bg-red-600"
+                              >
+                                sil
+                              </button>
+                            )}
+                          </div>
+                        </div>
+                        <div className="mt-1 flex flex-wrap items-center gap-1 text-xs text-gray-600">
+                          {t.moves.map((m, i) => (
+                            <span key={`${t.id}-${i}`} className="flex items-center gap-1">
+                              {i > 0 && <span className="text-gray-400">→</span>}
+                              <span className="rounded bg-white px-1.5 py-0.5">
+                                {findMoveLabel(t.moveSet, m)}
+                              </span>
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              );
+            })}
+
+            {paper.templates.length === 0 && (
+              <p className="rounded border border-dashed border-gray-300 px-3 py-3 text-sm text-gray-500">
+                Kendi şablonun yok. Bir paragrafın cümlelerini etiketledikten sonra
+                <strong> ⚡ Şablon yap</strong> ile o diziyi kaydedebilirsin.
+              </p>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* Denetim */}
       {showAudit && (
         <div className="fixed inset-0 z-50 overflow-y-auto bg-black/50 p-4">
@@ -586,6 +691,12 @@ export default function Home() {
                     {findingCounts.warning}
                   </span>
                 )}
+              </button>
+              <button
+                onClick={() => setShowTemplates(true)}
+                className="rounded-lg bg-indigo-600 px-4 py-2 text-white transition hover:bg-indigo-700"
+              >
+                ⚡ Şablonlar
               </button>
               <button
                 onClick={() => exportPaperAsJSON(paper)}
@@ -823,10 +934,12 @@ export default function Home() {
                       index={index}
                       total={currentSection.subsections.length}
                       references={paper.references}
+                      templates={paper.templates}
                       onUpdate={(subId, updates) =>
                         updateSubsection(currentSection.id, subId, updates)
                       }
                       onCreateReference={createReference}
+                      onSaveTemplate={saveTemplate}
                       onDelete={(subId) => deleteSubsection(currentSection.id, subId)}
                       onMove={(subId, dir) => moveSubsection(currentSection.id, subId, dir)}
                     />

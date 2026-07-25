@@ -91,6 +91,31 @@ dönüşür.
 - **Word'e aktarma** — cümleler paragraflara birleştirilerek dışa aktarılır
 - Otomatik kayıt (2 sn), TR/EN özet, anahtar kelimeler, kaynakça
 
+## ⚡ Şablonlar
+
+Şablon, bir paragrafın **işlev dizisidir**. Uygulandığında o sırayla
+etiketlenmiş boş cümle yuvaları açar — içeriği yine sen yazarsın.
+
+```
+"CARS giriş paragrafı" uygulanınca 4 yuva açılır:
+
+  1  Konunun genel önemi        ← plan ipucu hazır gelir
+  2  Geçmiş çalışmaların özeti
+  3  Eksik kalan yön (boşluk)
+  4  Çalışmanın amacı
+```
+
+**19 hazır şablon** var — giriş, literatür taraması, yöntem, bulgular,
+tartışma ve sonuç için. Bölüme uymayanlar listede görünmez: Giriş'teyken
+yalnızca giriş desenleri çıkar.
+
+**Kendi şablonun:** bir paragrafın cümlelerini etiketledikten sonra
+**⚡ Şablon yap** ile o diziyi kaydedersin, sonraki paragraflarda ★ işaretiyle
+listede çıkar. Kendi şablonların yedeğe (JSON) dahildir.
+
+Üst çubuktaki **⚡ Şablonlar** düğmesi tüm katalogu, her şablonun işlev
+zinciriyle birlikte gösterir.
+
 ## 🔍 Denetim
 
 Cümlelere işlev ve kaynak etiketlendiği için, normalde göz kararı yapılan
