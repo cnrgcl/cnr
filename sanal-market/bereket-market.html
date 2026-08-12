@@ -857,9 +857,9 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
   var TAVAN = 3.9;
 
   var RAFLAR = [
-    { id:'A', tip:'gondol', x:-5.2, z:-2,  uzun:10,  en:1.4, yuz:{ eksi:'kahvaltilik', arti:'bakliyat' } },
-    { id:'B', tip:'gondol', x:-0.5, z:-2,  uzun:10,  en:1.4, yuz:{ eksi:'atistirmalik', arti:'icecek' } },
-    { id:'C', tip:'gondol', x: 5.0, z:-2,  uzun:10,  en:1.4, yuz:{ eksi:'temizlik', arti:'kagit' } },
+    { id:'A', tip:'gondol', koridor:1, x:-5.2, z:-2,  uzun:10,  en:1.4, yuz:{ eksi:'kahvaltilik', arti:'bakliyat' } },
+    { id:'B', tip:'gondol', koridor:2, x:-0.5, z:-2,  uzun:10,  en:1.4, yuz:{ eksi:'atistirmalik', arti:'icecek' } },
+    { id:'C', tip:'gondol', koridor:3, x: 5.0, z:-2,  uzun:10,  en:1.4, yuz:{ eksi:'temizlik', arti:'kagit' } },
     { id:'D', tip:'dolap',  x:10.7, z:-2,  uzun:11,  en:0.9, yuz:{ eksi:'sut' } },
     { id:'M', tip:'manav',  x:-9.6, z: 6.0, uzun:5.9, en:3.2 },
     { id:'S', tip:'stand',  x: 2.7, z: 7.4, uzun:2.5, en:2.5 },
@@ -1033,6 +1033,48 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
     d.wrapS = d.wrapT = T.RepeatWrapping;
     d.repeat.set(24, 24);
     d.anisotropy = 8;
+    return d;
+  }
+
+  // Gondol ucuna asılan koridor posteri: numara + o koridordaki reyonlar
+  function ucPosterDoku(no, katlar) {
+    var c = tuval(512, 760);
+    var ctx = c.getContext('2d');
+    ctx.fillStyle = '#F4F7F5'; ctx.fillRect(0, 0, 512, 760);
+    ctx.fillStyle = '#0F8F8B'; ctx.fillRect(0, 0, 512, 132);
+
+    ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+    ctx.fillStyle = '#F4F7F5';
+    ctx.font = '400 46px "Archivo Black", sans-serif';
+    if ('letterSpacing' in ctx) ctx.letterSpacing = '10px';
+    ctx.fillText('KORİDOR', 256, 68);
+    if ('letterSpacing' in ctx) ctx.letterSpacing = '0px';
+
+    ctx.fillStyle = '#0C1513';
+    ctx.font = '400 250px "Archivo Black", sans-serif';
+    ctx.fillText(String(no), 256, 320);
+
+    ctx.strokeStyle = 'rgba(12,21,19,.18)';
+    ctx.lineWidth = 3;
+    ctx.beginPath(); ctx.moveTo(80, 470); ctx.lineTo(432, 470); ctx.stroke();
+
+    katlar.forEach(function (kat, i) {
+      var boy = 44;
+      ctx.fillStyle = '#0C1513';
+      ctx.font = '600 ' + boy + 'px "IBM Plex Sans", sans-serif';
+      var ad = buyuk(KATEGORI[kat].ad);
+      while (ctx.measureText(ad).width > 430 && boy > 22) {
+        boy -= 3;
+        ctx.font = '600 ' + boy + 'px "IBM Plex Sans", sans-serif';
+      }
+      ctx.fillText(ad, 256, 546 + i * 88);
+      ctx.fillStyle = KATEGORI[kat].renk;
+      ctx.fillRect(196, 574 + i * 88, 120, 8);
+    });
+
+    var d = new T.CanvasTexture(c);
+    d.colorSpace = T.SRGBColorSpace;
+    d.anisotropy = 4;
     return d;
   }
 
@@ -1341,10 +1383,10 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
   var PALET = {
     acik: { fon:'#DDE4E1', sis:'#DCE3E0', duvar:'#E7EAE6', tavan:'#F1F3F0',
       ortam:0.95, yon:1.42, yonRenk:'#FFF6E6', lamba:'#FFFFFF', lambaGuc:0.0,
-      sisYakin:18, sisUzak:54, poz:1.05, lambaGuclu:1.0 },
+      sisYakin:18, sisUzak:54, poz:1.05, lambaGuclu:1.0, tavanIsik:0.34 },
     koyu: { fon:'#0D1413', sis:'#101817', duvar:'#242C2D', tavan:'#171E1F',
       ortam:0.38, yon:0.30, yonRenk:'#BFD8E8', lamba:'#FFD9A0', lambaGuc:14,
-      sisYakin:9, sisUzak:38, poz:1.15, lambaGuclu:1.7 }
+      sisYakin:9, sisUzak:38, poz:1.15, lambaGuclu:1.7, tavanIsik:0.10 }
   };
 
   var sahne, kamera, ciz, sahneEl;
@@ -1376,6 +1418,8 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
     isikYon.color.set(P.yonRenk);
     duvarMat.color.set(P.duvar);
     tavanMat.color.set(P.tavan);
+    tavanMat.emissive.set(P.tavan);
+    tavanMat.emissiveIntensity = P.tavanIsik;
     lambaMat.color.set(P.lamba);
     lambaMat.emissive.set(P.lamba);
     lambaMat.emissiveIntensity = P.lambaGuclu;
@@ -1438,7 +1482,7 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
     sahne.add(zeminMesh);
 
     duvarMat = new T.MeshStandardMaterial({ color: '#E7EAE6', roughness: 0.92, side: T.DoubleSide });
-    tavanMat = new T.MeshStandardMaterial({ color: '#F1F3F0', roughness: 0.95, side: T.DoubleSide });
+    tavanMat = new T.MeshStandardMaterial({ color: '#F1F3F0', emissive: '#F1F3F0', emissiveIntensity: 0.34, roughness: 0.95, side: T.DoubleSide });
     lambaMat = new T.MeshStandardMaterial({ color: '#FFFFFF', emissive: '#FFFFFF', emissiveIntensity: 1, roughness: 1 });
     rafMat = new T.MeshStandardMaterial({ color: '#EAEEEB', roughness: 0.68, metalness: 0.08 });
     iskeletMat = new T.MeshStandardMaterial({ color: '#B3BCB8', roughness: 0.5, metalness: 0.35 });
@@ -1531,13 +1575,24 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
       });
     });
 
-    // Uç kapaklar
+    // Uç kapaklar — koridor posteriyle
+    var posterKatlar = [];
+    if (r.yuz.eksi) posterKatlar.push(r.yuz.eksi);
+    if (r.yuz.arti) posterKatlar.push(r.yuz.arti);
+    var posterMat = new T.MeshStandardMaterial({
+      map: ucPosterDoku(r.koridor, posterKatlar), roughness: 0.74
+    });
     [-1, 1].forEach(function (s) {
       var uc = new T.Mesh(new T.BoxGeometry(r.en, yuk, 0.06), rafMat);
       uc.position.set(0, yuk / 2, s * (r.uzun / 2 + 0.03));
       uc.castShadow = true; uc.receiveShadow = true;
       g.add(uc);
       bloklar.push(uc);
+
+      var poster = new T.Mesh(new T.PlaneGeometry(1.12, 1.66), posterMat);
+      poster.position.set(0, 1.15, s * (r.uzun / 2 + 0.065));
+      poster.rotation.y = s > 0 ? 0 : Math.PI;
+      g.add(poster);
     });
 
     [['eksi', -1], ['arti', 1]].forEach(function (par) {
