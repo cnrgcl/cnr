@@ -15,6 +15,7 @@ istemez — çift tıklayıp açmak yeterli. three.js ve yazı tipleri dosyanın
 | Mağaza planı | Sol alttaki mini plan; üstündeki noktaya tıklayınca oraya yürünür. Konum ve bakış konisi canlı. |
 | Raflar | 3 çift taraflı gondol, süt soğutucusu, manav kasaları, kampanya standı ve kasalar — toplam ~3.600 ürün nesnesi. |
 | Ürün | Rafta ürünün üstünde fiyat etiketi belirir. Tıklayınca panel açılır: canlı 3B görünüm (sürükleyerek döndür), fiyat, birim fiyat, menşe, raf ömrü. |
+| İçini aç | Paneldeki düğme kapağı kaldırır, ambalajı saydamlaştırır ve içi görünür: kavanozun balı, şişenin sıvı seviyesi, poşetin taneleri, meyvenin eti ve çekirdeği. |
 | Sepet | Sepete ekle, adet ve toplam tutar, kalem silme. |
 | Aydınlatma | Gündüz / akşam. Tarayıcı temasını izler, üstteki düğmeyle de değiştirilir. |
 
@@ -56,6 +57,20 @@ sürüm numaraları betiğin başındadır.
 
 `kat` ürünün hangi rafa gireceğini, `tip` gövde biçimini, `renk` ambalaj rengini belirler.
 Raf yerleşimi kategoriye göre kendiliğinden yeniden hesaplanır.
+
+Ürünün içi ayrı bir tabloda — `ICLER`. Anahtar ürün `id`'si:
+
+```js
+mercimek: { r:'#D2532A', t:'granul', d:0.80 }   // renk, doku tipi, doluluk oranı
+```
+
+`t` şunlardan biri: `sivi` (şişede seviye olarak görünür), `akiskan` (kavanoz dolgusu),
+`granul` (yüzeye tek tek taneler serpilir), `kati` (blok), `etli` (meyve içi + çekirdek).
+Tablodan bir ürün eksikse ambalaj renginin açığı kullanılır.
+
+Panelde görünen dolgu parçaları `panelde: true` ile işaretlidir; raftaki binlerce
+kopyaya dahil edilmezler. Kapağı kaldırılan parçalar `rol: 'kapak'`, saydamlaşan
+ambalaj `rol: 'kabuk'` / `'etiket'` taşır.
 
 Mağaza planı `RAFLAR` dizisinde: gondolların yeri, uzunluğu ve her yüzünün hangi
 kategoriyi taşıdığı oradan okunur.

@@ -339,6 +339,26 @@ kbd{
   position:absolute; right:10px; bottom:10px;
   display:flex; gap:6px;
 }
+
+.ic-dugme{
+  position:absolute; left:10px; bottom:10px;
+  display:flex; align-items:center; gap:7px;
+  padding:6px 12px 6px 9px;
+  border-radius:8px;
+  background:var(--cam-kati);
+  border:1px solid var(--cizgi);
+  color:var(--murekkep-soft);
+  font-size:var(--olcek-1); font-weight:600; letter-spacing:.02em;
+  transition:color .16s ease, border-color .16s ease, background-color .16s ease;
+}
+.ic-dugme:hover{ color:var(--murekkep); border-color:var(--cizgi-kuvvetli); }
+.ic-dugme[aria-pressed="true"]{
+  color:var(--turkuaz); border-color:var(--turkuaz); background-color:var(--turkuaz-yumusak);
+}
+.ic-dugme svg{
+  width:15px; height:15px; stroke:currentColor; fill:none;
+  stroke-width:1.7; stroke-linejoin:round; stroke-linecap:round;
+}
 .arac{
   width:32px; height:32px; border-radius:8px;
   background:var(--cam-kati); border:1px solid var(--cizgi);
@@ -621,9 +641,13 @@ kbd{
     <div class="panel-govde">
       <div class="gorsel-alan">
         <canvas id="urunTuval"></canvas>
-        <span class="gorsel-rozet"><span class="nabiz"></span>Canlı 3B</span>
+        <span class="gorsel-rozet"><span class="nabiz"></span><span id="rozetYazi">Canlı 3B</span></span>
         <button class="kapat" id="panelKapat" aria-label="Paneli kapat">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+        </button>
+        <button class="ic-dugme" id="acDugme" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 11.9h14.8v6.6a1.5 1.5 0 0 1-1.5 1.5H6.1a1.5 1.5 0 0 1-1.5-1.5z"></path><path d="M3.1 8.2 19.4 3.9l1.1 3.6L4.2 11.8z"></path><path d="M12 12v7.9"></path></svg>
+          <span>İçini aç</span>
         </button>
         <div class="gorsel-araclar">
           <button class="arac" id="donduruc" aria-pressed="true" aria-label="Otomatik döndür" title="Otomatik döndür">
@@ -844,6 +868,30 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
     { id:'kuruyemis', ad:'Karışık Kuruyemiş', marka:'Bereket Seçkin', kat:'kampanya', tip:'poset', renk:'#8A6A2C', fiyat:249.00, gram:'300 g', birim:'kg fiyatı 830,00 ₺', mense:'Gaziantep', raf:'8 ay',
       aciklama:'Antep fıstığı, badem, kaju ve leblebi. Az tuzlu, taze kavrum.' }
   ];
+
+  // Ürünün içi — panelde "aç" denince ortaya çıkan dolgu.
+  // r: dolgu rengi, t: sivi | akiskan | granul | kati | etli, d: doluluk oranı
+  var ICLER = {
+    bal:{r:'#E9A70F',t:'akiskan',d:0.86},      recel:{r:'#8E1B2B',t:'akiskan',d:0.84},
+    krema:{r:'#4A2A14',t:'akiskan',d:0.86},    yogurt:{r:'#F4F7F6',t:'akiskan',d:0.90},
+    gevrek:{r:'#D9A23C',t:'granul',d:0.72},    cay:{r:'#3A2A18',t:'granul',d:0.78},
+    kahve:{r:'#5A3418',t:'granul',d:0.80},     cikolata:{r:'#3A2114',t:'kati',d:0.92},
+    peynir:{r:'#F4F6F3',t:'kati',d:0.88},      tereyagi:{r:'#F0D46A',t:'kati',d:0.90},
+    pecete:{r:'#FBFCFB',t:'kati',d:0.90},      pirinc:{r:'#EDE6D6',t:'granul',d:0.80},
+    makarna:{r:'#D9A441',t:'granul',d:0.80},   mercimek:{r:'#D2532A',t:'granul',d:0.80},
+    un:{r:'#F0EADC',t:'granul',d:0.84},        cips:{r:'#E8C14A',t:'granul',d:0.60},
+    findik:{r:'#8A5A2A',t:'granul',d:0.76},    seker:{r:'#E8709F',t:'granul',d:0.76},
+    kuruyemis:{r:'#B08A46',t:'granul',d:0.76}, havlu:{r:'#FBFCFB',t:'kati',d:0.90},
+    tuvalet:{r:'#FBFCFB',t:'kati',d:0.90},     nohut:{r:'#D9C48A',t:'granul',d:0.82},
+    ton:{r:'#C97A4A',t:'granul',d:0.80},       su:{r:'#BFE6F5',t:'sivi',d:0.90},
+    gazoz:{r:'#E8D25A',t:'sivi',d:0.88},       zeytin:{r:'#9AA82A',t:'sivi',d:0.88},
+    ayran:{r:'#F4F6F5',t:'sivi',d:0.88},       bulasik:{r:'#5FCB92',t:'sivi',d:0.86},
+    camasir:{r:'#CFE4F2',t:'sivi',d:0.86},     sabun:{r:'#CBD86A',t:'sivi',d:0.86},
+    sut:{r:'#F6F8F7',t:'sivi',d:0.90},         visne:{r:'#7E1428',t:'sivi',d:0.90},
+    domates:{r:'#E06A56',t:'etli',d:1},        elma:{r:'#F2E6BC',t:'etli',d:1},
+    limon:{r:'#F6E28C',t:'etli',d:1},          salatalik:{r:'#E2EFCF',t:'etli',d:1}
+  };
+  function icBilgi(p) { return ICLER[p.id] || { r: tonla(p.renk, 0.2), t: 'kati', d: 0.86 }; }
 
   var URUN_INDEKS = {};
   URUNLER.forEach(function (p) { URUN_INDEKS[p.id] = p; });
@@ -1174,17 +1222,27 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
     var em = etiketMat(p, 'on', boy / en);
 
     var parcalar = [
-      { geo: kutuGeo, mat: yan },
-      { geo: levha(en * 0.995, boy * 0.995, derin / 2 + 0.0012, false), mat: em },
-      { geo: levha(en * 0.995, boy * 0.995, derin / 2 + 0.0012, true), mat: em }
+      { geo: kutuGeo, mat: yan, rol: 'kabuk' },
+      { geo: levha(en * 0.995, boy * 0.995, derin / 2 + 0.0012, false), mat: em, rol: 'etiket' },
+      { geo: levha(en * 0.995, boy * 0.995, derin / 2 + 0.0012, true), mat: em, rol: 'etiket' }
     ];
+
+    var ib = icBilgi(p);
+    var icBoy = boy * ib.d - 0.006;
+    var icGeo = new T.BoxGeometry(en * 0.9, icBoy, derin * 0.84);
+    icGeo.translate(0, icBoy / 2 + 0.004, 0);
+    parcalar.push({ geo: icGeo, mat: govdeMat(ib.r, ib.t === 'sivi'), rol: 'ic', panelde: true });
 
     if (p.tip === 'tetra') {
       var kap = new T.BoxGeometry(en * 0.44, 0.014, derin * 0.44);
       kap.translate(0, boy + 0.007, 0);
-      parcalar.push({ geo: kap, mat: govdeMat('#D8DCD8', true) });
+      parcalar.push({ geo: kap, mat: govdeMat('#D8DCD8', true), rol: 'kapak' });
+    } else {
+      var kapakGeo = new T.BoxGeometry(en, 0.008, derin);
+      kapakGeo.translate(0, boy - 0.004, 0);
+      parcalar.push({ geo: kapakGeo, mat: govdeMat(tonla(p.renk, -0.18), false), rol: 'kapak', panelde: true });
     }
-    return { parcalar: parcalar, en: en, boy: boy, derin: derin };
+    return { parcalar: parcalar, en: en, boy: boy, derin: derin, icYuzey: boy * ib.d };
   }
 
   function sisme(x, y, en, boy) {
@@ -1231,14 +1289,20 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
     var kirma = new T.BoxGeometry(en * 0.96, 0.014, derin * 0.34);
     kirma.translate(0, boy - 0.005, 0);
 
+    var ib = icBilgi(p);
+    var icBoy = boy * ib.d - 0.012;
+    var icGeo = new T.BoxGeometry(en * 0.86, icBoy, derin * 1.4);
+    icGeo.translate(0, icBoy / 2 + 0.006, 0);
+
     return {
       parcalar: [
-        { geo: geo, mat: yan },
-        { geo: kirma, mat: yan },
-        { geo: sisikLevha(false), mat: em },
-        { geo: sisikLevha(true), mat: em }
+        { geo: geo, mat: yan, rol: 'kabuk' },
+        { geo: kirma, mat: yan, rol: 'kapak' },
+        { geo: sisikLevha(false), mat: em, rol: 'etiket' },
+        { geo: sisikLevha(true), mat: em, rol: 'etiket' },
+        { geo: icGeo, mat: govdeMat(ib.r, false), rol: 'ic', panelde: true }
       ],
-      en: en, boy: boy, derin: derin * 1.85
+      en: en, boy: boy, derin: derin * 1.85, icYuzey: boy * ib.d
     };
   }
 
@@ -1272,13 +1336,25 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
     var etGeo = new T.CylinderGeometry(r * 1.014, r * 1.014, etH, 30, 1, true);
     etGeo.translate(0, boy * 0.30, 0);
 
+    // İçindeki sıvı — şişe yarı saydam olduğu için rafta da görünür
+    var ib = icBilgi(p);
+    var seviye = boy * 0.66 * ib.d + 0.02;
+    var siviGeo = new T.LatheGeometry([
+      new T.Vector2(0.001, 0.008),
+      new T.Vector2(r * 0.9, 0.022),
+      new T.Vector2(r * 0.945, boy * 0.55),
+      new T.Vector2(r * 0.9, seviye),
+      new T.Vector2(0.001, seviye)
+    ], 22);
+
     return {
       parcalar: [
-        { geo: geo, mat: siseMat },
-        { geo: kap, mat: govdeMat(kapakRenk, true) },
-        { geo: etGeo, mat: etiketMat(p, 'sarma', etH / (Math.PI * r), true) }
+        { geo: siviGeo, mat: govdeMat(ib.r, true), rol: 'ic' },
+        { geo: geo, mat: siseMat, rol: 'kabuk' },
+        { geo: kap, mat: govdeMat(kapakRenk, true), rol: 'kapak' },
+        { geo: etGeo, mat: etiketMat(p, 'sarma', etH / (Math.PI * r), true), rol: 'etiket' }
       ],
-      en: r * 2, boy: boy + 0.03, derin: r * 2
+      en: r * 2, boy: boy + 0.03, derin: r * 2, icYuzey: seviye
     };
   }
 
@@ -1294,14 +1370,20 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
     kapak.rotateX(-Math.PI / 2);
     kapak.translate(0, boy + 0.001, 0);
 
+    var ib = icBilgi(p);
+    var icBoy = boy * ib.d - 0.008;
+    var icGeo = new T.CylinderGeometry(r * 0.94, r * 0.94, icBoy, 22);
+    icGeo.translate(0, icBoy / 2 + 0.004, 0);
+
     return {
       parcalar: [
-        { geo: govde, mat: etiketMat(p, 'sarma', boy / (Math.PI * r), true) },
-        { geo: ustGeo, mat: metalMat('#C9CED2') },
-        { geo: altGeo, mat: metalMat('#C9CED2') },
-        { geo: kapak, mat: metalMat('#B4B9BD') }
+        { geo: govde, mat: etiketMat(p, 'sarma', boy / (Math.PI * r), true), rol: 'etiket' },
+        { geo: ustGeo, mat: metalMat('#C9CED2'), rol: 'kabuk' },
+        { geo: altGeo, mat: metalMat('#C9CED2'), rol: 'kabuk' },
+        { geo: kapak, mat: metalMat('#B4B9BD'), rol: 'kapak' },
+        { geo: icGeo, mat: govdeMat(ib.r, false), rol: 'ic', panelde: true }
       ],
-      en: r * 2.1, boy: boy, derin: r * 2.1
+      en: r * 2.1, boy: boy, derin: r * 2.1, icYuzey: boy * ib.d
     };
   }
 
@@ -1310,10 +1392,12 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
     if (p.id === 'yogurt') { r = 0.062; boy = 0.13; }
     if (p.id === 'krema') { r = 0.043; boy = 0.105; }
 
+    var ib = icBilgi(p);
+    var icBoy = boy * ib.d - 0.012;
     var cam = new T.CylinderGeometry(r, r * 0.95, boy, 24);
     cam.translate(0, boy / 2, 0);
-    var ic = new T.CylinderGeometry(r * 0.92, r * 0.88, boy * 0.76, 22);
-    ic.translate(0, boy * 0.39, 0);
+    var icGovde = new T.CylinderGeometry(r * 0.92, r * 0.88, icBoy, 22);
+    icGovde.translate(0, icBoy / 2 + 0.006, 0);
     var kapak = new T.CylinderGeometry(r * 1.04, r * 1.04, 0.024, 24);
     kapak.translate(0, boy + 0.011, 0);
     var etH = boy * 0.5;
@@ -1322,34 +1406,57 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
 
     return {
       parcalar: [
-        { geo: ic, mat: govdeMat(p.renk, false) },
-        { geo: cam, mat: camMat('#E8F0EE', p.id === 'yogurt' ? 0.9 : 0.42) },
-        { geo: kapak, mat: govdeMat(p.id === 'yogurt' ? '#2C6FA8' : tonla(p.renk, -0.22), true) },
-        { geo: etGeo, mat: etiketMat(p, 'sarma', etH / (Math.PI * r), true) }
+        { geo: icGovde, mat: govdeMat(ib.r, ib.t === 'akiskan'), rol: 'ic' },
+        { geo: cam, mat: camMat('#E8F0EE', p.id === 'yogurt' ? 0.9 : 0.42), rol: 'kabuk' },
+        { geo: kapak, mat: govdeMat(p.id === 'yogurt' ? '#2C6FA8' : tonla(p.renk, -0.22), true), rol: 'kapak' },
+        { geo: etGeo, mat: etiketMat(p, 'sarma', etH / (Math.PI * r), true), rol: 'etiket' }
       ],
-      en: r * 2.1, boy: boy + 0.03, derin: r * 2.1
+      en: r * 2.1, boy: boy + 0.03, derin: r * 2.1, icYuzey: icBoy
     };
   }
 
   function govdeMeyve(p) {
+    var ib = icBilgi(p);
     if (p.id === 'salatalik') {
       var g = new T.CapsuleGeometry(0.026, 0.10, 3, 12);
       g.rotateZ(Math.PI / 2);
       g.translate(0, 0.026, 0);
-      return { parcalar: [{ geo: g, mat: govdeMat(p.renk, true) }], en: 0.16, boy: 0.055, derin: 0.055 };
+      var icG = new T.CapsuleGeometry(0.020, 0.098, 3, 10);
+      icG.rotateZ(Math.PI / 2);
+      icG.translate(0, 0.026, 0);
+      return {
+        parcalar: [
+          { geo: icG, mat: govdeMat(ib.r, false), rol: 'ic', panelde: true },
+          { geo: g, mat: govdeMat(p.renk, true), rol: 'kabuk' }
+        ],
+        en: 0.16, boy: 0.055, derin: 0.055, icYuzey: 0.05
+      };
     }
     var r = 0.043;
     var yassilik = p.id === 'limon' ? 1.14 : 0.92;
     var kure = new T.SphereGeometry(r, 14, 10);
     kure.scale(1, yassilik, 1);
     kure.translate(0, r * yassilik, 0);
-    var parcalar = [{ geo: kure, mat: govdeMat(p.renk, true) }];
+    var etGeo = new T.SphereGeometry(r * 0.9, 12, 9);
+    etGeo.scale(1, yassilik, 1);
+    etGeo.translate(0, r * yassilik, 0);
+    var parcalar = [
+      { geo: etGeo, mat: govdeMat(ib.r, false), rol: 'ic', panelde: true },
+      { geo: kure, mat: govdeMat(p.renk, true), rol: 'kabuk' }
+    ];
     if (p.id !== 'limon') {
       var sap = new T.CylinderGeometry(0.0035, 0.005, 0.026, 5);
       sap.translate(0, r * yassilik * 2 + 0.008, 0);
-      parcalar.push({ geo: sap, mat: govdeMat('#4A5A20', false) });
+      parcalar.push({ geo: sap, mat: govdeMat('#4A5A20', false), rol: 'kapak' });
+      var cek = new T.SphereGeometry(r * 0.1, 6, 5);
+      cek.scale(0.7, 1.4, 1);
+      for (var ci = 0; ci < 5; ci++) {
+        var acili = cek.clone();
+        acili.translate(Math.cos(ci * 1.257) * r * 0.36, r * yassilik * 0.92, Math.sin(ci * 1.257) * r * 0.36);
+        parcalar.push({ geo: acili, mat: govdeMat('#4A3A1E', false), rol: 'ic', panelde: true });
+      }
     }
-    return { parcalar: parcalar, en: r * 2.1, boy: r * yassilik * 2.2, derin: r * 2.1 };
+    return { parcalar: parcalar, en: r * 2.1, boy: r * yassilik * 2.2, derin: r * 2.1, icYuzey: r * yassilik * 1.8 };
   }
 
   var govdeOnbellek = {};
@@ -1368,10 +1475,55 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
     return g;
   }
 
+  var granulGeolar = null;
+  function granulSekilleri() {
+    if (!granulGeolar) {
+      granulGeolar = [
+        new T.TetrahedronGeometry(0.5),
+        new T.BoxGeometry(0.95, 0.45, 0.62),
+        new T.SphereGeometry(0.5, 6, 5),
+        new T.CylinderGeometry(0.28, 0.28, 0.9, 6)
+      ];
+    }
+    return granulGeolar;
+  }
+
+  // Dolgunun üstüne tek tek taneler serpiştir — "içi göründü" hissi buradan gelir
+  function granulSerp(grup, p, g, ib) {
+    var sekiller = granulSekilleri();
+    var tonlar = [govdeMat(ib.r, false), govdeMat(tonla(ib.r, -0.13), false), govdeMat(tonla(ib.r, 0.12), false)];
+    var boyut = Math.min(g.en, g.derin) * 0.2;
+    var yuzey = g.icYuzey || g.boy * 0.8;
+    var eskiTohum = tohum;
+    tohum = 4021 + p.id.length * 977;
+    for (var i = 0; i < 44; i++) {
+      var m = new T.Mesh(sekiller[i % sekiller.length], tonlar[i % 3]);
+      var ol = boyut * rastArasi(0.7, 1.25);
+      m.scale.setScalar(ol);
+      m.position.set(
+        rastArasi(-g.en * 0.36, g.en * 0.36),
+        yuzey - rastArasi(0, boyut * 1.1),
+        rastArasi(-g.derin * 0.28, g.derin * 0.28));
+      m.rotation.set(rastArasi(0, 6.28), rastArasi(0, 6.28), rastArasi(0, 6.28));
+      m.userData.rol = 'ic';
+      grup.add(m);
+    }
+    tohum = eskiTohum;
+  }
+
   function urunGrubu(p) {
     var g = govde(p);
+    var ib = icBilgi(p);
     var grup = new T.Group();
-    g.parcalar.forEach(function (par) { grup.add(new T.Mesh(par.geo, par.mat)); });
+    g.parcalar.forEach(function (par) {
+      var mat = par.mat.clone();
+      var m = new T.Mesh(par.geo, mat);
+      m.userData.rol = par.rol || 'kabuk';
+      m.userData.temelSaydam = mat.opacity;
+      m.userData.temelYuz = mat.side;
+      grup.add(m);
+    });
+    if (ib.t === 'granul') granulSerp(grup, p, g, ib);
     grup.userData.olcu = { en: g.en, boy: g.boy, derin: g.derin };
     return grup;
   }
@@ -1899,6 +2051,7 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
       if (!yer || !yer.length) return;
       toplamNesne += yer.length;
       govde(p).parcalar.forEach(function (par) {
+        if (par.panelde) return;   // yalnızca panelde görünen dolgu parçaları
         var im = new T.InstancedMesh(par.geo, par.mat, yer.length);
         im.castShadow = true;
         im.receiveShadow = false;
@@ -2224,6 +2377,7 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
   var panelEl, nisanEl, havaEl, havaAd, havaFiyat, reyonAdEl;
   var pCiz, pSahne, pKamera, pKok, pOtoDon = true, pSapma = 0.6, pEgim = 0.16;
   var panelAcikMi = false, aktifUrun = null;
+  var pUrun = null, icAcik = false, acikT = 0, pBoyOlcekli = 0;
 
   function panelKur() {
     var tv = document.getElementById('urunTuval');
@@ -2274,6 +2428,13 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
       pSapma = 0.6; pEgim = 0.16; pOtoDon = true;
       document.getElementById('donduruc').setAttribute('aria-pressed', 'true');
     });
+
+    document.getElementById('acDugme').addEventListener('click', function () {
+      icAcik = !icAcik;
+      this.setAttribute('aria-pressed', icAcik ? 'true' : 'false');
+      this.querySelector('span').textContent = icAcik ? 'Kapat' : 'İçini aç';
+      document.getElementById('rozetYazi').textContent = icAcik ? 'İçi açık' : 'Canlı 3B';
+    });
   }
 
   function urunAc(p) {
@@ -2319,9 +2480,40 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
     grup.scale.setScalar(olcek);
     grup.position.y = -o.boy * olcek / 2;
     pKok.add(grup);
+    pUrun = grup;
+    pBoyOlcekli = o.boy;
+    icAcik = false; acikT = 0;
+    acilmaUygula();
+    var ac = document.getElementById('acDugme');
+    ac.setAttribute('aria-pressed', 'false');
+    ac.querySelector('span').textContent = 'İçini aç';
+    document.getElementById('rozetYazi').textContent = 'Canlı 3B';
 
     pSapma = 0.6; pEgim = 0.16;
     panelBoyutla();
+  }
+
+  // Kapağı kaldır, kabuğu şeffaflaştır: ürünün içi ortaya çıksın
+  function acilmaUygula() {
+    if (!pUrun) return;
+    var t = acikT * acikT * (3 - 2 * acikT);
+    pUrun.children.forEach(function (m) {
+      var rol = m.userData.rol;
+      if (rol === 'kapak') {
+        m.position.y = t * pBoyOlcekli * 0.46;
+        m.position.x = t * pBoyOlcekli * 0.34;
+        m.rotation.z = -t * 0.7;
+      } else if (rol === 'kabuk' || rol === 'etiket') {
+        var temel = m.userData.temelSaydam;
+        var hedef = rol === 'etiket' ? 0.16 : 0.26;
+        var o = temel + (Math.min(temel, hedef) - temel) * t;
+        m.material.opacity = o;
+        m.material.transparent = o < 0.999;
+        m.material.depthWrite = o > 0.72;
+        // Açıkken kabuk cam bir kap gibi okunsun: arka yüzler de görünsün
+        m.material.side = t > 0.02 ? T.DoubleSide : m.userData.temelYuz;
+      }
+    });
   }
 
   function panelKapat() {
@@ -2599,6 +2791,11 @@ const t="169",e={LEFT:0,MIDDLE:1,RIGHT:2,ROTATE:0,DOLLY:1,PAN:2},n={ROTATE:0,PAN
     ciz.render(sahne, kamera);
 
     if (panelAcikMi) {
+      var hedefAcik = icAcik ? 1 : 0;
+      if (Math.abs(acikT - hedefAcik) > 0.0015) {
+        acikT += (hedefAcik - acikT) * Math.min(1, dt * 5.5);
+        acilmaUygula();
+      }
       if (pOtoDon) pSapma += dt * 0.55;
       pKok.rotation.y = pSapma;
       pKok.rotation.x = pEgim * 0.35;

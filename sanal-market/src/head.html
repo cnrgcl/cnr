@@ -332,6 +332,26 @@ kbd{
   position:absolute; right:10px; bottom:10px;
   display:flex; gap:6px;
 }
+
+.ic-dugme{
+  position:absolute; left:10px; bottom:10px;
+  display:flex; align-items:center; gap:7px;
+  padding:6px 12px 6px 9px;
+  border-radius:8px;
+  background:var(--cam-kati);
+  border:1px solid var(--cizgi);
+  color:var(--murekkep-soft);
+  font-size:var(--olcek-1); font-weight:600; letter-spacing:.02em;
+  transition:color .16s ease, border-color .16s ease, background-color .16s ease;
+}
+.ic-dugme:hover{ color:var(--murekkep); border-color:var(--cizgi-kuvvetli); }
+.ic-dugme[aria-pressed="true"]{
+  color:var(--turkuaz); border-color:var(--turkuaz); background-color:var(--turkuaz-yumusak);
+}
+.ic-dugme svg{
+  width:15px; height:15px; stroke:currentColor; fill:none;
+  stroke-width:1.7; stroke-linejoin:round; stroke-linecap:round;
+}
 .arac{
   width:32px; height:32px; border-radius:8px;
   background:var(--cam-kati); border:1px solid var(--cizgi);
@@ -614,9 +634,13 @@ kbd{
     <div class="panel-govde">
       <div class="gorsel-alan">
         <canvas id="urunTuval"></canvas>
-        <span class="gorsel-rozet"><span class="nabiz"></span>Canlı 3B</span>
+        <span class="gorsel-rozet"><span class="nabiz"></span><span id="rozetYazi">Canlı 3B</span></span>
         <button class="kapat" id="panelKapat" aria-label="Paneli kapat">
           <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+        </button>
+        <button class="ic-dugme" id="acDugme" aria-pressed="false">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.6 11.9h14.8v6.6a1.5 1.5 0 0 1-1.5 1.5H6.1a1.5 1.5 0 0 1-1.5-1.5z"></path><path d="M3.1 8.2 19.4 3.9l1.1 3.6L4.2 11.8z"></path><path d="M12 12v7.9"></path></svg>
+          <span>İçini aç</span>
         </button>
         <div class="gorsel-araclar">
           <button class="arac" id="donduruc" aria-pressed="true" aria-label="Otomatik döndür" title="Otomatik döndür">
