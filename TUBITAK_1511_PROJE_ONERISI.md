@@ -101,20 +101,16 @@ Türkiye'de kültürel ve tarihi öneme sahip birçok destinasyon, yetersiz diji
 
 Gamification, oyun mekaniklerinin oyun dışı bağlamlarda kullanılması olarak tanımlanır (Deterding et al., 2011). Turizm sektöründe gamification uygulamaları son 10 yılda hızla artmıştır:
 
-- **Xu et al. (2017):** "Gamification in Tourism and Hospitality: A Systematic Literature Review"
-  - 2010-2016 arası 47 çalışma analizi
-  - Gamification'ın turist engagement'ını %35-60 arttırdığını gösterdi
-  - En etkili mekanikler: puanlar, rozetler, liderlik tabloları
+- **Xu, Buhalis & Weber (2017):** "Serious games and the gamification of tourism" (*Tourism Management*)
+  - Ciddi oyunlar ve oyunlaştırmanın turizmdeki kullanım alanlarını kavramsal olarak çerçeveler; destinasyon pazarlaması, turist deneyimi ve çalışan eğitimi başlıca uygulama alanlarıdır.
 
-- **Sigala (2015):** "The Application and Impact of Gamification in Tourism"
-  - Gamification'ın destinasyon pazarlamasında 3 temel etkisi:
-    1. Motivasyon artışı (intrinsic motivation)
-    2. Sosyal etkileşim
-    3. Sadakat oluşturma
+- **Sigala (2015):** "The application and impact of gamification funware on trip planning and experiences: the case of TripAdvisor's funware"
+  - TripAdvisor'daki puan/rozet mekaniklerinin gezi planlama ve deneyim üzerindeki etkisini inceleyen vaka çalışmasıdır.
 
-- **Negrusa et al. (2015):** "Gamification in Tourism and Hospitality"
-  - Turizm gamification uygulamalarının %78'i mobil platform kullanıyor
-  - GPS-based mekaniklerin engagement'ı 2.3x arttırdığı bulundu
+- **Negrusa et al. (2015):** "Exploring Gamification Techniques and Applications for Sustainable Tourism"
+  - Oyunlaştırma tekniklerinin sürdürülebilir turizm hedefleri için nasıl kullanılabileceğini derler.
+
+- **Sistematik derlemeler:** Turizm ve konaklama alanında oyunlaştırma üzerine 2011-2019 arasındaki 36 çalışmayı inceleyen ilk sistematik derleme, beş tema tanımlar: eğlenerek öğrenme (edutainment), sürdürülebilir davranış, etkileşim faktörleri, hizmet sağlayıcı içeriği ve kullanıcı yorumları (Pasca et al., 2021). Scopus'tan 64 makaleyi kapsayan daha yeni bir derleme ise alanın hızla büyüdüğünü, ancak **deneysel araştırmaların eksik kaldığını** vurgulamakta ve gelecekte deneysel tasarımlar ile makine öğrenmesi yöntemlerinin kullanılmasını önermektedir (Pradhan et al., 2023).
 
 **2.1.2 Self-Determination Theory (SDT)**
 
@@ -122,6 +118,50 @@ Ryan & Deci (2000) tarafından geliştirilen SDT, gamification'ın turizmdeki ba
 - **Autonomy (Özerklik):** Kullanıcı kendi keşif rotasını seçer
 - **Competence (Yeterlilik):** Rozetler ve seviyeler başarı hissi verir
 - **Relatedness (İlişkili olma):** Sosyal feed ve liderlik tabloları
+
+**2.1.3 Ampirik Kanıtlar: Oyunlaştırma Turist Davranışını Değiştiriyor mu?**
+
+*(a) Konum tabanlı teşvikler turist hareketini yönlendirebilir.* Davranışın doğrudan ölçüldüğü saha deneyleri, SEFERİ'nin temel varsayımını desteklemektedir:
+- Bir hayvanat bahçesinde gerçek ziyaretçilerle (n = 2.618 ve n = 970) yürütülen iki saha deneyinde, konum tabanlı mobil mesajlarla sunulan ödüllerin ziyaretçileri hedef noktalara yönlendirdiği iBeacon verileriyle nedensel olarak gösterilmiştir (Högberg et al., 2020).
+- Palermo'da GPS ile izlenen kruvaziyer yolcularında, teşviklerin turistlerin mekânsal-zamansal hareketini açık ve anlamlı biçimde değiştirdiği bulunmuştur (Shoval et al., 2020).
+- Hollanda'da randomize 2×2 bir deneyde, az ziyaret edilen noktaları öne çıkaran mobil bilgilendirme alan turistler bu noktaların çevresinde anlamlı olarak daha fazla hareket etmiş ve tatil memnuniyetleri olumsuz etkilenmemiştir (Mitas et al., 2023). Bu bulgu, SEFERİ'nin ziyaretçileri Selçuklu Mezarlığı dışındaki B/C sınıfı noktalara dağıtma hedefi için doğrudan emsaldir.
+- Kyoto'da 33 turistle yapılan bir saha çalışmasında, puan tabanlı check-in görevleri turist davranışını değiştirmiştir (Kawanaka et al., 2020).
+
+*(b) Kültürel miras ve az bilinen destinasyonlarda deneyim ve bağlılık.*
+- Güney Kore'de azalan nüfuslu bölgelerde artırılmış gerçeklik tabanlı oyunlaştırma deneyiminin yere bağlılığı ve destinasyon bilgisini artırdığı, bunların da tekrar ziyaret niyetini olumlu etkilediği bulunmuştur (Jo & Shin, 2025). Bu çalışma, Ahlat gibi turizm potansiyeli yeterince değerlendirilmemiş destinasyonlar için en yakın emsaldir.
+- Türkiye'den bir emsal olarak, Antalya Kaleiçi'nde kontrol gruplu yarı-deneysel desenle yürütülen çalışmada artırılmış gerçeklik kullanımının turist deneyimini, yere bağlılığı ve memnuniyeti anlamlı biçimde iyileştirdiği gösterilmiştir (Kılıçarslan & Albayrak, 2026).
+- Tayland'da bir müzede oyunlaştırılmış karma gerçeklik sürümü kullanan ziyaretçilerin toplam etkileşim süresi, oyunlaştırılmamış sürüme göre yaklaşık %30 daha yüksek bulunmuştur (Tongpaeng et al., 2024). Chiang Mai tarihi kentinde 25 kültürel noktayı kapsayan "oyna-kazan" uygulaması da katılım ve memnuniyeti artırmıştır (Thinnukool et al., 2025).
+- Porto'da 271 turistle yapılan çalışmaya göre derin duygular destinasyonda daha uzun zaman gerektirir ve kalış süresi duyguların destinasyon imajına etkisini güçlendirir (Ferreira et al., 2025). Bu bulgu, Ahlat'taki kısa (2-3 saatlik) ziyaret süresinin destinasyon imajını ve tavsiye davranışını neden sınırladığına teorik dayanak sağlar.
+- Destinasyonla ilişkili mobil oyunlarda ziyaret niyetini en güçlü biçimde *oynama motivasyonu* ve *oynama kolaylığı* belirlemektedir (Ting et al., 2025).
+
+*(c) Yerel işletmelere etki.* Pokémon GO ile ilişkilendirilen restoranların çevrimiçi müşteri etkileşiminin ve algısının arttığı bulunmuştur (Pamuru et al., 2021). Ancak fark-içinde-fark analizleri bu etkinin kısa vadede güçlü olduğunu, oyunun popülerliği azaldıkça söndüğünü göstermektedir (Zhang & Zhang, 2018). Bu çalışmalar çevrimiçi etkileşimi ölçmekte, **doğrudan harcama verisi sunmamaktadır**.
+
+*(d) Oyunlaştırmanın sınırları ve riskleri.* Literatür, tasarımın yanlış kurgulanması durumunda olumsuz etkiler de raporlamaktadır:
+- Kültürel miras alanlarında yapılan bir saha deneyinde (n = 331) oyunlaştırılmış uygulama bilgi kazanımını güçlü biçimde artırmış, ancak keyif ve akış deneyimini azaltmış ve sadakat üzerinde **olumsuz dolaylı etki** yaratmıştır (Lee, 2019).
+- Kyoto çalışmasında katılımcıların check-in görevlerini gezinin kendisinin önüne koyduğu gözlenmiştir (Kawanaka et al., 2020).
+- 1.203 katılımcılı faktöriyel bir saha deneyinde, içsel motivasyonu tetikleyen keşif mekaniğinin (gizli noktalardan damga toplama) turistin psikolojik çıktıları üzerinde dışsal ödüllerden (hediye) daha belirleyici olduğu bulunmuştur (Kim et al., 2021).
+
+*SEFERİ tasarımına yansımaları:* (i) Puanlar gezi deneyimini gölgelememeli, keşfi desteklemelidir. Bu nedenle rozet ve görevler içsel keşif motivasyonu üzerine kurulacak, kuponlar tamamlayıcı dışsal ödül olarak kullanılacaktır. (ii) Kullanım kolaylığı eğlenceden önce gelmelidir. (iii) Etkinin zamanla sönmesine karşı sezonluk görevler ve içerik yenilemesi planlanmalıdır.
+
+**2.1.4 Kullanıcı Tarafından Üretilen Fotoğraflar ve Destinasyon İmajı**
+
+- Turizm ve konaklama alanında kullanıcı tarafından üretilen fotoğraflara ilişkin araştırmalar hızla büyüyen bir alan oluşturmuş ve sistematik olarak derlenmiştir (Li et al., 2023).
+- Turist fotoğrafları, destinasyon yönetim örgütlerinin (DMO) içeriğinden daha inandırıcı ve yaygın kabul edilmektedir. Yapay zekâ ile 193 ülkeden 283.912 Flickr fotoğrafı analiz edilerek destinasyon imajı ölçeklenebilir biçimde haritalanmıştır (Taecharungroj & Mathayomchan, 2020). Peru üzerine yapılan klasik karşılaştırma ise DMO ve turist fotoğraflarının yansıttığı imajlar arasında sistematik farklar olduğunu göstermiştir (Stepchenkova & Zhan, 2013).
+- Saha ve deney çalışmaları, elektronik ağızdan ağıza iletişimin turistlerin ziyaret kararlarını büyük ölçüde görsel ipuçları ve kullanıcı fotoğrafları üzerinden etkilediğini göstermektedir (Filieri et al., 2021).
+- Öte yandan dört kontrollü deneyde (N = 1.282) profesyonel estetikteki fotoğrafların amatör fotoğraflara göre daha yüksek görsel çekicilik ve rezervasyon niyeti yarattığı bulunmuştur (Marder et al., 2019). En etkili modelin ikisini birleştiren **ortak yaratım** (co-creation) olduğu, yani DMO'nun turist fotoğraflarını stratejik olarak seçip yaydığı bir süreç olduğu gösterilmiştir (Zhao & Agyeiwaah, 2024).
+- Coğrafi etiketli fotoğraflar, resmî istatistiklerde yer almayan ikinci derece cazibe noktalarındaki ziyaret örüntülerini ortaya çıkarmak için kullanılabilmektedir (Leung et al., 2017).
+- Küçük ve kırsal destinasyonlardaki yerel işletmeler sosyal medyanın erişim avantajını kabul etmekle birlikte zaman, beceri ve etkiyi ölçme konusunda engellerle karşılaşmaktadır (Vlasich et al., 2022). Bir kruvaziyer limanı örneğinde çevrimiçi puanlamada üst sırada yer alan işletmelerin anlamlı ölçüde daha fazla turist ziyareti aldığı bulunmuştur (Gabe, 2020).
+
+*SEFERİ'ye yansıması:* Uygulama içinde toplanacak coğrafi etiketli ve kategorilere ayrılmış fotoğraflar, Ahlat'ın *algılanan imajını* ölçmeye yarayan bir araştırma veri seti oluşturacaktır. Seçilen fotoğraflar DMO ve belediye kanallarında paylaşılarak ortak yaratım modeli uygulanacaktır. İşletme etiketleme ve kupon kullanım verisi ise yerel işletmelerin yaşadığı "etkiyi ölçememe" sorununa doğrudan çözüm sunar.
+
+**2.1.5 Literatürdeki Boşluk ve SEFERİ'nin Konumu**
+
+Mevcut literatür üç önemli boşluk içermektedir:
+1. **Niyet ile davranış arasındaki boşluk:** Çalışmaların büyük kısmı ziyaret veya tekrar ziyaret *niyetini* anket ile ölçmektedir. Kalış süresi, mekânsal dağılım ve yerel harcama gibi *gerçekleşen davranışı* ölçen saha çalışmaları azdır (Pradhan et al., 2023).
+2. **Ekonomik etki kanıtının zayıflığı:** Yerel işletmelere etkiyi inceleyen çalışmalar çevrimiçi yorum ve itibar göstergeleriyle sınırlıdır. Kupon kullanımı veya satış gibi doğrudan ekonomik veriler neredeyse hiç kullanılmamıştır (Pamuru et al., 2021; Zhang & Zhang, 2018).
+3. **Bağlam boşluğu:** Kanıtların çoğu büyük kentler, müzeler veya tema parklarından gelmektedir. Kırsal ve az bilinen kültürel miras destinasyonlarında konum tabanlı oyunlaştırmanın bütüncül (davranış + deneyim + ekonomi) değerlendirmesi sınırlıdır. Türkiye'de bu alandaki çalışmalar ise artırılmış gerçeklik deneyimiyle sınırlı kalmıştır (Kılıçarslan & Albayrak, 2026).
+
+SEFERİ, uygulama içi GPS, check-in, fotoğraf ve kupon kullanım kayıtlarını kontrol grubu karşılaştırmasıyla birleştirerek bu üç boşluğu aynı anda ele alan, Türkiye'deki ilk hiper-yerel oyunlaştırma saha çalışmalarından biri olmayı hedeflemektedir.
 
 ### 2.2 Mevcut Uygulamalar ve Eksikleri
 
@@ -145,7 +185,8 @@ Türkiye'de destinasyon gamification alanında **ciddi bir boşluk** var:
 **Akademik Çalışmalar:**
 - **Özel & Kozak (2012):** Türkiye'de turizm teknolojileri kullanımı düşük
 - **Çeltek (2010):** Destinasyon pazarlamasında dijital araçların önemi
-- **Ancak:** Hyper-local gamification üzerine Türkiye'de **hiçbir AR-GE projesi yok**
+- **Kılıçarslan & Albayrak (2026):** Antalya Kaleiçi'nde artırılmış gerçekliğin miras turizmi deneyimine etkisini ölçen yarı-deneysel çalışma. Oyunlaştırma ve yerel ekonomi entegrasyonu kapsam dışında.
+- **Ancak:** Yapılan taramada, Türkiye'de hiper-yerel oyunlaştırmayı davranış ve ekonomik veriyle değerlendiren bir AR-GE çalışmasına **rastlanmamıştır**
 
 ### 2.3 Özgünlük ve Yenilikçi Yönler
 
@@ -1166,6 +1207,60 @@ M1=Tasarım  M2=MVP  M3=Beta  M4=AI  M5=Pilot  M6=Prod  M7=Ticari
 17. Mankins, J. C. (1995). Technology readiness levels. *White Paper, April*, 6(1995), 1995.
 
 18. Héder, M. (2017). From NASA to EU: the evolution of the TRL scale in Public Sector Innovation. *The Innovation Journal*, 22(2), 1-23.
+
+### 11.7 Oyunlaştırma ve Konum Tabanlı Uygulamalar: Ampirik Çalışmalar
+
+19. Ferreira, D. F., Costa, R. A., Chim-Miki, A. F., & Kozak, M. (2025). What emotions trigger the perceived destination image and word-of-mouth recommendation in World Heritage Sites? *International Journal of Tourism Research*, 27(3). https://doi.org/10.1002/jtr.70065
+
+20. Högberg, J., Wästlund, E., Aas, T., Hjemdahl, K. M., & Nordgård, D. (2020). Herding the hordes: Using location-based services and mobile messaging to affect visitor behavior. *Journal of Hospitality & Tourism Research*, 870-878. https://doi.org/10.1177/1096348020912449
+
+21. Jo, Y., & Shin, H. (2025). Can gamification and augmented reality (AR) revitalize declining destinations? Investigating its impact on tourist attitudes and behavior. *Journal of Travel Research*, 943-970. https://doi.org/10.1177/00472875251332961
+
+22. Kawanaka, S., Matsuda, Y., Suwa, H., Fujimoto, M., Arakawa, Y., & Yasumoto, K. (2020). Gamified participatory sensing in tourism: An experimental study of the effects on tourist behavior and satisfaction. *Smart Cities*, 3(3). https://doi.org/10.3390/smartcities3030037
+
+23. Kılıçarslan, Ö., & Albayrak, T. (2026). An experimental study on heritage tourism experiences through augmented reality: A case of Kaleiçi-Antalya. *International Journal of Tourism Research*, 28(3). https://doi.org/10.1002/jtr.70360
+
+24. Kim, Y., Lee, Y., Suh, Y., & Kim, D.-Y. (2021). The effects of gamification on tourist psychological outcomes: An application of letterboxing and external rewards to maze park. *Journal of Travel & Tourism Marketing*, 341-355. https://doi.org/10.1080/10548408.2021.1921095
+
+25. Lee, B. (2019). The effect of gamification on psychological and behavioral outcomes: Implications for cruise tourism destinations. *Sustainability*, 11(11), 3002. https://doi.org/10.3390/su11113002
+
+26. Mitas, O., Badal, R., Verhoeven, M., Verstraten, K., de Graaf, L., Mitásová, H., et al., & Klijs, J. (2023). Tell me where to go: An experiment in spreading visitor flows in The Netherlands. *International Journal of Environmental Research and Public Health*, 20(8), 5441. https://doi.org/10.3390/ijerph20085441
+
+27. Pamuru, V., Khern-am-nuai, W., & Kannan, K. N. (2021). The impact of an augmented-reality game on local businesses: A study of Pokémon Go on restaurants. *Information Systems Research*, 950-966. https://doi.org/10.1287/isre.2021.1004
+
+28. Pasca, M. G., Renzi, M. F., Di Pietro, L., & Guglielmetti Mugion, R. (2021). Gamification in tourism and hospitality research in the era of digital platforms: A systematic literature review. *Journal of Service Theory and Practice*. https://doi.org/10.1108/JSTP-05-2020-0094
+
+29. Pradhan, D., Malik, G., & Vishwakarma, P. (2023). Gamification in tourism research: A systematic review, current insights, and future research avenues. *Journal of Vacation Marketing*, 130-156. https://doi.org/10.1177/13567667231188879
+
+30. Shoval, N., Kahani, A., De Cantis, S., & Ferrante, M. (2020). Impact of incentives on tourist activity in space-time. *Annals of Tourism Research*, 80, 102846. https://doi.org/10.1016/j.annals.2019.102846
+
+31. Thinnukool, O., Phrommas, R., Kongdee, N., Jintapitak, M., Pitupumnak, K., Jarumaneerat, T., & Khuwuthyakorn, P. (2025). Sustainable tourism promotion through mobile gamification and reward systems for Chiang Mai Old Town, Thailand. *Frontiers in Computer Science*. https://doi.org/10.3389/fcomp.2025.1710089
+
+32. Ting, H., Cheah, J.-H., Tan, K., Tham, A., & Leong, Q. L. (2025). Mobile gamification's impact on tourism visit intention. *International Journal of Tourism Research*, 27(1). https://doi.org/10.1002/jtr.70002
+
+33. Tongpaeng, Y., Nobnop, R., Wongwan, N., Homla, P., Intawong, K., & Puritat, K. (2024). Comparison of gamified and non-gamified mixed reality in enhancing museum visitor engagement, motivation, and learning outcome. *Journal of Heritage Tourism*, 919-948. https://doi.org/10.1080/1743873X.2024.2351852
+
+34. Zhang, Y., & Zhang, J. (2018). Could nearby Pokéstops improve restaurants' online reputation? *Proceedings of the 51st Hawaii International Conference on System Sciences*, 1-10. https://doi.org/10.24251/HICSS.2018.623
+
+### 11.8 Kullanıcı Tarafından Üretilen Fotoğraflar ve Destinasyon İmajı
+
+35. Filieri, R., Lin, Z., Pino, G., Alguezaui, S., & Inversini, A. (2021). The role of visual cues in eWOM on consumers' behavioral intention and decisions. *Journal of Business Research*, 135, 663-675. https://doi.org/10.1016/j.jbusres.2021.06.055
+
+36. Gabe, T. (2020). Yelp.com ratings and the businesses visited by cruise passengers in Bar Harbor, Maine. *Applied Economics Letters*, 119-123. https://doi.org/10.1080/13504851.2020.1736496
+
+37. Leung, R., Vu, H. Q., & Rong, J. (2017). Understanding tourists' photo sharing and visit pattern at non-first tier attractions via geotagged photos. *Information Technology & Tourism*, 17, 55-74. https://doi.org/10.1007/s40558-017-0078-3
+
+38. Li, H., Zhang, L., & Hsu, C. H. C. (2023). Research on user-generated photos in tourism and hospitality: A systematic review and way forward. *Tourism Management*, 96, 104714. https://doi.org/10.1016/j.tourman.2022.104714
+
+39. Marder, B., Erz, A., Angell, R., & Plangger, K. (2019). The role of photograph aesthetics on online review sites: Effects of management- versus traveler-generated photos on tourists' decision making. *Journal of Travel Research*, 31-46. https://doi.org/10.1177/0047287519895125
+
+40. Stepchenkova, S., & Zhan, F. (2013). Visual destination images of Peru: Comparative content analysis of DMO and user-generated photography. *Tourism Management*, 36, 590-601. https://doi.org/10.1016/j.tourman.2012.08.006
+
+41. Taecharungroj, V., & Mathayomchan, B. (2020). Traveller-generated destination image: Analysing Flickr photos of 193 countries worldwide. *International Journal of Tourism Research*, 23(3), 417-441. https://doi.org/10.1002/jtr.2415
+
+42. Vlasich, E., Lee, D., & Archer, C. (2022). Tourism as a transformative economic agent in regional Australia: A case study of operators' use of social media. *Worldwide Hospitality and Tourism Themes*. https://doi.org/10.1108/WHATT-08-2022-0102
+
+43. Zhao, Y., & Agyeiwaah, E. (2024). How do tourism stakeholders co-create destination images with photos on social media? *Journal of Travel Research*, 1519-1536. https://doi.org/10.1177/00472875241253006
 
 ---
 
