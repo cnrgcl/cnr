@@ -24,7 +24,7 @@
 - **Radius:** 100m
 - **Açıklama:** 1200'lü yıllarda Ahlatşahlar döneminde yapılmış. Selçuklu mimarisi.
 - **En İyi Zaman:** Sabah (08:00-10:00)
-- **Hashtag:** #ahlatului camii #selcuklu
+- **Hashtag:** #ahlatulucamii #selcuklu
 
 ### 3. **Çifte Kümbet**
 - **Koordinat:** 38.7569° N, 42.4892° E
@@ -153,7 +153,7 @@
 - **Tekrar:** 5 puan
 - **Radius:** 100m
 - **Açıklama:** Tarihi cami, aktif ibadet yeri.
-- **Hashtag:** #tahtisuleymanı
+- **Hashtag:** #tahtisuleyman
 
 ### 16. **Ahlat Sahil Parkı**
 - **Koordinat:** 38.7432° N, 42.4972° E

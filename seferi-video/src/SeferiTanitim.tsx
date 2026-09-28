@@ -13,10 +13,10 @@ const STONE = "#c9a66b";
 const FONT = "system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif";
 
 const POIS = [
-  { emoji: "🪦", name: "Selçuklu Mezarlığı", points: 50 },
-  { emoji: "🕌", name: "Çifte Kümbet", points: 40 },
-  { emoji: "🌋", name: "Nemrut Krater Gölü", points: 60 },
-  { emoji: "🌊", name: "Van Gölü Sahili", points: 30 },
+  { emoji: "🪦", name: "Selçuklu Mezarlığı", points: 20 },
+  { emoji: "🕌", name: "Çifte Kümbet", points: 20 },
+  { emoji: "🌋", name: "Nemrut Krater Gölü", points: 20 },
+  { emoji: "🌊", name: "Van Gölü Sahili", points: 20 },
 ];
 
 const Background: React.FC = () => {

@@ -1,0 +1,393 @@
+[
+  {
+    "no": 1,
+    "tier": "A",
+    "name": "Selçuklu Mezarlığı (Ahlat Taşları)",
+    "category": "Tarihi",
+    "lat": 38.7536,
+    "lon": 42.4847,
+    "firstPoints": 20,
+    "repeatPoints": 10,
+    "radius": "200m",
+    "description": "Dünyanın en büyük İslam mezarlığı. 8000+ Selçuklu mezar taşı.",
+    "bestTime": "Gün batımı (17:00-19:00)",
+    "note": null,
+    "hashtags": [
+      "#ahlattaslari",
+      "#selcuklumezarligi"
+    ]
+  },
+  {
+    "no": 2,
+    "tier": "A",
+    "name": "Ulu Camii (Ahlat Ulu Camii)",
+    "category": "Tarihi",
+    "lat": 38.7508,
+    "lon": 42.48,
+    "firstPoints": 20,
+    "repeatPoints": 10,
+    "radius": "100m",
+    "description": "1200'lü yıllarda Ahlatşahlar döneminde yapılmış. Selçuklu mimarisi.",
+    "bestTime": "Sabah (08:00-10:00)",
+    "note": null,
+    "hashtags": [
+      "#ahlatulucamii",
+      "#selcuklu"
+    ]
+  },
+  {
+    "no": 3,
+    "tier": "A",
+    "name": "Çifte Kümbet",
+    "category": "Tarihi",
+    "lat": 38.7569,
+    "lon": 42.4892,
+    "firstPoints": 20,
+    "repeatPoints": 10,
+    "radius": "100m",
+    "description": "İki kubbeli tarihi türbe yapısı. Benzersiz mimari.",
+    "bestTime": "Öğlen (12:00-14:00)",
+    "note": null,
+    "hashtags": [
+      "#ciftekumbet",
+      "#ahlatturizm"
+    ]
+  },
+  {
+    "no": 4,
+    "tier": "A",
+    "name": "Nemrut Krater Gölü",
+    "category": "Doğa",
+    "lat": 38.6506,
+    "lon": 42.2311,
+    "firstPoints": 20,
+    "repeatPoints": 10,
+    "radius": "500m",
+    "description": "3050m yükseklikte volkanik krater gölü. Türkiye'nin en büyük krater gölü.",
+    "bestTime": "Sabah erken (06:00-08:00) veya akşam",
+    "note": "Ahlat merkezden 35km, araç gerekli",
+    "hashtags": [
+      "#nemrutkrater",
+      "#kratergolu"
+    ]
+  },
+  {
+    "no": 5,
+    "tier": "A",
+    "name": "Van Gölü Sahili (Ahlat)",
+    "category": "Doğa",
+    "lat": 38.742,
+    "lon": 42.495,
+    "firstPoints": 20,
+    "repeatPoints": 10,
+    "radius": "300m",
+    "description": "Van Gölü kenarı, muhteşem manzara ve gün batımı.",
+    "bestTime": "Gün batımı (18:30-19:30)",
+    "note": null,
+    "hashtags": [
+      "#vangolu",
+      "#gunbatimi"
+    ]
+  },
+  {
+    "no": 6,
+    "tier": "A",
+    "name": "Kadın Hamamı (Bayındır Hamamı)",
+    "category": "Tarihi",
+    "lat": 38.7494,
+    "lon": 42.4789,
+    "firstPoints": 20,
+    "repeatPoints": 10,
+    "radius": "80m",
+    "description": "13. yüzyıldan kalma hamam kalıntıları.",
+    "bestTime": "Sabah (09:00-11:00)",
+    "note": null,
+    "hashtags": [
+      "#kadinhamami",
+      "#tarihi"
+    ]
+  },
+  {
+    "no": 7,
+    "tier": "B",
+    "name": "Harabeşehir (Eski Ahlat)",
+    "category": "Tarihi",
+    "lat": 38.7653,
+    "lon": 42.4731,
+    "firstPoints": 10,
+    "repeatPoints": 5,
+    "radius": "400m",
+    "description": "Eski Ahlat şehrinin kalıntıları. Geniş arkeolojik alan.",
+    "bestTime": null,
+    "note": null,
+    "hashtags": [
+      "#harabesehir",
+      "#eskiahlat"
+    ]
+  },
+  {
+    "no": 8,
+    "tier": "B",
+    "name": "Ahlat Müzesi",
+    "category": "Kültür",
+    "lat": 38.7485,
+    "lon": 42.4812,
+    "firstPoints": 10,
+    "repeatPoints": 5,
+    "radius": "100m",
+    "description": "Urartular ve Selçuklular dönemine ait eserler.",
+    "bestTime": null,
+    "note": "Açık: 08:00-17:00 · Giriş ücretli",
+    "hashtags": [
+      "#ahlatmuzesi",
+      "#kultur"
+    ]
+  },
+  {
+    "no": 9,
+    "tier": "B",
+    "name": "Tarihi Ahlat Çarşısı",
+    "category": "Kültür",
+    "lat": 38.7501,
+    "lon": 42.4822,
+    "firstPoints": 10,
+    "repeatPoints": 5,
+    "radius": "150m",
+    "description": "Yerel ürünler, hediyelik eşya, el sanatları.",
+    "bestTime": "10:00-19:00",
+    "note": null,
+    "hashtags": [
+      "#ahlatcarsi",
+      "#yerel"
+    ]
+  },
+  {
+    "no": 10,
+    "tier": "B",
+    "name": "Balıklı Göl (İçmeler)",
+    "category": "Doğa",
+    "lat": 38.7389,
+    "lon": 42.4567,
+    "firstPoints": 10,
+    "repeatPoints": 5,
+    "radius": "200m",
+    "description": "Soğuk su kaynakları, piknik alanı.",
+    "bestTime": null,
+    "note": null,
+    "hashtags": [
+      "#balikligol",
+      "#icmeler"
+    ]
+  },
+  {
+    "no": 11,
+    "tier": "B",
+    "name": "Emir Bayındır Kümbeti",
+    "category": "Tarihi",
+    "lat": 38.7511,
+    "lon": 42.4793,
+    "firstPoints": 10,
+    "repeatPoints": 5,
+    "radius": "80m",
+    "description": "İlhanlılar döneminden türbe.",
+    "bestTime": null,
+    "note": null,
+    "hashtags": [
+      "#bayindirkumbet"
+    ]
+  },
+  {
+    "no": 12,
+    "tier": "B",
+    "name": "Usta Şagirt Kümbeti",
+    "category": "Tarihi",
+    "lat": 38.7544,
+    "lon": 42.4869,
+    "firstPoints": 10,
+    "repeatPoints": 5,
+    "radius": "80m",
+    "description": "Efsaneye göre usta ve çırağının yapım yarışı.",
+    "bestTime": null,
+    "note": null,
+    "hashtags": [
+      "#ustasagirt"
+    ]
+  },
+  {
+    "no": 13,
+    "tier": "B",
+    "name": "Kırklar Mezarlığı",
+    "category": "Tarihi",
+    "lat": 38.7549,
+    "lon": 42.4902,
+    "firstPoints": 10,
+    "repeatPoints": 5,
+    "radius": "150m",
+    "description": "Tarihi mezarlık alanı.",
+    "bestTime": null,
+    "note": null,
+    "hashtags": [
+      "#kirklarmezarligi"
+    ]
+  },
+  {
+    "no": 14,
+    "tier": "B",
+    "name": "Ahlat Kalesi (İç Kale)",
+    "category": "Tarihi",
+    "lat": 38.7522,
+    "lon": 42.4805,
+    "firstPoints": 10,
+    "repeatPoints": 5,
+    "radius": "200m",
+    "description": "Eski kale kalıntıları, panoramik şehir manzarası.",
+    "bestTime": null,
+    "note": null,
+    "hashtags": [
+      "#ahlatkalesi"
+    ]
+  },
+  {
+    "no": 15,
+    "tier": "B",
+    "name": "Taht-ı Süleyman Camii",
+    "category": "Tarihi",
+    "lat": 38.7517,
+    "lon": 42.481,
+    "firstPoints": 10,
+    "repeatPoints": 5,
+    "radius": "100m",
+    "description": "Tarihi cami, aktif ibadet yeri.",
+    "bestTime": null,
+    "note": null,
+    "hashtags": [
+      "#tahtisuleyman"
+    ]
+  },
+  {
+    "no": 16,
+    "tier": "B",
+    "name": "Ahlat Sahil Parkı",
+    "category": "Doğa",
+    "lat": 38.7432,
+    "lon": 42.4972,
+    "firstPoints": 10,
+    "repeatPoints": 5,
+    "radius": "200m",
+    "description": "Van Gölü kenarı dinlenme alanı, yürüyüş yolu.",
+    "bestTime": null,
+    "note": null,
+    "hashtags": [
+      "#sahilparki",
+      "#vangolu"
+    ]
+  },
+  {
+    "no": 17,
+    "tier": "C",
+    "name": "Akdamar Adası Manzara Noktası",
+    "category": "Doğa",
+    "lat": 38.7301,
+    "lon": 42.5123,
+    "firstPoints": 15,
+    "repeatPoints": 8,
+    "radius": "100m",
+    "description": "Van Gölü'nden Akdamar Adası manzarası.",
+    "bestTime": null,
+    "note": null,
+    "hashtags": [
+      "#akdamar",
+      "#gizliyer"
+    ]
+  },
+  {
+    "no": 18,
+    "tier": "C",
+    "name": "Yerel Köy Atölyesi (El Sanatları)",
+    "category": "Kültür",
+    "lat": 38.7467,
+    "lon": 42.4711,
+    "firstPoints": 15,
+    "repeatPoints": 8,
+    "radius": "100m",
+    "description": "Geleneksel el sanatları atölyesi.",
+    "bestTime": null,
+    "note": "Yerel halk ile etkileşim",
+    "hashtags": [
+      "#elsanati",
+      "#yerelkultur"
+    ]
+  },
+  {
+    "no": 19,
+    "tier": "C",
+    "name": "Rahva Köyü",
+    "category": "Kültür",
+    "lat": 38.7178,
+    "lon": 42.4389,
+    "firstPoints": 15,
+    "repeatPoints": 8,
+    "radius": "300m",
+    "description": "Geleneksel köy yaşamı, otantik deneyim.",
+    "bestTime": null,
+    "note": null,
+    "hashtags": [
+      "#rahvakoy",
+      "#koyturizm"
+    ]
+  },
+  {
+    "no": 20,
+    "tier": "C",
+    "name": "Gizli Manzara Noktası (Fotoğraf Terası)",
+    "category": "Doğa",
+    "lat": 38.7589,
+    "lon": 42.4723,
+    "firstPoints": 15,
+    "repeatPoints": 8,
+    "radius": "50m",
+    "description": "Mezarlık ve Van Gölü'nün panoramik görünümü.",
+    "bestTime": "Gün batımı",
+    "note": null,
+    "hashtags": [
+      "#panorama",
+      "#gizlimanzara"
+    ]
+  },
+  {
+    "no": 21,
+    "tier": "C",
+    "name": "İncili Hamam",
+    "category": "Tarihi",
+    "lat": 38.7502,
+    "lon": 42.4791,
+    "firstPoints": 15,
+    "repeatPoints": 8,
+    "radius": "80m",
+    "description": "Az bilinen tarihi hamam kalıntısı.",
+    "bestTime": null,
+    "note": null,
+    "hashtags": [
+      "#incilihamam",
+      "#gizli"
+    ]
+  },
+  {
+    "no": 22,
+    "tier": "C",
+    "name": "Yerel Çiftlik (Organik Ürünler)",
+    "category": "Kültür",
+    "lat": 38.7223,
+    "lon": 42.4601,
+    "firstPoints": 15,
+    "repeatPoints": 8,
+    "radius": "200m",
+    "description": "Geleneksel tarım, organik ürün deneyimi.",
+    "bestTime": null,
+    "note": "Mevsime göre aktiviteler",
+    "hashtags": [
+      "#organik",
+      "#ciftlik"
+    ]
+  }
+]
