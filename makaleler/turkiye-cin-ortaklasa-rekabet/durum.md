@@ -46,3 +46,4 @@ Durum sembolleri: ✓ tamam · → açık · İŞLEMDE · kilitli · ATLANDI
 [2026-10-07 02:10] Editör: kullanıcı tek yazar olduğunu bildirdi; hedef alt klasör 03_KAYNAK-KESIF. Yandex.Disk'e bulut oturumundan erişilemiyor → proje repo içinde kuruldu. `eski-nesil-ve-ortak` talebi klasör kuralı (dokunma) gereği uygulanmadı.
 [2026-10-07 02:12] proje-baslat: tamam, editöre devrediliyor
 [2026-10-07 02:15] Editör: Faz 1 kapı kriterleri dosyada doğrulandı (blueprint.md v1, durum.md, ledger.md, hedef dergi). Faz 1 ✓ → Faz 2 açıldı. Önceki kriterler: 4/4 ✓.
+[2026-10-07 02:25] Caner-editör: konu mantıklı mı → KARAR: DEVAM, korpus yeniden tasarlanacak (ikili resmî belgeler = iş birliği; iki ülkenin tek taraflı İpek Yolu tanıtım anlatıları karşılaştırmalı = rekabet). Sürpriz: resmî ikili belgeler rekabeti yapısal olarak gizler; rekabet ortak metinde değil, iki ülkenin ayrı ayrı çizdiği İpek Yolu haritasında görünür.
