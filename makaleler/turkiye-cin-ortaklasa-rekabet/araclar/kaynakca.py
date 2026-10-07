@@ -36,7 +36,6 @@ KAYNAKCA = [
 "Sciorati, G. (2023). 'Constructing' heritage diplomacy in Central Asia: China's Sinocentric historicisation of transnational World Heritage Sites. *International Journal of Cultural Policy, 29*(1), 94–112. https://doi.org/10.1080/10286632.2022.2141718",
 "Sirisuthikul, V. (2018). Conceptualizing ASEAN tourism brand: Towards a coopetition framework. *GATR Global Journal of Business Social Sciences Review, 6*(4), 114–121. https://doi.org/10.35609/gjbssr.2018.6.4(2)",
 "Tse, T. S. M. (2013). Chinese outbound tourism as a form of diplomacy. *Tourism Planning & Development, 10*(2), 149–158. https://doi.org/10.1080/21568316.2013.783738",
-"Tuna, M., Özyurt, B., Dülger, A. S., Türkmen, F., & Uyanık, N. (2022). Türk dünyasında turizmin ülkeler arası iş birliği temelli geliştirilmesine yönelik nitel bir araştırma. *Bilig*, 137–176. https://doi.org/10.12995/bilig.10007",
 "Türkiye İstatistik Kurumu. (2026). *Giriş yapan yabancı ve vatandaşlar* [Veri seti]. Türkiye İstatistik Kurumu.",
 "Türkiye Turizm Tanıtım ve Geliştirme Ajansı. (2026). *Visa-free entry policy for Chinese citizens traveling to Türkiye (effective from 2 January 2026)*. GoTürkiye. https://goturkiye.com/visa-free-entry-policy-for-chinese-citizens-traveling-to-turkiye",
 "Wang, J., & Sun, D. (2024). China and Türkiye's strategic cooperation in the 21st century: A 'complex role' prism. *Journal of Balkan and Near Eastern Studies, 26*(5), 732–749. https://doi.org/10.1080/19448953.2024.2308974",

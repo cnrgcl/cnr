@@ -46,4 +46,4 @@
 
 ### 5.4. Sonuç
 - Katkı cümlesi (Giriş'tekiyle aynı iddia, bulguyla doldurulmuş).
-- Gelecek araştırma: değer yakalama verisi; Çince birincil yazın; Orta Asya üçüncü taraf perspektifi; boylamsal izleme (2026 vize muafiyeti sonrası).
+- Gelecek araştırma: değer yakalama verisi; Çince birincil literatür; Orta Asya üçüncü taraf perspektifi; boylamsal izleme (2026 vize muafiyeti sonrası).

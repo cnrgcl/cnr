@@ -31,9 +31,9 @@ Nitel doküman analizi tasarımı: hipotez yerine **araştırma önermesi (Ö)**
 
 **Sorunsallaştırma:**
 
-1. **Yerleşik anlatı:** Türkiye–Çin turizm yazını (Niu & Li, 2019; Palidan, 2024; Kılıç 2021 ve Zengin 2021 gibi TR çalışmaları) İpek Yolu turizmini Kuşak ve Yol çerçevesinde karşılıklı kazanç sağlayan bir iş birliği ve yumuşak güç alanı olarak açıklar; sorunlar (güvenlik, dil, maliyet) iş birliğinin önündeki teknik engeller olarak ele alınır.
+1. **Yerleşik anlatı:** Türkiye–Çin turizm literatürü (Niu & Li, 2019; Palidan, 2024; Kılıç 2021 ve Zengin 2021 gibi TR çalışmaları) İpek Yolu turizmini Kuşak ve Yol çerçevesinde karşılıklı kazanç sağlayan bir iş birliği ve yumuşak güç alanı olarak açıklar; sorunlar (güvenlik, dil, maliyet) iş birliğinin önündeki teknik engeller olarak ele alınır.
 2. **Zımni varsayım:** "Ortak miras ortak çıkardır" — paylaşılan İpek Yolu mirası tarafların aynı yönde değerlendirdiği nötr bir ortak varlıktır.
-3. **Kırılma:** Miras siyaseti yazını paylaşılan mirasın aynı zamanda egemenlik ve temsil iddiası aracı olduğunu gösterir (Debarbieux vd., 2023: Türkiye'nin Karagöz'ü tek-devlet adaylığı); Çin'in İpek Yolu'nu Sinomerkezci tarihselleştirdiği belgelenmiştir (Sciorati, 2023; Winter 2020); altyapı iş birliği turist akışına dönüşmemektedir (Farmanov vd., 2026; TÜİK: Çin payı en fazla %1).
+3. **Kırılma:** Miras siyaseti literatürü paylaşılan mirasın aynı zamanda egemenlik ve temsil iddiası aracı olduğunu gösterir (Debarbieux vd., 2023: Türkiye'nin Karagöz'ü tek-devlet adaylığı); Çin'in İpek Yolu'nu Sinomerkezci tarihselleştirdiği belgelenmiştir (Sciorati, 2023; Winter 2020); altyapı iş birliği turist akışına dönüşmemektedir (Farmanov vd., 2026; TÜİK: Çin payı en fazla %1).
 4. **Alternatif okuma (KATKI):** İpek Yolu mirası bir ortak varlık değil, **ortaklaşa rekabetin nesnesidir**: Türkiye ve Çin değeri turistten uzak arenalarda (bağlantısallık) birlikte oluşturur, turiste yakın arenalarda (anlatı, değer yakalama) ayrı ayrı yakalamaya çalışır.
 5. **Üç soruluk sınav:** geçti — (i) Ö3 desteklenmese, yani rekabet bağlantısallıkta da yoğun çıksa, ayrıştırma ilkesinin devletlerarası ilişkide işlemediği sonucu yine ilginçtir; (ii) katkı cümlesi "çalışılmamıştı" demeden yazılabiliyor; (iii) yanlışlanan iddia tek cümle: "Türkiye–Çin İpek Yolu turizmi bir kazan-kazan iş birliği alanıdır."
 
@@ -51,7 +51,7 @@ Doküman analizi tasarımı olduğu için roller değişken rolü değil **anali
 | Ayrıştırma ilkesi | mekanizma | İş birliğinin müşteriden uzak, rekabetin müşteriye yakın faaliyetlerde yoğunlaşması | Bağlantısallık metinlerinde İB baskın; anlatı/turist metinlerinde RK baskın | Arena × İB/RK çapraz tablosu | Bengtsson & Kock (2000) |
 | Anlatı arenası | kod kategorisi | İpek Yolu'nun merkezini, başlangıcını ve sahibini tanımlama rekabeti | Harita/rota anlatısında merkez kent, "köprü/başlangıç" iddiası, tek-devlet adaylık | Tek taraflı tanıtım metinleri (GoTürkiye, TDT; Çin KTB, CGTN, Xinhua) | Miras diplomasisi: Winter (2015); Sinomerkezci tarihselleştirme: Sciorati (2023); paylaşılan miras/egemenlik: Debarbieux vd. (2023) |
 | Turist akışı arenası | kod kategorisi | Karşılıklı ziyaretçi hareketini artırma ve yönlendirme eylemleri | Vize, uçuş, turizm yılı, hedef sayılar | Resmî belgeler + KTB/TÜİK ziyaretçi serisi | `<KAYNAK YOK>` (operasyonel tanım yazarındır) |
-| Değer yakalama arenası (operasyonel) | kod kategorisi | Çinli turist harcamasının hangi aktörde kaldığına dair düzenlemeler ve söylemler | Aracı/acente bağımlılığı, ödeme sistemleri, Çinli operatör vurgusu | İkincil yazın (İbiş & Batman 2018: %82,4 acente) + belgeler | `<KAYNAK YOK>` — **kanıt zayıf; arena düşebilir** |
+| Değer yakalama arenası (operasyonel) | kod kategorisi | Çinli turist harcamasının hangi aktörde kaldığına dair düzenlemeler ve söylemler | Aracı/acente bağımlılığı, ödeme sistemleri, Çinli operatör vurgusu | İkincil literatür (İbiş & Batman 2018: %82,4 acente) + belgeler | `<KAYNAK YOK>` — **kanıt zayıf; arena düşebilir** |
 | Bağlantısallık arenası | kod kategorisi | Ulaşım ve altyapı koridorlarının uyumlaştırılması | Kuşak-Yol/Orta Koridor uyum metinleri, BTK, uçuş anlaşmaları | Resmî belgeler + Farmanov vd. (2026) | Silk Road diplomacy & connectivity: Winter (2020) |
 | Miras diplomasisi | bağlam kavramı | Mirasın devletlerarası ilişkilerde iş birliği ve nüfuz aracı olarak kullanımı | Ortak miras söylemi, UNESCO adaylıkları | Belgeler | Winter (2015) |
 
@@ -80,7 +80,7 @@ Faz 2'de doldurulur.
 - **Birim:** anlam birimi (bir iddia taşıyan cümle/paragraf).
 - **Kodlama:** karma — tümdengelim üst şema (4 arena × İB/RK; `analiz/kodbook-v1.md`) + tümevarım alt kodlar. Kodbook versiyonlu.
 - **Güvenirlik (v4, 2026-10-07 — kullanıcı kararı: "kodlayıcı sen olma"):** Nihai kodlama, birbirinden bağımsız çalışan İKİ İNSAN kodlayıcı tarafından kodbook v2 (manifest işaretler M1–M3; yönelim mekanik türetim) ile yapılır; araç: `kodlayici-paketi/ipek-yolu-kodlama-formu.xlsx` ya da çevrimiçi form. Kodlayıcılar arası uyum alan ve yönelim için Cohen κ ile raporlanır; uyuşmazlıklar yazar kararıyla çözülür ve `analiz/kodlama-gunlugu.md`'ye yazılır. YZ'nin v1/v2 kodları ve silikon-persona kodları yalnız PİLOT (şema geliştirme) kanıtıdır; analizde kullanılmaz, arşivde kalır. YZ beyanı: "Kodlama şemasının pilot aşamasında YZ destekli ön kodlama yapıldı; nihai kodlama iki insan kodlayıcı tarafından yapıldı." (v3 metni geçersiz.)
-- **İnandırıcılık:** üçgenleme (iki korpus + TÜİK serisi + akademik yazın); olumsuz vaka analizi (rekabet beklenen arenada iş birliği kodları ve tersi ayrıca raporlanır); audit trail (`analiz/kodlama-gunlugu.md`).
+- **İnandırıcılık:** üçgenleme (iki korpus + TÜİK serisi + akademik literatür); olumsuz vaka analizi (rekabet beklenen arenada iş birliği kodları ve tersi ayrıca raporlanır); audit trail (`analiz/kodlama-gunlugu.md`).
 - **Dil sınırlılığı:** Çince birincil metinler yerine resmî İngilizce sürümler; sınırlılıklarda yazılır.
 - **Raporlama standardı:** SRQR.
 
@@ -89,7 +89,7 @@ Faz 2'de doldurulur.
 > Önermeler desteklenmeseydi bu makaleyi hâlâ yazar mıydın?
 
 **Cevap:** evet.
-**Gerekçe:** Ö3 desteklenmezse (rekabet bağlantısallıkta da yoğunsa) ayrıştırma ilkesinin devletlerarası ilişkiye taşınamadığı sonucu kuramsal katkıdır; Ö2 desteklenmezse (rekabet izi yoksa) TR yazınının iş birliği okuması doğrulanır ama "söylem–akış açığı" (Ö4–Ö5) açıklanmamış bir bulmaca olarak kalır ve tartışmanın merkezine geçer.
+**Gerekçe:** Ö3 desteklenmezse (rekabet bağlantısallıkta da yoğunsa) ayrıştırma ilkesinin devletlerarası ilişkiye taşınamadığı sonucu kuramsal katkıdır; Ö2 desteklenmezse (rekabet izi yoksa) TR literatürünün iş birliği okuması doğrulanır ama "söylem–akış açığı" (Ö4–Ö5) açıklanmamış bir bulmaca olarak kalır ve tartışmanın merkezine geçer.
 
 > Önceden kilitlenen spesifikasyonlar
 
@@ -124,7 +124,7 @@ Faz 2'de doldurulur.
 ## 10. Yan Etkiler / Reflexivity
 
 - **Kim kazanır / kaybeder:** Türk turizm politikası (KTB, TGA) ve Çin pazarına çalışan acenteler, "iş birliği" ile "rekabet" alanlarını ayırarak daha gerçekçi strateji kurabilir. Kaybeden, ilişkiyi yalnız kazan-kazan dille sunan diplomatik iletişimdir; makale bu söylemi sorgular.
-- **Yazar önyargıları:** Yazar Türk ve turizm pazarlaması alanından geliyor; uluslararası ilişkiler yazınına hâkimiyeti sınırlı. Türk tarafının anlatısına sempati riski var → iki ülkenin belgeleri aynı kod şemasıyla, simetrik kodlanacak.
+- **Yazar önyargıları:** Yazar Türk ve turizm pazarlaması alanından geliyor; uluslararası ilişkiler literatürüne hâkimiyeti sınırlı. Türk tarafının anlatısına sempati riski var → iki ülkenin belgeleri aynı kod şemasıyla, simetrik kodlanacak.
 - **Politik konum şeffaflığı:** Sincan/Uygur meselesi kapsam dışı bırakılıyor; bu bir analitik tercih olduğu kadar siyasi bir tercihtir ve sınırlılıklarda açıkça yazılacak.
 
 ## 11. Kuşaksal Konum

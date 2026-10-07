@@ -26,7 +26,7 @@
 ### [03] Palidan, M. (2024). Kuşak ve Yol İnisiyatifi'nin Çin-Türkiye turizmi üzerindeki etkisi: Fırsatlar ve zorlukların incelenmesi. *The Journal of Social Sciences, 73*, 442–462.
 - **Tipi:** TR bağlam · **Alaka:** 8 · Künye Crossref ile teyitli (Crossref tek yazar listeliyor; PDF'den teyit)
 - **Anahtar bulgu:** Nitel, ikincil kaynak; Çinli gelişleri tablosu (2015–2023, kaynak: China Tourism Academy + TÜİK 2024); 2015 e-vize, 2018 Türkiye Turizm Yılı; vize muafiyeti yalnız ÖNERİ.
-- **Tezimize bağı:** İlişkiyi tamamen iş birliği olarak çerçeveliyor, rekabeti analiz etmiyor → TR yazınındaki tek yönlü okuma varsayımının kanıtı (sorunsallaştırma §3).
+- **Tezimize bağı:** İlişkiyi tamamen iş birliği olarak çerçeveliyor, rekabeti analiz etmiyor → TR literatüründeki tek yönlü okuma varsayımının kanıtı (sorunsallaştırma §3).
 - **Okuma:** YZ tam metin · **DOI:** 10.29228/sobider.78915
 
 ### [04] Sirisuthikul, V. (2018). Conceptualizing ASEAN tourism brand: Towards a coopetition framework. *GATR Global Journal of Business Social Sciences Review, 6*(4), 114–121. — sayı Crossref ile teyitli (2026-10-07)
@@ -140,7 +140,7 @@
 
 ### [21] Wisniewski, R. (2025). Coopetition as a form of great power relations—The case study of US–China dynamics in the post-Cold War period. *Stosunki Międzynarodowe – International Relations, 5*, 18.
 - **Tipi:** benzer kavramsal (devletlerarası ortaklaşa rekabet) / kısmi karşıt-bulgu · **Alaka:** 8 · F1000 tipi açık hakemlik platformu, sürüm 1 — hakem onay durumu teyit edilmeli.
-- **Anahtar bulgu:** Yönetim yazınından gelen ortaklaşa rekabet kavramı Soğuk Savaş sonrası büyük güç ilişkilerine uygulanabilir; ABD–ÇHC 1996–2007 vakasında ortaklaşa rekabeti kolaylaştıran etkenler ve tarafların stratejileri inceleniyor; ortaklaşa rekabetin çözülüp stratejik rekabete dönüşmesine dair hipotezler öneriliyor.
+- **Anahtar bulgu:** Yönetim literatüründen gelen ortaklaşa rekabet kavramı Soğuk Savaş sonrası büyük güç ilişkilerine uygulanabilir; ABD–ÇHC 1996–2007 vakasında ortaklaşa rekabeti kolaylaştıran etkenler ve tarafların stratejileri inceleniyor; ortaklaşa rekabetin çözülüp stratejik rekabete dönüşmesine dair hipotezler öneriliyor.
 - **Tezimize bağı:** Kavramın devletlerarası ilişkiye taşınmasının doğrudan emsali (Ö3'ün "devletlerarası ilişkide işler mi" sorusu); ortaklaşa rekabetin kalıcı olmayıp rekabete kayabileceği uyarısı.
 - **Okuma:** sadece abstract · **DOI:** 10.12688/stomiedintrelat.17973.1 · **Eklenme:** 2026-10-07, Faz 3
 
@@ -217,19 +217,19 @@
 ### [33] Kılıç, B. (2021). Çin'in Kuşak ve Yol Girişiminin Türkiye'nin turizmine beklenen olası yansımaları. *The Journal of Academic Social Sciences*, (113), 121–134.
 - **Tipi:** TR bağlam · **karşıt-bulgu** (kazan-kazan beklentisi) · **Alaka:** 7 · Crossref/OpenAlex dergi adını İngilizce veriyor (ISSN 2148-2489); Türkçe adı dergi sitesinden teyit edilmeli `<KÜNYE TEYİT: Türkçe dergi adı>`.
 - **Anahtar bulgu:** Türkiye'nin Modern İpek Yolu Girişiminden turizm yönünden olumlu etkileneceği; Türkiye'nin yetişmiş turizm insan kaynağının girişimdeki ülkelere bilgi/beceri transferini hızlandıracağı; ticari ilişkiler ve Çinli turist artışı örnek; sinerji üzerine ampirik çalışma gerekli.
-- **Tezimize bağı:** TR yazınındaki tek yönlü iş birliği/fırsat okumasının kanıtı; ampirik kanıt yerine beklenti.
+- **Tezimize bağı:** TR literatüründeki tek yönlü iş birliği/fırsat okumasının kanıtı; ampirik kanıt yerine beklenti.
 - **Okuma:** sadece abstract · **DOI:** 10.29228/asos.48560 · **Eklenme:** 2026-10-07, Faz 3
 
 ### [34] Zengin, B., & Koç, İ. (2021). Yeni İpek Yolu ticaret hattının Türkiye turizmi açısından değerlendirilmesi. *Journal of Gastronomy Hospitality and Travel, 4*(2), 586–599.
 - **Tipi:** TR bağlam · **Alaka:** 7
 - **Anahtar bulgu:** İkincil veri ve betimsel analizle OBOR'un Türk turizmi açısından olumlu ve/veya olumsuz yönleri; Çin–Orta Asya–Batı Asya Ekonomik Koridoru (Türkiye dâhil) üzerinden potansiyel etkiler; girişimin özellikle Çin'in ekonomik hedeflerine hizmeti göz önüne alınarak diğer ülkelerin kazanımlarının sorgulanması gerektiği vurgusu.
-- **Tezimize bağı:** TR yazınında "kimin kazandığı" sorusunu açan nadir çalışma → değer yakalama arenası için zayıf ama yerli dayanak. Özetin sonu kesik; olumsuz yönlerin ne olduğu tam metinden okunmalı.
+- **Tezimize bağı:** TR literatüründe "kimin kazandığı" sorusunu açan nadir çalışma → değer yakalama arenası için zayıf ama yerli dayanak. Özetin sonu kesik; olumsuz yönlerin ne olduğu tam metinden okunmalı.
 - **Okuma:** sadece abstract · **DOI:** 10.33083/joghat.2021.95 · **Eklenme:** 2026-10-07, Faz 3
 
 ### [35] İbiş, S. (2019). Yeni İpek Yolu Projesi ve Türkiye turizmine olası yansımaları. *Journal of Business Management and Economic Research, 3*(1), 34–44.
 - **Tipi:** TR bağlam · **karşıt-bulgu** (iş birliği/fırsat çerçevesi) · **Alaka:** 6
 - **Anahtar bulgu:** Literatür taramasına dayalı; Çin başta olmak üzere İpek Yolu ağındaki ülkeler Türkiye için alternatif turizm pazarı; projenin Çin ve Asya'dan Türkiye'ye seyahati kolaylaştırması ve yeni pazarlar geliştirmesi bekleniyor (özellikle sağlık ve kültür turizmi).
-- **Tezimize bağı:** Ö4'ün TR yazınındaki beklenti hâli (iş birliği → akış); TÜİK serisiyle karşılaştırılacak.
+- **Tezimize bağı:** Ö4'ün TR literatüründeki beklenti hâli (iş birliği → akış); TÜİK serisiyle karşılaştırılacak.
 - **Okuma:** sadece abstract · **DOI:** 10.29226/tr1001.2019.103 · **Eklenme:** 2026-10-07, Faz 3
 
 ### [36] Chaziza, M. (2021). China's New Silk Road strategy and the Turkish Middle Corridor vision. *Asian Journal of Middle Eastern and Islamic Studies, 15*(1), 34–50.
@@ -247,7 +247,7 @@
 ### [38] Wang, J., & Sun, D. (2024). China and Türkiye's strategic cooperation in the 21st century: A 'complex role' prism. *Journal of Balkan and Near Eastern Studies, 26*(5), 732–749.
 - **Tipi:** TR bağlam (ikili ilişki kuramı) · **Alaka:** 9
 - **Anahtar bulgu:** Çin–Türkiye ilişkileri 2010'dan beri düşük düzeyde stratejik iş birliğinde (Çin'in Cezayir, Mısır, S. Arabistan, İran, BAE ile kapsamlı stratejik ortaklıklarının aksine); ikili, bölgesel ve küresel rol katmanlarında uyumlu, rekabetçi ve çatışan roller ilişkinin hem itici gücü hem kısıtı; taraflar birbirini ekonomik ortak, siyasi rakip ve güvenlik rakibi karışımı olarak algılıyor.
-- **Tezimize bağı:** Türkiye–Çin ilişkisinin bütününde iş birliği–rekabet eşzamanlılığının uluslararası ilişkiler yazınındaki karşılığı; turizm/miras arenasına taşınabilecek en yakın çerçeve.
+- **Tezimize bağı:** Türkiye–Çin ilişkisinin bütününde iş birliği–rekabet eşzamanlılığının uluslararası ilişkiler literatüründeki karşılığı; turizm/miras arenasına taşınabilecek en yakın çerçeve.
 - **Okuma:** sadece abstract · **DOI:** 10.1080/19448953.2024.2308974 · **Eklenme:** 2026-10-07, Faz 3
 
 ### [39] Cihangir, E., Şeremet, M., & Cihangir-Çamur, K. (2022). Turkey at the crossroads: A study of geopolitics and tourism re-alignment. *Geography, 107*(3), 145–152.
@@ -271,7 +271,7 @@
 ### [42] Tuna, M., Özyurt, B., Dülger, A. S., Türkmen, F., & Uyanık, N. (2022). Türk dünyasında turizmin ülkeler arası iş birliği temelli geliştirilmesine yönelik nitel bir araştırma. *Bilig*, 137–176. `<KÜNYE TEYİT: sayı numarası — Crossref ve OpenAlex cilt/sayı vermiyor; yayın tarihi 2022-01-27>`
 - **Tipi:** TR bağlam · **karşıt-bulgu** (yalnız iş birliği çerçevesi) · **Alaka:** 6
 - **Anahtar bulgu:** Altı Türk devletinden (Azerbaycan, Kazakistan, Kırgızistan, KKTC, Özbekistan, Türkiye) 31 akademisyen, bakanlık temsilcisi ve yöneticiyle derinlemesine görüşme (Eylül–Ekim 2020), MAXQDA ile tematik analiz; katılımcıların %90,3'ü turizm iş birliği çatı örgütünü yararlı buluyor; vize kolaylığı, uçuş artışı, ortak ürün ve ortak tanıtım öneriliyor; ülkeler arası rekabet bulgu olarak analiz edilmiyor; İpek Yolu ortak miras ve tur paketi önerisi olarak anılıyor, Çin örneklemde yok.
-- **Tezimize bağı:** TR yazınında çok-ülkeli İpek Yolu turizminin rekabetsiz, saf iş birliği olarak çerçevelendiğinin doğrudan kanıtı (§3 sorunsallaştırma).
+- **Tezimize bağı:** TR literatüründe çok-ülkeli İpek Yolu turizminin rekabetsiz, saf iş birliği olarak çerçevelendiğinin doğrudan kanıtı (§3 sorunsallaştırma).
 - **Okuma:** YZ tam metin (Undermind read_pdfs) · **DOI:** 10.12995/bilig.10007 · **Eklenme:** 2026-10-07, Faz 3
 
 ---
@@ -304,8 +304,8 @@
 2. **[12] Brandenburger & Nalebuff (1996)** — kullanıcı 2026-10-07'de üçüncü taraf özetini (BusinessSummaries.com, 7 s.) yükledi; kitap değil. Asimetri sürüyor: alıntı/sayfa yok, yalnız genel kavram atfı. Bkz. okuma-notlari/12-brandenburger-nalebuff-1996.md
 3. **[23] Winter (2016, The Diplomat)** — metin okunamadı; URL ve içerik teyit edilmeli ya da yerine hakemli Winter eserleri ([22], [24]–[26]) kullanılmalı.
 4. **Değer yakalama arenası için ampirik kaynak** — Çinli tur operatörü/acente, ödeme sistemi, Çinli sahipli otel/aracı payına dair Türkiye verisi yok. Aday aramalar: Palidan (2018) acente tezi (adaylar U060), Abula (2019) tezi (U040), Nangong & Yokoyama (2023) paket tur dağıtım kanalları (U161).
-5. **Çince birincil akademik yazın** — Çin perspektifinden Türkiye/İpek Yolu turizmi (ör. adaylar U186 Çince kitap) taranmadı; dil sınırlılığı.
-6. **Türkçe ortaklaşa rekabet (coopetition) turizm yazını** — "ortaklaşa rekabet/eş-rekabet/koopetisyon" anahtar kelimeleriyle TR Dizin/DergiPark taraması yapılmadı; TR oranı artırılabilir.
+5. **Çince birincil akademik literatür** — Çin perspektifinden Türkiye/İpek Yolu turizmi (ör. adaylar U186 Çince kitap) taranmadı; dil sınırlılığı.
+6. **Türkçe ortaklaşa rekabet (coopetition) turizm literatürü** — "ortaklaşa rekabet/eş-rekabet/koopetisyon" anahtar kelimeleriyle TR Dizin/DergiPark taraması yapılmadı; TR oranı artırılabilir.
 7. **Yöntem kaynakları** — Bowen (2009) doküman analizi ve SRQR (blueprint §5) ledger'da değil; Faz 5'te kaynakçaya eklenmeli.
 8. **Değerlendirilip eklenmeyen yakın adaylar** — Raza-Ullah vd. (2014) gerilim/paradoks (U074), Chim-Miki vd. (2023) oluşturma-yakalama döngüsü (U049), Nakano & Zhu (2020) miras ve yumuşak güç (U043), van Noort (2020) Yeni İpek Yolu stratejik anlatıları (U087), Freymann (2021) tarihsel revizyonizm (U083), Yu (2021) Çin–Türkiye stratejik kenetlenme (U141), Ding & Jiang (2026) Çin–Türkiye kültürel değişim (U090) — ikinci dalga için.
 9. **Tam metin okuma açığı** — [10]–[41] yalnız abstract düzeyinde; makalede kritik dayanak olacak [11], [18], [27], [28], [32], [38] için PDF yüklenip read_pdfs ile okunmalı (Undermind'da PDF yok, kullanıcı yüklemesi gerekli).

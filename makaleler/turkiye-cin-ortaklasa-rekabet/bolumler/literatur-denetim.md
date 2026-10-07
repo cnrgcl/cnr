@@ -20,14 +20,14 @@ Graphify bu oturumda yok (MANUEL OVERRIDE, durum.md); çelişki malzemesi ledger
 Çapa doğrulaması: atif_kapisi.py bu ortamda yok; yerine `okuma-notlari/ozetler-verbatim.json` (Crossref/OpenAlex özetleri) ile birebir alt-dize kontrolü koşuldu → 38/38 özet çapası EŞLEŞTİ. [11] çapaları kullanıcının PDF'inden (okuma-notlari/11-…), [08] ve [09] çapaları Undermind tam metin verbatim çıktısından.
 
 ## Ters-outline (paragraf iddiaları)
-1.1-P1 TR–Çin turizm yazını ilişkiyi kazan-kazan iş birliği okur; sorunları engel sayar.
-1.1-P2 Uzlaşı beklentiye dayanır; UI yazını aynı ikilide rekabetçi roller görür → turizm/mirasta sınanmamış.
-1.2-P1 Uzlaşının varsayımı: miras nötr ortak varlık; miras diplomasisi yazını iş birliği + milliyetçi araç ikiliğini gösterir.
+1.1-P1 TR–Çin turizm literatürü ilişkiyi kazan-kazan iş birliği okur; sorunları engel sayar.
+1.1-P2 Uzlaşı beklentiye dayanır; UI literatürü aynı ikilide rekabetçi roller görür → turizm/mirasta sınanmamış.
+1.2-P1 Uzlaşının varsayımı: miras nötr ortak varlık; miras diplomasisi literatürü iş birliği + milliyetçi araç ikiliğini gösterir.
 1.2-P2 "Paylaşılan" karşıt sahiplenme üretir; Türkiye de bu çekişmenin tarafı (Karagöz, Mevlana/Nevruz, okçuluk).
 1.2-P3 Çin'in Sinomerkezci tarihselleştirmesi ve turizm metinlerinde dışlayıcı "paylaşılan miras"; iki anlam aynı ikilide → birleşik çerçeve gerekir.
 1.3-P1 Ortaklaşa rekabet faaliyet düzeyinde bölünür; ayrıştırma ilkesi (s. 421).
 1.3-P2 Bölünen şey değer oluşturma/yakalamadır; sonuç kazan-kazan olmak zorunda değil; tanımlar.
-1.3-P3 Turizm yazını kavramı destinasyona taşımış; çok ülkeli markalarda ilke görünür; ama destinasyon içinde kalmış.
+1.3-P3 Turizm literatürü kavramı destinasyona taşımış; çok ülkeli markalarda ilke görünür; ama destinasyon içinde kalmış.
 1.3-P4 En yakın rakipler (Redi & Pulido; Wisniewski; Wang & Sun) faaliyet düzeyini sormaz; güç asimetrisi kestirilemez.
 1.3-P5 Sınır koşulları (rakip ve müşteri tanımı) + rakip açıklama (pazar temelli ayrışma).
 1.3-P6/7/8 Ö1, Ö2, Ö3 türetimi.
@@ -39,7 +39,7 @@ Zincir: uzlaşı → varsayım → kırılma → birleştirici mekanizma → sı
 ## Başlık uzlaştırma
 | Alt bölüm | İskelet başlığı | Yeni başlık | Neden |
 |---|---|---|---|
-| 1.1 | Türkiye–Çin turizm yazınında iş birliği uzlaşısı | …Sınanmamış Bir İş Birliği Uzlaşısı | Paragraflar uzlaşının sınanmamışlığını iddia ediyor; başlık eksikti |
+| 1.1 | Türkiye–Çin turizm literatüründe iş birliği uzlaşısı | …Sınanmamış Bir İş Birliği Uzlaşısı | Paragraflar uzlaşının sınanmamışlığını iddia ediyor; başlık eksikti |
 | 1.2 | "Paylaşılan" İpek Yolu: ortak miras mı, anlatı otoritesi için çekişme mi? | "Paylaşılan" İpek Yolu: Ortak Miras ile Anlatı Otoritesi Arasında | Soru biçimi yerine iddia (iki anlam aynı anda geçerli) |
 | 1.3 | Ortaklaşa rekabet: değer oluşturma ile değer yakalamanın ayrıştırılması | aynı | — |
 | 1.4 | Söylemden akışa: bağlantısallık iş birliği neden turiste dönüşmüyor? | …Bağlantısallık İş Birliğinin Turist Akışına Dönüşmemesi | Soru yerine iddia |
@@ -69,3 +69,9 @@ Başlık değişen alt bölüm: 3 (yüzeysel; yapısal sapma yok, iskelet geçer
 
 ## YZ-izi taraması (son geçiş)
 Uzun tire 0; olumsuz paralelizm ("yalnızca … değil, aynı zamanda") 0; belirsiz atıf ("araştırmalar göstermektedir") 0; şişirilmiş önem 1 sınırda ("bu soruyu daha da önemli kılar", 1.3-P4) — yazar sesiyle elden geçirmede bakılsın. Üçlü sıralamalar kaynağın kendi sıralamasından (Wang & Sun "ortak, rakip, rakip"; Dayoub sorun listesi).
+
+---
+# v2 notu (2026-10-07, kullanıcı geri bildirimi: "cümleler ve paragraflar arasında ilişki yok")
+Tanı: v1 cümleleri kaynak-kart mantığıyla kurulmuştu (her cümle ayrı bir özetin aktarımı); yasaklı katalog geçişleriyle birlikte mantık bağlaçları da düşmüş; özne sürekliliği ve paragraflar arası köprü yoktu.
+v2'de yapılan: her bölümün başına iddia zinciri yazıldı (dosya başındaki > notu); cümleler bu zincire göre yeniden kuruldu; özne sürekliliği ve açık bağlaçlar (çünkü, bu yüzden, oysa, birincisi/ikincisi, bile, dolayısıyla); her paragraf bir öncekinin sonucuyla açılıyor. Zincire katkı vermeyen Tuna vd. (2022) çıkarıldı (kaynakça 45). "Yazın" → "literatür" (kullanıcı kuralı).
+Çapalar: 47 kaynak çapası korundu, tümü özet-verbatim / [11] tam metin / Undermind verbatim ile yeniden eşleşti (0 eşleşmeyen). Kelime: Giriş 549, Kuramsal Çerçeve 2.314, Yöntem 1.099.

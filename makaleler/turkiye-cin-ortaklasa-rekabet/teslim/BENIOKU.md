@@ -16,7 +16,7 @@ Dergi şablonu `nevubidek_makale-sablon_260506.docx` (DergiPark yazım kurallar�
 | 3. Yöntem | taslak dolu; κ değerleri `[ ]` |
 | 4. Bulgular | yalnız başlıklar + sarı yönergeler — **siz yazacaksınız** |
 | 5. Tartışma ve Sonuç | yalnız başlıklar + sarı yönergeler — **siz yazacaksınız** |
-| Kaynakça (46) | APA 7, yalnız metinde atıf yapılanlar |
+| Kaynakça (45) | APA 7, yalnız metinde atıf yapılanlar |
 | Extended Summary (750–1.000) | taslak dolu (~730 sabit kelime + yer tutucular); Findings/Conclusions sarı |
 | Yazar beyanı tablosu | işaretlendi: tek yazar, çıkar çatışması yok, etik kurul gerekmez, YZ beyanı (Claude), mali destek yok |
 
@@ -25,7 +25,6 @@ Dergi şablonu `nevubidek_makale-sablon_260506.docx` (DergiPark yazım kurallar�
 
 ## Kaynakçada teyit bekleyenler
 - Farmanov vd. 2026: üçüncü yazar "Bujdosó, Z." yazıldı (Crossref "Zoltán, B." veriyor; Macar ad düzeni) → makale PDF'inden teyit.
-- Tuna vd. 2022 (*Bilig*): sayı numarası yok → dergi sitesinden ekleyin.
 - TÜİK (2026): erişim adresi (data.tuik.gov.tr tablo bağlantısı) eklenecek.
 - Kılıç 2021 dergi adı Crossref'teki İngilizce ad; Türkçe adı (Akademik Sosyal Araştırmalar Dergisi) tercih ederseniz değiştirin.
 

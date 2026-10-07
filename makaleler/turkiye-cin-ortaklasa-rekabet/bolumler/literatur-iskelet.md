@@ -1,12 +1,12 @@
 # Literatür iskeleti (ADIM 1) — 2026-10-07
 
 ## Altın iplik
-Türkiye–Çin turizm yazını ilişkiyi Kuşak ve Yol çerçevesinde karşılıklı kazanç sağlayan bir iş birliği olarak okumakta uzlaşmış görünüyor; ancak miras siyaseti yazını "paylaşılan" İpek Yolu'nun aynı zamanda anlatı otoritesi ve egemenlik için bir çekişme alanı olduğunu gösteriyor. Ortaklaşa rekabet kuramı bu iki okumayı değer oluşturma–değer yakalama ayrımıyla birleştirebilir, fakat kavram firma ve destinasyon düzeyinde gelişmiş, devletlerarası miras turizminde sınanmamıştır. Bu çalışma, ayrıştırma ilkesini Türkiye–Çin İpek Yolu turizmine taşıyarak bu boşlukta konumlanıyor.
+Türkiye–Çin turizm literatürü ilişkiyi Kuşak ve Yol çerçevesinde karşılıklı kazanç sağlayan bir iş birliği olarak okumakta uzlaşmış görünüyor; ancak miras siyaseti literatürü "paylaşılan" İpek Yolu'nun aynı zamanda anlatı otoritesi ve egemenlik için bir çekişme alanı olduğunu gösteriyor. Ortaklaşa rekabet kuramı bu iki okumayı değer oluşturma–değer yakalama ayrımıyla birleştirebilir, fakat kavram firma ve destinasyon düzeyinde gelişmiş, devletlerarası miras turizminde sınanmamıştır. Bu çalışma, ayrıştırma ilkesini Türkiye–Çin İpek Yolu turizmine taşıyarak bu boşlukta konumlanıyor.
 
 ## Alt bölümler (her biri: bir iddia + bir gerilim)
 
-### 1.1. Türkiye–Çin turizm yazınında iş birliği uzlaşısı
-- İddia: Yazın ilişkiyi kazan-kazan iş birliği olarak okuyor; sorunları (güvenlik, dil, maliyet) teknik engellere indirgiyor.
+### 1.1. Türkiye–Çin turizm literatüründe iş birliği uzlaşısı
+- İddia: Literatür ilişkiyi kazan-kazan iş birliği olarak okuyor; sorunları (güvenlik, dil, maliyet) teknik engellere indirgiyor.
 - Kaynaklar: [32] Niu & Li 2019, [03] Palidan 2024, [33] Kılıç 2021, [34] Zengin & Koç 2021, [35] İbiş 2019, [42] Tuna vd. 2022, [37] Akçay & Guo 2023
 - Gerilim: SINANMAMIŞ UZLAŞMA + kırılma ipucu — [38] Wang & Sun 2024 (düşük düzey stratejik iş birliği; uyumlu ve rekabetçi rol katmanları), [36] Chaziza 2021 (sinerji ikili ilişkinin niteliğine bağlı)
 
