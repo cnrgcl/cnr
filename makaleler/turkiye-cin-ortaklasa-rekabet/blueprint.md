@@ -3,21 +3,24 @@
 **Tarih:** 2026-10-07
 **Yazar:** Dr. Caner Güçlü
 **Hedef dergi (taslak):** NEVÜ SBE Dergisi — "Türkiye-Çin Diplomatik İlişkileri" özel sayısı
-**Versiyon:** v1 (Faz 1'de yazılır, sonra v2/v3 ile yeniden yazılabilir)
+**Versiyon:** v2
 
 ---
 
 ## 1. Araştırma Sorusu
 
-(Taslak) Türkiye ve Çin, İpek Yolu turizm mirası üzerinden hangi arenalarda ortak değer yaratmakta (iş birliği), hangi arenalarda bu değerin anlatısı ve getirisi için rekabet etmektedir; bu ortaklaşa rekabet ilişkisi 2010–2026 döneminde nasıl biçimlenmiştir?
+**AS1:** 2010–2026 döneminde Türkiye ve Çin, İpek Yolu turizm mirası üzerinde hangi arenalarda iş birliği (değer yaratma), hangi arenalarda rekabet (değer yakalama) yürütmektedir ve bu dağılım faaliyetin turiste yakınlığına göre ayrışmakta mıdır?
+
+**AS2 (destekleyici):** İki ülkenin iş birliği söylemi ve anlaşmaları, Türkiye'ye Çin uyruklu giriş akışına ne ölçüde yansımıştır?
 
 ## 2. Hipotez(ler)
 
-(Taslak — nitel/doküman analizi tasarımı; konu-kesfet bunları araştırma önermelerine dönüştürür)
+Nitel doküman analizi tasarımı: hipotez yerine **araştırma önermesi (Ö)**; istatistiksel test yok, kodlama dağılımıyla değerlendirilir.
 
-H1: Türkiye–Çin turizm ilişkisinde iş birliği ağırlıklı olarak "değer yaratma" arenalarında (bağlantısallık, karşılıklı tanıtım, turist akışı) yoğunlaşır.
-H2: Rekabet ağırlıklı olarak "değer yakalama" ve "anlatı" arenalarında (İpek Yolu'nun merkezi/sahibi kim, gelirin kimde kaldığı) yoğunlaşır.
-H3: Türkiye, orta güç olarak, iş birliğine katılırken kendi markasını koruma stratejisi izler (ör. Orta Koridor adlandırması — doğrulanmalı).
+- **Ö1:** Ortak İpek Yolu mirası iki ülke arasında iş birliğini (değer yaratma) besler. Yön: pozitif · Beklenen görünürlük: güçlü (ikili belgelerin çoğunluğu) · Ref: Brandenburger & Nalebuff (1996); Niu & Li (2019).
+- **Ö2:** Aynı miras eşzamanlı olarak anlatı otoritesi ve değer yakalama rekabetini besler. Yön: pozitif · Görünürlük: orta (tek taraflı anlatılarda) · Ref: Deb21 (2021); Sci22 (2022).
+- **Ö3 (düzenleyici, ayrıştırma ilkesi):** Faaliyet turiste yaklaştıkça (bağlantısallık → turist akışı → anlatı → değer yakalama) rekabet kodlarının payı artar, iş birliği kodlarının payı azalır. Ref: Bengtsson & Kock (2000).
+- **Ö4:** İş birliği (özellikle bağlantısallık) turist akışına sınırlı ve dalgalı biçimde yansır. Yön: ilişkisel · Kanıt: TÜİK Çin uyruklu giriş, yabancılar içindeki pay %0,14–%1,00 aralığında (2012–2025); Farmanov vd. (2026) Orta Koridor'da yük var, yolcu yok.
 
 ## 3. Kuramsal Mercek ve Sorunsallaştırma
 
@@ -25,9 +28,15 @@ H3: Türkiye, orta güç olarak, iş birliğine katılırken kendi markasını k
 
 *Anlatı arenası notu:* Bu arenada kavram çatallanması ("ortak miras" bir tarafta paylaşım, diğer tarafta sahiplik) gerilimin kendisi olarak sosyal inşacı okuma ile ele alınır; ana mercek değişmez.
 
-**Sorunsallaştırma:** Faz 2'de konu-kesfet doldurur.
+**Sorunsallaştırma:**
 
-**Konu boşluğu (taslak, Faz 0'dan):** Ortaklaşa rekabet kavramı destinasyon pazarlamasında ve yeni yeni uluslararası ilişkilerde kullanılmış, ancak devletlerarası miras turizmi ve Türkiye–Çin ilişkisine uygulanmamıştır (doğrulanmalı) — ve bu boşluk, Türkiye–Çin turizm ilişkisinin "yumuşak güç/iş birliği" varsayımıyla tek yönlü okunmasından doğmuştur.
+1. **Yerleşik anlatı:** Türkiye–Çin turizm yazını (Niu & Li, 2019; Palaz vd., 2024; Kılıç 2021 ve Zengin 2021 gibi TR çalışmaları) İpek Yolu turizmini Kuşak ve Yol çerçevesinde karşılıklı kazanç sağlayan bir iş birliği ve yumuşak güç alanı olarak açıklar; sorunlar (güvenlik, dil, maliyet) iş birliğinin önündeki teknik engeller olarak ele alınır.
+2. **Zımni varsayım:** "Ortak miras ortak çıkardır" — paylaşılan İpek Yolu mirası tarafların aynı yönde değerlendirdiği nötr bir ortak varlıktır.
+3. **Kırılma:** Miras siyaseti yazını paylaşılan mirasın aynı zamanda egemenlik ve temsil iddiası aracı olduğunu gösterir (Deb21: Türkiye'nin Karagöz'ü tek-devlet adaylığı); Çin'in İpek Yolu'nu Sinomerkezci tarihselleştirdiği belgelenmiştir (Sci22; Winter 2020); altyapı iş birliği turist akışına dönüşmemektedir (Farmanov vd., 2026; TÜİK: Çin payı en fazla %1).
+4. **Alternatif okuma (KATKI):** İpek Yolu mirası bir ortak varlık değil, **ortaklaşa rekabetin nesnesidir**: Türkiye ve Çin değeri turistten uzak arenalarda (bağlantısallık) birlikte yaratır, turiste yakın arenalarda (anlatı, değer yakalama) ayrı ayrı yakalamaya çalışır.
+5. **Üç soruluk sınav:** geçti — (i) Ö3 desteklenmese, yani rekabet bağlantısallıkta da yoğun çıksa, ayrıştırma ilkesinin devletlerarası ilişkide işlemediği sonucu yine ilginçtir; (ii) katkı cümlesi "çalışılmamıştı" demeden yazılabiliyor; (iii) yanlışlanan iddia tek cümle: "Türkiye–Çin İpek Yolu turizmi bir kazan-kazan iş birliği alanıdır."
+
+**Konu boşluğu (tek cümle):** İpek Yolu'nda ortaklaşa rekabet çok taraflı destinasyon programı düzeyinde incelenmiş (Redi & Pulido Fernández, 2018), iki devlet arası anlatı ve değer yakalama düzeyinde incelenmemiştir — ve bu boşluk, paylaşılan mirasın nötr bir ortak varlık sayılmasından doğmuştur.
 
 ## 3b. Kavram Tanımları ve Operasyonelleştirme
 
@@ -49,7 +58,9 @@ Doküman analizi tasarımı olduğu için roller değişken rolü değil **anali
 
 ## 3c. Kavramsal Model (Şekil 1)
 
-Faz 2'de konu-kesfet üretir.
+- **Şekil:** `sekiller/sekil1-kavramsal-model.png` (300 dpi; elle yerleşim `sekiller/sekil1_ciz.py`) · **Tanım:** `sekiller/kavramsal-model.json`
+- `kavramsal_model.py` doğrulaması: çıkış 0 (5 kavram, 4 yol; oksuz önerme/kutusuz kavram yok). Otomatik yerleşim Ö2'yi yanıltıcı çizdiği için şekil aynı spec'ten elle yeniden çizildi.
+- Üretim: 2026-10-07. Kutular → §3b ek satırları: "Ortak İpek Yolu mirası", "Turiste yakınlık (arena konumu)" = ayrıştırma ilkesi satırı, "Turist akışı" = turist akışı arenası + TÜİK serisi.
 
 ## 4. Mukabil-Yazar Simülasyonu
 
@@ -82,7 +93,9 @@ Faz 2'de doldurulur.
 
 ## 10. Yan Etkiler / Reflexivity
 
-Faz 2'de doldurulur.
+- **Kim kazanır / kaybeder:** Türk turizm politikası (KTB, TGA) ve Çin pazarına çalışan acenteler, "iş birliği" ile "rekabet" alanlarını ayırarak daha gerçekçi strateji kurabilir. Kaybeden, ilişkiyi yalnız kazan-kazan dille sunan diplomatik iletişimdir; makale bu söylemi sorgular.
+- **Yazar önyargıları:** Yazar Türk ve turizm pazarlaması alanından geliyor; uluslararası ilişkiler yazınına hâkimiyeti sınırlı. Türk tarafının anlatısına sempati riski var → iki ülkenin belgeleri aynı kod şemasıyla, simetrik kodlanacak.
+- **Politik konum şeffaflığı:** Sincan/Uygur meselesi kapsam dışı bırakılıyor; bu bir analitik tercih olduğu kadar siyasi bir tercihtir ve sınırlılıklarda açıkça yazılacak.
 
 ## 11. Kuşaksal Konum
 
@@ -100,3 +113,4 @@ Faz 5'te makale-yaz doldurur.
 ## 13. Versiyon Geçmişi
 
 - v1 (2026-10-07): ilk hal, proje-baslat tarafından oluşturuldu
+- v2 (2026-10-07): konu-kesfet — §1, §2 (önermeler), §3 sorunsallaştırma, §3c Şekil 1, §10

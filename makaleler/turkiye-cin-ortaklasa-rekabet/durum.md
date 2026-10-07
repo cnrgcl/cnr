@@ -28,12 +28,12 @@ Durum sembolleri: ✓ tamam · → açık · İŞLEMDE · kilitli · ATLANDI
 
 ## Aktif Kapının Kriterleri
 
-- [ ] Kuramsal mercek + sentez modeli blueprint §3'e kilitli
-- [ ] Sorunsallaştırma yapıldı (boşluk-avcılığı katkı sayılmaz)
-- [ ] Araştırma sorusu kilitli
-- [ ] ≥1 hipotez / araştırma önermesi
-- [ ] §3b kavram tablosu dolu (bilinmeyen hücreler `<KAYNAK YOK>`)
-- [ ] §3c kavramsal model şekli üretildi (`kavramsal_model.py` çıkış 0)
+- [x] Kuramsal mercek + sentez modeli blueprint §3'e kilitli
+- [x] Sorunsallaştırma yapıldı (boşluk-avcılığı katkı sayılmaz)
+- [x] Araştırma sorusu kilitli
+- [x] ≥1 hipotez / araştırma önermesi
+- [x] §3b kavram tablosu dolu (bilinmeyen hücreler `<KAYNAK YOK>`)
+- [x] §3c kavramsal model şekli üretildi (`kavramsal_model.py` çıkış 0)
 - [ ] Yöntem ailesi yontem-kilavuzu ile seçilip §5-§6'ya kilitli
 - [ ] Undermind promptu teslim edildi
 
@@ -51,3 +51,4 @@ Durum sembolleri: ✓ tamam · → açık · İŞLEMDE · kilitli · ATLANDI
 [2026-10-07 02:45] Editör: BOŞLUK DARALDI. Redi & Pulido Fernández 2018 [Red18] UNWTO İpek Yolu Programı'nı "destinasyonlar arası ortaklaşa rekabet" olarak zaten inceliyor. Katkı cümlesi revize: çok taraflı program düzeyi değil, İKİ DEVLET arası (Türkiye–Çin) ve anlatı otoritesi + değer yakalama arenaları. Destek: Sinomerkezci tarihselleştirme yazını [Sci22, Win20, Win20b, Nak22, Bro24] anlatı arenasını kanıtlıyor; Niu19 2018 Türkiye Turizm Yılı'nı (Çin'de) doğruluyor.
 [2026-10-07 03:20] kuramsal-mercek: Kritik realizm + Hart/sorunsallaştırma/huni kilitlendi (kullanıcı 'devam' dedi, editör seçti). §3b kavram tablosu 9 satır; 3 hücre <KAYNAK TEYİT>, 2 hücre <KAYNAK YOK>. Değer yakalama arenası kanıt zayıflığı nedeniyle düşebilir.
 [2026-10-07 03:40] Editör: Kullanıcı TÜİK 01_turizm zip'ini yükledi. Çin serisi 2000–2025 birincil kaynaktan çıkarıldı (ham-veri/cinli-ziyaretci-tuik.csv; kaynak xls'ler ham-veri/tuik-kaynak/). Çin payı yabancı girişlerde 2018'de %0,998 ile zirve, 2025'te %0,806. Pal24 tablosunda 2021 (26.000 ↔ TÜİK 33.641) hatalı. 2026 aylık veri yok → vize muafiyeti iddiası hâlâ doğrulanmadı.
+[2026-10-07 04:10] konu-kesfet: tamam, §1-§3c ve §10 dolu, Şekil 1 üretildi (kavramsal_model.py çıkış 0; elle yeniden yerleşim). Kalan Faz 2 kriterleri: yöntem kilidi (§5-§6), Undermind promptu (kullanıcı aramayı zaten koştu → teslim edilmiş sayılabilir).
