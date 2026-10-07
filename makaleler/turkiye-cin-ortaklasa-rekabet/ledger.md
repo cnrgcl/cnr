@@ -2,7 +2,7 @@
 
 **Hedef:** ≥30 alakalı kaynak (≥%30 TR, ≥%30 uluslararası)
 **Mevcut:** 43 / 30
-**TR / Uluslar:** 14 / 28 (TR = Türkçe dilli ya da Türkiye odaklı; %33 / %67)
+**TR / Uluslar:** 14 / 29 (TR = Türkçe dilli ya da Türkiye odaklı; %33 / %67)
 **Son güncelleme:** 2026-10-07
 
 ---
