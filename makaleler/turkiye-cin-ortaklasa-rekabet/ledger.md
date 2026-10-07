@@ -23,13 +23,13 @@
 - **Tezimize bağı:** Çinli aracıların tur içeriğine dair tercihleri var; değer yakalama/kontrol VERİSİ YOK → değer yakalama arenası için zayıf kanıt uyarısı.
 - **Okuma:** YZ tam metin · **DOI:** 10.20491/isarder.2021.1230
 
-### [03] Palaz(?) — 2024. Kuşak ve Yol İnisiyatifi'nin Çin-Türkiye turizmi üzerindeki etkisi: Fırsatlar ve zorlukların incelenmesi. *The Journal of Social Sciences*.
-- **Tipi:** TR bağlam · **Alaka:** 8 · **KÜNYE EKSİK: yazar adları adaylar.csv U022'den teyit edilecek**
+### [03] Palidan, M. (2024). Kuşak ve Yol İnisiyatifi'nin Çin-Türkiye turizmi üzerindeki etkisi: Fırsatlar ve zorlukların incelenmesi. *The Journal of Social Sciences, 73*, 442–462.
+- **Tipi:** TR bağlam · **Alaka:** 8 · Künye Crossref ile teyitli (Crossref tek yazar listeliyor; PDF'den teyit)
 - **Anahtar bulgu:** Nitel, ikincil kaynak; Çinli gelişleri tablosu (2015–2023, kaynak: China Tourism Academy + TÜİK 2024); 2015 e-vize, 2018 Türkiye Turizm Yılı; vize muafiyeti yalnız ÖNERİ.
 - **Tezimize bağı:** İlişkiyi tamamen iş birliği olarak çerçeveliyor, rekabeti analiz etmiyor → TR yazınındaki tek yönlü okuma varsayımının kanıtı (sorunsallaştırma §3).
 - **Okuma:** YZ tam metin · **DOI:** adaylar.csv U022
 
-### [04] Sirirak(?) (2018). Conceptualizing ASEAN tourism brand: Towards a coopetition framework. *GATR Global Journal of Business Social Sciences Review*. — KÜNYE yazar adı teyit edilecek (U015)
+### [04] Sirisuthikul, V. (2018). Conceptualizing ASEAN tourism brand: Towards a coopetition framework. *GATR Global Journal of Business Social Sciences Review, 6*(2?), 114–121. — sayı numarası PDF'den teyit
 - **Tipi:** benzer kavramsal · **Alaka:** 7
 - **Anahtar bulgu:** Ortak bölgesel marka (iş birliği) + ulusal konumlandırma (rekabet) iki kademeli çerçeve.
 - **Tezimize bağı:** Çok-ülkeli ortak marka içinde ulusal farklılaşma şablonu → İpek Yolu markası için analog.
@@ -58,7 +58,7 @@
 - **Tezimize bağı:** Bağlantısallık arenasında iş birliğinin turizme DÖNÜŞMEDİĞİNİN kanıtı (altyapı iş birliği ≠ turist akışı).
 - **DOI:** 10.3389/frsut.2026.1948903
 
-### [09] De Cesari(?) / Deb21 (2021). Sharing heritage? Politics and territoriality in UNESCO's heritage lists. *Territory, Politics, Governance*. — KÜNYE yazar adları teyit edilecek (U044)
+### [09] Debarbieux, B., Bortolotto, C., Munz, H., & Raziano, C. (2023; çevrimiçi 2021). Sharing heritage? Politics and territoriality in UNESCO's heritage lists. *Territory, Politics, Governance, 11*(3?), 608–624.
 - **Tipi:** öncül kuram (miras siyaseti) · **Alaka:** 8
 - **Anahtar bulgu:** "Paylaşılan miras" hem iş birliği hem egemenlik iddiası aracı; Türkiye Karagöz'ü Yunanistan'sız aday gösterdi; İpek Yolları 2014: Çin, Kırgızistan, Kazakistan.
 - **Tezimize bağı:** Anlatı arenasının kuramsal dayanağı; Türkiye'nin tek-devlet adaylığı örneği.
