@@ -165,27 +165,44 @@ pb = copy.deepcopy(P_BODY); clear_runs(pb)
 r = etree.SubElement(pb, q('r')); br = etree.SubElement(r, q('br')); br.set(q('type'), 'page')
 ext.addprevious(pb)
 
+# ---- Öz / Abstract / Extended Summary metinleri (bolumler/ozet-v1.md) ----
+_oz = open(os.path.join(BOL, 'ozet-v1.md'), encoding='utf-8').read()
+_oz = re.sub(r'<!--.*?-->', '', _oz, flags=re.S)
+def _sec(name):
+    m = re.search(r'^## ' + re.escape(name) + r'\n(.*?)(?=^## |\Z)', _oz, flags=re.S | re.M)
+    return m.group(1)
+def _paras(block):
+    return [' '.join(l.strip() for l in b.splitlines()) for b in re.split(r'\n\s*\n', block.strip())
+            if b.strip() and not b.strip().startswith('**Anahtar') and not b.strip().startswith('**Keywords')]
+OZ_TR = _paras(_sec('Öz'))[0]
+OZ_EN = _paras(_sec('Abstract'))[0]
+EXT = {}
+for m in re.finditer(r'^### (.+?)\n(.*?)(?=^### |\Z)', _sec('Extended Summary'), flags=re.S | re.M):
+    EXT[m.group(1).strip()] = _paras(m.group(2))
+
 # ---- Genişletilmiş Özet ----
 kids = list(body)
 i0 = kids.index(ext)
-ext_place = {
-    'Bu bölümde, çalışmanın hangi temel': '[[EXTENDED SUMMARY – Purpose: to be written in English once findings are final (whole summary 750–1,000 words, with in-text citations, no separate reference list).]]',
-    'Bu bölümde, araştırmanın hangi yaklaşımla': '[[Methodology: single embedded case; systematic document analysis of 49 official documents (368 meaning units); two independent human coders; TÜİK arrivals series 2010–2025 (descriptive).]]',
-    'Bu bölümde, araştırma kapsamında': '[[Findings: P1–P5 in order; to be filled after the human coding is complete.]]',
-    'Bu bölümde, elde edilen bulgulara': '[[Conclusions: to be filled after Discussion and Conclusion is written by the author.]]',
-    'Bu bölümde, çalışmanın literatüre': '[[Originality and value: first transfer of the separation principle (Bengtsson & Kock, 2000) to inter-state heritage tourism; the Silk Road heritage as the object of coopetition rather than a neutral shared asset.]]',
+ext_map = {
+    'Bu bölümde, çalışmanın hangi temel': 'Purpose',
+    'Bu bölümde, araştırmanın hangi yaklaşımla': 'Methodology',
+    'Bu bölümde, araştırma kapsamında': 'Findings',
+    'Bu bölümde, elde edilen bulgulara': 'Conclusions',
+    'Bu bölümde, çalışmanın literatüre': 'Originality and Value',
 }
 for e in kids[i0 + 1:]:
     t = txt(e)
     if t.startswith('Dergide yayımlanan Türkçe') or t.startswith('An Extended Summary in English'):
         body.remove(e); continue
-    for k, v in ext_place.items():
+    for k, sec in ext_map.items():
         if t.startswith(k):
             has_pb = e.find('.//' + q('br') + "[@{%s}type='page']" % W) is not None
-            newp = para(e, v)
+            news = [para(e, ptxt) for ptxt in EXT[sec]]
             if has_pb:
-                r = etree.SubElement(newp, q('r')); b = etree.SubElement(r, q('br')); b.set(q('type'), 'page')
-            body.replace(e, newp)
+                r = etree.SubElement(news[-1], q('r')); b = etree.SubElement(r, q('br')); b.set(q('type'), 'page')
+            for n in news:
+                e.addprevious(n)
+            body.remove(e)
 
 # ---- Başlık sayfası ----
 kids = list(body)
@@ -227,10 +244,10 @@ for p in tbl.iter(q('p')):
     if m:
         set_text_runs(p, kw_en[int(m.group(1)) - 1])
     if t.startswith('Özet, en az 150'):
-        np_ = para(p, '[[ÖZ (150–200 kelime): amaç, yöntem, temel bulgular ve sonuç. Bulgular kesinleşince yazılacak.]]')
+        np_ = para(p, OZ_TR)
         p.getparent().replace(p, np_)
     elif t.startswith('The abstract should be'):
-        np_ = para(p, '[[ABSTRACT (150–200 words): to mirror the Turkish Öz once findings are final.]]')
+        np_ = para(p, OZ_EN)
         p.getparent().replace(p, np_)
 sdts = list(tbl.iter(q('sdt')))
 for s, lab in zip(sdts, ['ÖZ', 'ABSTRACT']):

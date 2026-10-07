@@ -8,7 +8,7 @@ Dergi şablonu `nevubidek_makale-sablon_260506.docx` (DergiPark yazım kurallar�
 | Kısım | Durum |
 |---|---|
 | Başlık TR/EN | dolu |
-| Öz / Abstract (150–200) | sarı yer tutucu — bulgular sonrası |
+| Öz / Abstract (150–200) | taslak dolu (`bolumler/ozet-v1.md`); bulgu ve sonuç cümleleri sarı yer tutucu |
 | Anahtar kelimeler (5+5) | öneri dolu; değiştirebilirsiniz |
 | 1. Giriş | taslak dolu (alt başlıksız, şablon kuralı) |
 | 2. Kuramsal Çerçeve (2.1–2.4) | taslak dolu; Ö1–Ö5 içinde |
@@ -17,7 +17,7 @@ Dergi şablonu `nevubidek_makale-sablon_260506.docx` (DergiPark yazım kurallar�
 | 4. Bulgular | yalnız başlıklar + sarı yönergeler — **siz yazacaksınız** |
 | 5. Tartışma ve Sonuç | yalnız başlıklar + sarı yönergeler — **siz yazacaksınız** |
 | Kaynakça (46) | APA 7, yalnız metinde atıf yapılanlar |
-| Extended Summary (750–1.000) | sarı yer tutucu — bulgular sonrası |
+| Extended Summary (750–1.000) | taslak dolu (~730 sabit kelime + yer tutucular); Findings/Conclusions sarı |
 | Yazar beyanı tablosu | işaretlendi: tek yazar, çıkar çatışması yok, etik kurul gerekmez, YZ beyanı (Claude), mali destek yok |
 
 **Kelime:** şu an ~5.960 (şablon sabit metinleri dahil); hedef 6.000–12.000. Bulgular + Tartışma + Öz + Extended Summary ile ~10.000 beklenir.
