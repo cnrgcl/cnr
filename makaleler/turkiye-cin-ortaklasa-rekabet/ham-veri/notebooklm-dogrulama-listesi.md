@@ -7,14 +7,14 @@ Durum: NotebookLM özeti, DOĞRULANMAMIŞ. Metin makaleye kopyalanmaz; yalnız o
 | # | İddia | Birincil kaynak | Durum |
 |---|---|---|---|
 | 1 | Çinli ziyaretçi: 2013 ~180 bin; 2018 394.109; 2023 248 bin; 2025 >425 bin | TÜİK/EGM Giriş yapan yabancılar (milliyet) | ✓ 2018, 2023 (248.119), 2025 (425.348) DOĞRU · ✗ 2013 YANLIŞ (gerçek 138.876) — `cinli-ziyaretci-tuik.csv` |
-| 2 | 2026 Ocak'tan itibaren Çin vatandaşlarına vize muafiyeti; Ocak–Şubat 2026 %52 artış, >79 bin | Resmî Gazete / MFA vize sayfası / KTB | bekliyor — kritik |
+| 2 | 2026 Ocak'tan itibaren Çin vatandaşlarına vize muafiyeti; Ocak–Şubat 2026 %52 artış, >79 bin | Cumhurbaşkanlığı Kararnamesi (RG no. teyit edilecek); GoTürkiye resmî duyuru; İletişim Bşk. (Xinhua aktarımı) | ✓ MUAFİYET DOĞRU: 2 Ocak 2026'dan itibaren, umuma mahsus pasaport, 180 günde 90 gün, turizm+transit. TEK TARAFLI — Çin karşılık vermedi (arama tarihi 2026-10-07). KTB hedefi: 2026'da 1 milyon, orta vadede 2 milyon. ✗ Ocak–Şubat %52 / >79 bin hâlâ doğrulanmadı |
 | 3 | Kuşak-Yol ile Orta Koridor uyumlaştırma mutabakatı (2015) | MFA / Resmî Gazete | bekliyor |
 | 4 | 2018 Çin'de Türkiye Turizm Yılı | Niu & Li 2019 [Niu19] — akademik teyit VAR | kısmen ✓ |
-| 5 | 5 Haziran 2024 Ersoy–Sun Yeli turizm işbirliği MoU, AKM İstanbul | KTB basın bülteni | bekliyor |
+| 5 | 5 Haziran 2024 Ersoy–Sun Yeli turizm işbirliği MoU, AKM İstanbul | Hürriyet Daily News; İletişim Bşk.; gov.cn (ÇHC Devlet Konseyi İng.) | ✓ 5 Haziran 2024, İstanbul, Ersoy–Sun Yeli; kapsam: yatırım, tanıtım-pazarlama, değişim, kültürel mirasın korunması. Hedef o tarihte: 2030'a kadar yılda 2 milyon |
 | 6 | Kumport %65 Çinli konsorsiyum (2015) | KAP / şirket açıklaması | bekliyor (turizm dışı — kenarda) |
 | 7 | İkili ticaret 2025: 52,9 mlr $; açık 46,3 mlr $ | TÜİK dış ticaret | bekliyor |
 | 8 | Türk Konseyi/TDT "Modern İpek Yolu Ortak Tur Paketi" | TDT resmî sitesi | bekliyor |
-| 9 | Hedef: yıllık 4 milyon Çinli turist | KTB / bakan açıklaması | bekliyor |
+| 9 | Hedef: yıllık 4 milyon Çinli turist | KTB | ✗ YANLIŞ — resmî hedef 1 milyon (2026), 2 milyon (orta vade) |
 | 10 | Çin, Akdeniz merkezi olarak Pire'yi seçti | akademik kaynak (BRI–Pire yazını) | bekliyor |
 
 ## Analitik uyarılar
