@@ -301,7 +301,7 @@
 ## Eksik Olanlar
 
 1. ~~[11] Bengtsson & Kock (2000) tam metni~~ — KAPANDI 2026-10-07 (kullanıcı PDF'i okundu).
-2. **[12] Brandenburger & Nalebuff (1996)** — değer oluşturma/yakalama ve "değer ağı" için sayfa numaraları kitaptan alınmalı.
+2. **[12] Brandenburger & Nalebuff (1996)** — kullanıcı 2026-10-07'de üçüncü taraf özetini (BusinessSummaries.com, 7 s.) yükledi; kitap değil. Asimetri sürüyor: alıntı/sayfa yok, yalnız genel kavram atfı. Bkz. okuma-notlari/12-brandenburger-nalebuff-1996.md
 3. **[23] Winter (2016, The Diplomat)** — metin okunamadı; URL ve içerik teyit edilmeli ya da yerine hakemli Winter eserleri ([22], [24]–[26]) kullanılmalı.
 4. **Değer yakalama arenası için ampirik kaynak** — Çinli tur operatörü/acente, ödeme sistemi, Çinli sahipli otel/aracı payına dair Türkiye verisi yok. Aday aramalar: Palidan (2018) acente tezi (adaylar U060), Abula (2019) tezi (U040), Nangong & Yokoyama (2023) paket tur dağıtım kanalları (U161).
 5. **Çince birincil akademik yazın** — Çin perspektifinden Türkiye/İpek Yolu turizmi (ör. adaylar U186 Çince kitap) taranmadı; dil sınırlılığı.
