@@ -9,7 +9,7 @@
 
 ## 1. Araştırma Sorusu
 
-**AS1:** 2010–2026 döneminde Türkiye ve Çin, İpek Yolu turizm mirası üzerinde hangi arenalarda iş birliği (değer yaratma), hangi arenalarda rekabet (değer yakalama) yürütmektedir ve bu dağılım faaliyetin turiste yakınlığına göre ayrışmakta mıdır?
+**AS1:** 2010–2026 döneminde Türkiye ve Çin, İpek Yolu turizm mirası üzerinde hangi arenalarda iş birliği (değer oluşturma), hangi arenalarda rekabet (değer yakalama) yürütmektedir ve bu dağılım faaliyetin turiste yakınlığına göre ayrışmakta mıdır?
 
 **AS2 (destekleyici):** İki ülkenin iş birliği söylemi ve anlaşmaları, Türkiye'ye Çin uyruklu giriş akışına ne ölçüde yansımıştır?
 
@@ -17,7 +17,7 @@
 
 Nitel doküman analizi tasarımı: hipotez yerine **araştırma önermesi (Ö)**; istatistiksel test yok, kodlama dağılımıyla değerlendirilir.
 
-- **Ö1:** Ortak İpek Yolu mirası iki ülke arasında iş birliğini (değer yaratma) besler. Yön: pozitif · Beklenen görünürlük: güçlü (ikili belgelerin çoğunluğu) · Ref: Brandenburger & Nalebuff (1996); Niu & Li (2019).
+- **Ö1:** Ortak İpek Yolu mirası iki ülke arasında iş birliğini (değer oluşturma) besler. Yön: pozitif · Beklenen görünürlük: güçlü (ikili belgelerin çoğunluğu) · Ref: Brandenburger & Nalebuff (1996); Niu & Li (2019).
 - **Ö2:** Aynı miras eşzamanlı olarak anlatı otoritesi ve değer yakalama rekabetini besler. Yön: pozitif · Görünürlük: orta (tek taraflı anlatılarda) · Ref: Debarbieux vd. (2023); Sciorati (2023).
 - **Ö3 (düzenleyici, ayrıştırma ilkesi):** Faaliyet turiste yaklaştıkça (bağlantısallık → turist akışı → anlatı → değer yakalama) rekabet kodlarının payı artar, iş birliği kodlarının payı azalır. Ref: Bengtsson & Kock (2000).
 - **Ö4:** İş birliği (özellikle bağlantısallık ve karşılıklı tanıtım) turist akışını artırır. Yön: pozitif · Kanıt: TÜİK Çin uyruklu giriş, yabancılar içindeki pay %0,14–%1,00 aralığında (2012–2025); Farmanov vd. (2026) Orta Koridor'da yük var, yolcu yok.
@@ -25,7 +25,7 @@ Nitel doküman analizi tasarımı: hipotez yerine **araştırma önermesi (Ö)**
 
 ## 3. Kuramsal Mercek ve Sorunsallaştırma
 
-**Mercek kilidi:** `Epistemolojik mercek: Kritik realizm · Sentez modeli: Hart argümantatif + Alvesson & Sandberg sorunsallaştırma + huni · Gerekçe: Soru, iş birliği ile rekabetin HANGİ arenada ve NEDEN ayrıştığına dair bir mekanizma (Bengtsson & Kock 2000 ayrıştırma ilkesi; değer yaratma/yakalama) arıyor; doküman analizi bu mekanizmanın gözlemlenebilir izlerini (söylem, anlaşma, akış) okur, izleri mekanizmanın kendisi saymaz.`
+**Mercek kilidi:** `Epistemolojik mercek: Kritik realizm · Sentez modeli: Hart argümantatif + Alvesson & Sandberg sorunsallaştırma + huni · Gerekçe: Soru, iş birliği ile rekabetin HANGİ arenada ve NEDEN ayrıştığına dair bir mekanizma (Bengtsson & Kock 2000 ayrıştırma ilkesi; değer oluşturma/yakalama) arıyor; doküman analizi bu mekanizmanın gözlemlenebilir izlerini (söylem, anlaşma, akış) okur, izleri mekanizmanın kendisi saymaz.`
 
 *Anlatı arenası notu:* Bu arenada kavram çatallanması ("ortak miras" bir tarafta paylaşım, diğer tarafta sahiplik) gerilimin kendisi olarak sosyal inşacı okuma ile ele alınır; ana mercek değişmez.
 
@@ -34,7 +34,7 @@ Nitel doküman analizi tasarımı: hipotez yerine **araştırma önermesi (Ö)**
 1. **Yerleşik anlatı:** Türkiye–Çin turizm yazını (Niu & Li, 2019; Palidan, 2024; Kılıç 2021 ve Zengin 2021 gibi TR çalışmaları) İpek Yolu turizmini Kuşak ve Yol çerçevesinde karşılıklı kazanç sağlayan bir iş birliği ve yumuşak güç alanı olarak açıklar; sorunlar (güvenlik, dil, maliyet) iş birliğinin önündeki teknik engeller olarak ele alınır.
 2. **Zımni varsayım:** "Ortak miras ortak çıkardır" — paylaşılan İpek Yolu mirası tarafların aynı yönde değerlendirdiği nötr bir ortak varlıktır.
 3. **Kırılma:** Miras siyaseti yazını paylaşılan mirasın aynı zamanda egemenlik ve temsil iddiası aracı olduğunu gösterir (Debarbieux vd., 2023: Türkiye'nin Karagöz'ü tek-devlet adaylığı); Çin'in İpek Yolu'nu Sinomerkezci tarihselleştirdiği belgelenmiştir (Sciorati, 2023; Winter 2020); altyapı iş birliği turist akışına dönüşmemektedir (Farmanov vd., 2026; TÜİK: Çin payı en fazla %1).
-4. **Alternatif okuma (KATKI):** İpek Yolu mirası bir ortak varlık değil, **ortaklaşa rekabetin nesnesidir**: Türkiye ve Çin değeri turistten uzak arenalarda (bağlantısallık) birlikte yaratır, turiste yakın arenalarda (anlatı, değer yakalama) ayrı ayrı yakalamaya çalışır.
+4. **Alternatif okuma (KATKI):** İpek Yolu mirası bir ortak varlık değil, **ortaklaşa rekabetin nesnesidir**: Türkiye ve Çin değeri turistten uzak arenalarda (bağlantısallık) birlikte oluşturur, turiste yakın arenalarda (anlatı, değer yakalama) ayrı ayrı yakalamaya çalışır.
 5. **Üç soruluk sınav:** geçti — (i) Ö3 desteklenmese, yani rekabet bağlantısallıkta da yoğun çıksa, ayrıştırma ilkesinin devletlerarası ilişkide işlemediği sonucu yine ilginçtir; (ii) katkı cümlesi "çalışılmamıştı" demeden yazılabiliyor; (iii) yanlışlanan iddia tek cümle: "Türkiye–Çin İpek Yolu turizmi bir kazan-kazan iş birliği alanıdır."
 
 **Konu boşluğu (tek cümle):** İpek Yolu'nda ortaklaşa rekabet çok taraflı destinasyon programı düzeyinde incelenmiş (Redi & Pulido Fernández, 2018), iki devlet arası anlatı ve değer yakalama düzeyinde incelenmemiştir — ve bu boşluk, paylaşılan mirasın nötr bir ortak varlık sayılmasından doğmuştur.
@@ -46,8 +46,8 @@ Doküman analizi tasarımı olduğu için roller değişken rolü değil **anali
 | Kavram | Rol | Kavramsal tanım (1 cümle) | Gözlemlenebilir gösterge | Ölçüm / veri kaynağı | Tanımın kaynağı |
 |---|---|---|---|---|---|
 | Ortaklaşa rekabet (coopetition) | çerçeve | İki aktörün aynı ilişki içinde eşzamanlı olarak iş birliği yapması ve rekabet etmesi | Aynı arenada hem ortak eylem (anlaşma, ortak tanıtım) hem ayrışan konumlanma (ayrı marka, ayrı rota) | Kod çifti: İB / RK her doküman segmentinde | Bengtsson & Kock (2000) |
-| Değer yaratma | arena üst-kategorisi (iş birliği) | Tarafların ortak "pastayı" büyütmeye yönelik eylemleri | Ortak tanıtım, vize/uçuş kolaylığı, ortak yıl ilanı, altyapı uyumu | İkili resmî belge korpusu kodları | Brandenburger & Nalebuff (1996) |
-| Değer yakalama | arena üst-kategorisi (rekabet) | Yaratılan değerden pay alma mücadelesi | Gelir/aracı kontrolü, merkez/rota konumu, marka sahipliği | Tek taraflı anlatı korpusu + ikincil veri | Brandenburger & Nalebuff (1996); değer yaratma–yakalama gerilimi için Chou & Zolkiewski (2018, IMM 70: 25–33) |
+| Değer oluşturma | arena üst-kategorisi (iş birliği) | Tarafların ortak "pastayı" büyütmeye yönelik eylemleri | Ortak tanıtım, vize/uçuş kolaylığı, ortak yıl ilanı, altyapı uyumu | İkili resmî belge korpusu kodları | Brandenburger & Nalebuff (1996) |
+| Değer yakalama | arena üst-kategorisi (rekabet) | Oluşturulan değerden pay alma mücadelesi | Gelir/aracı kontrolü, merkez/rota konumu, marka sahipliği | Tek taraflı anlatı korpusu + ikincil veri | Brandenburger & Nalebuff (1996); değer oluşturma–yakalama gerilimi için Chou & Zolkiewski (2018, IMM 70: 25–33) |
 | Ayrıştırma ilkesi | mekanizma | İş birliğinin müşteriden uzak, rekabetin müşteriye yakın faaliyetlerde yoğunlaşması | Bağlantısallık metinlerinde İB baskın; anlatı/turist metinlerinde RK baskın | Arena × İB/RK çapraz tablosu | Bengtsson & Kock (2000) |
 | Anlatı arenası | kod kategorisi | İpek Yolu'nun merkezini, başlangıcını ve sahibini tanımlama rekabeti | Harita/rota anlatısında merkez kent, "köprü/başlangıç" iddiası, tek-devlet adaylık | Tek taraflı tanıtım metinleri (GoTürkiye, TDT; Çin KTB, CGTN, Xinhua) | Miras diplomasisi: Winter (2015); Sinomerkezci tarihselleştirme: Sciorati (2023); paylaşılan miras/egemenlik: Debarbieux vd. (2023) |
 | Turist akışı arenası | kod kategorisi | Karşılıklı ziyaretçi hareketini artırma ve yönlendirme eylemleri | Vize, uçuş, turizm yılı, hedef sayılar | Resmî belgeler + KTB/TÜİK ziyaretçi serisi | `<KAYNAK YOK>` (operasyonel tanım yazarındır) |

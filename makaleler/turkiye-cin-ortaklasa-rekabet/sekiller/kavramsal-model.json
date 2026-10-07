@@ -7,7 +7,7 @@
       "tanim_var": true
     },
     {
-      "ad": "İş birliği (değer yaratma)",
+      "ad": "İş birliği (değer oluşturma)",
       "rol": "araci",
       "tanim_var": true
     },
@@ -31,7 +31,7 @@
     {
       "hipotez": "Ö1",
       "kaynak": "Ortak İpek Yolu mirası",
-      "hedef": "İş birliği (değer yaratma)",
+      "hedef": "İş birliği (değer oluşturma)",
       "yon": "pozitif"
     },
     {
@@ -48,7 +48,7 @@
     },
     {
       "hipotez": "Ö4",
-      "kaynak": "İş birliği (değer yaratma)",
+      "kaynak": "İş birliği (değer oluşturma)",
       "hedef": "Turist akışı",
       "yon": "pozitif"
     },

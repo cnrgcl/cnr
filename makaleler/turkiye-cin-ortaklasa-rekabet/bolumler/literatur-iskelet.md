@@ -1,7 +1,7 @@
 # Literatür iskeleti (ADIM 1) — 2026-10-07
 
 ## Altın iplik
-Türkiye–Çin turizm yazını ilişkiyi Kuşak ve Yol çerçevesinde karşılıklı kazanç sağlayan bir iş birliği olarak okumakta uzlaşmış görünüyor; ancak miras siyaseti yazını "paylaşılan" İpek Yolu'nun aynı zamanda anlatı otoritesi ve egemenlik için bir çekişme alanı olduğunu gösteriyor. Ortaklaşa rekabet kuramı bu iki okumayı değer yaratma–değer yakalama ayrımıyla birleştirebilir, fakat kavram firma ve destinasyon düzeyinde gelişmiş, devletlerarası miras turizminde sınanmamıştır. Bu çalışma, ayrıştırma ilkesini Türkiye–Çin İpek Yolu turizmine taşıyarak bu boşlukta konumlanıyor.
+Türkiye–Çin turizm yazını ilişkiyi Kuşak ve Yol çerçevesinde karşılıklı kazanç sağlayan bir iş birliği olarak okumakta uzlaşmış görünüyor; ancak miras siyaseti yazını "paylaşılan" İpek Yolu'nun aynı zamanda anlatı otoritesi ve egemenlik için bir çekişme alanı olduğunu gösteriyor. Ortaklaşa rekabet kuramı bu iki okumayı değer oluşturma–değer yakalama ayrımıyla birleştirebilir, fakat kavram firma ve destinasyon düzeyinde gelişmiş, devletlerarası miras turizminde sınanmamıştır. Bu çalışma, ayrıştırma ilkesini Türkiye–Çin İpek Yolu turizmine taşıyarak bu boşlukta konumlanıyor.
 
 ## Alt bölümler (her biri: bir iddia + bir gerilim)
 
@@ -15,7 +15,7 @@ Türkiye–Çin turizm yazını ilişkiyi Kuşak ve Yol çerçevesinde karşıl�
 - Kaynaklar: [22] Winter 2015, [25] Winter 2020, [24] Winter 2021, [26] Winter 2021, [27] Sciorati 2023, [28] Nakano 2023, [29] Brown & O'Brien 2025, [09] Debarbieux vd. 2023, [40] Mozaffari & Akbar 2024, [41] Hisarlıoğlu & Yanık 2025, [06] Kostopoulou vd. 2021
 - Gerilim: KAVRAM ÇATALLANMASI — "paylaşılan" = ortaklık (UNESCO ortak adaylık) ↔ egemenlik/tek-devlet sahipliği (Karagöz; Sinomerkezci tarihselleştirme)
 
-### 1.3. Ortaklaşa rekabet: değer yaratma ile değer yakalamanın ayrıştırılması
+### 1.3. Ortaklaşa rekabet: değer oluşturma ile değer yakalamanın ayrıştırılması
 - İddia: Ortaklaşa rekabet iki okumayı birleştirir; ayrıştırma ilkesi iş birliği ve rekabetin hangi faaliyette yoğunlaşacağını öngörür.
 - Kaynaklar: [12] Brandenburger & Nalebuff 1996, [10][11] Bengtsson & Kock 1999/2000, [13] Gnyawali & Ryan Charleton 2018, [14] Chou & Zolkiewski 2018; turizm: [17] Wang & Krakover 2008, [15][16] Chim-Miki & Batista-Canino 2017, [19] Kirillova vd. 2020, [04] Sirisuthikul 2018, [18] Redi & Pulido Fernández 2018 (en yakın rakip), [20] Norheim-Hansen vd. 2026; UI: [21] Wisniewski 2025
 - Gerilim: BAĞLAM SINIRI — kavram firma → destinasyon düzeyinde gelişti; devlet düzeyinde ve miras nesnesinde sınanmadı; [20] statü arttıkça ortaklaşa rekabet azalıyor (büyük güç–orta güç asimetrisi için öngörü)
@@ -29,6 +29,6 @@ Türkiye–Çin turizm yazını ilişkiyi Kuşak ve Yol çerçevesinde karşıl�
 
 ## Yazar-Okuma Asimetrisi uyarıları (kritik dayanak, tam metin yok)
 - [11] Bengtsson & Kock 2000 — Ö3'ün dayanağı; yalnız metadata. PDF ŞART.
-- [12] Brandenburger & Nalebuff 1996 — değer yaratma/yakalama; yalnız kitap tanıtımı. Kitap ya da ilgili bölüm ŞART.
+- [12] Brandenburger & Nalebuff 1996 — değer oluşturma/yakalama; yalnız kitap tanıtımı. Kitap ya da ilgili bölüm ŞART.
 - [18] Redi & Pulido Fernández 2018 — en yakın rakip; yalnız abstract. PDF önerilir.
 - Tam metni okunan kaynaklar (alıntı çapası yalnız bunlarda): [01] [02] [03] [04] [09] [42] (+ [05] [06] [07] [08] Undermind okuması)

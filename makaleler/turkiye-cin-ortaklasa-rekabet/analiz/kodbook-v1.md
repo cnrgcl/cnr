@@ -13,7 +13,7 @@ Her anlam birimine: ARENA + YÖNELİM + TARAF (+ serbest alt kod).
 ## YÖNELİM
 | Kod | Tanım | Karar kuralı |
 |---|---|---|
-| İB | Değer yaratma: ortak eylem/ortak çıkar dili | Birim iki tarafı birlikte özne yapıyor ya da ortak kazanç vurguluyor |
+| İB | Değer oluşturma: ortak eylem/ortak çıkar dili | Birim iki tarafı birlikte özne yapıyor ya da ortak kazanç vurguluyor |
 | RK | Değer yakalama: ayrışan konumlanma | Birim bir tarafı merkez/ayrıcalıklı konuma koyuyor ya da diğerini dışlıyor/görmezden geliyor |
 | KR | Karma | Aynı birimde ikisi birden (ör. "uyumlu ama kendi koridorumuz") |
 

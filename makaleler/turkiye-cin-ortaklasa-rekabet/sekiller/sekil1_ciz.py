@@ -5,7 +5,7 @@ from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
 fig, ax = plt.subplots(figsize=(10, 5.6)); ax.set_xlim(0, 10); ax.set_ylim(0, 5.6); ax.axis("off")
 W, H = 2.5, 0.8
 kutu = {"miras": (0.3, 2.6, "Ortak İpek Yolu\nmirası"),
-        "ib": (3.8, 3.9, "İş birliği\n(değer yaratma)"),
+        "ib": (3.8, 3.9, "İş birliği\n(değer oluşturma)"),
         "rk": (3.8, 0.9, "Rekabet\n(değer yakalama)"),
         "akis": (7.2, 2.4, "Turist akışı"),
         "yak": (0.3, 0.6, "Turiste yakınlık\n(arena konumu)")}
