@@ -52,3 +52,17 @@ Uyuşmazlığın niteliği (yönelim çapraz tablosu): 368 birimin yalnız **9'u
 ## 6. Yazarın karar vermesi gereken
 - **Uyuşmazlıklar nasıl raporlanacak?** (a) Önerim: uzlaşı yapmadan iki kodlayıcıyı ayrı ayrı + uyumlu alt kümeyi (n=195) ana sonuç olarak raporlamak (duyarlılık analizi; zaman açısından gerçekçi). (b) 173 uyuşmazlık birimini `analiz/insan-kodlar/uyusmazliklar.xlsx` üzerinde karara bağlamak (sarı sütunlar); dosya `uzlasi.csv` olarak kaydedilirse betik "nihai_uzlasi" setini otomatik üretir.
 - Şekil 3 için veri: `analiz/sekil-verileri/sekil3-rekabet-payi.csv` (Excel'de çizin).
+
+## 7. ANA SONUÇ SETİ: üç kodlayıcı çoğunluğu (kullanıcı kararı, 2026-10-07)
+Üçüncü kodlayıcı = YZ destekli kodlama (kodbook v2), insan kodlarından ÖNCE yapıldı (git: 02:18 UTC; insan kodları 15:14 UTC) → bağımsız. Kural: alan ve M1–M3 için 3'ten en az 2. Üç kodlama farklı alan verdiyse çözümsüz (5 birim: A03-03, A18-11, B02-13, B02-20, B18-03) → dışarıda. n = 363. YZ'nin belirleyici olduğu uyuşmazlık: 168.
+YZ–insan uyumu: alan κ K1 0,64 / K2 0,70; yönelim κ K1 0,44 / K2 0,43 (insan–insan: 0,73 / 0,47).
+
+| Alan | n | İB | RK | KR | NÖ | RK % (NÖ hariç) | RK % (NÖ dahil) |
+|---|---|---|---|---|---|---|---|
+| Bağlantısallık | 98 | 45 | 21 | 0 | 32 | 31,8 | 21,4 |
+| Turist akışı | 123 | 49 | 30 | 3 | 41 | 36,6 | 24,4 |
+| Anlatı | 122 | 40 | 21 | 3 | 58 | 32,8 | 17,2 |
+| Değer yakalama | 20 | 5 | 4 | 0 | 11 | 44,4 | 20,0 |
+Ö3 kararı: NÖ hariç fark +12,6 yp, monoton değil → **kısmi**; NÖ dahil fark −1,4 → **destek yok**. Duyarlılık setleriyle (K1, K2, uyumlu 195) aynı yön → sonuç kodlayıcıya ve çözüm yöntemine duyarlı değil.
+Korpus: A İB %49,7 / RK %20,3 (Ö1 destek); B İB %27,4 / RK %21,5 (Ö2 kısmi: B'de iş birliği düşüyor, rekabet artmıyor, nötr artıyor).
+Taraf (NÖ hariç RK %): TR 45,0 → 56,2 → 55,6 → 75,0 (destek); CN 13,0 → 25,0 → 24,4 → 25,0 (kısmi). Türk kaynaklarında ayrıştırma ilkesi işliyor, Çin kaynaklarında zayıf. M2 TR 32/154 (%20,8), CN 18/195 (%9,2).

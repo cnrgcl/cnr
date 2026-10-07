@@ -73,6 +73,33 @@ st["K1"] = ozet([K1[i] for i in ids]); st["K2"] = ozet([K2[i] for i in ids])
 uyumlu = [K1[i] for i in ids if K1[i]["alan"] == K2[i]["alan"] and yonelim(K1[i]) == yonelim(K2[i])]
 st["uyumlu_alt_kume"] = {"n": len(uyumlu), **ozet(uyumlu)}
 
+
+# Üçüncü kodlayıcı: YZ destekli kodlama (kodbook v2), insan kodlarından ÖNCE ve bağımsız üretildi
+# (git: analiz/kodlama-v2.csv, 2026-10-07 02:18 UTC; insan kodları 15:14 UTC). Uyuşmazlıklar çoğunluk kuralıyla çözülür:
+# alan ve her işaret (M1–M3) için 3 kodlayıcıdan en az 2'sinin verdiği değer; alan üçünde de farklıysa birim "çözümsüz".
+import re as _re
+K3 = {}
+for r in csv.DictReader(open("analiz/kodlama-v2.csv", encoding="utf-8")):
+    n = int(_re.search(r"(\d+)$", r["birim_no"]).group(1)); i = f"{r['belge']}-{n:02d}"
+    K3[i] = {**K1[i], "alan": r["arena_v2"].replace("A", ""), "m1": r["m1"], "m2": r["m2"], "m3": r["m3"]}
+assert set(K3) == set(K1)
+st["kappa_YZ"] = {k: {"alan": kappa([K[i]["alan"] for i in ids], [K3[i]["alan"] for i in ids]),
+                      "yonelim": kappa([yonelim(K[i]) for i in ids], [yonelim(K3[i]) for i in ids])} for k, K in (("K1", K1), ("K2", K2))}
+cog, cozumsuz, yz_belirleyici = [], [], 0
+for i in ids:
+    a, b, c = K1[i], K2[i], K3[i]
+    r = dict(a)
+    vals = [a["alan"], b["alan"], c["alan"]]
+    top = Counter(vals).most_common(1)[0]
+    if top[1] < 2:
+        cozumsuz.append(i); continue
+    r["alan"] = top[0]
+    for m in ("m1", "m2", "m3"):
+        r[m] = Counter([a[m], b[m], c[m]]).most_common(1)[0][0]
+    if not (a["alan"] == b["alan"] and yonelim(a) == yonelim(b)): yz_belirleyici += 1
+    cog.append(r)
+st["uc_kodlayici_cogunluk"] = {"n": len(cog), "cozumsuz_alan": cozumsuz, "yz_ile_cozulen_uyusmazlik": yz_belirleyici, **ozet(cog)}
+
 # Yazar uzlaşısı varsa nihai set
 if os.path.exists("analiz/insan-kodlar/uzlasi.csv"):
     uz = {r["ifade_id"]: r for r in csv.DictReader(open("analiz/insan-kodlar/uzlasi.csv", encoding="utf-8"))}
@@ -116,6 +143,7 @@ with open("analiz/sekil-verileri/sekil3-rekabet-payi.csv", "w", newline="", enco
         w.writerow([ADI[a], st["K1"]["tablo"][a]["rk_nö_haric"], st["K2"]["tablo"][a]["rk_nö_haric"],
                     st["uyumlu_alt_kume"]["tablo"][a]["rk_nö_haric"], st["uyumlu_alt_kume"]["tablo_TR"][a]["rk_nö_haric"],
                     st["uyumlu_alt_kume"]["tablo_CN"][a]["rk_nö_haric"]])
-print(json.dumps({"kappa": st["kappa"], "uyumlu_n": st["uyumlu_alt_kume"]["n"],
+print(json.dumps({"kappa": st["kappa"], "kappa_YZ": st["kappa_YZ"], "uyumlu_n": st["uyumlu_alt_kume"]["n"],
+                  "cogunluk": {k: st["uc_kodlayici_cogunluk"][k] for k in ("n", "cozumsuz_alan", "yz_ile_cozulen_uyusmazlik", "o3_nö_haric", "o3_nö_dahil")},
                   "o3": {k: st[k]["o3_nö_haric"] for k in ("K1", "K2", "uyumlu_alt_kume")},
                   "o3_dahil": {k: st[k]["o3_nö_dahil"] for k in ("K1", "K2", "uyumlu_alt_kume")}}, ensure_ascii=False, indent=1))

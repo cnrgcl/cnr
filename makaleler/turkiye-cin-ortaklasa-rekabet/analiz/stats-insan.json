@@ -769,5 +769,282 @@
    "m2_kendini_one_cikarma": 10,
    "m3_dislama": 6
   }
+ },
+ "kappa_YZ": {
+  "K1": {
+   "alan": {
+    "n": 368,
+    "uyusma_yuzde": 74.5,
+    "kappa": 0.64
+   },
+   "yonelim": {
+    "n": 368,
+    "uyusma_yuzde": 60.6,
+    "kappa": 0.437
+   }
+  },
+  "K2": {
+   "alan": {
+    "n": 368,
+    "uyusma_yuzde": 78.8,
+    "kappa": 0.702
+   },
+   "yonelim": {
+    "n": 368,
+    "uyusma_yuzde": 60.6,
+    "kappa": 0.428
+   }
+  }
+ },
+ "uc_kodlayici_cogunluk": {
+  "n": 363,
+  "cozumsuz_alan": [
+   "A03-03",
+   "A18-11",
+   "B02-13",
+   "B02-20",
+   "B18-03"
+  ],
+  "yz_ile_cozulen_uyusmazlik": 168,
+  "tablo": {
+   "1": {
+    "n": 98,
+    "İB": 45,
+    "RK": 21,
+    "KR": 0,
+    "NÖ": 32,
+    "rk_nö_haric": 31.8,
+    "rk_nö_dahil": 21.4,
+    "ib_nö_haric": 68.2
+   },
+   "2": {
+    "n": 123,
+    "İB": 49,
+    "RK": 30,
+    "KR": 3,
+    "NÖ": 41,
+    "rk_nö_haric": 36.6,
+    "rk_nö_dahil": 24.4,
+    "ib_nö_haric": 59.8
+   },
+   "3": {
+    "n": 122,
+    "İB": 40,
+    "RK": 21,
+    "KR": 3,
+    "NÖ": 58,
+    "rk_nö_haric": 32.8,
+    "rk_nö_dahil": 17.2,
+    "ib_nö_haric": 62.5
+   },
+   "4": {
+    "n": 20,
+    "İB": 5,
+    "RK": 4,
+    "KR": 0,
+    "NÖ": 11,
+    "rk_nö_haric": 44.4,
+    "rk_nö_dahil": 20.0,
+    "ib_nö_haric": 55.6
+   }
+  },
+  "o3_nö_haric": {
+   "seri": [
+    31.8,
+    36.6,
+    32.8,
+    44.4
+   ],
+   "monoton": false,
+   "fark_A1_A4": 12.6,
+   "karar": "kısmi"
+  },
+  "o3_nö_dahil": {
+   "seri": [
+    21.4,
+    24.4,
+    17.2,
+    20.0
+   ],
+   "monoton": false,
+   "fark_A1_A4": -1.4,
+   "karar": "destek yok"
+  },
+  "tablo_TR": {
+   "1": {
+    "n": 54,
+    "İB": 22,
+    "RK": 18,
+    "KR": 0,
+    "NÖ": 14,
+    "rk_nö_haric": 45.0,
+    "rk_nö_dahil": 33.3,
+    "ib_nö_haric": 55.0
+   },
+   "2": {
+    "n": 50,
+    "İB": 12,
+    "RK": 18,
+    "KR": 2,
+    "NÖ": 18,
+    "rk_nö_haric": 56.2,
+    "rk_nö_dahil": 36.0,
+    "ib_nö_haric": 37.5
+   },
+   "3": {
+    "n": 43,
+    "İB": 7,
+    "RK": 10,
+    "KR": 1,
+    "NÖ": 25,
+    "rk_nö_haric": 55.6,
+    "rk_nö_dahil": 23.3,
+    "ib_nö_haric": 38.9
+   },
+   "4": {
+    "n": 7,
+    "İB": 1,
+    "RK": 3,
+    "KR": 0,
+    "NÖ": 3,
+    "rk_nö_haric": 75.0,
+    "rk_nö_dahil": 42.9,
+    "ib_nö_haric": 25.0
+   }
+  },
+  "o3_TR_nö_haric": {
+   "seri": [
+    45.0,
+    56.2,
+    55.6,
+    75.0
+   ],
+   "monoton": false,
+   "fark_A1_A4": 30.0,
+   "karar": "destek"
+  },
+  "tablo_CN": {
+   "1": {
+    "n": 38,
+    "İB": 20,
+    "RK": 3,
+    "KR": 0,
+    "NÖ": 15,
+    "rk_nö_haric": 13.0,
+    "rk_nö_dahil": 7.9,
+    "ib_nö_haric": 87.0
+   },
+   "2": {
+    "n": 69,
+    "İB": 35,
+    "RK": 12,
+    "KR": 1,
+    "NÖ": 21,
+    "rk_nö_haric": 25.0,
+    "rk_nö_dahil": 17.4,
+    "ib_nö_haric": 72.9
+   },
+   "3": {
+    "n": 77,
+    "İB": 32,
+    "RK": 11,
+    "KR": 2,
+    "NÖ": 32,
+    "rk_nö_haric": 24.4,
+    "rk_nö_dahil": 14.3,
+    "ib_nö_haric": 71.1
+   },
+   "4": {
+    "n": 11,
+    "İB": 3,
+    "RK": 1,
+    "KR": 0,
+    "NÖ": 7,
+    "rk_nö_haric": 25.0,
+    "rk_nö_dahil": 9.1,
+    "ib_nö_haric": 75.0
+   }
+  },
+  "o3_CN_nö_haric": {
+   "seri": [
+    13.0,
+    25.0,
+    24.4,
+    25.0
+   ],
+   "monoton": false,
+   "fark_A1_A4": 12.0,
+   "karar": "kısmi"
+  },
+  "tablo_ORT": {
+   "1": {
+    "n": 6,
+    "İB": 3,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 3,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   },
+   "2": {
+    "n": 4,
+    "İB": 2,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 2,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   },
+   "3": {
+    "n": 2,
+    "İB": 1,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 1,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   },
+   "4": {
+    "n": 2,
+    "İB": 1,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 1,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   }
+  },
+  "korpusA": {
+   "n": 177,
+   "İB": 88,
+   "NÖ": 50,
+   "RK": 36,
+   "KR": 3,
+   "ib_yuzde": 49.7,
+   "rk_yuzde": 20.3
+  },
+  "korpusB": {
+   "n": 186,
+   "İB": 51,
+   "NÖ": 92,
+   "RK": 40,
+   "KR": 3,
+   "ib_yuzde": 27.4,
+   "rk_yuzde": 21.5
+  },
+  "isaret_TR": {
+   "n": 154,
+   "m2_kendini_one_cikarma": 32,
+   "m3_dislama": 21
+  },
+  "isaret_CN": {
+   "n": 195,
+   "m2_kendini_one_cikarma": 18,
+   "m3_dislama": 12
+  }
  }
 }
