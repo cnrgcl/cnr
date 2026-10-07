@@ -1,5 +1,7 @@
 # Bulgular özeti (2026-10-07) — her sayı analiz/stats.json'dan
 
+> **GEÇERSİZ (2026-10-07):** Bu özet YZ pilot kodlarına dayanır. Güncel sonuçlar: `bulgular-veri-ozeti-insan.md`.
+
 Korpus: 49 belge, 368 anlam birimi.
 
 ## Ö3 — rekabet payı turiste yakınlıkla artıyor mu? (ön-kayıtlı kural: monoton YA DA A1→A4 ≥20 yp)

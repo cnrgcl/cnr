@@ -1,0 +1,773 @@
+{
+ "n_birim": 368,
+ "kodlayicilar": "K1, K2 (iki bağımsız insan kodlayıcı; kullanıcı beyanı 2026-10-07)",
+ "kappa": {
+  "alan": {
+   "n": 368,
+   "uyusma_yuzde": 81.2,
+   "kappa": 0.731
+  },
+  "m1_ortak_ozne": {
+   "n": 368,
+   "uyusma_yuzde": 81.5,
+   "kappa": 0.611
+  },
+  "m2_kendini_one_cikarma": {
+   "n": 368,
+   "uyusma_yuzde": 88.3,
+   "kappa": 0.483
+  },
+  "m3_dislama": {
+   "n": 368,
+   "uyusma_yuzde": 88.6,
+   "kappa": 0.448
+  },
+  "yonelim": {
+   "n": 368,
+   "uyusma_yuzde": 64.7,
+   "kappa": 0.466
+  }
+ },
+ "yonelim_capraz": {
+  "İB|İB": 98,
+  "İB|NÖ": 17,
+  "NÖ|RK": 23,
+  "RK|RK": 43,
+  "NÖ|NÖ": 96,
+  "NÖ|İB": 35,
+  "RK|NÖ": 31,
+  "KR|İB": 8,
+  "KR|NÖ": 2,
+  "KR|RK": 2,
+  "RK|İB": 7,
+  "RK|KR": 2,
+  "KR|KR": 1,
+  "İB|RK": 2,
+  "NÖ|KR": 1
+ },
+ "K1": {
+  "tablo": {
+   "1": {
+    "n": 89,
+    "İB": 33,
+    "RK": 26,
+    "KR": 3,
+    "NÖ": 27,
+    "rk_nö_haric": 41.9,
+    "rk_nö_dahil": 29.2,
+    "ib_nö_haric": 53.2
+   },
+   "2": {
+    "n": 112,
+    "İB": 40,
+    "RK": 26,
+    "KR": 7,
+    "NÖ": 39,
+    "rk_nö_haric": 35.6,
+    "rk_nö_dahil": 23.2,
+    "ib_nö_haric": 54.8
+   },
+   "3": {
+    "n": 152,
+    "İB": 41,
+    "RK": 29,
+    "KR": 2,
+    "NÖ": 80,
+    "rk_nö_haric": 40.3,
+    "rk_nö_dahil": 19.1,
+    "ib_nö_haric": 56.9
+   },
+   "4": {
+    "n": 15,
+    "İB": 3,
+    "RK": 2,
+    "KR": 1,
+    "NÖ": 9,
+    "rk_nö_haric": 33.3,
+    "rk_nö_dahil": 13.3,
+    "ib_nö_haric": 50.0
+   }
+  },
+  "o3_nö_haric": {
+   "seri": [
+    41.9,
+    35.6,
+    40.3,
+    33.3
+   ],
+   "monoton": false,
+   "fark_A1_A4": -8.6,
+   "karar": "destek yok"
+  },
+  "o3_nö_dahil": {
+   "seri": [
+    29.2,
+    23.2,
+    19.1,
+    13.3
+   ],
+   "monoton": false,
+   "fark_A1_A4": -15.9,
+   "karar": "destek yok"
+  },
+  "tablo_TR": {
+   "1": {
+    "n": 48,
+    "İB": 15,
+    "RK": 17,
+    "KR": 1,
+    "NÖ": 15,
+    "rk_nö_haric": 51.5,
+    "rk_nö_dahil": 35.4,
+    "ib_nö_haric": 45.5
+   },
+   "2": {
+    "n": 42,
+    "İB": 8,
+    "RK": 13,
+    "KR": 2,
+    "NÖ": 19,
+    "rk_nö_haric": 56.5,
+    "rk_nö_dahil": 31.0,
+    "ib_nö_haric": 34.8
+   },
+   "3": {
+    "n": 60,
+    "İB": 14,
+    "RK": 15,
+    "KR": 0,
+    "NÖ": 31,
+    "rk_nö_haric": 51.7,
+    "rk_nö_dahil": 25.0,
+    "ib_nö_haric": 48.3
+   },
+   "4": {
+    "n": 6,
+    "İB": 1,
+    "RK": 1,
+    "KR": 0,
+    "NÖ": 4,
+    "rk_nö_haric": 50.0,
+    "rk_nö_dahil": 16.7,
+    "ib_nö_haric": 50.0
+   }
+  },
+  "o3_TR_nö_haric": {
+   "seri": [
+    51.5,
+    56.5,
+    51.7,
+    50.0
+   ],
+   "monoton": false,
+   "fark_A1_A4": -1.5,
+   "karar": "destek yok"
+  },
+  "tablo_CN": {
+   "1": {
+    "n": 35,
+    "İB": 14,
+    "RK": 9,
+    "KR": 2,
+    "NÖ": 10,
+    "rk_nö_haric": 36.0,
+    "rk_nö_dahil": 25.7,
+    "ib_nö_haric": 56.0
+   },
+   "2": {
+    "n": 68,
+    "İB": 31,
+    "RK": 13,
+    "KR": 5,
+    "NÖ": 19,
+    "rk_nö_haric": 26.5,
+    "rk_nö_dahil": 19.1,
+    "ib_nö_haric": 63.3
+   },
+   "3": {
+    "n": 88,
+    "İB": 24,
+    "RK": 14,
+    "KR": 2,
+    "NÖ": 48,
+    "rk_nö_haric": 35.0,
+    "rk_nö_dahil": 15.9,
+    "ib_nö_haric": 60.0
+   },
+   "4": {
+    "n": 7,
+    "İB": 1,
+    "RK": 1,
+    "KR": 1,
+    "NÖ": 4,
+    "rk_nö_haric": 33.3,
+    "rk_nö_dahil": 14.3,
+    "ib_nö_haric": 33.3
+   }
+  },
+  "o3_CN_nö_haric": {
+   "seri": [
+    36.0,
+    26.5,
+    35.0,
+    33.3
+   ],
+   "monoton": false,
+   "fark_A1_A4": -2.7,
+   "karar": "destek yok"
+  },
+  "tablo_ORT": {
+   "1": {
+    "n": 6,
+    "İB": 4,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 2,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   },
+   "2": {
+    "n": 2,
+    "İB": 1,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 1,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   },
+   "3": {
+    "n": 4,
+    "İB": 3,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 1,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   },
+   "4": {
+    "n": 2,
+    "İB": 1,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 1,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   }
+  },
+  "korpusA": {
+   "n": 179,
+   "İB": 84,
+   "NÖ": 54,
+   "RK": 32,
+   "KR": 9,
+   "ib_yuzde": 46.9,
+   "rk_yuzde": 17.9
+  },
+  "korpusB": {
+   "n": 189,
+   "İB": 33,
+   "NÖ": 101,
+   "RK": 51,
+   "KR": 4,
+   "ib_yuzde": 17.5,
+   "rk_yuzde": 27.0
+  },
+  "isaret_TR": {
+   "n": 156,
+   "m2_kendini_one_cikarma": 31,
+   "m3_dislama": 25
+  },
+  "isaret_CN": {
+   "n": 198,
+   "m2_kendini_one_cikarma": 26,
+   "m3_dislama": 24
+  }
+ },
+ "K2": {
+  "tablo": {
+   "1": {
+    "n": 103,
+    "İB": 46,
+    "RK": 13,
+    "KR": 0,
+    "NÖ": 44,
+    "rk_nö_haric": 22.0,
+    "rk_nö_dahil": 12.6,
+    "ib_nö_haric": 78.0
+   },
+   "2": {
+    "n": 124,
+    "İB": 50,
+    "RK": 32,
+    "KR": 3,
+    "NÖ": 39,
+    "rk_nö_haric": 37.6,
+    "rk_nö_dahil": 25.8,
+    "ib_nö_haric": 58.8
+   },
+   "3": {
+    "n": 117,
+    "İB": 44,
+    "RK": 21,
+    "KR": 1,
+    "NÖ": 51,
+    "rk_nö_haric": 31.8,
+    "rk_nö_dahil": 17.9,
+    "ib_nö_haric": 66.7
+   },
+   "4": {
+    "n": 24,
+    "İB": 8,
+    "RK": 4,
+    "KR": 0,
+    "NÖ": 12,
+    "rk_nö_haric": 33.3,
+    "rk_nö_dahil": 16.7,
+    "ib_nö_haric": 66.7
+   }
+  },
+  "o3_nö_haric": {
+   "seri": [
+    22.0,
+    37.6,
+    31.8,
+    33.3
+   ],
+   "monoton": false,
+   "fark_A1_A4": 11.3,
+   "karar": "kısmi"
+  },
+  "o3_nö_dahil": {
+   "seri": [
+    12.6,
+    25.8,
+    17.9,
+    16.7
+   ],
+   "monoton": false,
+   "fark_A1_A4": 4.1,
+   "karar": "kısmi"
+  },
+  "tablo_TR": {
+   "1": {
+    "n": 59,
+    "İB": 23,
+    "RK": 11,
+    "KR": 0,
+    "NÖ": 25,
+    "rk_nö_haric": 32.4,
+    "rk_nö_dahil": 18.6,
+    "ib_nö_haric": 67.6
+   },
+   "2": {
+    "n": 51,
+    "İB": 13,
+    "RK": 20,
+    "KR": 3,
+    "NÖ": 15,
+    "rk_nö_haric": 55.6,
+    "rk_nö_dahil": 39.2,
+    "ib_nö_haric": 36.1
+   },
+   "3": {
+    "n": 41,
+    "İB": 7,
+    "RK": 8,
+    "KR": 1,
+    "NÖ": 25,
+    "rk_nö_haric": 50.0,
+    "rk_nö_dahil": 19.5,
+    "ib_nö_haric": 43.8
+   },
+   "4": {
+    "n": 5,
+    "İB": 1,
+    "RK": 3,
+    "KR": 0,
+    "NÖ": 1,
+    "rk_nö_haric": 75.0,
+    "rk_nö_dahil": 60.0,
+    "ib_nö_haric": 25.0
+   }
+  },
+  "o3_TR_nö_haric": {
+   "seri": [
+    32.4,
+    55.6,
+    50.0,
+    75.0
+   ],
+   "monoton": false,
+   "fark_A1_A4": 42.6,
+   "karar": "destek"
+  },
+  "tablo_CN": {
+   "1": {
+    "n": 38,
+    "İB": 20,
+    "RK": 2,
+    "KR": 0,
+    "NÖ": 16,
+    "rk_nö_haric": 9.1,
+    "rk_nö_dahil": 5.3,
+    "ib_nö_haric": 90.9
+   },
+   "2": {
+    "n": 69,
+    "İB": 35,
+    "RK": 12,
+    "KR": 0,
+    "NÖ": 22,
+    "rk_nö_haric": 25.5,
+    "rk_nö_dahil": 17.4,
+    "ib_nö_haric": 74.5
+   },
+   "3": {
+    "n": 74,
+    "İB": 36,
+    "RK": 13,
+    "KR": 0,
+    "NÖ": 25,
+    "rk_nö_haric": 26.5,
+    "rk_nö_dahil": 17.6,
+    "ib_nö_haric": 73.5
+   },
+   "4": {
+    "n": 17,
+    "İB": 6,
+    "RK": 1,
+    "KR": 0,
+    "NÖ": 10,
+    "rk_nö_haric": 14.3,
+    "rk_nö_dahil": 5.9,
+    "ib_nö_haric": 85.7
+   }
+  },
+  "o3_CN_nö_haric": {
+   "seri": [
+    9.1,
+    25.5,
+    26.5,
+    14.3
+   ],
+   "monoton": false,
+   "fark_A1_A4": 5.2,
+   "karar": "kısmi"
+  },
+  "tablo_ORT": {
+   "1": {
+    "n": 6,
+    "İB": 3,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 3,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   },
+   "2": {
+    "n": 4,
+    "İB": 2,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 2,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   },
+   "3": {
+    "n": 2,
+    "İB": 1,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 1,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   },
+   "4": {
+    "n": 2,
+    "İB": 1,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 1,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   }
+  },
+  "korpusA": {
+   "n": 179,
+   "İB": 81,
+   "NÖ": 56,
+   "RK": 38,
+   "KR": 4,
+   "ib_yuzde": 45.3,
+   "rk_yuzde": 21.2
+  },
+  "korpusB": {
+   "n": 189,
+   "İB": 67,
+   "RK": 32,
+   "NÖ": 90,
+   "ib_yuzde": 35.4,
+   "rk_yuzde": 16.9
+  },
+  "isaret_TR": {
+   "n": 156,
+   "m2_kendini_one_cikarma": 25,
+   "m3_dislama": 22
+  },
+  "isaret_CN": {
+   "n": 198,
+   "m2_kendini_one_cikarma": 13,
+   "m3_dislama": 15
+  }
+ },
+ "uyumlu_alt_kume": {
+  "n": 195,
+  "tablo": {
+   "1": {
+    "n": 42,
+    "İB": 25,
+    "RK": 5,
+    "KR": 0,
+    "NÖ": 12,
+    "rk_nö_haric": 16.7,
+    "rk_nö_dahil": 11.9,
+    "ib_nö_haric": 83.3
+   },
+   "2": {
+    "n": 69,
+    "İB": 30,
+    "RK": 18,
+    "KR": 1,
+    "NÖ": 20,
+    "rk_nö_haric": 36.7,
+    "rk_nö_dahil": 26.1,
+    "ib_nö_haric": 61.2
+   },
+   "3": {
+    "n": 76,
+    "İB": 26,
+    "RK": 13,
+    "KR": 0,
+    "NÖ": 37,
+    "rk_nö_haric": 33.3,
+    "rk_nö_dahil": 17.1,
+    "ib_nö_haric": 66.7
+   },
+   "4": {
+    "n": 8,
+    "İB": 3,
+    "RK": 1,
+    "KR": 0,
+    "NÖ": 4,
+    "rk_nö_haric": 25.0,
+    "rk_nö_dahil": 12.5,
+    "ib_nö_haric": 75.0
+   }
+  },
+  "o3_nö_haric": {
+   "seri": [
+    16.7,
+    36.7,
+    33.3,
+    25.0
+   ],
+   "monoton": false,
+   "fark_A1_A4": 8.3,
+   "karar": "kısmi"
+  },
+  "o3_nö_dahil": {
+   "seri": [
+    11.9,
+    26.1,
+    17.1,
+    12.5
+   ],
+   "monoton": false,
+   "fark_A1_A4": 0.6,
+   "karar": "kısmi"
+  },
+  "tablo_TR": {
+   "1": {
+    "n": 22,
+    "İB": 11,
+    "RK": 5,
+    "KR": 0,
+    "NÖ": 6,
+    "rk_nö_haric": 31.2,
+    "rk_nö_dahil": 22.7,
+    "ib_nö_haric": 68.8
+   },
+   "2": {
+    "n": 27,
+    "İB": 6,
+    "RK": 11,
+    "KR": 1,
+    "NÖ": 9,
+    "rk_nö_haric": 61.1,
+    "rk_nö_dahil": 40.7,
+    "ib_nö_haric": 33.3
+   },
+   "3": {
+    "n": 30,
+    "İB": 6,
+    "RK": 6,
+    "KR": 0,
+    "NÖ": 18,
+    "rk_nö_haric": 50.0,
+    "rk_nö_dahil": 20.0,
+    "ib_nö_haric": 50.0
+   },
+   "4": {
+    "n": 1,
+    "İB": 1,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 0,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   }
+  },
+  "o3_TR_nö_haric": {
+   "seri": [
+    31.2,
+    61.1,
+    50.0,
+    0.0
+   ],
+   "monoton": false,
+   "fark_A1_A4": -31.2,
+   "karar": "destek yok"
+  },
+  "tablo_CN": {
+   "1": {
+    "n": 15,
+    "İB": 11,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 4,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   },
+   "2": {
+    "n": 40,
+    "İB": 23,
+    "RK": 7,
+    "KR": 0,
+    "NÖ": 10,
+    "rk_nö_haric": 23.3,
+    "rk_nö_dahil": 17.5,
+    "ib_nö_haric": 76.7
+   },
+   "3": {
+    "n": 44,
+    "İB": 19,
+    "RK": 7,
+    "KR": 0,
+    "NÖ": 18,
+    "rk_nö_haric": 26.9,
+    "rk_nö_dahil": 15.9,
+    "ib_nö_haric": 73.1
+   },
+   "4": {
+    "n": 5,
+    "İB": 1,
+    "RK": 1,
+    "KR": 0,
+    "NÖ": 3,
+    "rk_nö_haric": 50.0,
+    "rk_nö_dahil": 20.0,
+    "ib_nö_haric": 50.0
+   }
+  },
+  "o3_CN_nö_haric": {
+   "seri": [
+    0.0,
+    23.3,
+    26.9,
+    50.0
+   ],
+   "monoton": true,
+   "fark_A1_A4": 50.0,
+   "karar": "destek"
+  },
+  "tablo_ORT": {
+   "1": {
+    "n": 5,
+    "İB": 3,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 2,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   },
+   "2": {
+    "n": 2,
+    "İB": 1,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 1,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   },
+   "3": {
+    "n": 2,
+    "İB": 1,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 1,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   },
+   "4": {
+    "n": 2,
+    "İB": 1,
+    "RK": 0,
+    "KR": 0,
+    "NÖ": 1,
+    "rk_nö_haric": 0.0,
+    "rk_nö_dahil": 0.0,
+    "ib_nö_haric": 100.0
+   }
+  },
+  "korpusA": {
+   "n": 106,
+   "İB": 58,
+   "RK": 19,
+   "NÖ": 28,
+   "KR": 1,
+   "ib_yuzde": 54.7,
+   "rk_yuzde": 17.9
+  },
+  "korpusB": {
+   "n": 89,
+   "İB": 26,
+   "NÖ": 45,
+   "RK": 18,
+   "ib_yuzde": 29.2,
+   "rk_yuzde": 20.2
+  },
+  "isaret_TR": {
+   "n": 80,
+   "m2_kendini_one_cikarma": 12,
+   "m3_dislama": 13
+  },
+  "isaret_CN": {
+   "n": 104,
+   "m2_kendini_one_cikarma": 10,
+   "m3_dislama": 6
+  }
+ }
+}
