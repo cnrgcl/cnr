@@ -3,7 +3,7 @@
 **Tarih:** 2026-10-07
 **Yazar:** Dr. Caner Güçlü
 **Hedef dergi (taslak):** NEVÜ SBE Dergisi — "Türkiye-Çin Diplomatik İlişkileri" özel sayısı
-**Versiyon:** v2
+**Versiyon:** v3
 
 ---
 
@@ -79,7 +79,7 @@ Faz 2'de doldurulur.
 - **Başlangıç bandı:** 30–50 belge; Korpus A ve B için ayrı ayrı ≥12; Korpus B içinde Türkiye/Çin dengesi ≥%40. Doygunluk: son 5 belgede yeni alt kod çıkmazsa durulur; doygunluk tablosu ekte.
 - **Birim:** anlam birimi (bir iddia taşıyan cümle/paragraf).
 - **Kodlama:** karma — tümdengelim üst şema (4 arena × İB/RK; `analiz/kodbook-v1.md`) + tümevarım alt kodlar. Kodbook versiyonlu.
-- **Güvenirlik:** tek insan kodlayıcı (yazar). (a) %20 alt örneklemde aynı gün iki tur yeniden kodlama (iç tutarlılık); (b) YZ (Claude) bağımsız ikinci kodlama, yazar ile Cohen κ (hedef ≥ .70), uyuşmazlıklar yazar kararıyla çözülür ve günlüğe yazılır. YZ'nin kodlayıcı rolü YZ beyanında AÇIKÇA yazılır.
+- **Güvenirlik (v3, 2026-10-07 — rol değişikliği, kullanıcı onaylı):** Birincil kodlama YZ (Claude) tarafından, kodbook v1 karar kurallarıyla, her kod için gerekçe + verbatim alıntı ile yapılır. Yazar (a) tüm kodları denetler, düzeltir, son kararı verir (değişiklikler `analiz/kodlama-gunlugu.md`'ye); (b) YZ kodlarını görmeden rastgele seçilmiş 10 belgeyi (≈%20) bağımsız kodlar; yazar–YZ Cohen κ raporlanır (hedef ≥ .70). YZ beyanı: "Birincil kodlama YZ ile yapıldı; yazar tümünü denetledi ve bağımsız alt örneklemle doğruladı."
 - **İnandırıcılık:** üçgenleme (iki korpus + TÜİK serisi + akademik yazın); olumsuz vaka analizi (rekabet beklenen arenada iş birliği kodları ve tersi ayrıca raporlanır); audit trail (`analiz/kodlama-gunlugu.md`).
 - **Dil sınırlılığı:** Çince birincil metinler yerine resmî İngilizce sürümler; sınırlılıklarda yazılır.
 - **Raporlama standardı:** SRQR.
@@ -143,5 +143,6 @@ Faz 5'te makale-yaz doldurur.
 ## 13. Versiyon Geçmişi
 
 - v1 (2026-10-07): ilk hal, proje-baslat tarafından oluşturuldu
+- v3 (2026-10-07): §5 güvenirlik — birincil kodlayıcı YZ, yazar denetçi + bağımsız %20 alt örneklem (takvim gerekçesi; kullanıcı onayı)
 - v2.1 (2026-10-07): kullanıcı önerisiyle Ö5 eklendi (Rekabet → Turist akışı, negatif); Ö4 pozitif yapıldı
 - v2 (2026-10-07): konu-kesfet — §1, §2 (önermeler), §3 sorunsallaştırma, §3c Şekil 1, §10
