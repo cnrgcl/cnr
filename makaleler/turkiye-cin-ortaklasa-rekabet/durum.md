@@ -107,3 +107,5 @@ Durum sembolleri: ✓ tamam · → açık · İŞLEMDE · kilitli · ATLANDI
 [2026-10-07 15:38] Kullanıcı beyanı: 2026'da NEVÜ SBE Dergisi'nde yayımlanmış makalesi yok → 1 makale/yıl kuralı engel değil. (Not: kabul edilmiş/değerlendirmedeki makale de sayılabilir; kullanıcıya hatırlatıldı.)
 
 [2026-10-07 15:41] K1 kodlayıcı bilgisi (kullanıcının paylaştığı BEÜ profil sayfası): Dr. Öğr. Üyesi Hüseyin Sevinç, Bitlis Eren Ü. İİBF; lisans Marmara Ü. Siyaset Bilimi ve Uluslararası İlişkiler (2006), YL Van YYÜ Kamu Yönetimi (2014), doktora İnönü Ü. Siyaset Bilimi ve Kamu Yönetimi (2021). Yöntem'e kurum adı yazılmadan (anonimlik) eklendi. K2 bilgisi bekleniyor.
+
+[2026-10-07 15:41] K2 kodlayıcı bilgisi (kullanıcının paylaştığı BEÜ profil sayfası): Dr. Öğr. Üyesi Nurullah Cihan Ağbay, Bitlis Eren Ü. Kanık Uygulamalı Bilimler YO; turizm alanı (2025 Erasmus öğretim hareketliliği: Turizm ve Rekreasyon Bölümü). Doktora alanı sayfada yok → Yöntem'de 'turizm alanında görev yapan doktoralı öğretim üyesi'; kullanıcı teyit edecek. Not: iki kodlayıcı da yazarla aynı kurumda olabilir → anonim metinde kurum adı yok; künye/teşekkür yayın aşamasında.
