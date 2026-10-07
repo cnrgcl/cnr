@@ -1,0 +1,167 @@
+<title>İpek Yolu Kodlama Anketi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&family=Instrument+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: tek sütun, her ifade bir "fiş"; üstte yapışkan ilerleme şeridi */
+:root{
+  --bg:#f3f4f1; --card:#ffffff; --fg:#1d2524; --muted:#5d6967; --line:#d9dedb;
+  --accent:#2f6f62; --accent-soft:#e2efeb; --warn:#9a5b12; --ok:#2f6f62;
+  --f-quote:"Literata",Georgia,"Times New Roman",serif;
+  --f-ui:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#141a19; --card:#1c2422; --fg:#e6ecea; --muted:#9aa8a5; --line:#2e3a37;
+  --accent:#7cc2b1; --accent-soft:#213430; --warn:#e0a35a; --ok:#7cc2b1; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141a19; --card:#1c2422; --fg:#e6ecea; --muted:#9aa8a5; --line:#2e3a37;
+  --accent:#7cc2b1; --accent-soft:#213430; --warn:#e0a35a; --ok:#7cc2b1; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-ui);font-size:16px;line-height:1.5}
+.wrap{max-width:720px;margin:0 auto;padding-inline:16px;padding-block:24px 64px;display:flex;flex-direction:column;gap:20px}
+h1{font-family:var(--f-quote);font-weight:600;font-size:1.6rem;margin:0;text-wrap:balance}
+.lead{color:var(--muted);margin:0;max-width:62ch}
+.rules{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:grid;gap:6px;font-size:.92rem}
+.rules b{color:var(--accent)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:2;background:var(--bg);padding-block:10px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line)}
+.track{flex:1;height:6px;background:var(--line);border-radius:3px;overflow:hidden}
+.fill{height:100%;background:var(--accent);width:0;transition:width .25s}
+.count{font-variant-numeric:tabular-nums;font-size:.9rem;color:var(--muted);white-space:nowrap}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 16px;display:grid;gap:14px;min-width:0}
+.card.done{border-color:var(--accent)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline;font-size:.82rem;color:var(--muted)}
+.no{font-weight:600;color:var(--fg);letter-spacing:.04em}
+.chip{border:1px solid var(--line);border-radius:999px;padding:1px 8px}
+.state{margin-left:auto;font-weight:500}
+.state.ok{color:var(--ok)} .state.err{color:var(--warn)}
+blockquote{margin:0;font-family:var(--f-quote);font-size:1.08rem;line-height:1.55;border-left:3px solid var(--accent-soft);padding-left:12px;overflow-wrap:anywhere}
+fieldset{border:0;margin:0;padding:0;display:grid;gap:6px;min-width:0}
+legend{font-weight:600;font-size:.92rem;padding:0;margin-bottom:4px}
+legend small{font-weight:400;color:var(--muted)}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opts label{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:8px;padding:7px 11px;cursor:pointer;font-size:.92rem;user-select:none}
+.opts input{accent-color:var(--accent);margin:0}
+.opts label:has(input:checked){background:var(--accent-soft);border-color:var(--accent)}
+.opts label:has(input:focus-visible){outline:2px solid var(--accent);outline-offset:2px}
+.end{display:grid;gap:10px}
+textarea{width:100%;box-sizing:border-box;min-height:120px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.8rem;background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px}
+button{font:inherit;font-weight:600;background:var(--accent);color:var(--card);border:0;border-radius:8px;padding:9px 14px;cursor:pointer;justify-self:start}
+button:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
+.note{font-size:.88rem;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){.fill{transition:none}}
+</style>
+<div class="wrap">
+  <header style="display:grid;gap:8px">
+    <h1>İpek Yolu kodlaması · 2. tur</h1>
+    <p class="lead">19 ifade, yaklaşık 12 dakika. Her ifadede yalnızca <b>metinde açıkça yazana</b> bakın; arkasındaki niyeti yorumlamayın. Cevaplar seçtiğiniz anda kaydedilir, istediğiniz yerde bırakıp sonra devam edebilirsiniz.</p>
+  </header>
+  <section class="rules" aria-label="Kısa kurallar">
+    <div><b>Alan</b> · Bağlantı: ulaşım, koridor, lojistik, uçuş hattı · Turist akışı: vize, turist sayısı, tanıtım, kültür yılı · Anlatı: İpek Yolu tarihi, ortak medeniyet, miras · Değer: gelir, yatırım, finansman, ticaret</div>
+    <div><b>Ortak özne</b> · "taraflar", "iki ülke", "ortaklaşa", "karşılıklı" gibi iki ülkeyi birlikte anan bir söz var mı?</div>
+    <div><b>Kendini öne çıkarma</b> · Konuşan taraf kendini başlangıç, merkez, köprü, kapı ilan ediyor ya da kendi koridor/marka adını kullanıyor ya da üstünlük karşılaştırması yapıyor mu?</div>
+    <div><b>Dışlama / tek taraflılık</b> · Ortakları sayarken karşı ülkeyi atlıyor ya da yalnız bir tarafa yarayan hedef, taviz, talep var mı?</div>
+  </section>
+  <div class="bar" role="status"><div class="track"><div class="fill" id="fill"></div></div><span class="count" id="count">0 / 19</span></div>
+  <main id="list" style="display:grid;gap:16px"></main>
+  <section class="end" aria-label="Bitiş">
+    <p class="note" id="saveinfo">Kayıt durumu kontrol ediliyor…</p>
+    <details>
+      <summary class="note">Yedek: cevapları metin olarak kopyala</summary>
+      <div style="display:grid;gap:8px;margin-top:8px">
+        <textarea id="csv" readonly aria-label="Cevaplar (CSV)"></textarea>
+        <button type="button" id="copy">Kopyala</button>
+        <span class="note" id="copied" hidden>Kopyalandı. Sohbete yapıştırabilirsiniz.</span>
+      </div>
+    </details>
+  </section>
+</div>
+<script>
+const ITEMS = [{"s": 2, "b": "A06", "u": "13", "kaynak": "ÇHC Dışişleri Bakanlığı · 2015-04-08", "taraf": "Çin kaynağı", "t": "Türkiye'nin büyük düşünürü Mevlana, \"Gel, ne olursan ol gel, umut kapısı size açık\" demiştir."}, {"s": 3, "b": "B07", "u": "B07-13", "kaynak": "Çin Halk Cumhuriyeti Dışişleri Bakanlığı · 2023-05-19", "taraf": "Çin kaynağı", "t": "China invites Central Asian countries to take part in the “Cultural Silk Road” program"}, {"s": 4, "b": "A18", "u": "15", "kaynak": "T.C. Pekin Büyükelçiliği · 2023-10-25", "taraf": "Türk kaynağı", "t": "And vice-versa, I hope more Turkish tourists will visit the historic city of Xi’an treasuring house of relics and ancient sites, as the cradle of Chinese civilization."}, {"s": 5, "b": "A14", "u": "8", "kaynak": "T.C. Pekin Büyükelçiliği · 2019-12-30", "taraf": "Türk kaynağı", "t": "Karşılıklı doğrudan seferlerin artması, karşılıklı turizmin güçlendirilmesi ile dost halklarımızın birbirlerini daha iyi tanımaları bakımından özellikle önem arzetmektedir."}, {"s": 6, "b": "A24", "u": "1", "kaynak": "T.C. Pekin Büyükelçiliği · 2026-05-25", "taraf": "Türk kaynağı", "t": "Thanks to the Silk Road, cultural and economic exchanges have continued to serve for cooperation between our two great civilizations. The Chinese porcelains displayed in the Ottoman Court show the depth of this relationship."}, {"s": 7, "b": "A09", "u": "5", "kaynak": "ÇHC Dışişleri Bakanlığı · 2016-02-03", "taraf": "Çin kaynağı", "t": "İpek Yolu güzergâhındaki önemli bir ülke olarak Türk tarafı \"Kuşak ve Yol\" etrafında Çin tarafıyla güçlü işbirliği yapmak, kültürel yayılım ve heyet ziyaretleri gibi bir dizi kültürel kutlama etkinliğiyle halklar arası değişimi güçlendirmek istiyor."}, {"s": 8, "b": "A18", "u": "2", "kaynak": "T.C. Pekin Büyükelçiliği · 2023-10-25", "taraf": "Türk kaynağı", "t": "For instance, starting from the time of Ming Dynasty, Ottoman and Chinese Emperors have exchanged various precious gifts through the Silk Road."}, {"s": 9, "b": "B01", "u": "B01-05", "kaynak": "Çin Halk Cumhuriyeti Dışişleri Bakanlığı · 2013-09-07", "taraf": "Çin kaynağı", "t": "the ancient Silk Road is becoming full of new vitality with the rapid development of China's relations with Asian and European countries."}, {"s": 10, "b": "A18", "u": "4", "kaynak": "T.C. Pekin Büyükelçiliği · 2023-10-25", "taraf": "Türk kaynağı", "t": "Situated at a unique location at the crossroads of Europe, Asia and Africa, Türkiye prioritizes increased connectivity and economic cooperation to ensure peace, stability and sustainable development."}, {"s": 11, "b": "B06", "u": "B06-03", "kaynak": "ÇHC Kültür ve Turizm Bakanlığı · 2023-05-17", "taraf": "Çin kaynağı", "t": "Çin ve Orta Asya ülkelerinin kültür markalarının etkisini birlikte artırmak"}, {"s": 12, "b": "A12", "u": "17", "kaynak": "T.C. Pekin Büyükelçiliği · 2018-04-23", "taraf": "Türk kaynağı", "t": "I should also add that Turkish and Chinese tour operators need to work closely to offer the best alternatives for Chinese tourists in Turkey."}, {"s": 13, "b": "B15", "u": "B15-03", "kaynak": "ÇHC Kültür ve Turizm Bakanlığı · 2026-04-20", "taraf": "Çin kaynağı", "t": "Shaanxi'deki 22 roadshow satış noktasıyla birlikte eş zamanlı olarak turistik yer bileti indirimleri, otel ve pansiyon indirimleri, kültür-turizm ürünlerinde özel fiyatlar gibi kampanyalar başlattı"}, {"s": 14, "b": "B09", "u": "B09-11", "kaynak": "ÇHC Kültür ve Turizm Bakanlığı sitesi · 2023-09-06", "taraf": "Çin kaynağı", "t": "“Deniz İpek Yolu”nun doğudaki çıkış limanlarından biri olan Zhejiang Ningbo'da Qing'an Loncası, Yongfeng Deposu kalıntıları, Tianfei Tapınağı kalıntıları gibi Deniz İpek Yolu ile ilgili kültürel kalıntılar giderek daha fazla turistin uğrak noktası oldu."}, {"s": 15, "b": "A06", "u": "4", "kaynak": "ÇHC Dışişleri Bakanlığı · 2015-04-08", "taraf": "Çin kaynağı", "t": "Tesis bağlantısı, güzergâh ülkelerinin altyapı planlaması ve teknik standart sistemlerini birbirine bağlaması, uluslararası ana koridorların inşasını birlikte ilerletmesi ve Asya'nın alt bölgelerini ve Asya-Avrupa-Afrika'yı bağlayan bir altyapı ağını adım adım oluşturması demektir."}, {"s": 16, "b": "B05", "u": "B05-01", "kaynak": "T.C. Kültür ve Turizm Bakanlığı · 2017-11-24", "taraf": "Türk kaynağı", "t": "Kültür ve Turizm Bakanlığı, 2018 yılında Çin Halk Cumhuriyeti’nde kutlanacak olan “Türkiye Turizm Yılı” hazırlıklarını sürdürüyor."}, {"s": 17, "b": "B03", "u": "B03-04", "kaynak": "Çin Kuşak ve Yol portalı · 2016-09-22", "taraf": "Çin kaynağı", "t": "2016, Çin İpek Yolu Turizm Yılı'dır"}, {"s": 18, "b": "A18", "u": "7", "kaynak": "T.C. Pekin Büyükelçiliği · 2023-10-25", "taraf": "Türk kaynağı", "t": "This initiative is in natural harmony with the BRI."}, {"s": 19, "b": "A18", "u": "14", "kaynak": "T.C. Pekin Büyükelçiliği · 2023-10-25", "taraf": "Türk kaynağı", "t": "In this vein, I hope that the resumption of Turkish Airlines’ Xi’an-İstanbul direct flights will provide an excellent opportunity for the people of Xi’an city, Shaanxi and neighbouring provinces to discover and explore what Türkiye offers."}, {"s": 20, "b": "A24", "u": "4", "kaynak": "T.C. Pekin Büyükelçiliği · 2026-05-25", "taraf": "Türk kaynağı", "t": "The effective and full harmonization of these two visions will not only provide significant opportunities in commercial, political and cultural areas for the regional countries, but it will also address challenges posed by an increasingly complex world."}];
+const AL = [["A1","Bağlantı"],["A2","Turist akışı"],["A3","Anlatı"],["A4","Değer"]];
+const EH = [["E","Evet"],["H","Hayır"]];
+let ans = {};
+try { ans = JSON.parse(localStorage.getItem("ipek-tur2") || "{}"); } catch (e) { ans = {}; }
+let db = null;
+const pad = s => String(s).padStart(2, "0");
+function group(id, name, legend, opts, hint) {
+  const fs = document.createElement("fieldset");
+  const lg = document.createElement("legend"); lg.textContent = legend;
+  if (hint) { const sm = document.createElement("small"); sm.textContent = " " + hint; lg.appendChild(sm); }
+  const box = document.createElement("div"); box.className = "opts";
+  opts.forEach(([v, t]) => {
+    const lab = document.createElement("label");
+    const inp = document.createElement("input");
+    inp.type = "radio"; inp.name = id + "-" + name; inp.id = id + "-" + name + "-" + v; inp.value = v;
+    inp.dataset.item = id; inp.dataset.field = name;
+    lab.appendChild(inp); lab.append(t); box.appendChild(lab);
+  });
+  fs.append(lg, box); return fs;
+}
+function render() {
+  const list = document.getElementById("list");
+  ITEMS.forEach(it => {
+    const id = "s" + pad(it.s);
+    const c = document.createElement("article"); c.className = "card"; c.id = id;
+    const m = document.createElement("div"); m.className = "meta";
+    const no = document.createElement("span"); no.className = "no"; no.textContent = "İfade " + it.s;
+    const ch = document.createElement("span"); ch.className = "chip"; ch.textContent = it.taraf;
+    const src = document.createElement("span"); src.textContent = it.kaynak;
+    const st = document.createElement("span"); st.className = "state"; st.id = id + "-st";
+    m.append(no, ch, src, st);
+    const q = document.createElement("blockquote"); q.textContent = "“" + it.t + "”";
+    c.append(m, q,
+      group(id, "alan", "Alan", AL),
+      group(id, "m1", "Ortak özne var mı?", EH),
+      group(id, "m2", "Kendini öne çıkarma var mı?", EH),
+      group(id, "m3", "Dışlama / tek taraflılık var mı?", EH));
+    list.appendChild(c);
+    const a = ans[id] || {};
+    ["alan","m1","m2","m3"].forEach(f => { if (a[f]) { const el = document.getElementById(id + "-" + f + "-" + a[f]); if (el) el.checked = true; } });
+  });
+  list.addEventListener("change", e => {
+    const t = e.target; if (!t.dataset || !t.dataset.item) return;
+    const id = t.dataset.item; ans[id] = Object.assign({}, ans[id], { [t.dataset.field]: t.value });
+    try { localStorage.setItem("ipek-tur2", JSON.stringify(ans)); } catch (e) {}
+    refresh(); save(id);
+  });
+  refresh();
+}
+function complete(a) { return a && a.alan && a.m1 && a.m2 && a.m3; }
+function refresh() {
+  let n = 0; const rows = ["sira,belge,birim_no,arena,m1,m2,m3"];
+  ITEMS.forEach(it => {
+    const id = "s" + pad(it.s), a = ans[id] || {};
+    const done = complete(a); if (done) n++;
+    document.getElementById(id).classList.toggle("done", !!done);
+    rows.push([it.s, it.b, it.u, a.alan || "", a.m1 || "", a.m2 || "", a.m3 || ""].join(","));
+  });
+  document.getElementById("fill").style.width = (n / ITEMS.length * 100) + "%";
+  document.getElementById("count").textContent = n + " / " + ITEMS.length;
+  document.getElementById("csv").value = rows.join("\n");
+}
+function mark(id, ok, txt) { const st = document.getElementById(id + "-st"); st.className = "state " + (ok ? "ok" : "err"); st.textContent = txt; }
+async function save(id) {
+  const it = ITEMS.find(x => "s" + pad(x.s) === id); const a = ans[id] || {};
+  if (!db) { mark(id, false, "Yalnız bu cihazda"); return; }
+  try {
+    await db.doc("yanitlar/" + id).set({ sira: it.s, belge: it.b, birim_no: String(it.u), arena: a.alan || "", m1: a.m1 || "", m2: a.m2 || "", m3: a.m3 || "", zaman: new Date().toISOString() });
+    mark(id, true, complete(a) ? "Kaydedildi" : "Kısmen kaydedildi");
+  } catch (e) { mark(id, false, "Kaydedilemedi, yedek metni kullanın"); }
+}
+document.getElementById("copy").addEventListener("click", () => {
+  const ta = document.getElementById("csv");
+  const done = () => { document.getElementById("copied").hidden = false; };
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(ta.value).then(done, () => { ta.focus(); ta.select(); });
+  } else { ta.focus(); ta.select(); }
+});
+render();
+(async () => {
+  const info = document.getElementById("saveinfo");
+  try { db = window.claude && window.claude.use ? await window.claude.use("db") : null; } catch (e) { db = null; }
+  if (db) {
+    info.textContent = "Cevaplarınız otomatik olarak kaydediliyor; Claude bunları doğrudan okuyabilir.";
+    for (const id of Object.keys(ans)) save(id);
+  } else {
+    info.textContent = "Otomatik kayıt bu görünümde çalışmıyor. Bitirince aşağıdaki yedek metni kopyalayıp sohbete yapıştırın.";
+  }
+})();
+</script>
