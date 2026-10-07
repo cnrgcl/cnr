@@ -20,7 +20,8 @@ Nitel doküman analizi tasarımı: hipotez yerine **araştırma önermesi (Ö)**
 - **Ö1:** Ortak İpek Yolu mirası iki ülke arasında iş birliğini (değer yaratma) besler. Yön: pozitif · Beklenen görünürlük: güçlü (ikili belgelerin çoğunluğu) · Ref: Brandenburger & Nalebuff (1996); Niu & Li (2019).
 - **Ö2:** Aynı miras eşzamanlı olarak anlatı otoritesi ve değer yakalama rekabetini besler. Yön: pozitif · Görünürlük: orta (tek taraflı anlatılarda) · Ref: Deb21 (2021); Sci22 (2022).
 - **Ö3 (düzenleyici, ayrıştırma ilkesi):** Faaliyet turiste yaklaştıkça (bağlantısallık → turist akışı → anlatı → değer yakalama) rekabet kodlarının payı artar, iş birliği kodlarının payı azalır. Ref: Bengtsson & Kock (2000).
-- **Ö4:** İş birliği (özellikle bağlantısallık) turist akışına sınırlı ve dalgalı biçimde yansır. Yön: ilişkisel · Kanıt: TÜİK Çin uyruklu giriş, yabancılar içindeki pay %0,14–%1,00 aralığında (2012–2025); Farmanov vd. (2026) Orta Koridor'da yük var, yolcu yok.
+- **Ö4:** İş birliği (özellikle bağlantısallık ve karşılıklı tanıtım) turist akışını artırır. Yön: pozitif · Kanıt: TÜİK Çin uyruklu giriş, yabancılar içindeki pay %0,14–%1,00 aralığında (2012–2025); Farmanov vd. (2026) Orta Koridor'da yük var, yolcu yok.
+- **Ö5:** Rekabet, iş birliğinin turist akışına dönüşümünü sınırlar: Çin İpek Yolu'nu kendi yurt içi destinasyonlarında (Xi'an, Dunhuang vb.) pazarlayarak Çinli talebi içeride tutar; Çinli aracılar değerin bir kısmını kendinde tutar. Yön: negatif · Değerlendirme: yorumlayıcı (nedensel test değil); Ö4 ile Ö5 birlikte "söylem–akış açığını" açıklar · Ref: Daye vd. (2020); Sci22 (2022); İbiş & Batman (2018, %82,4 acente). Sınırlılık: Sincan tanıtımı kapsam dışı ilkesine göre yalnız ekonomik/turistik boyutta, siyasi tartışmaya girmeden anılır.
 
 ## 3. Kuramsal Mercek ve Sorunsallaştırma
 
@@ -59,7 +60,7 @@ Doküman analizi tasarımı olduğu için roller değişken rolü değil **anali
 ## 3c. Kavramsal Model (Şekil 1)
 
 - **Şekil:** `sekiller/sekil1-kavramsal-model.png` (300 dpi; elle yerleşim `sekiller/sekil1_ciz.py`) · **Tanım:** `sekiller/kavramsal-model.json`
-- `kavramsal_model.py` doğrulaması: çıkış 0 (5 kavram, 4 yol; oksuz önerme/kutusuz kavram yok). Otomatik yerleşim Ö2'yi yanıltıcı çizdiği için şekil aynı spec'ten elle yeniden çizildi.
+- `kavramsal_model.py` doğrulaması: çıkış 0 (5 kavram, 5 yol; oksuz önerme/kutusuz kavram yok). Otomatik yerleşim Ö2'yi yanıltıcı çizdiği için şekil aynı spec'ten elle yeniden çizildi.
 - Üretim: 2026-10-07. Kutular → §3b ek satırları: "Ortak İpek Yolu mirası", "Turiste yakınlık (arena konumu)" = ayrıştırma ilkesi satırı, "Turist akışı" = turist akışı arenası + TÜİK serisi.
 
 ## 4. Mukabil-Yazar Simülasyonu
@@ -113,4 +114,5 @@ Faz 5'te makale-yaz doldurur.
 ## 13. Versiyon Geçmişi
 
 - v1 (2026-10-07): ilk hal, proje-baslat tarafından oluşturuldu
+- v2.1 (2026-10-07): kullanıcı önerisiyle Ö5 eklendi (Rekabet → Turist akışı, negatif); Ö4 pozitif yapıldı
 - v2 (2026-10-07): konu-kesfet — §1, §2 (önermeler), §3 sorunsallaştırma, §3c Şekil 1, §10

@@ -1,16 +1,62 @@
 {
   "baslik": "Türkiye–Çin İpek Yolu turizminde ortaklaşa rekabet: kavramsal model",
   "kavramlar": [
-    {"ad": "Ortak İpek Yolu mirası", "rol": "bagimsiz", "tanim_var": true},
-    {"ad": "İş birliği (değer yaratma)", "rol": "araci", "tanim_var": true},
-    {"ad": "Rekabet (değer yakalama)", "rol": "araci", "tanim_var": true},
-    {"ad": "Turiste yakınlık (arena)", "rol": "duzenleyici", "tanim_var": true},
-    {"ad": "Turist akışı", "rol": "bagimli", "tanim_var": true}
+    {
+      "ad": "Ortak İpek Yolu mirası",
+      "rol": "bagimsiz",
+      "tanim_var": true
+    },
+    {
+      "ad": "İş birliği (değer yaratma)",
+      "rol": "araci",
+      "tanim_var": true
+    },
+    {
+      "ad": "Rekabet (değer yakalama)",
+      "rol": "araci",
+      "tanim_var": true
+    },
+    {
+      "ad": "Turiste yakınlık (arena)",
+      "rol": "duzenleyici",
+      "tanim_var": true
+    },
+    {
+      "ad": "Turist akışı",
+      "rol": "bagimli",
+      "tanim_var": true
+    }
   ],
   "yollar": [
-    {"hipotez": "Ö1", "kaynak": "Ortak İpek Yolu mirası", "hedef": "İş birliği (değer yaratma)", "yon": "pozitif"},
-    {"hipotez": "Ö2", "kaynak": "Ortak İpek Yolu mirası", "hedef": "Rekabet (değer yakalama)", "yon": "pozitif"},
-    {"hipotez": "Ö3", "kaynak": "Turiste yakınlık (arena)", "hedef": "Ö2", "yon": "duzenleyici"},
-    {"hipotez": "Ö4", "kaynak": "İş birliği (değer yaratma)", "hedef": "Turist akışı", "yon": "iliskisel"}
+    {
+      "hipotez": "Ö1",
+      "kaynak": "Ortak İpek Yolu mirası",
+      "hedef": "İş birliği (değer yaratma)",
+      "yon": "pozitif"
+    },
+    {
+      "hipotez": "Ö2",
+      "kaynak": "Ortak İpek Yolu mirası",
+      "hedef": "Rekabet (değer yakalama)",
+      "yon": "pozitif"
+    },
+    {
+      "hipotez": "Ö3",
+      "kaynak": "Turiste yakınlık (arena)",
+      "hedef": "Ö2",
+      "yon": "duzenleyici"
+    },
+    {
+      "hipotez": "Ö4",
+      "kaynak": "İş birliği (değer yaratma)",
+      "hedef": "Turist akışı",
+      "yon": "pozitif"
+    },
+    {
+      "hipotez": "Ö5",
+      "kaynak": "Rekabet (değer yakalama)",
+      "hedef": "Turist akışı",
+      "yon": "negatif"
+    }
   ]
 }
