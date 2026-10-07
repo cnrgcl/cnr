@@ -21,7 +21,9 @@ H3: Türkiye, orta güç olarak, iş birliğine katılırken kendi markasını k
 
 ## 3. Kuramsal Mercek ve Sorunsallaştırma
 
-**Mercek kilidi:** Faz 2'de kuramsal-mercek doldurur.
+**Mercek kilidi:** `Epistemolojik mercek: Kritik realizm · Sentez modeli: Hart argümantatif + Alvesson & Sandberg sorunsallaştırma + huni · Gerekçe: Soru, iş birliği ile rekabetin HANGİ arenada ve NEDEN ayrıştığına dair bir mekanizma (Bengtsson & Kock 2000 ayrıştırma ilkesi; değer yaratma/yakalama) arıyor; doküman analizi bu mekanizmanın gözlemlenebilir izlerini (söylem, anlaşma, akış) okur, izleri mekanizmanın kendisi saymaz.`
+
+*Anlatı arenası notu:* Bu arenada kavram çatallanması ("ortak miras" bir tarafta paylaşım, diğer tarafta sahiplik) gerilimin kendisi olarak sosyal inşacı okuma ile ele alınır; ana mercek değişmez.
 
 **Sorunsallaştırma:** Faz 2'de konu-kesfet doldurur.
 
@@ -29,7 +31,21 @@ H3: Türkiye, orta güç olarak, iş birliğine katılırken kendi markasını k
 
 ## 3b. Kavram Tanımları ve Operasyonelleştirme
 
-Faz 2'de doldurulur.
+Doküman analizi tasarımı olduğu için roller değişken rolü değil **analitik rol**dür (çerçeve / arena / kod kategorisi).
+
+| Kavram | Rol | Kavramsal tanım (1 cümle) | Gözlemlenebilir gösterge | Ölçüm / veri kaynağı | Tanımın kaynağı |
+|---|---|---|---|---|---|
+| Ortaklaşa rekabet (coopetition) | çerçeve | İki aktörün aynı ilişki içinde eşzamanlı olarak iş birliği yapması ve rekabet etmesi | Aynı arenada hem ortak eylem (anlaşma, ortak tanıtım) hem ayrışan konumlanma (ayrı marka, ayrı rota) | Kod çifti: İB / RK her doküman segmentinde | Bengtsson & Kock (2000) |
+| Değer yaratma | arena üst-kategorisi (iş birliği) | Tarafların ortak "pastayı" büyütmeye yönelik eylemleri | Ortak tanıtım, vize/uçuş kolaylığı, ortak yıl ilanı, altyapı uyumu | İkili resmî belge korpusu kodları | Brandenburger & Nalebuff (1996) |
+| Değer yakalama | arena üst-kategorisi (rekabet) | Yaratılan değerden pay alma mücadelesi | Gelir/aracı kontrolü, merkez/rota konumu, marka sahipliği | Tek taraflı anlatı korpusu + ikincil veri | Brandenburger & Nalebuff (1996); değer yaratma–yakalama gerilimi için U085 (2017, IMM) — yazar `<KAYNAK TEYİT>` |
+| Ayrıştırma ilkesi | mekanizma | İş birliğinin müşteriden uzak, rekabetin müşteriye yakın faaliyetlerde yoğunlaşması | Bağlantısallık metinlerinde İB baskın; anlatı/turist metinlerinde RK baskın | Arena × İB/RK çapraz tablosu | Bengtsson & Kock (2000) |
+| Anlatı arenası | kod kategorisi | İpek Yolu'nun merkezini, başlangıcını ve sahibini tanımlama rekabeti | Harita/rota anlatısında merkez kent, "köprü/başlangıç" iddiası, tek-devlet adaylık | Tek taraflı tanıtım metinleri (GoTürkiye, TDT; Çin KTB, CGTN, Xinhua) | Miras diplomasisi: Winter (2015); Sinomerkezci tarihselleştirme: Sci22 (2022) — yazar `<KAYNAK TEYİT>`; paylaşılan miras/egemenlik: Deb21 (2021) — yazar `<KAYNAK TEYİT>` |
+| Turist akışı arenası | kod kategorisi | Karşılıklı ziyaretçi hareketini artırma ve yönlendirme eylemleri | Vize, uçuş, turizm yılı, hedef sayılar | Resmî belgeler + KTB/TÜİK ziyaretçi serisi | `<KAYNAK YOK>` (operasyonel tanım yazarındır) |
+| Değer yakalama arenası (operasyonel) | kod kategorisi | Çinli turist harcamasının hangi aktörde kaldığına dair düzenlemeler ve söylemler | Aracı/acente bağımlılığı, ödeme sistemleri, Çinli operatör vurgusu | İkincil yazın (İbiş & Batman 2018: %82,4 acente) + belgeler | `<KAYNAK YOK>` — **kanıt zayıf; arena düşebilir** |
+| Bağlantısallık arenası | kod kategorisi | Ulaşım ve altyapı koridorlarının uyumlaştırılması | Kuşak-Yol/Orta Koridor uyum metinleri, BTK, uçuş anlaşmaları | Resmî belgeler + Farmanov vd. (2026) | Silk Road diplomacy & connectivity: Winter (2020) |
+| Miras diplomasisi | bağlam kavramı | Mirasın devletlerarası ilişkilerde iş birliği ve nüfuz aracı olarak kullanımı | Ortak miras söylemi, UNESCO adaylıkları | Belgeler | Winter (2015) |
+
+**Construct–measure gap:** Değer yakalama kavramsal olarak gelir payıdır; elimizde gelir payını ölçen veri yok, yalnız dolaylı göstergeler var. Bu açık yöntem bölümünde sınırlılık olarak yazılacak.
 
 ## 3c. Kavramsal Model (Şekil 1)
 
