@@ -6,7 +6,7 @@ Durum: NotebookLM özeti, DOĞRULANMAMIŞ. Metin makaleye kopyalanmaz; yalnız o
 
 | # | İddia | Birincil kaynak | Durum |
 |---|---|---|---|
-| 1 | Çinli ziyaretçi: 2013 ~180 bin; 2018 394.109; 2023 248 bin; 2025 >425 bin | KTB sınır istatistikleri (yıllık bülten) | bekliyor |
+| 1 | Çinli ziyaretçi: 2013 ~180 bin; 2018 394.109; 2023 248 bin; 2025 >425 bin | TÜİK/EGM Giriş yapan yabancılar (milliyet) | ✓ 2018, 2023 (248.119), 2025 (425.348) DOĞRU · ✗ 2013 YANLIŞ (gerçek 138.876) — `cinli-ziyaretci-tuik.csv` |
 | 2 | 2026 Ocak'tan itibaren Çin vatandaşlarına vize muafiyeti; Ocak–Şubat 2026 %52 artış, >79 bin | Resmî Gazete / MFA vize sayfası / KTB | bekliyor — kritik |
 | 3 | Kuşak-Yol ile Orta Koridor uyumlaştırma mutabakatı (2015) | MFA / Resmî Gazete | bekliyor |
 | 4 | 2018 Çin'de Türkiye Turizm Yılı | Niu & Li 2019 [Niu19] — akademik teyit VAR | kısmen ✓ |
@@ -18,6 +18,7 @@ Durum: NotebookLM özeti, DOĞRULANMAMIŞ. Metin makaleye kopyalanmaz; yalnız o
 | 10 | Çin, Akdeniz merkezi olarak Pire'yi seçti | akademik kaynak (BRI–Pire yazını) | bekliyor |
 
 ## Analitik uyarılar
+- TÜİK teyidi: 2025'te tüm ziyaretçilerin kişi başı ortalama harcaması 1.008 $ → 425 bin Çinli × ~1.000 $ ≈ 0,43 mlr $ (Çin'e özgü harcama verisi yok; kaba tahmin).
 - Raporun "turizm ticaret açığını dengeler" iddiası büyüklük olarak tutarsız: ~425 bin turist × kişi başı birkaç bin $ ≈ <1–2 mlr $; açık ~46 mlr $. Makalede bu iddia KULLANILMAZ (kişi başı harcama KTB'den doğrulanınca tek cümleyle çürütülebilir).
 - Liman/ihale (Kumport, Edirne–Kars, Pire) lojistik rekabettir, turizm değil → yalnız "bağlantısallık" arenasında bir paragraf.
 - TDT vs BRI anlatı karşılaştırması anlatı arenası için güçlü; ancak "Türklük/Doğu Türkistan" eksenini açar → kapsam dışı ilkesi korunur.
