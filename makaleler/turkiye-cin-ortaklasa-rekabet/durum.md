@@ -87,3 +87,5 @@ Durum sembolleri: ✓ tamam · → açık · İŞLEMDE · kilitli · ATLANDI
 [2026-10-07 12:46] [12] için yüklenen PDF kitap değil, BusinessSummaries.com özeti (7 s.). Asimetri sürüyor; [12] yalnız genel kavram atfıyla kullanılacak. Not: okuma-notlari/12-brandenburger-nalebuff-1996.md
 
 [2026-10-07 12:53] [18] Redi & Pulido Fernández 2018 tam metni bulunamadı (Google Books bot erişimine kapalı; kullanıcı da erişemedi). KARAR: yalnız özet düzeyinde kullanılacak, alıntı yok; Yazar-Okuma Asimetrisi uyarısı açık kalır.
+
+[2026-10-07 13:01] Faz 5 literatür v1 yazıldı (bolumler/literatur-v1.md, ~2.250 kelime): 4 alt bölüm, 4 gerilim (sınanmamış uzlaşı, kavram çatallanması, bağlam sınırı, bulgu çelişkisi), katalog sayacı 1/2, corpus-dışı 0, başlık değişen 3 (yüzeysel), Q1 rapor ihlali 0 (1 uyarı). 47 çapa; 38 özet çapası Crossref/OpenAlex verbatim ile eşleşti. Denetim: bolumler/literatur-denetim.md. Sıradaki: ustabaşı Faz 5 kapısı.

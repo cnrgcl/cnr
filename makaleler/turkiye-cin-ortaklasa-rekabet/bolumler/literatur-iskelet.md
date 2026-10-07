@@ -32,3 +32,7 @@ Türkiye–Çin turizm yazını ilişkiyi Kuşak ve Yol çerçevesinde karşıl�
 - [12] Brandenburger & Nalebuff 1996 — yüklenen dosya üçüncü taraf özeti (kitap değil). Yalnız genel kavram atfı (değer ağı, tamamlayıcı); alıntı ve sayfa YOK. Ayrım savunusu [11][13][14]'e yaslanacak.
 - [18] Redi & Pulido Fernández 2018 — en yakın rakip; tam metin BULUNAMADI (kullanıcı, 2026-10-07). Yalnız özetteki iki tespitle kullanılacak; alıntı yok; boşluk cümlesi temkinli ("özet düzeyinde görüldüğü kadarıyla" değil, iddia çok taraflı program düzeyi ↔ ikili düzey ayrımıyla sınırlı).
 - Tam metni okunan kaynaklar (alıntı çapası yalnız bunlarda): [11] [01] [02] [03] [04] [09] [42] (+ [05] [06] [07] [08] Undermind okuması)
+
+## Köşe-taşı işaretleri (v1 yazımında)
+- 1.3-P1 ve 1.3-P5: Bengtsson & Kock (1999/2000) derinleştirmesi; tek-kaynak istisnası (≤2).
+- Onay: kullanıcı "Başla" (2026-10-07).
