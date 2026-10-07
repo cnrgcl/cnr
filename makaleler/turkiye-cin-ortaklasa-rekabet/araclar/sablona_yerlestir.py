@@ -259,9 +259,9 @@ for s, lab in zip(sdts, ['ÖZ', 'ABSTRACT']):
 
 # ---- Yazar beyanı tablosu ----
 NEDEN_TR = ('literatür taraması ve künye doğrulama, doküman korpusunun hazırlanması ve Çince metinlerin çevirisi, '
-            'kodlama şemasının pilot sınaması, betimsel hesaplamalar ile Giriş, Kuramsal Çerçeve ve Yöntem bölümlerinde taslak ve dil desteği')
+            'kodlama şemasının pilot sınaması, insan kodlayıcılar arasındaki uyuşmazlıkların çözümünde bağımsız üçüncü kodlama, betimsel hesaplamalar ile Giriş, Kuramsal Çerçeve ve Yöntem bölümlerinde taslak ve dil desteği')
 NEDEN_EN = ('literature search and reference verification, preparation of the document corpus and translation of Chinese texts, '
-            'pilot testing of the coding scheme, descriptive calculations, and drafting and language support in the Introduction, Theoretical Framework and Method sections')
+            'pilot testing of the coding scheme, an independent third coding used to resolve disagreements between the human coders, descriptive calculations, and drafting and language support in the Introduction, Theoretical Framework and Method sections')
 isaretle = [
     'Yazar, çalışmanın tümüne tek başına', 'The author contributes the study on his/her own',
     'Çalışmada herhangi bir potansiyel çıkar', 'There is no potential conflict of interest',
