@@ -1,0 +1,11 @@
+# Yazarın YZ kodlarını görmeden kodlayacağı 10 belge (seed 20261007)
+A03_2012-02-21_mfa-cn_xi-jinping-gul-gorusmesi.txt
+A08_2015-11-14_mfa-cn_xi-erdogan-antalya-g20.txt
+A10_2018-04-17_aa_kurtulmus-cin-turizm-ortagi.txt
+A12_2018-04-23_pekin-bk_onen-beijing-review-mulakat-turizm-yili.txt
+A20_2024-06-05_mct_sun-yeli-ersoy-turizm-mou-imzasi.txt
+B04_2016-12-29_Kultur-Bakanligi-CN_Kusak-ve-Yol-kultur-eylem-plani.txt
+B19_tarihsiz_GoTurkiye_cin-vatandaslari-vizesiz-giris.txt
+B20_tarihsiz_KTB-KVMGM_Selcuklu-kervansaraylari-UNESCO-aday.txt
+B23_tarihsiz_Kayseri-IKTM_Ipek-Yolu.txt
+B24_tarihsiz_MFA_baglantililik-ulastirma-politikasi.txt
