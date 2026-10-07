@@ -113,3 +113,5 @@ Durum sembolleri: ✓ tamam · → açık · İŞLEMDE · kilitli · ATLANDI
 [2026-10-07 15:57] Kullanıcı: 'üçüncü kodlayıcı olarak sen yap'. Uygulama: insan kodlarından önce yapılmış bağımsız YZ v2 kodlaması (02:18 UTC) üçüncü kodlayıcı; çoğunluk kuralı; 5 çözümsüz birim dışarıda, n=363 ANA SET. Ö3: kısmi (NÖ hariç) / destek yok (NÖ dahil) — duyarlılık setleriyle tutarlı. Yeni kodlama ÜRETİLMEDİ (insan kodlarını gördükten sonra bağımsızlık bozulurdu). Yöntem 3.4 ve YZ beyanı şeffaf biçimde güncellendi.
 
 [2026-10-07 16:04] Kullanıcı Bulgular taslağını YZ'den istedi → dergi politikası (Bulgular/Tartışma/Sonuç YZ'ye yazdırılamaz) gereği metin yazılmadı; yerine bolumler/bulgular-yazar-kiti.md: 5 hazır tablo, alt başlık başına olgular, uyumlu birimlerden alıntılar (veri özetleme, politikaya uygun). Sayılar stats-insan.json ile çapraz kontrol edildi.
+
+[2026-10-07 23:43] Kullanıcı kuralı: 'korpus' kelimesi kullanılmayacak (CLAUDE.md). Giriş, Yöntem (3.2 başlığı 'İncelenen Belgeler'), Öz/Extended Summary, 4.2, YZ beyanı, beyan tablosu, yazar kiti ve veri özetinde 'ikili belgeler / tek taraflı belgeler / belge grubu' kullanıldı.

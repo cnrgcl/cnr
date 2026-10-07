@@ -14,11 +14,11 @@
 
 Uyuşmazlığın niteliği (yönelim çapraz tablosu): 368 birimin yalnız **9'unda (%2,4)** kodlayıcılar zıt yön verdi (biri İB, öteki RK). Uyuşmazlıkların büyük kısmı bir işaretin var olup olmadığına ilişkin: NÖ↔İB 52, NÖ↔RK 54. Yani kodlayıcılar yön konusunda değil, işaretin yeterince açık olup olmadığı konusunda ayrışıyor. Her iki kodlayıcının alan ve yönelimde uyuştuğu birim: **195**.
 
-## 2. Ö1 ve Ö2: korpuslara göre yönelim
+## 2. Ö1 ve Ö2: belge gruplarına göre yönelim
 | | K1 İB % | K1 RK % | K2 İB % | K2 RK % | Uyumlu İB % | Uyumlu RK % |
 |---|---|---|---|---|---|---|
-| Korpus A (ikili/ortak, n=179; uyumlu 106) | 46,9 | 17,9 | 45,3 | 21,2 | 54,7 | 17,9 |
-| Korpus B (tek taraflı, n=189; uyumlu 89) | 17,5 | 27,0 | 35,4 | 16,9 | 29,2 | 20,2 |
+| İkili belgeler (ikili/ortak, n=179; uyumlu 106) | 46,9 | 17,9 | 45,3 | 21,2 | 54,7 | 17,9 |
+| Tek taraflı belgeler (tek taraflı, n=189; uyumlu 89) | 17,5 | 27,0 | 35,4 | 16,9 | 29,2 | 20,2 |
 
 - Ö1: ikili belgelerde iş birliği kodu rekabetin 2–3 katı; üç ölçümde de tutarlı → destek.
 - Ö2: tek taraflı belgelerde rekabet payı K1'de belirgin biçimde yüksek, K2'de değil; uyumlu alt kümede B'de İB düşüyor, RK hafif artıyor → kısmi destek; kodlayıcıya duyarlı.

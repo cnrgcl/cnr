@@ -4,14 +4,14 @@
 
 ## 4. Bulgular
 
-### 4.1. Korpusun ve kodlamanın genel görünümü
+### 4.1. Belgelerin ve kodlamanın genel görünümü
 - Tablo 1: Korpus özeti (A: 25 belge, B: 24 belge; taraf dağılımı; dönem dağılımı). Kaynak: `korpus-belge/A/_envanter.csv`, `korpus-belge/B/_envanter.csv`.
 - Tablo 2: 368 birimin arena × yönelim (İB/RK/KR/NÖ) dağılımı, NÖ dahil ve hariç iki sütun. Kaynak: stats.json → `v2.arena_yonelim` (insan kodlarıyla yeniden üretilecek).
 - Kodlayıcılar arası uyum: κ(alan), κ(yönelim) + uzlaşı yöntemi tek cümle (Yöntem'de ayrıntı var).
 - Burada yorum yok; yalnız betim.
 
 ### 4.2. Ö1 ve Ö2: aynı mirasın iki yüzü
-- Korpus A'da İB payı; Korpus B'de RK payı. İki korpusun karşılaştırması (Tablo 3).
+- İkili belgelerde İB payı; Tek taraflı belgelerde RK payı. İki belge grubunun karşılaştırması (Tablo 3).
 - Her yönelim için 2–3 kısa belge alıntısı (ifade no ile: A07-03 gibi). Çin kaynakları için Türkçe çeviri + dipnotta özgün dil notu.
 - Tanınma asimetrisi: karşı ülkeyi atlama ve "başlangıç iddiası" sayıları TR/CN ayrı (M3 işareti). Pilot v1 alt kodları (tanınma-yok TR 4 / CN 20) analizde KULLANILMAZ; insan kodlarında M3 "dışlama" sütunundan yeniden sayılır.
 
@@ -23,7 +23,7 @@
 ### 4.4. Ö4 ve Ö5: söylem–akış açığı
 - Şekil 2: Çin uyruklu giriş 2010–2025 + pay (%); olaylar: 2015 e-vize, 2018 Turizm Yılı, 2020 COVID, 2024 MoU. Veri: `ham-veri/cinli-ziyaretci-tuik.csv`. Yazar şekli Excel'de yeniden çizer (YZ görseli yasak).
 - Betimsel: 2013 138.876 → 2019 426.344 → 2025 425.348; pay en yüksek 2018 %0,998. Nedensel iddia YOK.
-- Korpus B'de Çin'in yurt içi İpek Yolu destinasyonlarını (Xi'an, Dunhuang vb.) pazarlayan birimler → Ö5 için yorumlayıcı kanıt; sayısı ve örneği.
+- Tek taraflı belgelerde Çin'in yurt içi İpek Yolu destinasyonlarını (Xi'an, Dunhuang vb.) pazarlayan birimler → Ö5 için yorumlayıcı kanıt; sayısı ve örneği.
 
 ## 5. Tartışma ve Sonuç
 

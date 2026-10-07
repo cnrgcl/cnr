@@ -5,17 +5,17 @@
 > Yazım ipucu (CLAUDE.md): her alt bölümde önce iddia zincirini bir satırda yazın, sonra cümleleri ona göre kurun; her paragraf bir öncekinin sonucuyla açılsın.
 
 ## Önerilen alt başlık düzeni
-4.1. Korpus ve kodlamanın genel görünümü · 4.2. İkili ve tek taraflı belgelerde yönelim (Ö1, Ö2) · 4.3. Alanlara göre rekabet payı (Ö3) · 4.4. Türk ve Çin kaynaklarının farkı · 4.5. Söylem ve akış (Ö4, Ö5)
+4.1. Belgeler ve kodlamanın genel görünümü · 4.2. İkili ve tek taraflı belgelerde yönelim (Ö1, Ö2) · 4.3. Alanlara göre rekabet payı (Ö3) · 4.4. Türk ve Çin kaynaklarının farkı · 4.5. Söylem ve akış (Ö4, Ö5)
 
 ---
 
-## 4.1. Korpus ve kodlamanın genel görünümü
+## 4.1. Belgeler ve kodlamanın genel görünümü
 
-**Tablo 1.** Korpusun bileşimi
+**Tablo 1.** İncelenen belgelerin bileşimi
 | | Türk | Çin | Ortak | Toplam belge | Anlam birimi |
 |---|---|---|---|---|---|
-| Korpus A (ikili/ortak) | 11 | 12 | 2 | 25 | 179 |
-| Korpus B (tek taraflı) | 12 | 12 | 0 | 24 | 189 |
+| İkili belgeler | 11 | 12 | 2 | 25 | 179 |
+| Tek taraflı belgeler | 12 | 12 | 0 | 24 | 189 |
 | Toplam | 23 | 24 | 2 | 49 | 368 |
 Not: Ana analiz 363 birim (üç kodlamanın da farklı alan verdiği 5 birim dışarıda).
 
@@ -26,11 +26,11 @@ Not: Ana analiz 363 birim (üç kodlamanın da farklı alan verdiği 5 birim dı
 
 ## 4.2. İkili ve tek taraflı belgelerde yönelim (Ö1, Ö2)
 
-**Tablo 2.** Korpuslara göre yönelim (ana set, n = 363)
+**Tablo 2.** Belge gruplarına göre yönelim (ana set, n = 363)
 | | n | İş birliği | Rekabet | Karma | Nötr | İB % | RK % |
 |---|---|---|---|---|---|---|---|
-| Korpus A | 177 | 88 | 36 | 3 | 50 | 49,7 | 20,3 |
-| Korpus B | 186 | 51 | 40 | 3 | 92 | 27,4 | 21,5 |
+| İkili belgeler | 177 | 88 | 36 | 3 | 50 | 49,7 | 20,3 |
+| Tek taraflı belgeler | 186 | 51 | 40 | 3 | 92 | 27,4 | 21,5 |
 Duyarlılık (İB % / RK %): K1 A 46,9/17,9 · B 17,5/27,0 · K2 A 45,3/21,2 · B 35,4/16,9 · uyumlu A 54,7/17,9 · B 29,2/20,2.
 
 **Anlatılacak olgular**
@@ -39,10 +39,10 @@ Duyarlılık (İB % / RK %): K1 A 46,9/17,9 · B 17,5/27,0 · K2 A 45,3/21,2 · 
 - Ö2 kodlayıcıya duyarlı: K1'de B'de rekabet belirgin biçimde yüksek, K2'de değil. Bunu açıkça yazın.
 
 **Örnek alıntılar**
-- İB, Korpus A, ortak belge (A01-02): "2012'de Türkiye'de düzenlenecek 'Çin Kültür Yılı' ve 2013'te Çin'de düzenlenecek 'Türkiye Kültür Yılı' etkinliklerini en iyi şekilde gerçekleştirmek için tüm gücün seferber edilmesi."
-- İB, Korpus A, Çin kaynağı, anlatı (A03-01): "Çin ve Türkiye binlerce dağ ve nehirle birbirinden uzak olsa da, kadim İpek Yolu iki köklü halkımızı birbirine bağlamış; el ele insan medeniyetinin dostane mübadelesi ve ortak ilerlemesinin güzel bir sayfasını yazmıştır."
-- RK, Korpus B, Türk kaynağı, anlatı (B21-01): "Coğrafi konumu nedeniyle, eski çağlardan beri doğu ile batı arasında bir köprü işlevi gören Anadolu, İpek Yolunun en önemli kavşak noktalarından biri olmuştur."
-- RK, Korpus B, Çin kaynağı, anlatı (B03-05): "Antik Deniz İpek Yolu Çin'de doğmuştur; bugün burada yeniden yeni bir canlılık ve dinamizm parlıyor."
+- İB, İkili belgeler, ortak belge (A01-02): "2012'de Türkiye'de düzenlenecek 'Çin Kültür Yılı' ve 2013'te Çin'de düzenlenecek 'Türkiye Kültür Yılı' etkinliklerini en iyi şekilde gerçekleştirmek için tüm gücün seferber edilmesi."
+- İB, İkili belgeler, Çin kaynağı, anlatı (A03-01): "Çin ve Türkiye binlerce dağ ve nehirle birbirinden uzak olsa da, kadim İpek Yolu iki köklü halkımızı birbirine bağlamış; el ele insan medeniyetinin dostane mübadelesi ve ortak ilerlemesinin güzel bir sayfasını yazmıştır."
+- RK, Tek taraflı belgeler, Türk kaynağı, anlatı (B21-01): "Coğrafi konumu nedeniyle, eski çağlardan beri doğu ile batı arasında bir köprü işlevi gören Anadolu, İpek Yolunun en önemli kavşak noktalarından biri olmuştur."
+- RK, Tek taraflı belgeler, Çin kaynağı, anlatı (B03-05): "Antik Deniz İpek Yolu Çin'de doğmuştur; bugün burada yeniden yeni bir canlılık ve dinamizm parlıyor."
 
 ## 4.3. Alanlara göre rekabet payı (Ö3)
 
