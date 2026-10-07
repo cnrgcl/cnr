@@ -1,9 +1,9 @@
 # Proje: Türkiye–Çin İlişkilerinde Ortaklaşa Rekabet: İpek Yolu Turizmi
 **Kurulum tarihi:** 2026-10-07
 **Yazar:** Dr. Caner Güçlü (tek yazar; YZ yardımı beyan edilecek)
-**Mevcut faz:** 2 — KEŞİF
+**Mevcut faz:** 3 — KAYNAK (+ doküman korpusu derleme)
 **Kapı durumu:** AÇIK
-**Sıradaki worker:** kuramsal-mercek → konu-kesfet → yontem-kilavuzu → undermind-prompt
+**Sıradaki worker:** Faz 3 — ledger 30'a + doküman korpusu (A/B) derleme
 **Hedef dergi (taslak):** NEVÜ SBE Dergisi — "Türkiye-Çin Diplomatik İlişkileri" özel sayısı (ek başvuru 10.10.2026 00:01 – 11.10.2026 23:59 TSİ)
 **Konum:** bulut oturumu — repo `cnrgcl/cnr`, `makaleler/turkiye-cin-ortaklasa-rekabet/`; kullanıcı `C:\Users\kadir\Yandex.Disk\1_CALISMALAR\03_KAYNAK-KESIF\` altına kopyalayacak
 
@@ -14,8 +14,8 @@
 |---|---|---|---|---|
 | 0 | VAZGEÇİRME | ✓ tamam | 2026-10-07 | editör + caner-editör |
 | 1 | PLAN | ✓ tamam | 2026-10-07 | proje-baslat |
-| 2 | KEŞİF | → açık | 2026-10-07 | — |
-| 3 | KAYNAK | kilitli | — | — |
+| 2 | KEŞİF | ✓ tamam | 2026-10-07 | kuramsal-mercek, konu-kesfet, yontem-kilavuzu |
+| 3 | KAYNAK | → açık | 2026-10-07 | — |
 | 4 | VERİ | kilitli | — | — |
 | 5 | YAZIM | kilitli | — | — |
 | 6 | KALİTE | kilitli | — | — |
@@ -34,8 +34,8 @@ Durum sembolleri: ✓ tamam · → açık · İŞLEMDE · kilitli · ATLANDI
 - [x] ≥1 hipotez / araştırma önermesi
 - [x] §3b kavram tablosu dolu (bilinmeyen hücreler `<KAYNAK YOK>`)
 - [x] §3c kavramsal model şekli üretildi (`kavramsal_model.py` çıkış 0)
-- [ ] Yöntem ailesi yontem-kilavuzu ile seçilip §5-§6'ya kilitli
-- [ ] Undermind promptu teslim edildi
+- [x] Yöntem ailesi yontem-kilavuzu ile seçilip §5-§6'ya kilitli
+- [x] Undermind promptu teslim edildi (kullanıcı aramayı kendisi koştu, 191 kayıt)
 
 ---
 
@@ -53,3 +53,5 @@ Durum sembolleri: ✓ tamam · → açık · İŞLEMDE · kilitli · ATLANDI
 [2026-10-07 03:40] Editör: Kullanıcı TÜİK 01_turizm zip'ini yükledi. Çin serisi 2000–2025 birincil kaynaktan çıkarıldı (ham-veri/cinli-ziyaretci-tuik.csv; kaynak xls'ler ham-veri/tuik-kaynak/). Çin payı yabancı girişlerde 2018'de %0,998 ile zirve, 2025'te %0,806. Pal24 tablosunda 2021 (26.000 ↔ TÜİK 33.641) hatalı. 2026 aylık veri yok → vize muafiyeti iddiası hâlâ doğrulanmadı.
 [2026-10-07 04:10] konu-kesfet: tamam, §1-§3c ve §10 dolu, Şekil 1 üretildi (kavramsal_model.py çıkış 0; elle yeniden yerleşim). Kalan Faz 2 kriterleri: yöntem kilidi (§5-§6), Undermind promptu (kullanıcı aramayı zaten koştu → teslim edilmiş sayılabilir).
 [2026-10-07 04:25] Kullanıcı: 'rekabetin sonucu ne?' → Ö5 eklendi (Rekabet → Turist akışı, −). Yeni kutu yerine ok: değer dağılımı için veri yok, kutu kanıtsız kalırdı. Ö4 ± → +. Şekil yeniden üretildi (doğrulama çıkış 0, 5 kavram 5 yol).
+[2026-10-07 04:40] yontem-kilavuzu (Şapka 1): §5–§6 kilitlendi — tek durumlu iç içe örnek olay + sistematik doküman analizi; korpus A/B, 30–50 belge bandı, kodbook v1, Ö3 karar eşiği veriden önce yazıldı; YZ ikinci kodlayıcı (beyan edilecek).
+[2026-10-07 04:40] Editör: Faz 2 kapı kriterleri dosyada doğrulandı (8/8). Faz 2 ✓ → Faz 3 açıldı (EKONOMİ: graphify yerine ledger + Undermind okuma; atıf doğrulaması Crossref engelli → Undermind indeksi).

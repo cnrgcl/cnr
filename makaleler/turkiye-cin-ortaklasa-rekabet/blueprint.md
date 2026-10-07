@@ -67,13 +67,42 @@ Doküman analizi tasarımı olduğu için roller değişken rolü değil **anali
 
 Faz 2'de doldurulur.
 
-## 5. Yöntem
+## 5. Yöntem (KİLİTLİ — 2026-10-07)
 
-Faz 2'de yontem-kilavuzu doldurur. (Ön karar, kilit değil: sistematik doküman analizi + betimsel ikincil veri.)
+- **Tip:** nitel (betimsel ikincil nicel destekli)
+- **Desen:** Tek durumlu, iç içe birimli örnek olay (vaka: Türkiye–Çin ikilisi; birimler: 4 arena) + sistematik doküman analizi (Bowen, 2009). Seçenek B (nicel içerik analizi/frekans testi) reddedildi: belge sayısı istatistiksel çıkarım için yetersiz, mercek mekanizma arıyor.
+- **Veri kaynağı:**
+  - **Korpus A (iş birliği):** ikili resmî belgeler — ortak bildirgeler, mutabakat zaptları, bakan/devlet başkanı ziyaret açıklamaları, ortak turizm yılı metinleri.
+  - **Korpus B (rekabet):** tek taraflı İpek Yolu tanıtım ve politika anlatıları — Türk tarafı (KTB/GoTürkiye, TDT, MFA bağlantısallık metinleri), Çin tarafı (ÇHC Kültür ve Turizm Bakanlığı İngilizce, Xinhua/CGTN İngilizce, BRI resmî portalı).
+  - **Betimsel seri:** TÜİK/EGM Çin uyruklu giriş 2010–2025 ve yabancılar içindeki pay (`ham-veri/cinli-ziyaretci-tuik.csv`).
+- **Örnekleme:** ölçüt örneklemesi. Dahil: (i) 2010-01-01 – 2026-09-30; (ii) resmî ya da resmî yayın organı kaynaklı; (iii) turizm, İpek Yolu mirası veya bağlantısallıktan söz eden; (iv) tam metne erişilebilen. Hariç: köşe yazısı, düşünce kuruluşu yorumu (bağlam için kullanılır, kodlanmaz), Sincan siyasetine odaklı metinler.
+- **Başlangıç bandı:** 30–50 belge; Korpus A ve B için ayrı ayrı ≥12; Korpus B içinde Türkiye/Çin dengesi ≥%40. Doygunluk: son 5 belgede yeni alt kod çıkmazsa durulur; doygunluk tablosu ekte.
+- **Birim:** anlam birimi (bir iddia taşıyan cümle/paragraf).
+- **Kodlama:** karma — tümdengelim üst şema (4 arena × İB/RK; `analiz/kodbook-v1.md`) + tümevarım alt kodlar. Kodbook versiyonlu.
+- **Güvenirlik:** tek insan kodlayıcı (yazar). (a) %20 alt örneklemde aynı gün iki tur yeniden kodlama (iç tutarlılık); (b) YZ (Claude) bağımsız ikinci kodlama, yazar ile Cohen κ (hedef ≥ .70), uyuşmazlıklar yazar kararıyla çözülür ve günlüğe yazılır. YZ'nin kodlayıcı rolü YZ beyanında AÇIKÇA yazılır.
+- **İnandırıcılık:** üçgenleme (iki korpus + TÜİK serisi + akademik yazın); olumsuz vaka analizi (rekabet beklenen arenada iş birliği kodları ve tersi ayrıca raporlanır); audit trail (`analiz/kodlama-gunlugu.md`).
+- **Dil sınırlılığı:** Çince birincil metinler yerine resmî İngilizce sürümler; sınırlılıklarda yazılır.
+- **Raporlama standardı:** SRQR.
 
-## 6. Reverse Design Sınavı
+## 6. Reverse Design Sınavı (KİLİTLİ)
 
-Faz 2'de yontem-kilavuzu doldurur.
+> Önermeler desteklenmeseydi bu makaleyi hâlâ yazar mıydın?
+
+**Cevap:** evet.
+**Gerekçe:** Ö3 desteklenmezse (rekabet bağlantısallıkta da yoğunsa) ayrıştırma ilkesinin devletlerarası ilişkiye taşınamadığı sonucu kuramsal katkıdır; Ö2 desteklenmezse (rekabet izi yoksa) TR yazınının iş birliği okuması doğrulanır ama "söylem–akış açığı" (Ö4–Ö5) açıklanmamış bir bulmaca olarak kalır ve tartışmanın merkezine geçer.
+
+> Önceden kilitlenen spesifikasyonlar
+
+- Dönem: 2010–2026/09 (değiştirilmez).
+- Kod şeması üst düzeyi: 4 arena × {İB, RK, Karma}; arena sıralaması turiste yakınlık için önceden sabit: Bağlantısallık (1) < Turist akışı (2) < Anlatı (3) < Değer yakalama (4).
+- Ö3 değerlendirme kuralı: RK payının arena sırası boyunca artması (monoton ya da en az 1→4 farkı ≥ 20 yüzde puan) "destek"; tersi "destek yok"; arada "kısmi". Bu eşik veriden ÖNCE yazıldı.
+- Değer yakalama arenasında < 5 anlam birimi çıkarsa arena "kanıt yetersiz" olarak raporlanır, düşürülmez.
+- Betimsel seri: yalnız düzey ve pay; regresyon/nedensellik testi YOK (tek seri, n=16). Grafikte işaretlenecek olaylar önceden sabit: 2015 e-vize, 2018 Türkiye Turizm Yılı, 2020 COVID, 2024 MoU (teyit edilirse).
+- Eksik veri: erişilemeyen belge "erişilemedi" listesine yazılır, yerine benzeri aranmaz.
+
+> Çoklu-Evren Analizi yapılacak mı?
+
+Hayır (nitel tasarım). Yerine olumsuz vaka analizi.
 
 ## 7. Beklenen Bulgu Senaryoları
 
