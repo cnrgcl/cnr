@@ -105,3 +105,5 @@ Durum sembolleri: ✓ tamam · → açık · İŞLEMDE · kilitli · ATLANDI
 [2026-10-07 15:23] Caner-editör: iptal mi? → KARAR: İPTAL YOK; Ö3'ün desteklenmemesi bulgu olarak çerçevelenir ('iki basamaklı ayrışma'). Koşullar: 1 makale/yıl kuralı temiz, kodlayıcı beyanı yazılı, Bulgular/Tartışma 10.10'a kadar yazar tarafından yazılır; yetişmezse iptal değil erteleme (başka TR Dizin dergisi). Sürpriz: YZ pilotu 'destek', insan kodu 'destek yok' → yorumlayıcı okumanın rekabeti şişirdiği yöntemsel bir bulgu.
 
 [2026-10-07 15:38] Kullanıcı beyanı: 2026'da NEVÜ SBE Dergisi'nde yayımlanmış makalesi yok → 1 makale/yıl kuralı engel değil. (Not: kabul edilmiş/değerlendirmedeki makale de sayılabilir; kullanıcıya hatırlatıldı.)
+
+[2026-10-07 15:41] K1 kodlayıcı bilgisi (kullanıcının paylaştığı BEÜ profil sayfası): Dr. Öğr. Üyesi Hüseyin Sevinç, Bitlis Eren Ü. İİBF; lisans Marmara Ü. Siyaset Bilimi ve Uluslararası İlişkiler (2006), YL Van YYÜ Kamu Yönetimi (2014), doktora İnönü Ü. Siyaset Bilimi ve Kamu Yönetimi (2021). Yöntem'e kurum adı yazılmadan (anonimlik) eklendi. K2 bilgisi bekleniyor.
