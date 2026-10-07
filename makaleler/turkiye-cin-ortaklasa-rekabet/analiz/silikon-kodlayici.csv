@@ -1,0 +1,61 @@
+set,sira,belge,birim_no,arena,m1,m2,m3,yonelim,not
+tur1,1,A03,1,A3,E,H,H,İB,İki köklü halkı İpek Yolu bağlamış; ortak tarih
+tur1,2,A03,2,A2,E,H,H,İB,"Halklar arası değişim, turizm; iki ülke dostluğu"
+tur1,3,A03,3,A1,H,H,H,NÖ,Çoklu alan işbirliği; ortak özne işareti yok
+tur1,4,A08,1,A1,E,E,H,KR,Taraflar ortaklaşa; yalnız Kuşak ve Yol adı
+tur1,5,A08,2,A4,E,H,H,İB,"İpek Yolu Fonu, AIIB; ortak kalkınma"
+tur1,6,A08,3,A4,E,H,H,İB,İkili ticarette yerel para kullanımı
+tur1,7,A08,6,A4,H,H,E,RK,Çinli şirket yatırımı Türkiye'ye; tek yönlü fayda
+tur1,8,A10,3,A2,H,H,E,RK,500 bin turist hedefi; tek taraflı
+tur1,9,A10,5,A2,E,H,H,İB,Çinli turistler iki halk bağını güçlendiriyor
+tur1,10,A12,1,A2,H,H,E,RK,Çinli turist Türk turizmine katkı; tek yönlü
+tur1,11,A12,2,A2,H,H,E,RK,Çinli turist payını artırma hedefi
+tur1,12,A12,4,A2,E,H,H,İB,Her iki taraf için vizesiz hedef
+tur1,13,A12,5,A2,H,H,H,NÖ,Çinli turistlere e-vize bilgisi; betimsel
+tur1,14,A12,9,A2,E,H,H,İB,Turizm Yılı etkinlikleri; Türk-Çin şirket etkileşimi
+tur1,15,A12,10,A1,H,H,H,NÖ,THY doğrudan uçuşlar; turizm amacı belirtilmemiş
+tur1,16,A12,11,A2,E,H,H,İB,Türk ve Çin operatörlerini buluşturma
+tur1,17,A12,12,A2,H,H,H,NÖ,"Çince personel, paket uyarlama; betimsel"
+tur1,18,A12,13,A2,H,H,E,RK,2018 için 500 bin Çinli turist hedefi
+tur1,19,A12,18,A4,H,H,E,RK,Çin pazarı Türk operatörlere açılmalı talebi
+tur1,20,A12,19,A2,H,H,H,NÖ,Turistik yerlerde güvenlik önlemleri; betimsel
+tur1,21,A12,23,A3,E,H,H,İB,"İki kadim medeniyet, İpek Yolu ortak tarih"
+tur1,22,A12,24,A1,E,H,H,İB,"İpek Yolu kapıları el ele, Kuşak ve Yol"
+tur1,23,A12,25,A1,H,E,H,RK,"Türkiye doğal köprü, pazarlara çıkış"
+tur1,24,A12,26,A1,H,E,H,RK,Dünyanın en büyük havalimanı iddiası
+tur1,25,A20,1,A2,E,H,H,İB,Taraflar çift yönlü turist hareketi
+tur1,26,B04,B04-03,A2,H,E,E,RK,Kuşak ve Yol ülkelerinde Çin kültür merkezleri
+tur1,27,B04,B04-05,A3,H,H,H,NÖ,Güzergâh ülkeleriyle miras ve Dünya Mirası işbirliği
+tur1,28,B04,B04-06,A2,H,H,H,NÖ,"İpek Yolu tiyatro, kütüphane, müze birlikleri"
+tur1,29,B04,B04-08,A2,H,H,H,NÖ,Çin festivallerini uluslararası platforma dönüştürme
+tur1,30,B04,B04-10,A3,E,E,H,KR,Kuşak ve Yol ülkeleriyle ortak miras başvurusu
+tur1,31,B19,B19-02,A2,H,H,E,RK,Tek taraflı vize muafiyetinin kapsam sınırı
+tur1,32,B23,B23-02,A3,H,H,H,NÖ,İpek Yolu ana rota omurgası; Çin dahil
+tur1,33,B23,B23-03,A2,H,H,H,NÖ,"Kayseri konaklama, kervansaray gezisi önerisi"
+tur1,34,B24,B24-02,A1,H,H,H,NÖ,Koridor güzergâhı Çin'den Avrupa'ya betimsel
+tur1,35,B24,B24-04,A1,H,E,H,RK,"Orta Koridor daha hızlı, daha kısa"
+tur1,36,B24,B24-05,A1,H,E,H,RK,Orta Koridor adıyla Kervansaray gümrük projesi
+tur1,37,B24,B24-06,A1,H,E,H,RK,"Orta Koridor, Türkiye limanlarıyla yük erişimi"
+tur1,38,B24,B24-07,A1,H,H,H,NÖ,BTK bölge ülkelerine ekonomik fırsat
+tur1,39,B24,B24-09,A1,H,H,E,RK,Türk Devletleri anlaşması; Çin sayılmıyor
+tur1,40,B24,B24-10,A1,E,E,H,KR,Orta Koridor ile Kuşak ve Yol sinerjisi
+tur2,1,A24,7,A3,E,H,H,İB,Çin de Türkiye gibi medeniyet beşiği
+tur2,2,A06,13,A3,H,H,H,NÖ,Mevlana alıntısı; betimsel
+tur2,3,B07,B07-13,A3,H,E,E,RK,Kültürel İpek Yolu; yalnız Orta Asya davetli
+tur2,4,A18,15,A2,E,H,H,İB,Karşılıklı: Türk turistler Xi'an'ı ziyaret etsin
+tur2,5,A14,8,A2,E,H,H,İB,"Karşılıklı seferler ve turizm, dost halklar"
+tur2,6,A24,1,A3,E,H,H,İB,"İki büyük medeniyet, İpek Yolu mübadelesi"
+tur2,7,A09,5,A2,H,H,H,NÖ,Türk tarafı kültürel etkinlik ve değişim istiyor
+tur2,8,A18,2,A3,E,H,H,İB,Osmanlı ve Çin imparatorları hediyeleşmesi
+tur2,9,B01,B01-05,A3,H,H,H,NÖ,İpek Yolu canlanıyor; genel betimleme
+tur2,10,A18,4,A1,H,E,H,RK,Türkiye kıtaların kavşağında; bağlantısallık
+tur2,11,B06,B06-03,A3,H,H,E,RK,Çin ve Orta Asya kültür markası; Türkiye yok
+tur2,12,A12,17,A2,E,H,H,İB,Türk ve Çin tur operatörleri yakın çalışmalı
+tur2,13,B15,B15-03,A4,H,H,H,NÖ,Shaanxi bilet ve otel indirim kampanyaları
+tur2,14,B09,B09-11,A3,H,E,H,RK,Ningbo Deniz İpek Yolu çıkış limanı
+tur2,15,A06,4,A1,H,H,H,NÖ,Tesis bağlantısı güzergâh ülkeleri; betimsel
+tur2,16,B05,B05-01,A2,H,H,H,NÖ,Türkiye Turizm Yılı hazırlıkları sürüyor
+tur2,17,B03,B03-04,A2,H,E,H,RK,2016 Çin İpek Yolu Turizm Yılı
+tur2,18,A18,7,A1,E,H,H,İB,Girişim Kuşak ve Yol ile doğal uyum
+tur2,19,A18,14,A2,H,H,H,NÖ,Xi'an-İstanbul uçuşu Türkiye'yi keşfetmek için
+tur2,20,A24,4,A1,E,H,H,İB,İki vizyonun uyumu bölgeye fırsat
