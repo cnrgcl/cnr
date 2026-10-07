@@ -28,7 +28,7 @@ Türkiye–Çin turizm yazını ilişkiyi Kuşak ve Yol çerçevesinde karşıl�
 - Köprü → Ö4, Ö5; Şekil 1; katkı cümlesi
 
 ## Yazar-Okuma Asimetrisi uyarıları (kritik dayanak, tam metin yok)
-- [11] Bengtsson & Kock 2000 — Ö3'ün dayanağı; yalnız metadata. PDF ŞART.
+- ~~[11] Bengtsson & Kock 2000~~ — TAM METİN OKUNDU (Önerme 2, s. 421 teyitli). 1.3'e eklenecek gerilim: pazar temelli karşı örüntü (s. 420) + dar rakip tanımı (s. 415).
 - [12] Brandenburger & Nalebuff 1996 — değer oluşturma/yakalama; yalnız kitap tanıtımı. Kitap ya da ilgili bölüm ŞART.
 - [18] Redi & Pulido Fernández 2018 — en yakın rakip; yalnız abstract. PDF önerilir.
-- Tam metni okunan kaynaklar (alıntı çapası yalnız bunlarda): [01] [02] [03] [04] [09] [42] (+ [05] [06] [07] [08] Undermind okuması)
+- Tam metni okunan kaynaklar (alıntı çapası yalnız bunlarda): [11] [01] [02] [03] [04] [09] [42] (+ [05] [06] [07] [08] Undermind okuması)

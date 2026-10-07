@@ -78,9 +78,9 @@
 
 ### [11] Bengtsson, M., & Kock, S. (2000). "Coopetition" in business networks—To cooperate and compete simultaneously. *Industrial Marketing Management, 29*(5), 411–426.
 - **Tipi:** öncül kuram (ayrıştırma ilkesi) · **Alaka:** 10
-- **Anahtar bulgu:** `<ABSTRACT ERİŞİLEMEDİ>` — yayıncı özeti Crossref/OpenAlex/Semantic Scholar'da gizli, PDF Undermind'da yok. İkincil kaynaklarda (web araması) esere "rakipler müşteriye yakın faaliyetlerde rekabet eder, müşteriden uzak faaliyetlerde iş birliği yapar" önermesi atfediliyor; birincil metinden sayfa numarasıyla teyit ŞART.
-- **Tezimize bağı:** Ö3'ün (turiste yakınlık arttıkça RK payı artar) doğrudan kaynağı; blueprint §3b ayrıştırma ilkesi satırı bu esere dayanıyor → PDF kullanıcı tarafından yüklenmeli.
-- **Okuma:** sadece metadata (abstract yok) · **DOI:** 10.1016/S0019-8501(99)00067-X · **Eklenme:** 2026-10-07, Faz 3
+- **Anahtar bulgu:** Keşifsel çoklu vaka (3 sektör, 21 görüşme). Ortaklaşa rekabet, iki firmanın bazı faaliyetlerde iş birliği yapıp diğerlerinde eşzamanlı rekabet ettiği ikili ve paradoksal ilişkidir (s. 412). Önerme 2: iş birliği müşteriden uzak (girdi), rekabet müşteriye yakın (çıktı) faaliyetlerde yoğunlaşır (s. 421). Karşı örüntü: ayrışma ürün-pazar alanına göre de olabilir (s. 420). Önerme 3: karar ağdaki konumlara bağlı (s. 422); Önerme 5: ayrılamayan mantıkları ara aktör düzenler (s. 423).
+- **Tezimize bağı:** Ö3'ün doğrudan dayanağı TEYİT EDİLDİ (s. 421). Uyarılar: "ayrıştırma ilkesi" adı makalede geçmez; rakip dar tanımlanır (aynı ürün/pazar, s. 415); pazar temelli ayrışma Ö3 için rakip açıklamadır. Ayrıntı: okuma-notlari/11-bengtsson-kock-2000.md
+- **Okuma:** TAM METİN (kullanıcı PDF'i, 2026-10-07) · **DOI:** 10.1016/S0019-8501(99)00067-X · **Eklenme:** 2026-10-07, Faz 3
 
 ### [12] Brandenburger, A. M., & Nalebuff, B. J. (1996). *Co-opetition*. Doubleday.
 - **Tipi:** öncül kuram (değer oluşturma/yakalama) · **Alaka:** 9 · Künye OpenLibrary (OL968398M: New York, Doubleday, 1996, 290 s.) ile teyitli; Undermind kaydı 1997 tarihli Currency/Doubleday baskısı ("Co-opetition: 1. a revolutionary mindset…"). Aynı yazarların 1997 tarihli kısa makalesi de var: *Strategy & Leadership, 25*(6), 28–33, DOI 10.1108/eb054655.
@@ -291,7 +291,7 @@
 |---|---|---|---|---|
 | **İ1 (Ö1):** Ortak İpek Yolu mirası/Kuşak-Yol çerçevesi Türkiye–Çin arasında iş birliğini (değer oluşturma) besler | [03], [32], [33], [35], [36], [37]; analog: [42] | [38] (2010'dan beri düşük stratejik iş birliği) | [01] (fırsat + eşitsiz fayda), [34] (olumlu ve olumsuz yönler), [24] (iş birliği platformu = Çin'in güç aracı) | Ortak tanıtım/turizm yılı belgelerinin etkisine dair sistematik ampirik çalışma yok |
 | **İ2 (Ö2):** Paylaşılan miras eşzamanlı olarak anlatı otoritesi/sahiplik rekabeti doğurur | [09], [25], [26], [28], [29], [40], [41]; [06] (Batı İpek Yolu sahiplenmesi) | — | [22] (miras diplomasisi iş birliği vurgusu), [27] (iş birliği Sinomerkezci anlatıyla birlikte), [24] | Türkiye–Çin ikilisinde İpek Yolu anlatı rekabetini doğrudan inceleyen çalışma yok (konu boşluğu) |
-| **İ3 (Ö3):** İş birliği müşteriden/turistten uzak, rekabet yakın faaliyetlerde yoğunlaşır (ayrıştırma ilkesi) | [11] (birincil teyit bekliyor), [04] (ortak bölgesel marka + ulusal konumlandırma), [19] | — | [10], [17] (ilişki türleri bir arada, ayrışma ölçütü belirtilmiyor), [14] (oluşturma/yakalamanın yeri değişir) | İlkenin devletlerarası/turizm-miras bağlamında sınandığı çalışma yok; [21] yalnız kavramsal emsal |
+| **İ3 (Ö3):** İş birliği müşteriden/turistten uzak, rekabet yakın faaliyetlerde yoğunlaşır (ayrıştırma ilkesi) | [11] (tam metin teyitli, s. 421; karşı örüntü s. 420), [04] (ortak bölgesel marka + ulusal konumlandırma), [19] | — | [10], [17] (ilişki türleri bir arada, ayrışma ölçütü belirtilmiyor), [14] (oluşturma/yakalamanın yeri değişir) | İlkenin devletlerarası/turizm-miras bağlamında sınandığı çalışma yok; [21] yalnız kavramsal emsal |
 | **İ4:** Ortaklaşa rekabet kavramı destinasyonlar ve devletler arası ilişkiye taşınabilir | [18], [19], [15], [16], [04]; [21] (kavramsal) | [20] (prestij/baskın statü ortaklaşa rekabeti azaltır) | [21] (ortaklaşa rekabet stratejik rekabete çözülebilir), [13] (sonuç değer yıkımı olabilir) | İkili devlet düzeyinde turizm ortaklaşa rekabeti ampirik çalışması yok |
 | **İ5 (Ö4–Ö5):** İş birliği söylemi/bağlantısallık turist akışına dönüşmez; rekabet ve Çin'in yönlendirmesi dönüşümü sınırlar (söylem–akış açığı) | [08], [30], [07] (özerklik kaygısı), [39] (jeopolitik yöneliş ≠ Çinli payı) | [33], [35] (akış artışı beklentisi) | [31] (düşük pay coğrafi/kültürel uzaklıkla da açıklanabilir: rakip açıklama), [32] (engeller teknik: güvenlik, dil) | Türkiye'ye Çinli akışının nedensel belirleyicileri çalışılmamış; tasarım gereği burada da test yok |
 | **İ6:** Değer yakalama (aracı/acente kontrolü) rekabetin turiste en yakın arenasıdır | [14], [12] (kuramsal) | — | [02] (aracı tercihleri var, kontrol verisi yok), [05] (%82,4 acente: dolaylı), [34] | **Yetersiz:** Türkiye'de Çinli turist harcamasının hangi aktörde kaldığına dair veri yok → arena "kanıt yetersiz" raporlanabilir |
@@ -300,7 +300,7 @@
 
 ## Eksik Olanlar
 
-1. **[11] Bengtsson & Kock (2000) tam metni** — abstract dahi erişilemedi; ayrıştırma ilkesi (Ö3) bu esere dayanıyor. Kullanıcı PDF'i Undermind'a yüklemeli; atıf sayfa numarası teyit edilmeli.
+1. ~~[11] Bengtsson & Kock (2000) tam metni~~ — KAPANDI 2026-10-07 (kullanıcı PDF'i okundu).
 2. **[12] Brandenburger & Nalebuff (1996)** — değer oluşturma/yakalama ve "değer ağı" için sayfa numaraları kitaptan alınmalı.
 3. **[23] Winter (2016, The Diplomat)** — metin okunamadı; URL ve içerik teyit edilmeli ya da yerine hakemli Winter eserleri ([22], [24]–[26]) kullanılmalı.
 4. **Değer yakalama arenası için ampirik kaynak** — Çinli tur operatörü/acente, ödeme sistemi, Çinli sahipli otel/aracı payına dair Türkiye verisi yok. Aday aramalar: Palidan (2018) acente tezi (adaylar U060), Abula (2019) tezi (U040), Nangong & Yokoyama (2023) paket tur dağıtım kanalları (U161).
