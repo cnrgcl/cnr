@@ -5,7 +5,7 @@
 ## 4. Bulgular
 
 ### 4.1. Belgelerin ve kodlamanın genel görünümü
-- Tablo 1: Korpus özeti (A: 25 belge, B: 24 belge; taraf dağılımı; dönem dağılımı). Kaynak: yazar kiti Tablo 1.
+- Tablo 1: İncelenen belgelerin bileşimi (ikili 25, tek taraflı 24 belge; taraf dağılımı; dönem dağılımı). Kaynak: yazar kiti Tablo 1.
 - Tablo 2: 368 birimin arena × yönelim (İB/RK/KR/NÖ) dağılımı, NÖ dahil ve hariç iki sütun. Kaynak: stats.json → `v2.arena_yonelim` (insan kodlarıyla yeniden üretilecek).
 - Kodlayıcılar arası uyum: κ(alan), κ(yönelim) + uzlaşı yöntemi tek cümle (Yöntem'de ayrıntı var).
 - Burada yorum yok; yalnız betim.
@@ -38,7 +38,7 @@
 - Kısa, somut; en fazla 3 öneri.
 
 ### 5.3. Sınırlılıklar
-- Korpus seçim yanlılığı (Bowen 2009); erişilemeyen 12 belge; Çince metinlerin İngilizce/çeviri sürümleri.
+- Belge seçim yanlılığı (Bowen 2009); erişilemeyen 12 belge; Çince metinlerin İngilizce/çeviri sürümleri.
 - Değer yakalama arenasında construct–measure gap (gelir payı verisi yok; <5 birimse "kanıt yetersiz").
 - TÜİK serisi sınır girişi, turist değil; nedensel test yok.
 - Sincan tartışmasının kapsam dışı bırakılması analitik olduğu kadar siyasi bir tercihtir (blueprint §10).
