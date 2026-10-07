@@ -85,3 +85,5 @@ Durum sembolleri: ✓ tamam · → açık · İŞLEMDE · kilitli · ATLANDI
 [2026-10-07 12:44] [11] Bengtsson & Kock 2000 tam metni kullanıcıdan geldi, okundu: Önerme 2 (s. 421) Ö3 dayanağını teyit ediyor. Yeni uyarılar: pazar temelli karşı örüntü (s. 420) Ö3 için rakip açıklama; dar rakip tanımı (s. 415) blueprint §3b'de netleşmeli. Not: okuma-notlari/11-bengtsson-kock-2000.md. Kalan PDF: [12], [18].
 
 [2026-10-07 12:46] [12] için yüklenen PDF kitap değil, BusinessSummaries.com özeti (7 s.). Asimetri sürüyor; [12] yalnız genel kavram atfıyla kullanılacak. Not: okuma-notlari/12-brandenburger-nalebuff-1996.md
+
+[2026-10-07 12:53] [18] Redi & Pulido Fernández 2018 tam metni bulunamadı (Google Books bot erişimine kapalı; kullanıcı da erişemedi). KARAR: yalnız özet düzeyinde kullanılacak, alıntı yok; Yazar-Okuma Asimetrisi uyarısı açık kalır.

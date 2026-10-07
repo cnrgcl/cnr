@@ -30,5 +30,5 @@ Türkiye–Çin turizm yazını ilişkiyi Kuşak ve Yol çerçevesinde karşıl�
 ## Yazar-Okuma Asimetrisi uyarıları (kritik dayanak, tam metin yok)
 - ~~[11] Bengtsson & Kock 2000~~ — TAM METİN OKUNDU (Önerme 2, s. 421 teyitli). 1.3'e eklenecek gerilim: pazar temelli karşı örüntü (s. 420) + dar rakip tanımı (s. 415).
 - [12] Brandenburger & Nalebuff 1996 — yüklenen dosya üçüncü taraf özeti (kitap değil). Yalnız genel kavram atfı (değer ağı, tamamlayıcı); alıntı ve sayfa YOK. Ayrım savunusu [11][13][14]'e yaslanacak.
-- [18] Redi & Pulido Fernández 2018 — en yakın rakip; yalnız abstract. PDF önerilir.
+- [18] Redi & Pulido Fernández 2018 — en yakın rakip; tam metin BULUNAMADI (kullanıcı, 2026-10-07). Yalnız özetteki iki tespitle kullanılacak; alıntı yok; boşluk cümlesi temkinli ("özet düzeyinde görüldüğü kadarıyla" değil, iddia çok taraflı program düzeyi ↔ ikili düzey ayrımıyla sınırlı).
 - Tam metni okunan kaynaklar (alıntı çapası yalnız bunlarda): [11] [01] [02] [03] [04] [09] [42] (+ [05] [06] [07] [08] Undermind okuması)
