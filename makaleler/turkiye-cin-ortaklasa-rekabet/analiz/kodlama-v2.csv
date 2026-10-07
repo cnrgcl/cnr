@@ -1,0 +1,369 @@
+belge,birim_no,taraf,konusan,arena_v1,yonelim_v1,arena_v2,m1,m2,m3,m_gerekce,yonelim_v2
+A01,1,ORT,ORT,A2,İB,A2,E,H,H,"M1: ""iki ülke"" ortak özne; M2: işaret yok; M3: işaret yok",İB
+A01,2,ORT,ORT,A2,İB,A2,H,H,H,"M1: ""tüm gücün seferber edilmesi""; ortak özne kelimesi yok; M2: işaret yok; M3: işaret yok",NÖ
+A02,1,TR,TR,A2,İB,A2,H,H,H,M1: yıllar ilan edildi; ortak özne kelimesi yok; M2: işaret yok; M3: işaret yok,NÖ
+A03,1,CN,CN,A3,İB,A3,E,H,H,"M1: ""iki köklü halkımızı"", ""el ele""; M2: işaret yok; M3: işaret yok",İB
+A03,2,CN,CN,A2,İB,A2,E,H,H,"M1: ""Çin tarafı Türk tarafıyla"", ""iki ülke dostluğu""; M2: işaret yok; M3: işaret yok",İB
+A03,3,CN,TR,A2,İB,A2,E,H,H,"M1: ""Türk tarafı Çin ile işbirliği""; M2: işaret yok; M3: işaret yok",İB
+A04,1,TR,TR,A4,RK,A4,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""fuels our tourism ... in Turkey"" tek taraflı fayda",RK
+A04,2,TR,TR,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""Istanbul ... strategic intersection"" kavşak iddiası; M3: işaret yok",RK
+A04,3,TR,TR,A3,KR,A3,H,E,H,"M1: işaret yok; M2: ""Silk Road ... ended in Istanbul"" uç nokta iddiası; M3: işaret yok",RK
+A04,4,TR,TR,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""critical location"", ""crucial connecting point"" kavşak; M3: işaret yok",RK
+A04,5,TR,TR,A4,RK,A4,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""consolidate its position"" tek taraflı hedef",RK
+A04,6,TR,TR,A2,İB,A2,E,H,H,"M1: ""between Turkey and Hong Kong"" ikili; M2: işaret yok; M3: işaret yok",İB
+A05,1,TR,TR,A2,İB,A2,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+A05,2,TR,TR,A3,RK,A3,H,H,H,"M1: işaret yok; M2: ""Rumi ... symbolized""; merkez/üstünlük iddiası yok; M3: işaret yok",NÖ
+A06,1,CN,CN,A3,İB,A3,H,H,H,"M1: ""Avrasya halkları""; iki ülke adı yok; M2: işaret yok; M3: işaret yok",NÖ
+A06,2,CN,CN,A3,İB,A3,E,H,H,"M1: ""tüm ülkelerin ortak ... mirası""; M2: işaret yok; M3: işaret yok",İB
+A06,3,CN,CN,A3,RK,A1,H,E,H,"M1: işaret yok; M2: ""Xi ... Kuşak ve Yol önerdi"" tek marka; M3: işaret yok",RK
+A06,4,CN,CN,A1,İB,A1,E,H,H,"M1: ""güzergâh ülkeleri ... birlikte ilerletmesi""; M2: işaret yok; M3: işaret yok",İB
+A06,5,CN,CN,A2,İB,A2,H,H,H,M1: işaret yok; tanım cümlesi; M2: işaret yok; M3: işaret yok,NÖ
+A06,6,CN,CN,A1,İB,A1,E,E,H,"M1: ""ortak istişare, ortak inşa"", ""koro""; M2: ""Kuşak ve Yol"" tek başına marka; M3: işaret yok",KR
+A06,7,CN,CN,A1,İB,A1,E,E,H,"M1: ""birbirine bağlanması"" (相互对接) karşılıklı; M2: ""Kuşak ve Yol"" tek başına marka; M3: işaret yok",KR
+A06,8,CN,CN,A3,RK,A1,H,E,H,"M1: işaret yok; M2: ""Kuşak ve Yol ... önemli bir halkası""; M3: işaret yok",RK
+A06,9,CN,CN,A1,İB,A1,E,H,H,"M1: iki liderin girişimleri ""örtüşmektedir""; M2: iki marka birlikte; ayrı öne sürme yok; M3: işaret yok",İB
+A06,10,CN,CN,A1,KR,A1,H,E,H,"M1: işaret yok; M2: ""Türkiye Kuşak ve Yol'un ... katılımcısı""; M3: işaret yok",RK
+A06,11,CN,CN,A4,KR,A1,H,H,H,"M1: ""Çin şirketleri ... katılmış""; ortak özne yok; M2: işaret yok; M3: işaret yok",NÖ
+A06,12,CN,CN,A2,İB,A2,E,H,H,"M1: ""karşılıklı anlayışı ve dostluğu""; M2: işaret yok; M3: işaret yok",İB
+A06,13,CN,CN,A3,İB,A3,H,H,H,M1: işaret yok; Mevlana alıntısı; M2: işaret yok; M3: işaret yok,NÖ
+A06,14,CN,CN,A1,İB,A1,E,E,H,"M1: ""Türkiye dahil ... birlikte"", ""ortak inşası""; M2: ""Kuşak ve Yol"" tek başına marka; M3: işaret yok",KR
+A07,1,ORT,ORT,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""Kuşak ve Yol Girişiminin önerildiğini"" tek marka; M3: işaret yok",RK
+A07,2,ORT,ORT,A3,KR,A1,H,E,H,"M1: işaret yok; M2: ""Türkiye ... Orta Koridor Girişimi"" tek marka; M3: işaret yok",RK
+A07,3,ORT,ORT,A1,İB,A1,E,H,H,"M1: ""İki Tarafın ... ortaklaşa"", ""kazan-kazan""; M2: işaret yok; M3: işaret yok",İB
+A07,4,ORT,ORT,A1,KR,A1,E,H,H,"M1: ""ortaklaşa teşvik ederler""; M2: Orta Koridor ve Kuşak-Yol birlikte anılıyor; M3: işaret yok",İB
+A07,5,ORT,ORT,A1,İB,A1,E,H,H,"M1: ""Türkiye'de, Çin'de ... iki taraflı""; M2: işaret yok; M3: işaret yok",İB
+A07,6,ORT,ORT,A1,İB,A1,H,H,H,M1: işaret yok; taraf adı yok; M2: işaret yok; M3: işaret yok,NÖ
+A07,7,ORT,ORT,A1,KR,A1,H,H,H,M1: işaret yok; taraf adı yok; M2: Kervansaray ve Kuşak-Yol birlikte; M3: işaret yok,NÖ
+A07,8,ORT,ORT,A4,KR,A4,E,H,H,"M1: ""ikili işbirliği"", ""Türk-Çin para takas""; M2: işaret yok; M3: işaret yok",İB
+A07,9,ORT,ORT,A4,İB,A4,H,H,H,M1: işaret yok; taraf adı yok; M2: işaret yok; M3: işaret yok,NÖ
+A07,10,ORT,ORT,A2,İB,A2,H,H,H,M1: işaret yok; taraf adı yok; M2: işaret yok; M3: işaret yok,NÖ
+A07,11,ORT,ORT,A2,İB,A2,H,H,H,M1: işaret yok; taraf adı yok; M2: işaret yok; M3: işaret yok,NÖ
+A07,12,ORT,ORT,A3,İB,A2,E,H,H,"M1: ""İki Tarafta ... değişiminin""; M2: işaret yok; M3: işaret yok",İB
+A08,1,CN,CN,A1,RK,A1,E,E,H,"M1: ""Taraflar ... ortaklaşa ilerletme""; M2: ""Kuşak ve Yol"" tek başına marka; M3: işaret yok",KR
+A08,2,CN,CN,A4,İB,A4,E,H,H,"M1: ""Taraflar"", ""ortak kalkınma ve ortak refah""; M2: işaret yok; M3: işaret yok",İB
+A08,3,CN,CN,A4,İB,A4,E,H,H,"M1: ""Çin tarafı Türk tarafıyla"", ""ikili ticaret""; M2: işaret yok; M3: işaret yok",İB
+A08,4,CN,CN,A2,İB,A2,E,H,H,"M1: ""Taraflar"", ""Çin-Türkiye dostluğunun""; M2: işaret yok; M3: işaret yok",İB
+A08,5,CN,TR,A2,İB,A2,E,H,H,"M1: ""Çin tarafıyla"", ""karşılıklı saygı""; M2: işaret yok; M3: işaret yok",İB
+A08,6,CN,TR,A1,KR,A1,H,H,H,"M1: ""katılmak"", ""memnuniyetle karşılamak""; ortak özne yok; M2: Kuşak-Yol konuşanın markası değil; M3: işaret yok",NÖ
+A08,7,CN,CN,A1,RK,A1,E,E,H,"M1: ""iki devlet başkanı"", ""ortaklaşa"", ""birlikte""; M2: ""Kuşak ve Yol"" tek başına marka; M3: işaret yok",KR
+A09,1,CN,CN,A2,İB,A2,E,E,H,"M1: ""Taraflar ... kültür ve turizm işbirliği""; M2: ""Kuşak ve Yol çerçevesinde"" tek marka; M3: işaret yok",KR
+A09,2,CN,CN,A2,İB,A2,E,H,H,"M1: ""Çin-Türkiye turizm işbirliği""; M2: işaret yok; M3: işaret yok",İB
+A09,3,CN,CN,A2,RK,A2,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""Türk tarafının ... güvenceyi güçlendirmesini umuyoruz"" talep",RK
+A09,4,CN,TR,A3,İB,A3,E,H,H,"M1: ""Türkiye ve Çin'in her ikisinin de""; M2: işaret yok; M3: işaret yok",İB
+A09,5,CN,TR,A2,İB,A2,E,H,H,"M1: ""Çin tarafıyla güçlü işbirliği""; M2: ""önemli bir ülke""; merkez/kapı iddiası yok; M3: işaret yok",İB
+A09,6,CN,TR,A2,İB,A2,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""Çinli turistlere yönelik güvenlik seviyesini yükseltti"" tek taraflı taviz",RK
+A09,7,CN,TR,A1,İB,A1,E,H,H,"M1: ""iki ülke arasındaki uçuşların""; M2: işaret yok; M3: işaret yok",İB
+A10,1,TR,TR,A2,İB,A2,E,H,H,"M1: ""China ... tourism partners of Turkey""; M2: işaret yok; M3: işaret yok",İB
+A10,2,TR,TR,A2,RK,A2,H,H,H,M1: işaret yok; M2: işaret yok; M3: Çin listede var; dışlama yok,NÖ
+A10,3,TR,TR,A2,RK,A2,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""increase this number to 500,000"" hedef",RK
+A10,4,TR,TR,A2,İB,A2,E,H,H,"M1: ""ties with Beijing""; M2: işaret yok; M3: işaret yok",İB
+A10,5,TR,TR,A2,İB,A2,E,H,H,"M1: ""ties between Turkish and Chinese people""; M2: işaret yok; M3: işaret yok",İB
+A10,6,TR,TR,A2,İB,A2,H,H,H,"M1: ""met his Chinese counterpart""; ortak özne kelimesi yok; M2: işaret yok; M3: işaret yok",NÖ
+A10,7,TR,TR,A3,RK,A3,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""Turkey wants to open ... called for"" tek taraflı talep",RK
+A11,1,CN,CN,A1,İB,A1,E,H,H,"M1: ""Both sides""; M2: ""Belt and Road"" ile ""Middle Corridor"" birlikte; M3: işaret yok",İB
+A11,2,CN,CN,A2,İB,A2,E,H,H,"M1: ""Both sides"", ""China-Turkey friendship""; M2: işaret yok; M3: işaret yok",İB
+A11,3,CN,TR,A1,KR,A1,E,H,H,"M1: ""exchanges with China""; M2: Kuşak-Yol konuşanın markası değil; M3: işaret yok",İB
+A12,1,TR,TR,A4,RK,A2,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""boosting Turkey's tourism sector"" tek taraflı fayda",RK
+A12,2,TR,TR,A2,RK,A2,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""increasing the percentage of Chinese tourists"" hedef",RK
+A12,3,TR,TR,A2,RK,A2,H,H,H,"M1: işaret yok; M2: ""Istanbul is a treasure""; merkez/üstünlük iddiası yok; M3: işaret yok",NÖ
+A12,4,TR,TR,A2,İB,A2,E,H,H,"M1: ""visa free policy for both sides""; M2: işaret yok; M3: işaret yok",İB
+A12,5,TR,TR,A2,İB,A2,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+A12,6,TR,TR,A4,İB,A4,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+A12,7,TR,TR,A2,İB,A2,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""Chinese passports are visa-exempt"" tek taraflı muafiyet",RK
+A12,8,TR,TR,A2,İB,A2,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+A12,9,TR,TR,A2,KR,A2,E,H,H,"M1: ""between private Turkish and Chinese companies""; M2: ""showcasing the country's tourism""; merkez iddiası yok; M3: işaret yok",İB
+A12,10,TR,TR,A1,İB,A1,E,H,H,"M1: ""between Beijing, Shanghai ... and Istanbul""; M2: ""one of Turkey's biggest""; dünya karşılaştırması yok; M3: işaret yok",İB
+A12,11,TR,TR,A4,İB,A4,E,H,H,"M1: ""Turkish and Chinese tourism operators""; M2: işaret yok; M3: işaret yok",İB
+A12,12,TR,TR,A2,İB,A2,H,H,H,M1: işaret yok; tek taraflı uyum çabası; M2: işaret yok; M3: hedef/talep kelimesi yok,NÖ
+A12,13,TR,TR,A2,RK,A2,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""goal is to host around 500,000 Chinese tourists""",RK
+A12,14,TR,TR,A1,İB,A1,E,H,H,"M1: ""flight capacity between Turkey and China""; M2: işaret yok; M3: işaret yok",İB
+A12,15,TR,TR,A1,İB,A1,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""Turkish Airlines would like to extend"" tek taraflı hedef",RK
+A12,16,TR,TR,A1,İB,A1,E,H,H,"M1: ""Turkish-Chinese civil aviation cooperation""; M2: işaret yok; M3: işaret yok",İB
+A12,17,TR,TR,A4,İB,A4,E,H,H,"M1: ""Turkish and Chinese tour operators ... closely""; M2: işaret yok; M3: işaret yok",İB
+A12,18,TR,TR,A4,RK,A4,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""market in China ... accessible for Turkish operators""",RK
+A12,19,TR,TR,A2,İB,A2,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+A12,20,TR,TR,A2,İB,A2,E,H,H,"M1: ""Both leaders ... bilateral ties""; M2: işaret yok; M3: işaret yok",İB
+A12,21,TR,TR,A2,İB,A2,E,H,H,"M1: ""Both countries ... to each other""; M2: işaret yok; M3: işaret yok",İB
+A12,22,TR,TR,A2,RK,A2,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""Chinese authorities' visa policy needs to be revisited""",RK
+A12,23,TR,TR,A3,İB,A3,E,H,H,"M1: ""Turkey and China, two ancient civilizations""; M2: işaret yok; M3: işaret yok",İB
+A12,24,TR,TR,A3,İB,A3,E,H,H,"M1: ""gates ... tied again hand in hand""; M2: ""gates"" kime ait söylenmiyor; M3: işaret yok",İB
+A12,25,TR,TR,A3,RK,A1,H,E,H,"M1: işaret yok; M2: ""Turkey ... natural bridge"", ""outlet to major markets""; M3: işaret yok",RK
+A12,26,TR,TR,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""world's largest"" üstünlük karşılaştırması; M3: işaret yok",RK
+A13,1,CN,CN,A1,İB,A1,E,H,H,"M1: ""ortak inşasında önemli bir ortak"", ""Çin tarafı Türk tarafıyla""; M2: Kuşak-Yol ile Orta Koridor birlikte; M3: işaret yok",İB
+A13,2,CN,CN,A4,İB,A4,E,H,H,"M1: ""Çin-Türkiye işbirliğinden somut faydalar""; M2: işaret yok; M3: işaret yok",İB
+A13,3,CN,CN,A2,İB,A2,E,H,H,"M1: ""iki ülke halkının karşılıklı anlayışını""; M2: işaret yok; M3: işaret yok",İB
+A13,4,CN,TR,A3,İB,A3,E,H,H,"M1: ""Türk-Çin dostluğunun""; M2: işaret yok; M3: işaret yok",İB
+A13,5,CN,TR,A1,KR,A1,E,H,H,"M1: ""tarafların ... işbirliğini güçlendirmesini""; M2: Kuşak-Yol konuşanın markası değil; M3: işaret yok",İB
+A14,1,TR,TR,A3,İB,A1,E,H,H,"M1: ""İstanbul ile Xi'an'ı ... birbirine bağlıyoruz""; M2: ""en görkemli"" iki kente birlikte; M3: işaret yok",İB
+A14,2,TR,TR,A1,İB,A1,H,H,H,M1: işaret yok; tren ulaştı betimi; M2: işaret yok; M3: işaret yok,NÖ
+A14,3,TR,TR,A1,İB,A1,E,H,H,"M1: ""iki ülke arasındaki işbirliğinin"", ""ortak anlayışları""; M2: işaret yok; M3: işaret yok",İB
+A14,4,TR,TR,A1,İB,A1,E,H,H,"M1: ""İki ülke arasındaki bağlantılılığın""; M2: Kuşak-Yol ile Orta Koridor birlikte; M3: işaret yok",İB
+A14,5,TR,TR,A1,İB,A1,E,H,H,"M1: ""ikili işbirliğimize"", ""kazan-kazan"", ""karşılıklı""; M2: işaret yok; M3: işaret yok",İB
+A14,6,TR,TR,A2,İB,A2,H,H,H,"M1: işaret yok; turist sayısı betimi; M2: işaret yok; M3: hedef değil, betimsel sayı",NÖ
+A14,7,TR,TR,A2,RK,A2,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""Hedefimiz bu sayıyı 1 milyona""",RK
+A14,8,TR,TR,A2,İB,A2,E,H,H,"M1: ""karşılıklı turizmin"", ""birbirlerini daha iyi""; M2: işaret yok; M3: işaret yok",İB
+A14,9,TR,TR,A1,İB,A1,E,H,H,"M1: ""karşılıklı seferleri""; M2: işaret yok; M3: talep karşılıklı sefer için",İB
+A14,10,TR,TR,A1,KR,A1,E,H,H,"M1: ""Türkiye ve Çin arasındaki dostluğun""; M2: ""yeni yuvası""; merkez/üstünlük iddiası yok; M3: işaret yok",İB
+A15,1,TR,TR,A3,RK,A3,H,H,H,"M1: işaret yok; M2: ""18 ... UNESCO"" sayım; karşılaştırma yok; M3: işaret yok",NÖ
+A15,2,TR,TR,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""the only city ... on two continents in the world""; M3: işaret yok",RK
+A15,3,TR,TR,A2,RK,A2,H,H,H,"M1: işaret yok; M2: ""most visited places in Turkey"" iç karşılaştırma; M3: işaret yok",NÖ
+A15,4,TR,TR,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""where the history has begun ... Şanlıurfa"" başlangıç; M3: işaret yok",RK
+A15,5,TR,TR,A3,RK,A3,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+A15,6,TR,TR,A2,RK,A2,H,H,E,"M1: ""Turkish-Chinese tourism perspective"" yalnız çerçeve; M2: işaret yok; M3: ""still below our expectations"" tek taraflı beklenti",RK
+A15,7,TR,TR,A2,RK,A2,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""aim at increasing this number up to one million""",RK
+A15,8,TR,TR,A2,İB,A2,H,H,H,"M1: ""whole of humanity""; iki ülke adı yok; M2: işaret yok; M3: işaret yok",NÖ
+A16,1,TR,TR,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""Middle Corridor"" tek marka, ""in just over two weeks""; M3: işaret yok",RK
+A16,2,TR,TR,A3,İB,A3,E,H,H,"M1: ""historical ties between Turkey and China""; M2: işaret yok; M3: işaret yok",İB
+A16,3,TR,TR,A3,İB,A3,E,H,H,"M1: ""meeting ... point of ancient Turks and Chinese""; M2: ""eastern end"" karşı tarafa ait; M3: işaret yok",İB
+A16,4,TR,TR,A3,İB,A1,E,H,H,"M1: ""we again follow their path"" (Türk+Çinli); M2: işaret yok; M3: işaret yok",İB
+A16,5,TR,TR,A1,İB,A1,E,H,H,"M1: ""direct flights between Xi'an and Istanbul""; M2: işaret yok; M3: işaret yok",İB
+A16,6,TR,TR,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""Turkey's strategic location at the intersection""; M3: işaret yok",RK
+A16,7,TR,TR,A1,İB,A1,H,E,H,"M1: işaret yok; M2: ""faster and cheaper transport"" üstünlük; M3: işaret yok",RK
+A16,8,TR,TR,A1,İB,A1,E,H,H,"M1: ""with Chinese partnership""; M2: işaret yok; M3: işaret yok",İB
+A16,9,TR,TR,A1,İB,A1,E,E,H,"M1: ""natural complementarity with the BRI""; M2: ""one of the earliest supporters"" üstünlük; M3: işaret yok",KR
+A16,10,TR,TR,A1,İB,A1,E,H,H,"M1: ""Turkey and China have common views""; M2: işaret yok; M3: işaret yok",İB
+A16,11,TR,TR,A4,RK,A4,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""Turkish brands ... available in the Chinese market""",RK
+A17,1,CN,CN,A3,RK,A3,E,H,H,"M1: ""Türkiye'nin de aralarında olduğu ... halklarla birlikte""; M2: işaret yok; M3: işaret yok",İB
+A17,2,CN,CN,A3,KR,A3,E,E,H,"M1: ""tüm taraflara yarar sağlayarak""; M2: ""Kuşak ve Yol inisiyatifi"" tek marka; M3: işaret yok",KR
+A17,3,CN,CN,A1,KR,A1,E,E,H,"M1: ""diğer ülkelerle birlikte çalışma""; M2: ""Kuşak ve Yol ... Çin tarafından sunulan""; M3: işaret yok",KR
+A17,4,CN,CN,A1,İB,A1,E,H,H,"M1: ""Çin ve Türkiye ... mutabakat"", ""Çin-Türkiye işbirliği""; M2: Kuşak-Yol ile Orta Koridor birlikte; M3: işaret yok",İB
+A17,5,CN,CN,A1,İB,A1,E,H,H,"M1: ""birbirine sıkı sıkıya kenetlenmesiyle"", ""hayata geçirdik""; M2: Kuşak-Yol ile Orta Koridor birlikte; M3: işaret yok",İB
+A17,6,CN,CN,A1,İB,A1,E,H,H,"M1: ""İki taraf ... mekanizması kurmuş""; M2: Kuşak-Yol ile Orta Koridor birlikte; M3: işaret yok",İB
+A17,7,CN,CN,A4,İB,A4,H,E,H,"M1: işaret yok; iki ülke adı yok; M2: ""İnisiyatif ... 1 trilyon USD"" tek marka başarısı; M3: işaret yok",RK
+A17,8,CN,CN,A2,İB,A2,E,H,H,"M1: ""iki ülke halkı ... birbirlerini tanımış""; M2: işaret yok; M3: işaret yok",İB
+A18,1,TR,TR,A3,İB,A3,E,H,H,"M1: ""including the ancient Chinese and Turks""; M2: ""eastern end"" karşı tarafa ait; M3: işaret yok",İB
+A18,2,TR,TR,A3,İB,A3,E,H,H,"M1: ""Ottoman and Chinese Emperors have exchanged""; M2: işaret yok; M3: işaret yok",İB
+A18,3,TR,TR,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""gateway between Asia and Europe"" kapı iddiası; M3: işaret yok",RK
+A18,4,TR,TR,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""unique location at the crossroads"" kavşak; M3: işaret yok",RK
+A18,5,TR,TR,A1,İB,A1,H,H,H,M1: işaret yok; yalnız Türkiye özne; M2: BRI konuşanın markası değil; M3: işaret yok,NÖ
+A18,6,TR,TR,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""Middle Corridor ... starts from Türkiye"" tek marka; M3: işaret yok",RK
+A18,7,TR,TR,A1,İB,A1,E,H,H,"M1: ""in natural harmony with the BRI""; M2: iki girişim birlikte; M3: işaret yok",İB
+A18,8,TR,TR,A1,İB,A1,E,H,H,"M1: ""MoU with China"", ""align the two initiatives""; M2: iki girişim birlikte; M3: işaret yok",İB
+A18,9,TR,TR,A1,İB,A1,E,H,H,"M1: ""Together with the BRI, the Middle Corridor""; M2: iki girişim birlikte; M3: işaret yok",İB
+A18,10,TR,TR,A1,İB,A1,E,H,H,"M1: ""As part of this shared vision""; M2: işaret yok; M3: işaret yok",İB
+A18,11,TR,TR,A3,İB,A2,E,H,H,"M1: ""information about each other""; M2: işaret yok; M3: işaret yok",İB
+A18,12,TR,TR,A2,İB,A2,H,H,H,M1: işaret yok; taraf adı yok; M2: işaret yok; M3: işaret yok,NÖ
+A18,13,TR,TR,A2,RK,A2,H,E,H,"M1: işaret yok; M2: ""4th most popular tourist destination in the world""; M3: işaret yok",RK
+A18,14,TR,TR,A2,İB,A2,E,H,H,"M1: ""Xi'an-İstanbul direct flights""; M2: işaret yok; M3: işaret yok",İB
+A18,15,TR,TR,A2,İB,A2,E,H,H,"M1: ""And vice-versa ... Turkish tourists will visit""; M2: işaret yok; M3: işaret yok",İB
+A19,1,CN,CN,A3,İB,A3,E,H,H,"M1: ""Çin ve Türkiye"", ""iki ülkeyi ... bağlamış""; M2: işaret yok; M3: işaret yok",İB
+A19,2,CN,CN,A1,İB,A1,E,H,H,"M1: ""ortak inşası ile ... uyumlaştırılmasını""; M2: Kuşak-Yol ile Orta Koridor birlikte; M3: işaret yok",İB
+A19,3,CN,CN,A2,İB,A2,H,H,H,M1: işaret yok; taraf adı yok; M2: işaret yok; M3: işaret yok,NÖ
+A19,4,CN,TR,A1,İB,A1,E,H,H,"M1: ""yüksek düzeyde örtüşmektedir"", ""Çin tarafıyla""; M2: iki girişim birlikte; M3: işaret yok",İB
+A20,1,CN,CN,A2,İB,A2,E,H,H,"M1: ""Taraflar iki ülke arasında"", ""çift yönlü""; M2: işaret yok; M3: işaret yok",İB
+A20,2,CN,CN,A2,İB,A2,E,H,H,"M1: ""Sun Yeli ve Ersoy ... birlikte imzaladı""; M2: işaret yok; M3: işaret yok",İB
+A21,1,CN,TR,A2,RK,A2,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""aims to attract 1 million Chinese tourists""",RK
+A21,2,CN,TR,A2,İB,A2,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""host more and more Chinese guests"" hedef",RK
+A21,3,CN,TR,A3,RK,A2,H,E,H,"M1: işaret yok; M2: ""Silk Road routes that span the country"" kendi rotası; M3: işaret yok",RK
+A21,4,CN,CN,A3,RK,A2,H,H,H,"M1: işaret yok; M2: konuşan CN; ""crossroads"" karşı tarafa ait; M3: işaret yok",NÖ
+A21,5,CN,TR,A2,İB,A2,H,H,H,"M1: işaret yok; M2: ""entry point for our Chinese visitors""; İpek Yolu kapısı değil; M3: işaret yok",NÖ
+A21,6,CN,TR,A2,İB,A2,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+A21,7,CN,TR,A4,RK,A2,H,H,H,M1: işaret yok; M2: işaret yok; M3: tanıtım; hedef/talep kelimesi yok,NÖ
+A21,8,CN,TR,A3,RK,A3,H,H,H,"M1: işaret yok; M2: ""truly unique""; karşılaştırma yok; M3: işaret yok",NÖ
+A22,1,CN,CN,A1,İB,A1,E,H,H,"M1: ""synergy between the Belt and Road ... Middle Corridor""; M2: iki girişim birlikte; M3: işaret yok",İB
+A22,2,CN,CN,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""China-Europe Railway Express"" tek marka; M3: işaret yok",RK
+A22,3,CN,CN,A2,İB,A2,H,H,H,M1: işaret yok; taraf adı yok; M2: işaret yok; M3: işaret yok,NÖ
+A22,4,CN,TR,A1,KR,A1,E,H,H,"M1: ""exchanges with China, jointly pursue""; M2: BRI konuşanın markası değil; M3: işaret yok",İB
+A22,5,CN,TR,A2,İB,A2,H,H,H,M1: işaret yok; taraf adı yok; M2: işaret yok; M3: işaret yok,NÖ
+A23,1,TR,TR,A4,KR,A4,E,H,E,"M1: ""ikili ticaretin dengeli""; M2: işaret yok; M3: ""Çin firmalarının Türkiye'de yatırım yapmaları"" talep",KR
+A23,2,TR,TR,A1,İB,A1,E,H,H,"M1: ""müşterek adımlar atılmasının""; M2: iki girişim birlikte; M3: işaret yok",İB
+A24,1,TR,TR,A3,İB,A3,E,H,H,"M1: ""between our two great civilizations""; M2: işaret yok; M3: işaret yok",İB
+A24,2,TR,TR,A1,İB,A1,H,H,H,"M1: işaret yok; ""our support for"" tek özne; M2: BRI konuşanın markası değil; M3: işaret yok",NÖ
+A24,3,TR,TR,A1,İB,A1,E,H,H,"M1: ""MoU with China"", ""harmonize these two initiatives""; M2: iki girişim birlikte; M3: işaret yok",İB
+A24,4,TR,TR,A1,İB,A1,E,H,H,"M1: ""harmonization of these two visions""; M2: iki girişim birlikte; M3: işaret yok",İB
+A24,5,TR,TR,A2,İB,A2,E,H,H,"M1: ""bilateral cooperation in all fields""; M2: işaret yok; M3: işaret yok",İB
+A24,6,TR,TR,A3,RK,A3,H,H,H,"M1: işaret yok; M2: işaret yok; M3: ""one-sided sources"" eleştiri; dışlama değil",NÖ
+A24,7,TR,TR,A3,İB,A3,E,H,H,"M1: ""China is surely like Türkiye""; M2: ""cradles ... of the world civilization"" İpek Yolu başlangıcı değil; M3: işaret yok",İB
+A25,1,CN,CN,A2,İB,A2,E,H,H,"M1: ""işbirliği içinde"", ""Çin-Türkiye diplomatik ilişkilerinin""; M2: işaret yok; M3: işaret yok",İB
+A25,2,CN,CN,A3,İB,A3,E,H,H,"M1: ""Çin ve Türk medeniyetlerinin ... karşılıklı""; M2: işaret yok; M3: işaret yok",İB
+A25,3,CN,CN,A3,RK,A3,H,H,H,"M1: işaret yok; M2: ""Dunhuang sanatının ruhunu""; merkez iddiası yok; M3: işaret yok",NÖ
+A25,4,CN,CN,A2,İB,A2,E,H,H,"M1: ""Çin-Türkiye ... değişim"", ""iki ülke arasındaki""; M2: işaret yok; M3: işaret yok",İB
+B01,B01-01,CN,CN,A3,RK,A3,E,E,H,"M1: ""friendly contacts between China and Central Asian countries""; M2: ""Zhang Qian ... to open the door"" açıcı/başlangıç; M3: işaret yok",KR
+B01,B01-02,CN,CN,A3,KR,A3,H,H,H,"M1: işaret yok; Kazakistan tek özne; M2: ""major stop"" konuşana ait değil; M3: işaret yok",NÖ
+B01,B01-03,CN,CN,A3,İB,A3,H,H,H,"M1: ""People in regional countries""; ortak işaret kelimesi yok; M2: işaret yok; M3: işaret yok",NÖ
+B01,B01-04,CN,CN,A3,İB,A3,E,H,H,"M1: ""countries ... can absolutely share peace""; M2: işaret yok; M3: işaret yok",İB
+B01,B01-05,CN,CN,A3,RK,A3,E,H,H,"M1: ""China's relations with Asian and European countries""; M2: işaret yok; M3: bölgeler Türkiye'yi kapsıyor",İB
+B01,B01-06,CN,CN,A1,İB,A1,E,E,H,"M1: ""join hands building"", ""benefiting people in regional countries""; M2: ""Silk Road economic belt"" tek marka; M3: işaret yok",KR
+B01,B01-07,CN,CN,A1,KR,A1,H,H,H,"M1: işaret yok; M2: işaret yok; M3: ""West Asia"" Türkiye'yi kapsıyor",NÖ
+B01,B01-08,CN,CN,A2,İB,A2,E,H,H,"M1: ""All the parties ... with each other""; M2: işaret yok; M3: işaret yok",İB
+B01,B01-09,CN,3. taraf,A1,İB,A1,E,H,H,"M1: ""with China, to jointly build""; M2: konuşan Kazakistan; ""new Silk Road"" marka değil; M3: işaret yok",İB
+B02,B02-01,CN,CN,A3,İB,A3,H,H,H,"M1: ""people of Eurasia""; ortak işaret kelimesi yok; M2: işaret yok; M3: işaret yok",NÖ
+B02,B02-02,CN,CN,A3,İB,A3,E,H,H,"M1: ""heritage shared by all countries""; M2: işaret yok; M3: işaret yok",İB
+B02,B02-03,CN,CN,A3,RK,A1,H,E,H,"M1: özne ""The Chinese government""; M2: ""Silk Road Economic Belt ... Maritime Silk Road"" tek marka; M3: işaret yok",RK
+B02,B02-04,CN,CN,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""Silk Road Economic Belt"", her bağ ""China"" çıkışlı; M3: ""Europe"", ""Mediterranean"" Türkiye'yi kapsıyor",RK
+B02,B02-05,CN,CN,A1,KR,A1,E,E,H,"M1: ""jointly building a new Eurasian Land Bridge""; M2: ""China-Mongolia-Russia ... China-Indochina"" Çin önekli koridorlar; M3: ""West Asia"" Türkiye'yi kapsıyor",KR
+B02,B02-06,CN,CN,A1,İB,A1,E,H,H,"M1: ""countries along ... jointly push forward""; M2: ""Belt and Road"" yalnız ülke etiketi; M3: işaret yok",İB
+B02,B02-07,CN,CN,A1,İB,A1,E,H,H,"M1: ""We"" (güzergâh ülkeleri) ""should expand ... cooperation""; M2: işaret yok; M3: işaret yok",İB
+B02,B02-08,CN,CN,A3,İB,A2,E,H,H,"M1: ""in each other's countries"", ""jointly apply""; M2: işaret yok; M3: işaret yok",İB
+B02,B02-09,CN,CN,A2,İB,A2,E,H,H,"M1: ""in each other's countries; jointly create""; M2: ""Belt and Road"" yalnız ülke etiketi; M3: işaret yok",İB
+B02,B02-10,CN,CN,A2,İB,A2,H,E,H,"M1: ""cooperation"" çıplak; taraf adı yok; M2: ""21st-Century Maritime Silk Road"" tek marka; M3: işaret yok",RK
+B02,B02-11,CN,CN,A3,KR,A3,E,E,H,"M1: ""jointly hold investment, trade and cultural exchange""; M2: ""Belt and Road"", ""Silk Road (Dunhuang) ... Expo""; M3: işaret yok",KR
+B02,B02-12,CN,CN,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""key ... center, and a core area""; M3: işaret yok",RK
+B02,B02-13,CN,CN,A1,RK,A1,H,H,H,"M1: işaret yok; M2: ""focus of reform ... in China's interior""; İpek Yolu merkezi değil; M3: işaret yok",NÖ
+B02,B02-14,CN,CN,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""core area of the 21st-Century Maritime Silk Road""; M3: işaret yok",RK
+B02,B02-15,CN,CN,A2,RK,A2,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B02,B02-16,CN,CN,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""cultivate the brand of China-Europe freight trains""; M3: işaret yok",RK
+B02,B02-17,CN,CN,A4,KR,A4,H,H,H,"M1: işaret yok; ""local economy"" yarar sahibi; M2: ""Belt and Road"" yalnız ülke etiketi; M3: işaret yok",NÖ
+B02,B02-18,CN,CN,A4,RK,A4,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B02,B02-19,CN,CN,A3,KR,A1,E,E,H,"M1: ""common aspiration of all countries""; M2: ""proposed by China, the Belt and Road""; M3: işaret yok",KR
+B02,B02-20,CN,CN,A4,İB,A1,E,E,H,"M1: ""people of countries ... can all benefit""; M2: ""Belt and Road"" tek marka; M3: işaret yok",KR
+B03,B03-01,CN,CN,A2,RK,A2,H,E,H,"M1: işaret yok; M2: ""Güzel Çin – Deniz İpek Yolu"" kendi markası; M3: işaret yok",RK
+B03,B03-02,CN,CN,A3,RK,A3,H,H,H,M1: işaret yok; M2: yalnız Çin eyaletleri; merkez iddiası yok; M3: güzergâh ülkesi sayımı değil,NÖ
+B03,B03-03,CN,CN,A2,İB,A2,E,H,H,"M1: ""iki yönlü artışın"" (双向); M2: işaret yok; M3: işaret yok",İB
+B03,B03-04,CN,CN,A2,RK,A2,H,E,H,"M1: işaret yok; M2: ""Çin İpek Yolu Turizm Yılı"" kendi markası; M3: işaret yok",RK
+B03,B03-05,CN,CN,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""Deniz İpek Yolu Çin'de doğmuştur"" başlangıç; M3: işaret yok",RK
+B03,B03-06,CN,CN,A2,RK,A2,H,H,H,"M1: işaret yok; M2: ""zengin turizm kaynakları""; merkez/üstünlük yok; M3: işaret yok",NÖ
+B03,B03-07,CN,CN,A4,RK,A2,H,E,H,"M1: işaret yok; M2: ""Deniz İpek Yolu rotaları"" kendi markası; M3: işaret yok",RK
+B04,B04-01,CN,CN,A3,KR,A3,E,H,E,"M1: ""medeniyetlerin karşılıklı öğrenmesini""; M2: işaret yok; M3: ""Çin kültürünün uluslararası etkisini genişletmek""",KR
+B04,B04-02,CN,CN,A3,KR,A3,E,H,H,"M1: ""ortak kader topluluğunu""; M2: ""Kuşak ve Yol""a ışıyan yön etiketi; M3: işaret yok",İB
+B04,B04-03,CN,CN,A3,RK,A3,H,H,H,"M1: işaret yok; M2: ""Kuşak ve Yol"" ülke etiketi; marka/merkez iddiası yok; M3: hedef/talep kelimesi yok",NÖ
+B04,B04-04,CN,CN,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""Mutlu Bahar Bayramı markasının ... etkisini""; M3: işaret yok",RK
+B04,B04-05,CN,CN,A3,İB,A3,E,H,H,"M1: ""güzergâh ülke ve bölgeleriyle ... işbirliği""; M2: işaret yok; M3: işaret yok",İB
+B04,B04-06,CN,CN,A3,KR,A3,H,H,H,"M1: işaret yok; M2: ""İpek Yolu Uluslararası ... Birliği"" ulusal marka değil; M3: işaret yok",NÖ
+B04,B04-07,CN,CN,A3,RK,A3,H,H,E,"M1: işaret yok; M2: ""Kuşak ve Yol"" ülke etiketi; M3: 13 ülke sayılıyor, Türkiye yok",RK
+B04,B04-08,CN,CN,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""Çin Sincan ..."", ""Çin Deniz Kültürü Festivali""; M3: işaret yok",RK
+B04,B04-09,CN,CN,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""21. Yüzyıl Deniz İpek Yolu"" tek marka; M3: işaret yok",RK
+B04,B04-10,CN,CN,A3,İB,A3,E,H,H,"M1: ""ortak korunması"", ""ortak başvurusunu""; M2: ""Kuşak ve Yol"" ülke etiketi; M3: işaret yok",İB
+B04,B04-11,CN,CN,A2,KR,A2,E,E,H,"M1: ""güzergâhı ülke ve bölgeleriyle kültürel değişim""; M2: ""İpek Yolu Kültür Yolculuğu markasını""; M3: işaret yok",KR
+B04,B04-12,CN,CN,A2,İB,A2,E,H,H,"M1: ""Güzergâh ülke ve bölgeleriyle birlikte ... ortaklaşa""; M2: işaret yok; M3: işaret yok",İB
+B04,B04-13,CN,CN,A3,RK,A3,H,H,H,"M1: işaret yok; M2: ""Deniz İpek Yolu ... başvurusu""; marka/merkez kelimesi yok; M3: sayım yok",NÖ
+B04,B04-14,CN,CN,A4,RK,A4,H,E,E,"M1: işaret yok; M2: ""İpek Yolu Kültür Endüstrisi Kuşağı"" kendi markası; M3: ""Yurt içi"" tek taraflı fayda",RK
+B04,B04-15,CN,CN,A4,RK,A4,H,H,E,"M1: ""karşılıklı"" yalnız yurt içi bölgeler; M2: ""Kuşak ve Yol"" ülke etiketi; M3: ""Yurt içi ... varış noktası hem kaynak pazar""",RK
+B04,B04-16,CN,CN,A4,RK,A4,H,H,E,"M1: işaret yok; M2: ""Kuşak ve Yol"" bölge etiketi; M3: ""Yurt içi ... kültürel tüketimi genişletme""",RK
+B04,B04-17,CN,CN,A4,RK,A4,H,E,H,"M1: işaret yok; M2: ""İnternet + Çin Medeniyeti"", ""Kuşak ve Yol""; M3: işaret yok",RK
+B04,B04-18,CN,CN,A4,RK,A4,H,E,H,"M1: işaret yok; M2: ""Ulusal kültür markalarını tanıtmak"", ""Kuşak ve Yol""; M3: işaret yok",RK
+B04,B04-19,CN,CN,A4,RK,A4,H,E,H,"M1: işaret yok; M2: ""Kuşak ve Yol özel pavyonları""; M3: işaret yok",RK
+B05,B05-01,TR,TR,A2,KR,A2,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B05,B05-02,TR,TR,A2,RK,A2,H,H,H,M1: işaret yok; M2: işaret yok; M3: tanıtım; hedef/talep kelimesi yok,NÖ
+B05,B05-03,TR,TR,A4,RK,A4,H,H,H,M1: işaret yok; katılımcı listesi; M2: işaret yok; M3: işaret yok,NÖ
+B06,B06-01,CN,CN,A3,KR,A3,E,H,H,"M1: ""Çin ile Orta Asya ülkelerinin halklarını ... bağlamıştı""; M2: işaret yok; M3: ikili anma; sayım değil",İB
+B06,B06-02,CN,CN,A2,İB,A2,E,H,H,"M1: ""Çin ile Orta Asya'nın beş ülkesi ... karşılıklı""; M2: işaret yok; M3: işaret yok",İB
+B06,B06-03,CN,CN,A3,İB,A3,E,H,H,"M1: ""Çin ve Orta Asya ... birlikte artırmak""; M2: işaret yok; M3: işaret yok",İB
+B06,B06-04,CN,CN,A2,İB,A2,E,H,H,"M1: ""turizm kaynaklarının karşılıklı tanıtımını""; M2: işaret yok; M3: işaret yok",İB
+B06,B06-05,CN,CN,A2,İB,A2,E,H,H,"M1: ""Çin ile Orta Asya ülkeleri arasındaki ... işbirliği""; M2: işaret yok; M3: işaret yok",İB
+B07,B07-01,CN,CN,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""cradle"", ""starting point of the ancient Silk Road""; M3: işaret yok",RK
+B07,B07-02,CN,CN,A3,RK,A3,E,E,H,"M1: ""friendship and exchanges between China and Central Asia""; M2: ""from Chang'an, opening the door"" başlangıç; M3: işaret yok",KR
+B07,B07-03,CN,CN,A3,KR,A3,E,H,H,"M1: ""joint endeavor"", ""Chinese and Central Asian peoples""; M2: işaret yok; M3: işaret yok",İB
+B07,B07-04,CN,CN,A3,KR,A1,E,E,H,"M1: ""jointly building""; M2: ""I put forward ... Silk Road Economic Belt""; M3: işaret yok",KR
+B07,B07-05,CN,CN,A3,KR,A3,E,H,H,"M1: ""China and Central Asian countries ... together""; M2: işaret yok; M3: işaret yok",İB
+B07,B07-06,CN,CN,A1,KR,A1,H,E,E,"M1: işaret yok; M2: Çin önekli koridorlar ""the present-day Silk Road""; M3: koridor sayımında Orta Koridor/Türkiye yok",RK
+B07,B07-07,CN,CN,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""China-Europe Railway Express ... camel caravans""; M3: işaret yok",RK
+B07,B07-08,CN,CN,A3,RK,A1,H,H,H,"M1: işaret yok; M2: ""center"", ""crossroads"" Orta Asya'ya; konuşana değil; M3: işaret yok",NÖ
+B07,B07-09,CN,CN,A1,KR,A1,H,H,H,"M1: işaret yok; M2: ""connectivity hub"" Orta Asya'ya; konuşana değil; M3: işaret yok",NÖ
+B07,B07-10,CN,CN,A1,İB,A1,H,H,H,"M1: özne ""China will strive""; ortak işaret yok; M2: işaret yok; M3: işaret yok",NÖ
+B07,B07-11,CN,CN,A1,İB,A1,H,H,H,"M1: özne ""China will seek""; ortak işaret yok; M2: işaret yok; M3: işaret yok",NÖ
+B07,B07-12,CN,CN,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""China-Europe Railway Express assembly centers""; M3: işaret yok",RK
+B07,B07-13,CN,CN,A3,KR,A3,H,E,H,"M1: ""China invites""; ortak işaret yok; M2: ""Cultural Silk Road program"" kendi markası; M3: işaret yok",RK
+B07,B07-14,CN,CN,A2,İB,A2,H,H,H,"M1: ""We will launch""; ortak işaret yok; M2: ""China-Central Asia"" ortak adlı program; M3: işaret yok",NÖ
+B08,B08-01,CN,CN,A3,RK,A2,H,E,H,"M1: işaret yok; M2: ""İpek Yolu'nun başlangıç noktası""; M3: işaret yok",RK
+B08,B08-02,CN,CN,A2,RK,A2,H,E,H,"M1: işaret yok; M2: ""İpek Yolu'nun kaynağının"" başlangıç iddiası; M3: işaret yok",RK
+B08,B08-03,CN,CN,A2,İB,A2,E,H,H,"M1: ""Shaanxi ile Moğolistan arasındaki"", ""karşılıklı anlayışını""; M2: işaret yok; M3: işaret yok",İB
+B09,B09-01,CN,CN,A2,İB,A2,E,H,H,"M1: ""karşılıklı yarar ve kazan-kazan"", ""birlikte kuruyor""; M2: işaret yok; M3: işaret yok",İB
+B09,B09-02,CN,CN,A2,İB,A2,E,H,H,"M1: ""26 ülkeden 58 kent ... birlikte""; M2: işaret yok; M3: işaret yok",İB
+B09,B09-03,CN,CN,A2,İB,A2,E,H,H,"M1: ""karşılıklı yararlı ve kazan-kazan""; M2: işaret yok; M3: işaret yok",İB
+B09,B09-04,CN,3. taraf,A2,KR,A2,H,H,H,M1: işaret yok; M2: konuşan İran; Çin'i övüyor; M3: işaret yok,NÖ
+B09,B09-05,CN,3. taraf,A4,İB,A4,H,H,H,"M1: ""üye kentlerin""; ortak işaret kelimesi yok; M2: işaret yok; M3: işaret yok",NÖ
+B09,B09-06,CN,CN,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""önemli bir mal ihraç merkeziydi""; M3: işaret yok",RK
+B09,B09-07,CN,CN,A3,RK,A2,H,H,H,"M1: işaret yok; M2: ""ilk başkan kenti""; merkez/başlangıç kelimesi yok; M3: işaret yok",NÖ
+B09,B09-08,CN,CN,A4,İB,A4,E,H,H,"M1: ""birlikte yaratmak"", ""pazarını paylaşmak""; M2: işaret yok; M3: işaret yok",İB
+B09,B09-09,CN,CN,A1,İB,A1,H,H,H,M1: işaret yok; ortak özne kelimesi yok; M2: işaret yok; M3: işaret yok,NÖ
+B09,B09-10,CN,CN,A3,İB,A2,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B09,B09-11,CN,CN,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""doğudaki çıkış limanlarından biri"" başlangıç; M3: işaret yok",RK
+B09,B09-12,CN,CN,A4,İB,A4,E,H,H,"M1: ""birlikte yaratacak"", ""pazarını paylaşacak""; M2: ""Kuşak ve Yol"" ülke etiketi; M3: işaret yok",İB
+B09,B09-13,CN,CN,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""başlıca başlangıç kenti"", ""önemli bir köprüdür""; M3: işaret yok",RK
+B09,B09-14,CN,CN,A3,İB,A3,E,H,H,"M1: ""dünyayı birbirine bağlayan bir bağ""; M2: işaret yok; M3: işaret yok",İB
+B09,B09-15,CN,CN,A2,İB,A2,E,H,H,"M1: ""Birlik kentlerinin ... arasında çok yönlü işbirliği""; M2: işaret yok; M3: işaret yok",İB
+B10,B10-01,TR,TR,A1,KR,A1,H,E,H,"M1: işaret yok; M2: ""Buna Orta Koridor diyoruz"" tek marka; M3: Çin başlangıç olarak anılıyor",RK
+B10,B10-02,TR,TR,A3,RK,A3,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B10,B10-03,TR,TR,A3,RK,A1,H,E,H,"M1: işaret yok; M2: ""Türkiye bir kavşak ülke"", ""Her yol Türkiye'den geçiyor""; M3: işaret yok",RK
+B11,B11-01,CN,CN,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""our ancestors ... to create a land Silk Road""; M3: işaret yok",RK
+B11,B11-02,CN,CN,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""our ancestors ... to open a maritime Silk Road""; M3: işaret yok",RK
+B11,B11-03,CN,CN,A3,İB,A1,E,H,H,"M1: ""reflecting a common wish""; M2: işaret yok; M3: işaret yok",İB
+B11,B11-04,CN,CN,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""The Belt and Road Initiative ... carries forward"" tek marka; M3: işaret yok",RK
+B11,B11-05,CN,CN,A3,KR,A3,H,H,E,"M1: işaret yok; M2: Çin dört beşikten biri; tek başına değil; M3: ""Egyptian, Babylonian, Indian and Chinese"" Anadolu yok",RK
+B11,B11-06,CN,CN,A3,RK,A3,H,H,H,"M1: ""all states joining together"" ülkü içeriği; özne değil; M2: ""upheld by the Chinese nation""; sahip kelimesi yok; M3: işaret yok",NÖ
+B11,B11-07,CN,CN,A3,KR,A3,H,E,H,"M1: ""we"" = Çin; ortak işaret yok; M2: ""the Chinese Dream"" kendi markası; M3: işaret yok",RK
+B11,B11-08,CN,CN,A1,İB,A1,E,E,H,"M1: ""collaborative effort involving all stakeholders""; M2: ""the BRI ... by China"" tek marka; M3: işaret yok",KR
+B11,B11-09,CN,CN,A1,KR,A1,E,E,E,"M1: ""coordinating with ... strategies and initiatives""; M2: ""the BRI has succeeded"" tek marka; M3: Rusya, Kazakistan, Türkmenistan, Moğolistan sayılıyor; Orta Koridor yok",KR
+B11,B11-10,CN,CN,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""China-Central Asia-West Asia ... China-Kyrgyzstan"" Çin önekli; M3: işaret yok",RK
+B11,B11-11,CN,CN,A1,İB,A1,E,H,H,"M1: ""bilateral air transport agreements with""; M2: ""BRI partner countries"" etiket; M3: işaret yok",İB
+B11,B11-12,CN,CN,A1,RK,A1,H,E,E,"M1: işaret yok; M2: ""China-Europe Railway Express ..."" Çin önekli kanallar; M3: kanal sayımında Orta Koridor yok",RK
+B11,B11-13,CN,CN,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""China-Europe Railway Express ... 120 km per hour""; M3: işaret yok",RK
+B11,B11-14,CN,CN,A2,İB,A2,E,H,H,"M1: ""participating countries ... cooperated""; M2: işaret yok; M3: işaret yok",İB
+B11,B11-15,CN,CN,A2,İB,A2,E,H,H,"M1: ""signed ... cooperation documents with 144""; M2: ""BRI partner countries"" etiket; M3: işaret yok",İB
+B11,B11-16,CN,CN,A3,KR,A3,E,H,H,"M1: ""together with participating countries""; M2: ""Silk Road International ..."" ulusal marka değil; M3: işaret yok",İB
+B11,B11-17,CN,CN,A2,RK,A2,H,E,H,"M1: işaret yok; M2: ""Cultural Silk Road"", ""Happy Chinese New Year"", ""Nihao China""; M3: işaret yok",RK
+B11,B11-18,CN,CN,A2,KR,A2,E,H,E,"M1: ""worked with ... to co-host""; M2: işaret yok; M3: Brunei ... ASEAN sayılıyor, Türkiye yok",KR
+B11,B11-19,CN,CN,A2,RK,A2,H,H,H,"M1: işaret yok; M2: ""46 China cultural centers""; marka/merkez iddiası yok; M3: işaret yok",NÖ
+B11,B11-20,CN,CN,A2,İB,A2,E,H,H,"M1: ""pairs of friendly cities with their Chinese counterparts""; M2: ""BRI partner countries"" etiket; M3: işaret yok",İB
+B11,B11-21,CN,CN,A4,KR,A4,E,E,H,"M1: ""share the opportunities ... with BRI participants""; M2: ""Silk Road E-commerce"", ""capitalize on its strengths""; M3: işaret yok",KR
+B11,B11-22,CN,CN,A1,İB,A1,H,H,H,M1: işaret yok; yarar sahibi yalnız Laos; M2: işaret yok; M3: işaret yok,NÖ
+B11,B11-23,CN,CN,A3,İB,A3,E,H,H,"M1: ""China, Kyrgyzstan, Iran ... jointly launched""; M2: işaret yok; M3: ""other ... West Asian countries"" Türkiye'yi kapsıyor",İB
+B11,B11-24,CN,CN,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""Silk Road (Dunhuang)"", ""Belt and Road/Great Wall"" festivaller; M3: işaret yok",RK
+B11,B11-25,CN,CN,A3,İB,A3,H,H,H,"M1: ""peoples of all BRI participating countries""; ortak kelimesi yok; M2: ""BRI"" etiket; M3: işaret yok",NÖ
+B11,B11-26,CN,CN,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""The Belt and Road Initiative has given new life""; M3: işaret yok",RK
+B12,B12-01,CN,CN,A3,KR,A2,E,H,H,"M1: ""Kuşak ve Yol'u birlikte inşa eden ülke""; M2: ""Kuşak ve Yol"" ülke etiketi; M3: işaret yok",İB
+B12,B12-02,CN,CN,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""doğuş yeri"", ""İpek Yolu'nun başlangıç noktası""; M3: işaret yok",RK
+B12,B12-03,CN,CN,A3,RK,A3,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""Çin kültürünün yayılma gücünü ve etkisini artırmak""",RK
+B13,B13-01,CN,CN,A2,RK,A2,H,H,H,"M1: işaret yok; M2: ""dünya gezginlerinin hayal diyarı""; karşılaştırma yok; M3: işaret yok",NÖ
+B13,B13-02,CN,CN,A4,RK,A2,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B13,B13-03,CN,CN,A2,RK,A2,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""Gansu'nun gelen turizm pazarının"" tek taraflı hedef",RK
+B14,B14-01,TR,TR,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""bir coğrafyanın tam merkezinde""; M3: işaret yok",RK
+B14,B14-02,TR,TR,A4,RK,A4,H,H,H,M1: işaret yok; M2: işaret yok; M3: yarar sahibi ülke adı yok,NÖ
+B14,B14-03,TR,TR,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""Orta Koridor ... 2 kat daha hızlı""; M3: işaret yok",RK
+B14,B14-04,TR,TR,A3,RK,A1,H,H,H,"M1: işaret yok; M2: ""Adeta ... yeniden hizmete alıyoruz""; merkez/marka yok; M3: işaret yok",NÖ
+B14,B14-05,TR,TR,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""Orta Koridor'un bel kemiğini"" tek marka; M3: işaret yok",RK
+B14,B14-06,TR,TR,A1,KR,A1,H,H,H,"M1: ""ikili"" ortak adı belirsiz; M2: ""Bu muazzam proje"" marka adı yok; M3: ""ikili"" Çin'i dışlamıyor",NÖ
+B14,B14-07,TR,TR,A1,İB,A1,E,H,H,"M1: ""Orta Koridor'u ... kuşak ve yol ... uyumlaştırmaya""; M2: iki girişim birlikte; M3: işaret yok",İB
+B14,B14-08,TR,TR,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""Süveyş ... 35 gün ... Orta Koridor'da 15""; M3: işaret yok",RK
+B14,B14-09,TR,TR,A4,RK,A4,H,E,E,"M1: işaret yok; M2: ""Orta Koridor için ... projelerimizi"" tek marka; M3: ""istihdam sağlayacağımızı"" tek taraflı fayda",RK
+B15,B15-01,CN,CN,A2,KR,A2,E,H,H,"M1: ""birbirine bağlıyor"", ""birlikte yaratalım""; M2: işaret yok; M3: işaret yok",İB
+B15,B15-02,CN,CN,A2,KR,A2,H,H,E,"M1: ""bir araya geldi"" fiziksel; ortak özne yok; M2: işaret yok; M3: ""Uruguay, Singapur, Almanya gibi 19 ülke"" Türkiye yok",RK
+B15,B15-03,CN,CN,A4,RK,A4,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B15,B15-04,CN,CN,A4,İB,A4,E,H,H,"M1: ""paylaşılmasını"", ""birlikte genişletilmesini""; M2: işaret yok; M3: işaret yok",İB
+B16,B16-01,TR,TR,A2,RK,A2,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B17,B17-01,TR,TR,A3,RK,A3,H,H,H,"M1: işaret yok; M2: ""kültürel mirasımızın""; merkez/marka iddiası yok; M3: işaret yok",NÖ
+B17,B17-02,TR,TR,A3,KR,A3,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""Orta Asya'yı Avrupa'ya bağlayan"" Çin yok",RK
+B17,B17-03,TR,TR,A3,RK,A3,H,H,H,"M1: işaret yok; M2: ""Türk Cumhuriyetleri"" marka/merkez iddiası değil; M3: sayım yok",NÖ
+B17,B17-04,TR,TR,A2,RK,A2,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B18,B18-01,TR,TR,A2,RK,A2,H,E,H,"M1: işaret yok; M2: ""Traces of the Silk Road ... Heart of Anatolia"" kendi rotası; M3: işaret yok",RK
+B18,B18-02,TR,TR,A3,RK,A3,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B18,B18-03,TR,TR,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""one of the most important stopovers"" üstünlük; M3: işaret yok",RK
+B18,B18-04,TR,TR,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""Located at the crossroads of historic caravan routes""; M3: işaret yok",RK
+B18,B18-05,TR,TR,A2,RK,A2,H,H,H,"M1: işaret yok; M2: ""an essential stop""; üstünlük kelimesi yok; M3: işaret yok",NÖ
+B18,B18-06,TR,TR,A3,RK,A3,H,H,H,"M1: işaret yok; M2: ""one of the key structures"" yerel; İpek Yolu iddiası yok; M3: işaret yok",NÖ
+B18,B18-07,TR,TR,A3,RK,A3,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B18,B18-08,TR,TR,A3,RK,A3,H,H,H,"M1: işaret yok; M2: ""an important Silk Road stop""; üstünlük yok; M3: işaret yok",NÖ
+B19,B19-01,TR,TR,A2,KR,A2,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""visa-free entry policy for ... the People's Republic of China"" tek taraflı",RK
+B19,B19-02,TR,TR,A2,RK,A2,H,H,E,"M1: işaret yok; M2: işaret yok; M3: ""This visa-free policy"" tek taraflı muafiyetin kapsamı",RK
+B20,B20-01,TR,TR,A3,RK,A3,H,H,H,"M1: işaret yok; M2: ""Türk boylarının ... esinlenerek""; İpek Yolu iddiası yok; M3: işaret yok",NÖ
+B20,B20-02,TR,TR,A3,RK,A3,H,H,H,"M1: işaret yok; M2: işaret yok; M3: ""Asya'ya da uzanan"" kabul; dışlama kelimesi yok",NÖ
+B21,B21-01,TR,TR,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""bir köprü işlevi"", ""en önemli kavşak noktalarından""; M3: işaret yok",RK
+B21,B21-02,TR,TR,A3,İB,A3,H,H,H,"M1: işaret yok; M2: ""Çin'den başlayıp"" başlangıç karşı tarafa; M3: işaret yok",NÖ
+B21,B21-03,TR,TR,A3,RK,A3,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B21,B21-04,TR,TR,A2,RK,A2,H,E,H,"M1: işaret yok; M2: ""Bakanlığımızın ... İpek Yolu Projesi"" kendi markası; M3: işaret yok",RK
+B21,B21-05,TR,TR,A4,RK,A4,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B22,B22-01,TR,TR,A3,İB,A3,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B22,B22-02,TR,TR,A3,İB,A3,H,H,H,"M1: işaret yok; M2: ""started ... from today's Chinese Xian"" karşı tarafa; M3: işaret yok",NÖ
+B22,B22-03,TR,TR,A3,İB,A3,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B22,B22-04,TR,TR,A3,RK,A3,H,H,H,M1: işaret yok; M2: işaret yok; M3: sayım yok,NÖ
+B22,B22-05,TR,TR,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""Anatolia ... a gate and bridge""; M3: işaret yok",RK
+B22,B22-06,TR,TR,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""one of the most important junction points""; M3: işaret yok",RK
+B22,B22-07,TR,TR,A3,RK,A3,H,E,H,"M1: işaret yok; M2: ""Seljukians were the first state"" üstünlük; M3: işaret yok",RK
+B23,B23-01,TR,TR,A3,İB,A3,H,H,H,"M1: işaret yok; M2: ""Çin'den başlayıp"" başlangıç karşı tarafa; M3: işaret yok",NÖ
+B23,B23-02,TR,TR,A3,İB,A3,H,H,H,M1: işaret yok; M2: işaret yok; M3: Çin rotada sayılıyor,NÖ
+B23,B23-03,TR,TR,A2,RK,A2,H,H,H,M1: işaret yok; M2: işaret yok; M3: işaret yok,NÖ
+B24,B24-01,TR,TR,A1,KR,A1,H,E,H,"M1: işaret yok; M2: ""Middle Corridor ... one of the most important""; M3: işaret yok",RK
+B24,B24-02,TR,TR,A1,İB,A1,H,H,H,"M1: işaret yok; M2: marka adı birimde yok; ""starts from China""; M3: Çin sayılıyor",NÖ
+B24,B24-03,TR,TR,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""the Middle Corridor is an important alternative""; M3: işaret yok",RK
+B24,B24-04,TR,TR,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""faster, more economical, safer, 2,000 km shorter""; M3: işaret yok",RK
+B24,B24-05,TR,TR,A1,İB,A1,E,E,H,"M1: ""connecting Türkiye to China""; M2: ""Caravansarai Project"", ""Middle Corridor"" tek marka; M3: işaret yok",KR
+B24,B24-06,TR,TR,A1,RK,A1,H,E,H,"M1: işaret yok; M2: ""Middle Corridor ... thanks to Türkiye's port""; M3: işaret yok",RK
+B24,B24-07,TR,TR,A4,İB,A4,H,H,H,"M1: ""countries in the region""; ortak kelimesi yok; M2: işaret yok; M3: işaret yok",NÖ
+B24,B24-08,TR,TR,A1,RK,A1,H,H,H,"M1: işaret yok; M2: ""great potential of Türkiye""; merkez/üstünlük yok; M3: işaret yok",NÖ
+B24,B24-09,TR,TR,A1,KR,A1,E,E,H,"M1: ""between the member countries""; M2: ""Organization of Turkic States"" Türk dünyası çerçevesi; M3: sayım yok",KR
+B24,B24-10,TR,TR,A1,İB,A1,E,H,H,"M1: ""creates a natural synergy with the Belt and Road""; M2: iki girişim birlikte; M3: işaret yok",İB
+B24,B24-11,TR,TR,A1,İB,A1,E,H,H,"M1: ""on the basis of win-win principle""; M2: BRI konuşanın markası değil; M3: işaret yok",İB
+B24,B24-12,TR,TR,A1,İB,A1,E,H,H,"M1: ""between ... Türkiye and ... China"", ""Harmonization""; M2: iki girişim birlikte; M3: işaret yok",İB
+B24,B24-13,TR,TR,A1,KR,A1,H,H,H,M1: işaret yok; M2: BRI ve Middle Corridor birlikte; M3: işaret yok,NÖ
+B24,B24-14,TR,TR,A1,İB,A1,E,H,H,"M1: ""Harmonization of the Middle Corridor with ... BRI""; M2: iki girişim birlikte; M3: işaret yok",İB
