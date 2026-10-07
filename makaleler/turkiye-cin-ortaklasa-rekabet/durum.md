@@ -89,3 +89,5 @@ Durum sembolleri: ✓ tamam · → açık · İŞLEMDE · kilitli · ATLANDI
 [2026-10-07 12:53] [18] Redi & Pulido Fernández 2018 tam metni bulunamadı (Google Books bot erişimine kapalı; kullanıcı da erişemedi). KARAR: yalnız özet düzeyinde kullanılacak, alıntı yok; Yazar-Okuma Asimetrisi uyarısı açık kalır.
 
 [2026-10-07 13:01] Faz 5 literatür v1 yazıldı (bolumler/literatur-v1.md, ~2.250 kelime): 4 alt bölüm, 4 gerilim (sınanmamış uzlaşı, kavram çatallanması, bağlam sınırı, bulgu çelişkisi), katalog sayacı 1/2, corpus-dışı 0, başlık değişen 3 (yüzeysel), Q1 rapor ihlali 0 (1 uyarı). 47 çapa; 38 özet çapası Crossref/OpenAlex verbatim ile eşleşti. Denetim: bolumler/literatur-denetim.md. Sıradaki: ustabaşı Faz 5 kapısı.
+
+[2026-10-07 13:01] Ustabaşı: literatur-yazim → ŞARTLI GEÇ (şart: bolumler/literatur-v1.md / ÇAPA YOK [12][14][19] ve TEYİT [05] atıfları yazar PDF teyidiyle ya da genel-kavram düzeyinde bırakılarak kapatılacak; atif_kapisi.py yerine özet-verbatim kontrolü MANUEL OVERRIDE kapsamında kabul / Faz 6'da kapanır). Faz 3 kapısı (ekonomi modu) aynı koşumda: korpus+ledger yeterli, graphify OVERRIDE geçerli.

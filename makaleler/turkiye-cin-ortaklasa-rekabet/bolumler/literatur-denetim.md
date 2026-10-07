@@ -66,3 +66,6 @@ Başlık değişen alt bölüm: 3 (yüzeysel; yapısal sapma yok, iskelet geçer
 - [09] Karagöz bilgisi Debarbieux vd.'nin Aykan (2015)'e dayanarak verdiği bilgidir; istenirse birincil kaynak Aykan (2015) ledger'a eklenir.
 - Kaynakça harfleri: Winter 2021a = "The geocultural heritage of the Silk Roads" (IJHS), 2021b = "Geocultural power" (Geopolitics); Chim-Miki & Batista-Canino 2017a = Anatolia, 2017b = IBR (APA başlık sırası; ledger'daki a/b ters → kaynakçada düzeltilecek).
 - Bölüm YZ destekli taslaktır; YZ beyanında "literatür sentezi taslağı ve dil desteği" olarak yer almalı. Dergi politikası Bulgular/Tartışma/Sonuç'u yasaklıyor; bu bölüm o kapsamda değil.
+
+## YZ-izi taraması (son geçiş)
+Uzun tire 0; olumsuz paralelizm ("yalnızca … değil, aynı zamanda") 0; belirsiz atıf ("araştırmalar göstermektedir") 0; şişirilmiş önem 1 sınırda ("bu soruyu daha da önemli kılar", 1.3-P4) — yazar sesiyle elden geçirmede bakılsın. Üçlü sıralamalar kaynağın kendi sıralamasından (Wang & Sun "ortak, rakip, rakip"; Dayoub sorun listesi).
