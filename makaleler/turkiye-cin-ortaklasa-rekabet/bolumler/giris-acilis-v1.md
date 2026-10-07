@@ -1,4 +1,4 @@
-# 1. Giriş — açılış paragrafları (taslak v1, 2026-10-07)
+# 1. Giriş: açılış paragrafları (taslak v1, 2026-10-07)
 
 > YZ destekli taslak; yazar kendi sesiyle elden geçirecek. Bu açılış, Giriş başlığının hemen altına gelir; ardından literatur-v1.md'deki 1.1–1.4 alt bölümleri izler. Sayılar `ham-veri/cinli-ziyaretci-tuik.csv` ile birebir; kodlayıcı verisi gelince değişmez.
 
