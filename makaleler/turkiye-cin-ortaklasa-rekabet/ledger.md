@@ -1,8 +1,8 @@
 # Ledger — Türkiye–Çin İlişkilerinde Ortaklaşa Rekabet: İpek Yolu Turizmi
 
 **Hedef:** ≥30 alakalı kaynak (≥%30 TR, ≥%30 uluslararası)
-**Mevcut:** 9 / 30
-**TR / Uluslar:** 3 / 6
+**Mevcut:** 42 / 30
+**TR / Uluslar:** 14 / 28 (TR = Türkçe dilli ya da Türkiye odaklı; %33 / %67)
 **Son güncelleme:** 2026-10-07
 
 ---
@@ -11,7 +11,7 @@
 
 > Okuma seviyesi notu: aşağıdakiler Undermind read_pdfs alt-ajanıyla TAM METİNDEN özetlendi (YZ okuması). Makalede kritik dayanak olacak alıntılar yazar tarafından PDF'den teyit edilmeli.
 
-### [01] Dayoub, B., Yang, P., Omran, S., Zhang, Q., Chen, X., Ahmed Noman Alabsi, A., et al. (2024). The Belt and Road Initiative's impact on tourism and heritage along the Silk Roads: A systematic literature review and future research agenda. *PLOS ONE, 19*(7), e0306298.
+### [01] Dayoub, B., Yang, P., Omran, S., Zhang, Q., Chen, X., Ahmed Noman Alabsi, A., & Dayoub, A. (2024). The Belt and Road Initiative's impact on tourism and heritage along the Silk Roads: A systematic literature review and future research agenda. *PLOS ONE, 19*(7), e0306298.
 - **Tipi:** benzer ampirik (sistematik derleme) · **Alaka:** 8
 - **Anahtar bulgu:** 56 çalışma; BRI turizmi bağlantısallık fırsatı + eşitsiz fayda dağılımı/sızıntı riski; Orta Doğu az çalışılmış.
 - **Tezimize bağı:** Türkiye'ye özgü bulgu yok; ülkeler arası anlatı rekabeti bulgu olarak yok → boşluğu destekler; "eşitsiz fayda" değer yakalama arenasını gerekçelendirir.
@@ -27,12 +27,13 @@
 - **Tipi:** TR bağlam · **Alaka:** 8 · Künye Crossref ile teyitli (Crossref tek yazar listeliyor; PDF'den teyit)
 - **Anahtar bulgu:** Nitel, ikincil kaynak; Çinli gelişleri tablosu (2015–2023, kaynak: China Tourism Academy + TÜİK 2024); 2015 e-vize, 2018 Türkiye Turizm Yılı; vize muafiyeti yalnız ÖNERİ.
 - **Tezimize bağı:** İlişkiyi tamamen iş birliği olarak çerçeveliyor, rekabeti analiz etmiyor → TR yazınındaki tek yönlü okuma varsayımının kanıtı (sorunsallaştırma §3).
-- **Okuma:** YZ tam metin · **DOI:** adaylar.csv U022
+- **Okuma:** YZ tam metin · **DOI:** 10.29228/sobider.78915
 
-### [04] Sirisuthikul, V. (2018). Conceptualizing ASEAN tourism brand: Towards a coopetition framework. *GATR Global Journal of Business Social Sciences Review, 6*(2?), 114–121. — sayı numarası PDF'den teyit
+### [04] Sirisuthikul, V. (2018). Conceptualizing ASEAN tourism brand: Towards a coopetition framework. *GATR Global Journal of Business Social Sciences Review, 6*(4), 114–121. — sayı Crossref ile teyitli (2026-10-07)
 - **Tipi:** benzer kavramsal · **Alaka:** 7
 - **Anahtar bulgu:** Ortak bölgesel marka (iş birliği) + ulusal konumlandırma (rekabet) iki kademeli çerçeve.
 - **Tezimize bağı:** Çok-ülkeli ortak marka içinde ulusal farklılaşma şablonu → İpek Yolu markası için analog.
+- **Okuma:** YZ tam metin · **DOI:** 10.35609/gjbssr.2018.6.4(2)
 
 ### [05] İbiş, S., & Batman, O. (2018). Türkiye'ye gelen Çinli turistlerin seyahat motivasyonları üzerine bir araştırma. *Hitit Üniversitesi Sosyal Bilimler Enstitüsü Dergisi, 11*(1), 455–476.
 - **Tipi:** TR bağlam · **Alaka:** 5
@@ -58,10 +59,11 @@
 - **Tezimize bağı:** Bağlantısallık arenasında iş birliğinin turizme DÖNÜŞMEDİĞİNİN kanıtı (altyapı iş birliği ≠ turist akışı).
 - **DOI:** 10.3389/frsut.2026.1948903
 
-### [09] Debarbieux, B., Bortolotto, C., Munz, H., & Raziano, C. (2023; çevrimiçi 2021). Sharing heritage? Politics and territoriality in UNESCO's heritage lists. *Territory, Politics, Governance, 11*(3?), 608–624.
+### [09] Debarbieux, B., Bortolotto, C., Munz, H., & Raziano, C. (2023; çevrimiçi 2021). Sharing heritage? Politics and territoriality in UNESCO's heritage lists. *Territory, Politics, Governance, 11*(3), 608–624. — sayı Crossref ile teyitli
 - **Tipi:** öncül kuram (miras siyaseti) · **Alaka:** 8
 - **Anahtar bulgu:** "Paylaşılan miras" hem iş birliği hem egemenlik iddiası aracı; Türkiye Karagöz'ü Yunanistan'sız aday gösterdi; İpek Yolları 2014: Çin, Kırgızistan, Kazakistan.
 - **Tezimize bağı:** Anlatı arenasının kuramsal dayanağı; Türkiye'nin tek-devlet adaylığı örneği.
+- **Okuma:** YZ tam metin · **DOI:** 10.1080/21622671.2020.1854112
 
 ---
 
