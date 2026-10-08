@@ -193,8 +193,12 @@ for f in sorted(_glob.glob(os.path.join(BOL, 'bulgular-4-*.md'))):
                 if no in TABLOLAR and no not in yerlesen:
                     yeni.extend(tablo_xml(no, TABLOLAR[no])); yerlesen.add(no)
 
-# Tartışma ve Sonuç: yalnız başlıklar + yazar için sarı yönerge (YZ bu bölümü yazmaz)
-isk = md_blocks('bulgular-tartisma-iskelet.md')
+# Tartışma ve Sonuç: yazar notlarından düzenlenen metin varsa onu kullan, yoksa iskelet yönergeleri
+if os.path.exists(os.path.join(BOL, 'tartisma-sonuc.md')):
+    yeni += render(md_blocks('tartisma-sonuc.md', h1='5. Tartışma ve Sonuç'))
+    isk = []
+else:
+    isk = md_blocks('bulgular-tartisma-iskelet.md')
 in_tart = False
 for lvl, t in isk:
     if lvl == 'h2':
