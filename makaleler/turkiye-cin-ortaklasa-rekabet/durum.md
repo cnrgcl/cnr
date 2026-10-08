@@ -115,3 +115,5 @@ Durum sembolleri: ✓ tamam · → açık · İŞLEMDE · kilitli · ATLANDI
 [2026-10-07 16:04] Kullanıcı Bulgular taslağını YZ'den istedi → dergi politikası (Bulgular/Tartışma/Sonuç YZ'ye yazdırılamaz) gereği metin yazılmadı; yerine bolumler/bulgular-yazar-kiti.md: 5 hazır tablo, alt başlık başına olgular, uyumlu birimlerden alıntılar (veri özetleme, politikaya uygun). Sayılar stats-insan.json ile çapraz kontrol edildi.
 
 [2026-10-07 23:43] Kullanıcı kuralı: 'korpus' kelimesi kullanılmayacak (CLAUDE.md). Giriş, Yöntem (3.2 başlığı 'İncelenen Belgeler'), Öz/Extended Summary, 4.2, YZ beyanı, beyan tablosu, yazar kiti ve veri özetinde 'ikili belgeler / tek taraflı belgeler / belge grubu' kullanıldı.
+
+[2026-10-08 00:15] Bulgular tamamlandı (4.1–4.5; yazar notları/onayıyla, YZ dil düzenlemesi). 5 tablo araclar/tablolar.py ile docx'e dergi biçiminde (yatay çizgi, başlık üstte, Not altta) yerleştirildi; betik Bulgular'ı bulgular-4-*.md'den, Tartışma iskeletini sarı yönergeyle basıyor. Önizleme 23 sayfa (yedek yazı tipi); Tartışma eklenince 25 sayfa sınırı Word/Garamond'da kontrol edilmeli.

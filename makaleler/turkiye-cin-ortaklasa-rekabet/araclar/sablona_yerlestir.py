@@ -128,14 +128,82 @@ _ppr.insert(_pos, etree.Element(q('pageBreakBefore')))
 yeni += render(md_blocks('literatur-v1.md', h1='2. Kuramsal Çerçeve'))
 yeni += render(md_blocks('yontem-v1.md', h1='3. Yöntem'))
 
-# Bulgular / Tartışma: yalnız başlıklar + yazar için sarı yönerge (YZ bu bölümleri yazmaz)
+# Bulgular: yazar notlarından düzenlenen alt bölümler (bolumler/bulgular-4-*.md) + tablolar (araclar/tablolar.py)
+from tablolar import TABLOLAR
+import glob as _glob
+
+def tablo_xml(no, t):
+    """Dergi biçimi: başlık üstte ortalı (numara kalın), yalnız yatay çizgiler, 9 pt; altında Not."""
+    out = []
+    cap = etree.Element(q('p')); pp = etree.SubElement(cap, q('pPr'))
+    sp = etree.SubElement(pp, q('spacing')); sp.set(q('before'), '120'); sp.set(q('after'), '120')
+    jc = etree.SubElement(pp, q('jc')); jc.set(q('val'), 'center'); kp = etree.SubElement(pp, q('keepNext'))
+    pp.remove(kp); pp.insert(0, kp)
+    base = proto_rpr(P_BODY)
+    def run(par, text, bold=False, size='20'):
+        r = etree.SubElement(par, q('r')); rp = copy.deepcopy(base)
+        for old in rp.findall(q('b')) + rp.findall(q('sz')) + rp.findall(q('szCs')):
+            rp.remove(old)
+        if bold: etree.SubElement(rp, q('b'))
+        z = etree.SubElement(rp, q('sz')); z.set(q('val'), size); z2 = etree.SubElement(rp, q('szCs')); z2.set(q('val'), size)
+        r.append(rp); tt = etree.SubElement(r, q('t')); tt.text = text
+        tt.set('{http://www.w3.org/XML/1998/namespace}space', 'preserve')
+    run(cap, f'Tablo {no}. ', bold=True); run(cap, t['baslik'])
+    out.append(cap)
+    tbl = etree.Element(q('tbl')); tp = etree.SubElement(tbl, q('tblPr'))
+    w = etree.SubElement(tp, q('tblW')); w.set(q('w'), '5000'); w.set(q('type'), 'pct')
+    j = etree.SubElement(tp, q('jc')); j.set(q('val'), 'center')
+    bd = etree.SubElement(tp, q('tblBorders'))
+    for side, val in (('top', 'single'), ('left', 'none'), ('bottom', 'single'), ('right', 'none'), ('insideH', 'none'), ('insideV', 'none')):
+        e = etree.SubElement(bd, q(side)); e.set(q('val'), val); e.set(q('sz'), '8' if val == 'single' else '0'); e.set(q('space'), '0'); e.set(q('color'), 'auto')
+    ncol = len(t['sutunlar']); grid = etree.SubElement(tbl, q('tblGrid'))
+    first = 2600 if ncol <= 6 else 2000; rest = int((9354 - first) / (ncol - 1))
+    for k in range(ncol):
+        gc = etree.SubElement(grid, q('gridCol')); gc.set(q('w'), str(first if k == 0 else rest))
+    for ri, row in enumerate([t['sutunlar']] + t['satirlar']):
+        tr = etree.SubElement(tbl, q('tr'))
+        if ri == 0:
+            trp = etree.SubElement(tr, q('trPr')); etree.SubElement(trp, q('tblHeader'))
+        for ci, val in enumerate(row):
+            tc = etree.SubElement(tr, q('tc')); tcp = etree.SubElement(tc, q('tcPr'))
+            tw = etree.SubElement(tcp, q('tcW')); tw.set(q('w'), str(first if ci == 0 else rest)); tw.set(q('type'), 'dxa')
+            if ri == 0:
+                cb = etree.SubElement(tcp, q('tcBorders')); bb = etree.SubElement(cb, q('bottom'))
+                bb.set(q('val'), 'single'); bb.set(q('sz'), '6'); bb.set(q('space'), '0'); bb.set(q('color'), 'auto')
+            par = etree.SubElement(tc, q('p')); ppr = etree.SubElement(par, q('pPr'))
+            s2 = etree.SubElement(ppr, q('spacing')); s2.set(q('before'), '20'); s2.set(q('after'), '20')
+            jj = etree.SubElement(ppr, q('jc')); jj.set(q('val'), 'left' if ci == 0 else 'center')
+            run(par, val, bold=(ri == 0), size='18')
+    out.append(tbl)
+    note = etree.Element(q('p')); npp = etree.SubElement(note, q('pPr'))
+    s3 = etree.SubElement(npp, q('spacing')); s3.set(q('before'), '60'); s3.set(q('after'), '120')
+    run(note, 'Not: ', bold=True, size='18'); run(note, t['not'], size='18')
+    out.append(note)
+    return out
+
+yeni.append(para(P_H1, '4. Bulgular'))
+yerlesen = set()
+for f in sorted(_glob.glob(os.path.join(BOL, 'bulgular-4-*.md'))):
+    for lvl, t in md_blocks(os.path.basename(f)):
+        if lvl == 'h1':
+            yeni.append(para(P_H2, re.sub(r'\s*\(taslak[^)]*\)', '', t).strip()))
+        elif lvl == 'p':
+            yeni.append(para(P_BODY, t))
+            for no in sorted(int(n) for n in re.findall(r'Tablo (\d)', t)):
+                if no in TABLOLAR and no not in yerlesen:
+                    yeni.extend(tablo_xml(no, TABLOLAR[no])); yerlesen.add(no)
+
+# Tartışma ve Sonuç: yalnız başlıklar + yazar için sarı yönerge (YZ bu bölümü yazmaz)
 isk = md_blocks('bulgular-tartisma-iskelet.md')
+in_tart = False
 for lvl, t in isk:
-    if lvl == 'h1':
-        continue
     if lvl == 'h2':
-        yeni.append(para(P_H1, t))
-    elif lvl == 'h3':
+        in_tart = t.startswith('5.')
+        if in_tart: yeni.append(para(P_H1, t))
+        continue
+    if not in_tart or lvl == 'h1':
+        continue
+    if lvl == 'h3':
         yeni.append(para(P_H2, t[0].upper() + t[1:] if t else t))
     else:
         for line in re.split(r'\s*- ', ' ' + t):

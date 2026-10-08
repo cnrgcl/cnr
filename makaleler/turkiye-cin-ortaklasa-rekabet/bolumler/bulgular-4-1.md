@@ -1,0 +1,5 @@
+# 4.1. Belgelerin ve Kodlamanın Genel Görünümü (taslak, 2026-10-08)
+
+> Kaynak: yazarın onayı ("bu haliyle"); yorum içermez, yalnız Tablo 1 ve genel dağılımlar. Sayılar: `analiz/stats-insan.json` (ana set n = 363), `korpus-belge/*/_envanter.csv`.
+
+İncelenen 49 belgenin 25'i ikili, 24'ü tek taraflı belgedir ve iki ülkenin kaynakları her iki grupta da dengeli biçimde temsil edilmektedir (Tablo 1). Belgelerden çıkarılan 368 anlam biriminden, üç kodlamanın da farklı alan verdiği 5 birim dışarıda bırakıldığı için analiz 363 birim üzerinden yapılmıştır. Bu birimlerin alanlara dağılımı dengesizdir: bağlantısallık 98, turist akışı 123 ve anlatı 122 birim içerirken değer yakalama alanında yalnızca 20 birim bulunmaktadır. Yönelim bakımından birimlerin 139'u iş birliği, 76'sı rekabet, 6'sı karma kodu almış; 142'si ise açık bir işaret taşımadığı için nötr olarak kodlanmıştır. Başka bir deyişle resmî belgelerdeki ifadelerin yaklaşık %39'u ne iş birliğini ne de rekabeti açıkça dile getirmektedir. Aşağıdaki alt bölümlerde iş birliği ve rekabet payları, bu nötr birimler hem dahil hem hariç tutularak raporlanmaktadır.
