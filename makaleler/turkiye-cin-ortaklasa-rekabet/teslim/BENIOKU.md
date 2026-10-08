@@ -1,3 +1,5 @@
+> **⚠ 2026-10-08 — GÖNDERMEYİN.** K1/K2 kodları insan kodlayıcılara ait değil (Manus ve ChatGPT). Yöntem 3.4, Bulgular 4.1–4.4, Tablo 1–5, Öz/Abstract/Extended Summary bulguları ve YZ beyanı gerçek kodlamayla yeniden üretilmeden bu docx gönderilemez. Ayrıntı: `durum.md` 2026-10-08 00:50.
+
 # Teslim klasörü — NEVÜ SBE Dergisi (ek başvuru 10.10.2026 00:01 – 11.10.2026 23:59)
 
 ## makale-anonim-taslak-v1.docx (2026-10-07)
