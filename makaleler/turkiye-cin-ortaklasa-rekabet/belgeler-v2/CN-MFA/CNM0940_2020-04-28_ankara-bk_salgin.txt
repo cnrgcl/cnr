@@ -1,0 +1,17 @@
+URL: https://tr.china-embassy.gov.cn/chn/sgxw/202205/t20220531_10696013.htm
+ERISIM_TARIHI: 2026-11-02
+KAYNAK_KURUM: ÇHC Ankara Büyükelçiliği (tr.china-embassy.gov.cn) – 使馆新闻
+TARAF: CN
+GRUP: ikili
+TUR: haber
+TARIH: 2020-04-28
+SAYFA_TARIHI: 2020/04/28
+DIL: zh
+---
+土耳其新冠肺炎疫情通报（4月28日晚）
+
+4月28日，土耳其进行新冠肺炎检测29230份，新增确诊病例2392例，新增死亡病例92例，新增治愈5018例。
+
+截至28日19时，土耳其累计确诊114653例，累计死亡2992例，累计治愈38809例。
+
+土耳其航空公司宣布继续停飞旗下所有国际、国内航班至5月28日。

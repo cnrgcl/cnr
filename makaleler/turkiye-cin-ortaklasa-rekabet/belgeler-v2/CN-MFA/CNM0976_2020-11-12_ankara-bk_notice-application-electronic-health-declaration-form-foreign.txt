@@ -1,0 +1,45 @@
+URL: https://tr.china-embassy.gov.cn/tur/sgxw/202011/t20201112_9617262.htm
+ERISIM_TARIHI: 2026-11-02
+KAYNAK_KURUM: ÇHC Ankara Büyükelçiliği (tr.china-embassy.gov.cn) – Haberler (sgxw)
+TARAF: CN
+GRUP: ikili
+TUR: duyuru
+TARIH: 2020-11-12
+SAYFA_TARIHI: 2020/11/12
+DIL: en
+---
+Notice on the Application of Electronic Health Declaration Form for Foreign Passengers
+
+Starting from 16 November,2020, all foreign passengers who are flying from Turkey to China will be required to present the Electronic Health
+
+Declaration Form for boarding.
+
+Foreign passengers with certificates of negative results of both nucleic acid and IgM antibody tests taken in the medical institution designated or
+
+recognized by the Chinese Embassy in Turkey/ Chinese Consulate General in Istanbul shall apply for the Electronic Health Declaration Form by
+
+logging on the website of http://hrhk.cs.mfa.gov.cn/H5/ via computer or smart phone, or by scanning the QR Code below.
+
+Foreign passengers need to register, fill in the information, declare the health status and upload the testing certificates online, which will then be
+
+examined and verified by the Chinese Embassy in Turkey/Chinese Consulate General in Istanbul. Upon approval, applicants will receive the Electronic
+
+Health Declaration Form, which will be displayed in QR code with the "HDC" mark. Foreign passengers are required to present the electronic or
+
+printed QR code with the "HDC" mark, and follow the procedures for inspection by relevant airlines during boarding.
+
+Chinese passengers(including the Hong Kong SAR, the Macao SAR and the Taiwan region) can still apply for the green health code with the"HS"mark
+
+via the WeChat Health Code app.
+
+Annex:
+
+1.The list of medical institutions for IgM anti-body tests recognized by the Chinese Embassy in Turkey/Chinese Consulate General in Istanbul:
+
+http://tr.china-embassy.org/chn/xwdt/P020201105589521457179.xlsx
+
+2.The list of medical institutions for nucleic acid tests recognized by the Chinese Embassy in Turkey/Chinese Consulate General in Istanbul:
+
+http://tr.china-embassy.org/chn/xwdt/P020201105589521567134.doc  Email of Chinese Embassy in Turkey:consulate_tur@mfa.gov.cn
+
+Email of  Chinese Consulate General in Istanbul:consulate_ist@sina.com

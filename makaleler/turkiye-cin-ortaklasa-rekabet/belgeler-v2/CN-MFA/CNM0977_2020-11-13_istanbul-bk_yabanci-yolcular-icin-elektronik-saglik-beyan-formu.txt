@@ -1,0 +1,55 @@
+URL: https://istanbul.china-consulate.gov.cn/tur/xwdt/202011/t20201113_5348274.htm
+ERISIM_TARIHI: 2026-11-02
+KAYNAK_KURUM: ÇHC İstanbul Başkonsolosluğu (istanbul.china-consulate.gov.cn) – Haberler
+TARAF: CN
+GRUP: ikili
+TUR: duyuru
+TARIH: 2020-11-13
+SAYFA_TARIHI: 2020-11-13 00:42
+DIL: tr
+---
+Yabancı Yolcular İçin Elektronik Sağlık Beyan Formu Uygulaması Başlatılmasına İlişkin Duyuru (Notice on the Application of Electronic Health Declaration Form for Foreign Passengers)
+
+16 Kasım 2020 tarihinden itibaren, Türkiye'den Çin'e uçacak tüm yabancı yolcuların binişi için Elektronik Sağlık Beyan Formu sunmaları gerekecektir.
+
+Çin'in Ankara Büyükelçiliği veya Çin'in İstanbul Başkonsolosluğu tarafından belirlenen veya tanınan sağlık kurumlarından alınmış hem nükleik asit hem
+
+de IgM antikor testlerinin negatif sonucunu gösteren belgeye sahip yabancı yolcular, Elektronik Sağlık Beyan Formu için bilgisayar veya akıllı telefon
+
+aracılığıyla http://hrhk.cs.mfa.gov.cn/H5/ web sitesine girerek veya aşağıdaki QR kodunu tarayarak başvuru yapabileceklerdir.
+
+Yabancı yolcuların kayıt olmaları, gerekli bilgileri doldurmaları, sağlık durumlarını beyan etmeleri ve test sonuçlarını online olarak yüklemeleri
+
+gerekmektedir, bu bilgiler daha sonra Çin'in Ankara Büyükelçiliği veya Çin'in İstanbul Başkonsolosluğu tarafından incelenip doğrulanacaktır.
+
+Bilgiler doğrulandıktan sonra başvuru sahiplerine, QR kodunda "HDC" işareti ile gösterilecek Elektronik Sağlık Beyan Formu gönderilecektir.
+
+Yabancı yolcuların, "HDC" işaretli QR kodunu elektronik veya basılı olarak sunmaları ve uçağa biniş sırasında ilgili havayollarının inceleme
+
+prosedürlerini takip etmeleri gerekmektedir.
+
+Çin vatandaşı olan yolcular (Hong Kong Özel İdari Bölgesi, Macao Özel İdari Bölgesi ve Taiwan Bölgesi dahil) WeChat Sağlık Kodu uygulaması
+
+aracılığıyla"HS"işaretli yeşil sağlık kodu için hala başvuru yapabilirler.
+
+Starting from 16 November,2020, all foreign passengers who are flying from Turkey to China will be required to present the Electronic Health
+
+Declaration Form for boarding.
+
+Foreign passengers with certificates of negative results of both nucleic acid and IgM antibody tests taken in the medical institution designated or
+
+recognized by the Chinese Embassy in Turkey/ Chinese Consulate General in Istanbul shall apply for the Electronic Health Declaration Form by
+
+logging on the website of http://hrhk.cs.mfa.gov.cn/H5/ via computer or smart phone, or by scanning the QR Code below.
+
+Foreign passengers need to register, fill in the information, declare the health status and upload the testing certificates online, which will then be
+
+examined and verified by the Chinese Embassy in Turkey/Chinese Consulate General in Istanbul. Upon approval, applicants will receive the Electronic
+
+Health Declaration Form, which will be displayed in QR code with the "HDC" mark. Foreign passengers are required to present the electronic or
+
+printed QR code with the "HDC" mark, and follow the procedures for inspection by relevant airlines during boarding.
+
+Chinese passengers(including the Hong Kong SAR, the Macao SAR and the Taiwan region) can still apply for the green health code with the"HS"mark
+
+via the WeChat Health Code app.

@@ -1,0 +1,47 @@
+URL: https://tr.china-embassy.gov.cn/tur/sgxw/202011/t20201112_9617261.htm
+ERISIM_TARIHI: 2026-11-02
+KAYNAK_KURUM: ÇHC Ankara Büyükelçiliği (tr.china-embassy.gov.cn) – Haberler (sgxw)
+TARAF: CN
+GRUP: ikili
+TUR: duyuru
+TARIH: 2020-11-12
+SAYFA_TARIHI: 2020/11/12
+DIL: tr
+---
+Yabancı Yolcular İçin Elektronik Sağlık Beyan Formu Uygulaması Başlatılmasına İlişkin Duyuru
+
+16 Kasım 2020 tarihinden itibaren, Türkiye'den Çin'e uçacak tüm yabancı yolcuların binişi için Elektronik Sağlık Beyan Formu sunmaları gerekecektir.
+
+Çin'in Ankara Büyükelçiliği veya Çin'in İstanbul Başkonsolosluğu tarafından belirlenen veya tanınan sağlık kurumlarından alınmış hem nükleik asit hem
+
+de IgM antikor testlerinin negatif sonucunu gösteren belgeye sahip yabancı yolcular, Elektronik Sağlık Beyan Formu için bilgisayar veya akıllı telefon
+
+aracılığıyla http://hrhk.cs.mfa.gov.cn/H5/ web sitesine girerek veya aşağıdaki QR kodunu tarayarak başvuru yapabileceklerdir.
+
+Yabancı yolcuların kayıt olmaları, gerekli bilgileri doldurmaları, sağlık durumlarını beyan etmeleri ve test sonuçlarını online olarak yüklemeleri
+
+gerekmektedir, bu bilgiler daha sonra Çin'in Ankara Büyükelçiliği veya Çin'in İstanbul Başkonsolosluğu tarafından incelenip doğrulanacaktır.
+
+Bilgiler doğrulandıktan sonra başvuru sahiplerine, QR kodunda "HDC" işareti ile gösterilecek Elektronik Sağlık Beyan Formu gönderilecektir.
+
+Yabancı yolcuların, "HDC" işaretli QR kodunu elektronik veya basılı olarak sunmaları ve uçağa biniş sırasında ilgili havayollarının inceleme
+
+prosedürlerini takip etmeleri gerekmektedir.
+
+Çin vatandaşı olan yolcular (Hong Kong Özel İdari Bölgesi, Macao Özel İdari Bölgesi ve Taiwan Bölgesi dahil) WeChat Sağlık Kodu uygulaması
+
+aracılığıyla"HS"işaretli yeşil sağlık kodu için hala başvuru yapabilirler.
+
+EK:
+
+IgM antikor testleri için Çin'in Ankara Büyükelçiliği veya Çin'in İstanbul Başkonsolosluğu tarafından onaylanan Sağlık Kurumlarının Listesi:
+
+http://tr.china-embassy.org/chn/xwdt/P020201105589521457179.xlsx
+
+Nükleik asit testleri için Türkiye'deki Çin Büyükelçiliği / İstanbul Başkonsolsoluğu tarafından onaylanan Sağlık Kurumlarının Listesi
+
+http://tr.china-embassy.org/chn/xwdt/P020201105589521567134.doc
+
+Çin'in Ankara Büyükelçiliği Email Adresi: consulate_tur@mfa.gov.cn
+
+Çin'in İstanbul Başkonsolosluğu Email Adresi: consulate_ist@sina.com
