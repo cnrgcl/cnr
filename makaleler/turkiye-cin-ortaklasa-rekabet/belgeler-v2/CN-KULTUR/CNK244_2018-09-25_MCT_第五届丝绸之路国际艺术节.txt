@@ -1,0 +1,13 @@
+URL: https://www.mct.gov.cn/preview/special/8672/8674/201809/t20180925_835044.htm
+ERISIM_TARIHI: 2026-11-02
+KAYNAK_KURUM: ÇHC Kültür ve Turizm Bakanlığı (mct.gov.cn); sayfadaki kaynak: 中国国家话剧院
+TARAF: CN
+GRUP: tek-tarafli
+TUR: haber
+TARIH: 2018-09-25
+DIL: zh
+BASLIK: 第五届丝绸之路国际艺术节
+SAYFADAKI_TARIH: 2018-09-25 14:47
+SAYFADAKI_KAYNAK: 中国国家话剧院
+---
+9月7日，在习近平主席提出“一带一路”倡议5周年之际，伴随着新编京剧《丝路长歌——大漠传情》在西安易俗大剧院的精彩亮相，由文化和旅游部、陕西省人民政府共同主办，陕西省文化厅承办的第五届丝绸之路国际艺术节在古丝绸之路的起点西安正式开幕。

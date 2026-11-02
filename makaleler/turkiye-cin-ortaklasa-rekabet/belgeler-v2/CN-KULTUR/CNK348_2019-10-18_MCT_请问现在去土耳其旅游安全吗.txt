@@ -1,0 +1,21 @@
+URL: https://www.mct.gov.cn/wlhdjl/hdjl_detail.html?mailId=38f95b402a48409d9dffef31516dc67f&type=dflb&laiyuan=0
+ERISIM_TARIHI: 2026-11-02
+KAYNAK_KURUM: ÇHC Kültür ve Turizm Bakanlığı (mct.gov.cn); sayfadaki kaynak: 文化和旅游部信息中心（文化和旅游部 互动交流 留言回复；数据来源 /communication/api-mailbox/frontMail/detail）
+TARAF: CN
+GRUP: ikili
+TUR: kamu danışma yanıtı
+TARIH: 2019-10-18
+DIL: zh
+BASLIK: 请问现在去土耳其旅游安全吗？
+SAYFADAKI_TARIH: 2019-10-18 17:08:34
+SAYFADAKI_KAYNAK: 文化和旅游部信息中心（文化和旅游部 互动交流 留言回复；数据来源 /communication/api-mailbox/frontMail/detail）
+---
+编号：20191008404
+标题：请问现在去土耳其旅游安全吗？
+来信时间：2019-10-18 17:08:34
+类型：业务咨询
+来信内容：请问现在去土耳其旅游安全吗，9月份预定了11月去土耳其的旅游，现在土耳其在打仗，请问现在国家对去土耳其旅游有安全限制通知吗？
+回复时间：2020-03-15 20:47:55
+回复部门：文化和旅游部信息中心
+回复内容：您好，请及时关注外交部、文化和旅游部门户网站、官方微信公众号、政务微博等渠道发布的权威信息。
+办理状态：已办结

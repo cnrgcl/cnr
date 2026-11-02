@@ -1,0 +1,15 @@
+URL: https://www.yidaiyilu.gov.cn/p/0M3TNVNC.html
+ERISIM_TARIHI: 2026-11-02
+KAYNAK_KURUM: Kuşak ve Yol resmî portalı (yidaiyilu.gov.cn); haber kaynağı: 新华社
+TARAF: CN
+GRUP: ikili
+TUR: haber (ajans)
+TARIH: 2026-01-01
+DIL: zh
+BASLIK: 土耳其宣布对中国公民免签
+SAYFADAKI_TARIH: 2026-01-01
+SAYFADAKI_KAYNAK: 新华社
+ETIKET: ajans
+---
+新华社安卡拉12月31日电（记者熊思浩）土耳其政府12月31日宣布，自2026年1月2日起，对持普通护照的中华人民共和国公民实施免签入境政策。
+根据官方公报，土耳其总统埃尔多安签署总统令，决定自2026年1月2日起，持普通护照的中华人民共和国公民可享受旅游和过境免签待遇，在任何180天内累计停留时间最多为90天。

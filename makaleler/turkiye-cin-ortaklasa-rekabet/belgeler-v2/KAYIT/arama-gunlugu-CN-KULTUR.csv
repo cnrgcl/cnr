@@ -1,0 +1,99 @@
+tarih,ajan,site,arama_yolu,sonuc_sayisi,incelenen,dahil
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=土耳其 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",172,161,34
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=中土 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",62,48,15
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=埃尔索伊 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",2,2,2
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=丝路 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",1770,159,155
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=丝绸之路 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",1842,224,216
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=土方 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",21,8,4
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=安卡拉 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",9,7,5
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=伊斯坦布尔 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",25,19,10
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=中间走廊 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",1089,13,13
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=旅游年 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",477,12,11
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=土耳其旅游年 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",645,158,38
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=丝路 (api.so-gov.cn/query/s, tüm sayfalar) [ilk çalıştırma API hatasıyla kesildi; 60 kayıt tarandı; tamamlanmadı — aynı sorgu ayrıca tam yinelendiyse aşağıda]; başlık+özet taraması, aday sayfalar tam okundu",,159,155
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=中土 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",62,48,15
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=埃尔索伊 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",2,2,2
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=库尔图尔穆什 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",0,0,0
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=土耳其文化年 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",500,166,44
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=丝绸之路旅游 (api.so-gov.cn/query/s, tüm sayfalar) [ilk çalıştırma API hatasıyla kesildi; 140 kayıt tarandı; tamamlanmadı — aynı sorgu ayrıca tam yinelendiyse aşağıda]; başlık+özet taraması, aday sayfalar tam okundu",,8,8
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=丝路旅游 (api.so-gov.cn/query/s, tüm sayfalar) [ilk çalıştırma API hatasıyla kesildi; 40 kayıt tarandı; tamamlanmadı — aynı sorgu ayrıca tam yinelendiyse aşağıda]; başlık+özet taraması, aday sayfalar tam okundu",,0,0
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=丝绸之路旅游年 (api.so-gov.cn/query/s, tüm sayfalar) [ilk çalıştırma API hatasıyla kesildi; 1360 kayıt tarandı; tamamlanmadı — aynı sorgu ayrıca tam yinelendiyse aşağıda]; başlık+özet taraması, aday sayfalar tam okundu",,205,198
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=丝绸之路 (api.so-gov.cn/query/s, tüm sayfalar) [ilk çalıştırma API hatasıyla kesildi; 360 kayıt tarandı; tamamlanmadı — aynı sorgu ayrıca tam yinelendiyse aşağıda]; başlık+özet taraması, aday sayfalar tam okundu",,224,216
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"site araması https://www.mct.gov.cn/mctso/s?qt=土耳其 (api.so-gov.cn/query/s, tüm sayfalar); başlık+özet taraması, aday sayfalar tam okundu",172,161,34
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/whzx/bnsj/dwwhllj/ (index..index_24; 25 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",500,20,19
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/preview/special/8672/8673/ (index..index_0; 1 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",8,1,1
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/preview/special/8672/8674/ (index..index_0; 1 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",7,4,2
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/preview/special/8672/8676/ (index..index_4; 5 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",99,42,41
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/preview/special/8672/8677/ (index..index_0; 1 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",1,0,0
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/whzx/bnsj/fwzwhycs/ (index..index_11; 12 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",230,1,1
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/whzx/bnsj/whcys/ (index..index_24; 25 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",500,8,8
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/whzx/bnsj/zcfgs_bnsj/ (index..index_24; 25 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",496,0,0
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/whzx/qgwhxxlb/gs/ (index..index_16; 17 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",500,25,25
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/whzx/qgwhxxlb/hn/ (index..index_16; 17 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",500,0,0
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/whzx/qgwhxxlb/nx/ (index..index_16; 17 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",500,3,3
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/whzx/qgwhxxlb/qh/ (index..index_16; 17 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",500,2,2
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/whzx/qgwhxxlb/sx_7740/ (index..index_16; 17 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",500,20,20
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/whzx/tpxw/ (index..index_24; 25 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",498,9,8
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/whzx/whyw/ (index..index_24; 25 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",498,8,8
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"liste sayfası https://www.mct.gov.cn/whzx/zsdw/zwwhjlzx/ (index..index_15; 16 sayfa, sitenin listede gösterdiği tüm kayıtlar; TRS listeleri en fazla 25 sayfa/500 kayıt gösterir, daha eskileri site aramasıyla kapsandı) başlık taraması",303,11,11
+2026-11-02,CN-KULTUR,www.mct.gov.cn,liste sayfası https://www.mct.gov.cn/whzx/bnsj/gjjlhzj/ (国际交流与合作局),erişilemedi (liste URL’si 404/boş),0,0
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"https://www.mct.gov.cn/tourism/ (eski CNTA veri kataloğu; yalnız yönetim/katalog SPA, haber arşivi değil)",0,0,0
+2026-11-02,CN-KULTUR,www.mct.gov.cn,https://www.mct.gov.cn/communication/api-mailbox/frontMail/detail?mailId=38f95b402a48409d9dffef31516dc67f (互动交流 留言 sayfasının veri kaynağı),1,1,1
+2026-11-02,CN-KULTUR,www.mct.gov.cn,"vipchat (在线访谈/新闻发布会) sayfaları …/vipchat/home/site/{1,2}/{129,141,171,174,246,413}/article.html",6,6,2
+2026-11-02,CN-KULTUR,www.yidaiyilu.gov.cn,"site araması /newSearch/all/1/<şifreli:土耳其 旅游>?page=N (sunucu tarafı sayfalar) [ilk 49 sayfa / 552 kayıt tarandı, toplam 565; tamamlanmadı]; başlık taraması",565,72,9
+2026-11-02,CN-KULTUR,www.yidaiyilu.gov.cn,site araması /newSearch/all/1/<şifreli:土耳其 遗产>?page=N (sunucu tarafı sayfalar); başlık taraması,150,12,3
+2026-11-02,CN-KULTUR,www.yidaiyilu.gov.cn,"site araması /newSearch/all/1/<şifreli:丝绸之路旅游年>?page=N (sunucu tarafı sayfalar) [ilk 30 sayfa / 360 kayıt tarandı, toplam 2232; tamamlanmadı]; başlık taraması",2232,15,2
+2026-11-02,CN-KULTUR,www.yidaiyilu.gov.cn,site araması /newSearch/all/1/<şifreli:土耳其旅游年>?page=N (sunucu tarafı sayfalar); başlık taraması,33,13,0
+2026-11-02,CN-KULTUR,www.yidaiyilu.gov.cn,"site araması /newSearch/all/1/<şifreli:愿景与行动>?page=N (sunucu tarafı sayfalar) [ilk 3 sayfa / 36 kayıt tarandı, toplam 1600; tamamlanmadı]; başlık taraması",1600,0,0
+2026-11-02,CN-KULTUR,www.yidaiyilu.gov.cn,"site araması /newSearch/all/1/<şifreli:土耳其 文化>?page=N (sunucu tarafı sayfalar) [ilk 74 sayfa / 849 kayıt tarandı, toplam 876; tamamlanmadı]; başlık taraması",876,85,17
+2026-11-02,CN-KULTUR,www.yidaiyilu.gov.cn,"site araması /newSearch/all/1/<şifreli:中间走廊>?page=N (sunucu tarafı sayfalar) [ilk 27 sayfa / 292 kayıt tarandı, toplam 304; tamamlanmadı]; başlık taraması",304,73,6
+2026-11-02,CN-KULTUR,www.yidaiyilu.gov.cn,site araması /newSearch/all/1/<şifreli:土耳其 签证>?page=N (sunucu tarafı sayfalar); başlık taraması,129,3,0
+2026-11-02,CN-KULTUR,www.yidaiyilu.gov.cn,"site araması /newSearch/all/1/<şifreli:土耳其 丝绸之路>?page=N (sunucu tarafı sayfalar) [ilk 61 sayfa / 701 kayıt tarandı, toplam 717; tamamlanmadı]; başlık taraması",717,54,5
+2026-11-02,CN-KULTUR,www.yidaiyilu.gov.cn,site araması /newSearch/all/1/<şifreli:中土 人文>?page=N (sunucu tarafı sayfalar); başlık taraması,146,43,3
+2026-11-02,CN-KULTUR,www.yidaiyilu.gov.cn,"site araması /newSearch/all/1/<şifreli:丝绸之路 旅游>?page=N (sunucu tarafı sayfalar) [ilk 80 sayfa / 934 kayıt tarandı, toplam 3654; tamamlanmadı]; başlık taraması",3654,27,4
+2026-11-02,CN-KULTUR,www.yidaiyilu.gov.cn,"site araması /newSearch/all/1/<şifreli:土耳其 航线>?page=N (sunucu tarafı sayfalar) [ilk 26 sayfa / 286 kayıt tarandı, toplam 290; tamamlanmadı]; başlık taraması",290,15,3
+2026-11-02,CN-KULTUR,www.yidaiyilu.gov.cn,"site araması /newSearch/all/1/<şifreli:土耳其 班列>?page=N (sunucu tarafı sayfalar) [ilk 40 sayfa / 452 kayıt tarandı, toplam 659; tamamlanmadı]; başlık taraması",659,40,9
+2026-11-02,CN-KULTUR,www.yidaiyilu.gov.cn,ülke sayfası https://www.yidaiyilu.gov.cn/country/Türkiye (yalnız son haberler; tümü yukarıdaki aramalarda kapsandı),12,0,0
+2026-11-02,CN-KULTUR,www.yidaiyilu.gov.cn,arama API’si https://www.yidaiyilu.gov.cn/api/g_content/list/adv_search — imzalı Authorization başlığı olmadan 403; atlatılmadı,403,0,0
+2026-11-02,CN-KULTUR,eng.yidaiyilu.gov.cn,https://eng.yidaiyilu.gov.cn/p/0TQ0A7UC.html (A21),erişilemedi (boş yanıt),1,0
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_gw (国务院文件)&q=丝路 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,161,18,18
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_gw (国务院文件)&q=丝绸之路 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,95,18,18
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_gw (国务院文件)&q=土耳其 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,10,16,0
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_gw (国务院文件)&q=一带一路 旅游 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,437,13,13
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_gw (国务院文件)&q=一带一路 文化 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,830,14,14
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_gw (国务院文件)&q=世界遗产 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,220,13,13
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_gw (国务院文件)&q=丝路 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,161,18,18
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_gw (国务院文件)&q=丝绸之路 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,95,18,18
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_gw (国务院文件)&q=土耳其 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,10,16,0
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_gw (国务院文件)&q=一带一路 旅游 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,437,13,13
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_gw (国务院文件)&q=一带一路 文化 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,830,14,14
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_gw (国务院文件)&q=世界遗产 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,220,13,13
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_bm (部门文件)&q=丝路 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,89,18,18
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_bm (部门文件)&q=丝绸之路 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,44,18,18
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_bm (部门文件)&q=土耳其 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,8,16,0
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_bm (部门文件)&q=一带一路 旅游 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,414,13,13
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_bm (部门文件)&q=一带一路 文化 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,1076,14,14
+2026-11-02,CN-KULTUR,www.gov.cn,politika kütüphanesi araması sousuo.www.gov.cn/search-gov/data?t=zhengcelibrary_bm (部门文件)&q=世界遗产 (tüm sayfalar); başlık filtresi (旅游/文化/遗产/文物/丝绸之路/一带一路) + tam metinde 丝绸之路/丝路 kontrolü,118,13,13
+2026-11-02,CN-KULTUR,www.gov.cn,"beyaz kitap listesi https://www.gov.cn/zhengce/baipishu/ home.htm … home_8.htm (9 sayfa, 148 başlık)",148,1,1
+2026-11-02,CN-KULTUR,www.gov.cn,genel site araması (sousuo.www.gov.cn athena API) — şifreli uygulama anahtarı gerektiriyor; kullanılmadı,kullanılmadı,0,0
+2026-11-02,CN-KULTUR,www.gov.cn,https://www.gov.cn/xinwen/2015-01/08/content_2802256.htm (E06) ve /xinwen/2015-03/28/content_2839723.htm,404,2,0
+2026-11-02,CN-KULTUR,www.ndrc.gov.cn,https://www.ndrc.gov.cn/xwdt/xwfb/201503/t20150328_956036.html (愿景与行动 Çince metni; site araması yapılmadı),1,1,1
+2026-11-02,CN-KULTUR,wlt.gansu.gov.cn,ana sayfa / erişim denemesi — HTTP 412 (bot koruması/JS çerezi); atlatılmadı,erişilemedi,0,0
+2026-11-02,CN-KULTUR,www.gansu.gov.cn,ana sayfa / erişim denemesi — HTTP 412,erişilemedi,0,0
+2026-11-02,CN-KULTUR,whhlyt.nx.gov.cn,ana sayfa / erişim denemesi — HTTP 405 NWAF güvenlik duvarı sayfası,erişilemedi,0,0
+2026-11-02,CN-KULTUR,www.nx.gov.cn,ana sayfa / erişim denemesi — HTTP 405 NWAF,erişilemedi,0,0
+2026-11-02,CN-KULTUR,whlyt.qinghai.gov.cn,ana sayfa / erişim denemesi — bağlantı sıfırlandı,erişilemedi,0,0
+2026-11-02,CN-KULTUR,www.qinghai.gov.cn,ana sayfa / erişim denemesi — bağlantı sıfırlandı,erişilemedi,0,0
+2026-11-02,CN-KULTUR,hct.henan.gov.cn,ana sayfa / erişim denemesi — HTTP 403,erişilemedi,0,0
+2026-11-02,CN-KULTUR,www.henan.gov.cn,ana sayfa / erişim denemesi — HTTP 403,erişilemedi,0,0
+2026-11-02,CN-KULTUR,www.ly.gov.cn,ana sayfa / erişim denemesi — bağlantı sıfırlandı,erişilemedi,0,0
+2026-11-02,CN-KULTUR,whhlyt.shaanxi.gov.cn,ana sayfa / erişim denemesi — bağlantı sıfırlandı / proxy 502,erişilemedi,0,0
+2026-11-02,CN-KULTUR,www.shaanxi.gov.cn,ana sayfa / erişim denemesi — bağlantı sıfırlandı,erişilemedi,0,0
+2026-11-02,CN-KULTUR,wwj.shaanxi.gov.cn,ana sayfa / erişim denemesi — bağlantı sıfırlandı (E05),erişilemedi,0,0
+2026-11-02,CN-KULTUR,www.cnta.gov.cn,ana sayfa / erişim denemesi — DNS çözümlenmiyor (site kapalı),erişilemedi,0,0
+2026-11-02,CN-KULTUR,web.archive.org,ana sayfa / erişim denemesi — bağlantı sıfırlandı,erişilemedi,0,0
+2026-11-02,CN-KULTUR,WebSearch (genel arama motoru),anahtar: site:gov.cn 土耳其 旅游年,~9,0,0
+2026-11-02,CN-KULTUR,WebSearch (genel arama motoru),anahtar: site:www.gov.cn 丝绸之路旅游,~9,0,0
+2026-11-02,CN-KULTUR,WebSearch (genel arama motoru),"anahtar: ""丝绸之路旅游年"" 国家旅游局 gov.cn 2015",~9,0,0
+2026-11-02,CN-KULTUR,WebSearch (genel arama motoru),"anahtar: ""土耳其旅游年"" 开幕 2018 中国 国家旅游局 gov.cn",~9,0,0
+2026-11-02,CN-KULTUR,WebSearch (genel arama motoru),anahtar: 推动共建丝绸之路经济带和21世纪海上丝绸之路的愿景与行动 全文 ndrc.gov.cn,~9,0,1

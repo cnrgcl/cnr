@@ -1,0 +1,15 @@
+URL: https://www.mct.gov.cn/whzx/qgwhxxlb/gs/202112/t20211222_929953.htm
+ERISIM_TARIHI: 2026-11-02
+KAYNAK_KURUM: ÇHC Kültür ve Turizm Bakanlığı (mct.gov.cn); sayfadaki kaynak: 中国旅游报
+TARAF: CN
+GRUP: tek-tarafli
+TUR: haber
+TARIH: 2021-12-22
+DIL: zh
+BASLIK: 新版《丝绸之路（甘肃）自驾旅游护照》发放
+SAYFADAKI_TARIH: 2021-12-22 10:50
+SAYFADAKI_KAYNAK: 中国旅游报
+---
+12月20日，由甘肃省文化和旅游厅联合省内部分旅游景区、酒店等推出的新版《丝绸之路（甘肃）自驾旅游护照》发放。
+据了解，新版《丝绸之路（甘肃）自驾旅游护照》面向全国自驾游客发放，有效期2年，含94个景区、45家酒店，其中，5A级旅游景区4家、4A级旅游景区57家，有效期内自驾游护照可在每个景区和酒店重复使用10次。
+此外，甘肃省文化和旅游厅还打造了“丝绸之路（甘肃）自驾旅游护照”智慧化管理服务平台，持有驾驶证的游客用微信扫描绑定护照小程序后，用自驾游电子护照就能完成景区信息浏览、出入景区核验等。（罗赟鹏 张陇堂）
