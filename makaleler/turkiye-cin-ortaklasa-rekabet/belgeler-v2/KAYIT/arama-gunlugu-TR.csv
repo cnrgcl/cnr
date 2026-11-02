@@ -1,0 +1,68 @@
+tarih,ajan,site,arama_yolu,sonuc_sayisi,incelenen,dahil
+2026-11-02,TR-ajan,basin.ktb.gov.tr,"Haber Arşivi (TR-283244) → yıl (2015, 2017–2026) → ay listeleri (119 ay sayfası; 2015 Ocak–Mart boş, 2016 ve Ekim 2026 listesi yok); tüm haberlerin tam metni indirilip Çin/Çinli/Pekin/Şanghay/Şian/İpek Yolu/Kuşak-Yol/Orta Koridor/China/Silk Road ile tarandı",2223,116,31
+2026-11-02,TR-ajan,www.ktb.gov.tr,"Site içi arama (POST /arama?_Dil=1, _ARANACAK=Çin): sonuçlar AJAX UpdatePanel ile yükleniyor, curl yanıtında sonuç listesi boş",0,0,0
+2026-11-02,TR-ajan,www.ktb.gov.tr,"Gündem (TR-283240), Tüm Duyurular (TR-178231), Arşiv (TR-150462) listeleri",30,30,0
+2026-11-02,TR-ajan,ktb.gov.tr (WebSearch),site:ktb.gov.tr Çin Halk Cumhuriyeti turizm,10,10,0
+2026-11-02,TR-ajan,ktb.gov.tr (WebSearch),"site:ktb.gov.tr ""İpek Yolu"" turizm",9,9,6
+2026-11-02,TR-ajan,ktb.gov.tr (WebSearch),"site:ktb.gov.tr ""Çin'de Türkiye Turizm Yılı"" OR ""Türkiye'de Çin Kültür Yılı"" OR ""Çin'de Türk Kültür Yılı""",9,9,1
+2026-11-02,TR-ajan,disiliskiler.ktb.gov.tr (WebSearch),site:disiliskiler.ktb.gov.tr Çin,9,4,0
+2026-11-02,TR-ajan,ktb.gov.tr (WebSearch),site:ktb.gov.tr Çinli turist,9,9,6
+2026-11-02,TR-ajan,ktb.gov.tr (WebSearch),site:ktb.gov.tr China tourism Silk Road,9,6,1
+2026-11-02,TR-ajan,ktb.gov.tr (WebSearch),ktb.gov.tr il kültür ve turizm müdürlüğü Çin heyeti ziyaret,9,9,3
+2026-11-02,TR-ajan,ktb.gov.tr (WebSearch),site:ktb.gov.tr Çin Başkonsolosu ziyaret müdürlüğümüz,9,9,4
+2026-11-02,TR-ajan,ktb.gov.tr (WebSearch),"site:ktb.gov.tr ""Çin"" tanıtım fuarı Pekin Şanghay",10,10,0
+2026-11-02,TR-ajan,ktb.gov.tr (WebSearch),"site:ktb.gov.tr ""Çin"" ""İpek Yolu"" haber",20,20,0
+2026-11-02,TR-ajan,ktb.gov.tr (WebSearch),site:ktb.gov.tr Çin Kültür ve Turizm Bakanı görüşme Ersoy,20,20,0
+2026-11-02,TR-ajan,ktb.gov.tr (WebSearch),site:ktb.gov.tr Çinli seyahat acentaları fam trip,19,19,0
+2026-11-02,TR-ajan,ktb.gov.tr (WebSearch),"site:ktb.gov.tr ""Çin Halk Cumhuriyeti"" kültür yılı 2012",18,18,0
+2026-11-02,TR-ajan,istanbul.ktb.gov.tr (WebSearch),site:istanbul.ktb.gov.tr Çin,14,14,0
+2026-11-02,TR-ajan,nevsehir/kapadokya.ktb.gov.tr (WebSearch),site:nevsehir.ktb.gov.tr OR site:kapadokya.ktb.gov.tr Çinli turist Çin,17,17,0
+2026-11-02,TR-ajan,ktb.gov.tr (WebSearch),"site:ktb.gov.tr ""Çin"" büyükelçisi ziyaret il kültür turizm müdürü 2025",18,18,0
+2026-11-02,TR-ajan,ktb.gov.tr (WebSearch),site:ktb.gov.tr ipekyolu kervansaray Çin'den başlayan,20,20,0
+2026-11-02,TR-ajan,*.ktb.gov.tr,WebSearch sonuçlarındaki il müdürlüğü / genel müdürlük sayfalarının doğrudan indirilmesi (kısaltılmış slug’lar tam slug ile yeniden denendi),24,24,17
+2026-11-02,TR-ajan,basin.ktb.gov.tr,2015 ay listeleri (Ocak–Mart 2015) — liste boş; 2016 yılı arşivde yok,0,0,0
+2026-11-02,TR-ajan,iletisim.gov.tr,"Site içi arama formu (POST ACT=22, keywords=Çin): ""This form has expired"" hatası; arama yapılamadı",0,0,0
+2026-11-02,TR-ajan,iletisim.gov.tr,"/turkce/haberler/P0…P13149 liste sayfaları (1.462 sayfa, 9’ar haber); P1008–P10000 aralığı tekrarlanan denemelerde boş döndü (sunucu sayfalama sorunu); 4.150 benzersiz haber başlığı/slug Çin/Cinping/Pekin/Şanghay/İpek Yolu/Orta Koridor/Kuşak/ŞİÖ anahtarlarıyla tarandı",4150,52,6
+2026-11-02,TR-ajan,iletisim.gov.tr,/english/haberler/P0…P14000 liste sayfaları (yalnız P0–P999 dolu: 1.008 haber); China/Silk Road/Middle Corridor/SCO/Belt anahtarlarıyla tarandı,1008,5,1
+2026-11-02,TR-ajan,iletisim.gov.tr (WebSearch),site:iletisim.gov.tr Çin Cinping,10,10,1
+2026-11-02,TR-ajan,iletisim.gov.tr (WebSearch),"site:iletisim.gov.tr ""Orta Koridor""",9,9,4
+2026-11-02,TR-ajan,iletisim.gov.tr (WebSearch),"site:iletisim.gov.tr ""İpek Yolu""",9,3,0
+2026-11-02,TR-ajan,iletisim.gov.tr (WebSearch),site:iletisim.gov.tr China Türkiye Middle Corridor Silk Road,10,9,2
+2026-11-02,TR-ajan,iletisim.gov.tr (WebSearch),site:iletisim.gov.tr Çin turizm Erdoğan Pekin,10,10,2
+2026-11-02,TR-ajan,iletisim.gov.tr (WebSearch),"site:iletisim.gov.tr Bakü-Tiflis-Kars ""İpek Yolu"" demiryolu",20,0,0
+2026-11-02,TR-ajan,iletisim.gov.tr (WebSearch),site:iletisim.gov.tr Şanghay İşbirliği Örgütü Erdoğan Kuşak Yol,17,0,0
+2026-11-02,TR-ajan,iletisim.gov.tr,"Aday sayfaların tam metinlerinin incelenmesi (36 sayfa; ""Dış Basında Türkiye"" derlemeleri yabancı basın özeti olduğu için incelenip dışlandı)",36,36,16
+2026-11-02,TR-ajan,goturkiye.com,sitemap.xml → sitemap-en/tr/zh (3.429/3.431/3.429 URL); URL slug taraması (silk/ipek/china/cin/visa/caravan),10289,40,0
+2026-11-02,TR-ajan,goturkiye.com,EN (3.429) ve TR (3.431) sayfaların tam metin taraması: Silk Road/China/Chinese/Beijing/Shanghai/Middle Corridor; İpek Yolu/Çin/Çinli/Pekin/Şanghay/Orta Koridor,6860,247,3
+2026-11-02,TR-ajan,tga.gov.tr,sitemap-0.xml (43 sayfa) tam metin taraması: Çin/Çinli/İpek Yolu/China/Pekin/Şanghay,43,43,0
+2026-11-02,TR-ajan,tbmm.gov.tr,"Kanunlar sorgusu (POST /Yasama/Kanun-Sorgu-Sonuc, KanunBasligi=Çin Halk Cumhuriyeti) ve Komisyon Raporları sorgusu (POST /Yasama/KomisyonRaporlari-Sonuc, dönem 24–28): ""kayıt bulunamadı"" (form curl ile çalışmadı)",0,0,0
+2026-11-02,TR-ajan,tbmm.gov.tr (WebSearch),"tbmm.gov.tr ""Çin Halk Cumhuriyeti Hükümeti Arasında"" anlaşmanın onaylanmasının uygun bulunduğuna dair kanun tasarısı",9,9,1
+2026-11-02,TR-ajan,tbmm.gov.tr (WebSearch),"""Çin Halk Cumhuriyeti"" ""Kültür Merkezlerinin"" kanun TBMM onay",14,14,1
+2026-11-02,TR-ajan,tbmm.gov.tr (WebSearch),"""Çin Halk Cumhuriyeti Hükümeti Arasında"" ""Karayolu"" OR ""Uluslararası Taşımacılık"" anlaşma kanun 2016 OR 2017 OR 2018 TBMM",18,18,1
+2026-11-02,TR-ajan,tbmm.gov.tr (WebSearch),"""Çin Halk Cumhuriyeti"" ""Demiryolu"" işbirliği anlaşmasının onaylanmasının uygun bulunduğuna dair kanun sayılı",11,0,0
+2026-11-02,TR-ajan,tbmm.gov.tr (WebSearch),"""Çin Halk Cumhuriyeti Hükümeti Arasında Kültür Anlaşması"" onaylanmasının uygun bulunduğuna dair kanun 2023",12,12,1
+2026-11-02,TR-ajan,tbmm.gov.tr (WebSearch),"""Karşılıklı Kültür Merkezlerinin Kurulması"" Çin kanun sayısı Resmî Gazete",14,3,0
+2026-11-02,TR-ajan,tbmm.gov.tr (WebSearch),"cdn.tbmm.gov.tr KKBSPublicFile ""Çin Halk Cumhuriyeti"" Sıra Sayısı kanun tasarısı Dışişleri Komisyonu Raporu",9,9,0
+2026-11-02,TR-ajan,tbmm.gov.tr (WebSearch),"tbmm ""İpek Yolu Ekonomik Kuşağının"" ""Orta Koridor"" Mutabakat Zaptı kanun tasarısı sıra sayısı 378",16,12,0
+2026-11-02,TR-ajan,tbmm.gov.tr (WebSearch),Türkiye Çin Halk Cumhuriyeti anlaşma onaylanmasının uygun bulunduğuna dair kanun 2019–2025 TBMM kabul edildi Çin,10,10,1
+2026-11-02,TR-ajan,cdn.tbmm.gov.tr,"Arama sonuçlarındaki 15 komisyon raporu PDF’inin kapak sayfası kontrolü (Çin ile ilgili olanlar: S.Sayısı 175, 166; 116 BİT MoU konu dışı)",15,15,2
+2026-11-02,TR-ajan,tbmm.gov.tr,Dönemin Tutanak Metinleri (26/2 ve 26/3) → 70. Birleşim (15.02.2017) ve 57. Birleşim (08.02.2018) PDF’leri; Dışişleri Komisyonu tutanağı 1632; 6792 sayılı Kanun PDF’i,4,4,4
+2026-11-02,TR-ajan,aa.com.tr,"Site içi arama (/tr/search?s=…): sonuçlar istemci tarafında yükleniyor, curl yanıtında sonuç yok",0,0,0
+2026-11-02,TR-ajan,aa.com.tr (WebSearch),aa.com.tr 2012 Türkiye'de Çin Kültür Yılı açılış Ertuğrul Günay,15,15,0
+2026-11-02,TR-ajan,aa.com.tr (WebSearch),aa.com.tr Ersoy Çin Kültür ve Turizm Bakanı Sun Yeli turizm mutabakat zaptı İstanbul 2024,16,16,0
+2026-11-02,TR-ajan,aa.com.tr (WebSearch),aa.com.tr Ersoy Pekin Luo Shugang görüştü Çin,18,18,0
+2026-11-02,TR-ajan,aa.com.tr (WebSearch),"aa.com.tr 2013 ""Çin'de Türk Kültür Yılı"" açılış Pekin",18,18,0
+2026-11-02,TR-ajan,"aa.com.tr (WebSearch, allowed_domains)",Türkiye Çin turizm işbirliği mutabakat zaptı Ersoy Sun Yeli Haziran 2024,10,10,0
+2026-11-02,TR-ajan,"aa.com.tr (WebSearch, allowed_domains)",Çin Kültür Yılı açılış Ankara 2012 Günay,9,9,0
+2026-11-02,TR-ajan,"aa.com.tr (WebSearch, allowed_domains)",Ersoy Çin Luo Shugang Pekin Türkiye Turizm Yılı kapanış,10,10,0
+2026-11-02,TR-ajan,"aa.com.tr (WebSearch, allowed_domains)",Türkiye China tourism memorandum signed Istanbul Ersoy Sun Yeli,10,10,0
+2026-11-02,TR-ajan,mfa.gov.tr (WebSearch; site erişilemiyor),site:mfa.gov.tr Çin Halk Cumhuriyeti ziyaret açıklama İpek Yolu Orta Koridor,9,9,0
+2026-11-02,TR-ajan,mfa.gov.tr (WebSearch; site erişilemiyor),site:mfa.gov.tr China Türkiye Middle Corridor Belt and Road tourism visit,9,9,0
+2026-11-02,TR-ajan,beijing-emb/pekin-be.mfa.gov.tr (WebSearch; site erişilemiyor),beijing-emb.mfa.gov.tr speech ambassador Silk Road tourism China Türkiye,9,9,0
+2026-11-02,TR-ajan,beijing-emb/pekin-be.mfa.gov.tr (WebSearch; site erişilemiyor),"""beijing-emb.mfa.gov.tr/Mission/ShowSpeech"" OR ""pekin-be.mfa.gov.tr/Mission/ShowSpeech""",9,9,0
+2026-11-02,TR-ajan,pekin-be.mfa.gov.tr (WebSearch; site erişilemiyor),"Pekin Büyükelçiliği Büyükelçi konuşması ""Türkiye Turizm Yılı"" OR ""İpek Yolu"" OR ""turizm"" site:mfa.gov.tr",9,9,0
+2026-11-02,TR-ajan,beijing-emb.mfa.gov.tr (WebSearch; site erişilemiyor),Turkish Embassy Beijing announcement tourism Chinese tourists visa Türkiye ShowAnnouncement,20,20,0
+2026-11-02,TR-ajan,tccb.gov.tr (WebSearch; site erişilemiyor),tccb.gov.tr Erdoğan Kuşak ve Yol Forumu konuşma 2017 Pekin İpek Yolu,16,16,0
+2026-11-02,TR-ajan,uab.gov.tr (WebSearch; site erişilemiyor),uab.gov.tr Orta Koridor Çin ihracat treni Bakü-Tiflis-Kars Uraloğlu Çin İpek Yolu Fuarı,19,19,0
+2026-11-02,TR-ajan,resmigazete.gov.tr (WebSearch; site erişilemiyor),Resmî Gazete Çin Halk Cumhuriyeti vatandaşlarına vize muafiyeti Cumhurbaşkanı Kararı sayısı Aralık 2025,16,16,0
+2026-11-02,TR-ajan,"iletisim.gov.tr / aa (WebSearch, tarih teyidi)",Ağrı Hamur-Tutak-Patnos açılış; Türkiye-Çin Medya Forumu; Elazığ İpek Yolu Çocuk ve Gençlik Merkezi; Altun–Gao Jianmin (4 sorgu),62,62,0
